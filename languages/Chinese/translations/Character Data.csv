@@ -1,5 +1,5 @@
 original,translate
-#Animals,#野兽
+#Animals,#动物
 Chicken,鸡
 Dog,狗
 The dog is roaming around restlessly,狗不安地四处游荡
@@ -7,222 +7,224 @@ Goat,山羊
 #Common Humanoids,#常见人形生物
 Commoner,平民
 Guard,守卫
-Guest,来宾
-Scullion,厨房杂役
+A guardsman dressed in the livery of the noble house Berryn scowls at you,一个穿着贝林家族制服的守卫对你怒目而视
+Armsmaster Lyra awaits you at the main entrance,军械长莱拉在主入口等你
+You best talk to her if you've not already done so,如果你还没和她谈过，最好去谈谈
+Guest,客人
+Scullion,帮厨
 Good evening m'lord,晚上好，大人
 Good evening m'lady,晚上好，女士
-the red-faced scullion bows slightly,面红耳赤的厨房杂役微微鞠躬
-Servants,仆人
-Henchman,忠实随从
+the red-faced scullion bows slightly,红脸的帮厨微微鞠躬
+Servants,仆人们
+Henchman,随从
 Brigand Archer,强盗弓箭手
-Brigand Rogue,强盗盗贼
+Brigand Rogue,强盗游荡者
 Brigand Swordsman,强盗剑士
 Child,孩子
-Jester,小丑
+Jester,弄臣
 Farmer,农夫
-Fruit-Picker,摘果者
-FRUIT-PICKER,摘果者
-Handmaid,女侍
+Fruit-Picker,果农
+Handmaid,侍女
 Crewmember,船员
-Refugee,流亡者
-"A ragged, hungry refugee from Horryn",来自霍林的一名衣衫褴褛、饥饿的流亡者
-Treasure Hunter,寻宝者
-Fire-Spitter,火焰喷射者
-Mercenary,武士
-"The mercenary looks at you, menacingly",武士怒视着你
-Armorer,铠甲匠
-Arms Merchant,武器商
-Food Merchant,食物商
-Potion Merchant,法术商
-Reagent Merchant,药剂商
-Spell Merchant,魔法商
-Trinket Merchant,珍奇物商
+Refugee,难民
+"A ragged, hungry refugee from Horryn",“一个来自霍林的衣衫褴褛、饥肠辘辘的难民”
+Treasure Hunter,寻宝猎人
+Fire-Spitter,喷火者
+Mercenary,雇佣兵
+"The mercenary looks at you, menacingly",“雇佣兵威胁地看着你”
+Armorer,护甲匠
+Arms Merchant,武器商人
+Food Merchant,食品商人
+Potion Merchant,药水商人
+Reagent Merchant,药材商人
+Spell Merchant,法术商人
+Trinket Merchant,饰品商人
 Pilgrim,朝圣者
-Reaver Berserker,剥夺者狂战士
-Reaver Brute,攫魂壮汉
-Reaver Scout,攫魂斥候
-Reaver,攫魂者
-Reaver Blackguard,攫魂恶僧
-Reaver Mystic,攫魂巫师
-Cultist,教派信徒
-Prisoner,狱卒
-Wretch,废物
+Reaver Berserker,劫掠者狂战士
+Reaver Brute,掠夺者蛮兵
+Reaver Scout,劫掠者侦察兵
+Reaver,劫掠者
+Reaver Blackguard,劫掠者黑卫
+Reaver Mystic,劫掠者秘术师
+Cultist,邪教徒
+Prisoner,囚犯
+Wretch,可怜虫
 Sailor,水手
 Captain,船长
-Mad Sailor,疯狂水手
-Mad Sailo,疯狂水手
-Guild Magos,行会魔导士
-Guild Mag,行会魔导士
-Wight,僵尸巫医
+Mad Sailor,疯水手
+Mad Sailo,疯水手
+Guild Magos,公会法师
+Guild Mag,公会法师
+Wight,尸妖
 Apprentice,学徒
 Feral Clone,野性克隆体
+FRUIT-PICKER,果农
 #Monsters,#怪物
 Giant Bat,巨蝙蝠
-Giant Beetle,巨型甲虫
-Rhino Beetle,犀牛甲虫
-Carrion Crawler,腐肉爬行者
-Giant Centipede,巨型蜈蚣
-Fell Crab,深渊螃蟹
-Corpse Eater,尸体吞噬者
-Giant Crab,巨型螃蟹
+Giant Beetle,巨甲虫
+Rhino Beetle,犀甲虫
+Carrion Crawler,腐尸爬行者
+Giant Centipede,巨蜈蚣
+Fell Crab,凶煞蟹
+Corpse Eater,食尸者
+Giant Crab,巨螃蟹
 Crab,螃蟹
-Rot Crab,腐烂螃蟹
-Spider Crab,巨型蜘蛛蟹
-Brood Guard,群落卫士
-Father,父亲
-Deep One Priestess,深渊女祭司
-Deep One Queen,深渊女王
-Deep One Warrior,深渊战士
+Rot Crab,腐烂蟹
+Spider Crab,蜘蛛蟹
+Brood Guard,巢穴守卫
+Father,【父亲】
+Deep One Priestess,深潜者女祭司
+Deep One Queen,深潜者女王
+Deep One Warrior,深潜者战士
 Devolved,退化者
-Ghoul,僵尸
-Frost Ghoul,寒霜僵尸
-Giant Gnat,巨型蚋
-Cave Gnat,山洞蚋
-Fell Hog,深渊野猪
-Dire Hound,神秘猎犬
-Fell Hound,恶灵猎犬
-Ice Hound,冰霜猎犬
-Ice Strider,冰霜行者
-Shadow Stalker,影踪追踪者
-Giant Leech,巨型吸血蠕虫
-Albino Leech,白化吸血蠕虫
-Bloodletter,血泵
-Fell Lizard,恶灵蜥蜴
-Alpha Lizard,领主蜥蜴
-Giant Lizard,巨型蜥蜴
-Ice Salamander,冰霜火蜥蜴
-Mold Child,畸变儿
-Ooze,浑浊物
-Flesh Ooze,肉块
+Ghoul,食尸鬼
+Frost Ghoul,寒霜食尸鬼
+Giant Gnat,巨型蠓虫
+Cave Gnat,洞穴蠓虫
+Fell Hog,凶煞野猪
+Dire Hound,凶暴野狗
+Fell Hound,凶煞野狗
+Ice Hound,冰原野狗
+Ice Strider,冰上漫步者
+Shadow Stalker,暗影猎手
+Giant Leech,巨型水蛭
+Albino Leech,白化水蛭
+Bloodletter,放血者
+Fell Lizard,凶煞蜥蜴
+Alpha Lizard,阿尔法蜥蜴
+Giant Lizard,巨蜥
+Ice Salamander,冰火蜥蜴
+Mold Child,霉菌幼体
+Ooze,软泥怪
+Flesh Ooze,血肉软泥怪
 Medusa Jelly,美杜莎果冻
-Risen Ooze,复活的浑浊物
-Magma Ooze,岩浆浑浊物
-Magmite,岩浆
-Large Ooze,大型浑浊物
+Risen Ooze,复生软泥怪
+Magma Ooze,岩浆软泥怪
+Magmite,岩浆虫
+Large Ooze,大型软泥怪
 Giant Rat,巨鼠
-Dire Rat,强壮鼠
-Chitters-In-Darkness,深暗之嗤
-Rabid Rat,狂暴鼠
-Shade,阴影
-Dire Serpent,强壮巨蛇
-Fell Serpent,堕落巨蛇
-Giant Snake,巨型毒蛇
-Fleshstrider,肉行者
-Flying Polyp,飞行的多波
-Dragon's Herald,龙之使者
-Evolved,进化
-Newborne,新生
-Vessel,载体
-Stalker,跟踪者
-Giant Spider,巨型蜘蛛
-Large Spider,大型蜘蛛
-Shambler,摇摇行者
-Frost Shambler,寒霜摇摇行者
-#Unique Humanoids,独特的人形生物
+Dire Rat,凶暴鼠
+Chitters-In-Darkness,暗影低语者
+Rabid Rat,狂怒鼠
+Shade,幽影
+Dire Serpent,凶暴蛇
+Fell Serpent,凶煞蛇
+Giant Snake,巨蛇
+Fleshstrider,血肉行者
+Flying Polyp,飞行水螅体
+Dragon's Herald,龙使
+Evolved,进化者
+Newborne,新生儿
+Vessel,容器
+Stalker,猎手
+Giant Spider,巨蜘蛛
+Large Spider,大蜘蛛
+Shambler,行尸
+Frost Shambler,寒霜行尸
+#Unique Humanoids,#独特人形生物
 Big Lorn,大洛恩
-Arra the Trader,阿拉商人
-Doran the Pilot,罗兰飞行员
+Arra the Trader,商人阿拉
+Doran the Pilot,引航员多兰
 Chef Armand,厨师阿曼德
-Kydeon,克德翁
-The scarred and graying veteran smiles varmly towards you,那位威严的老牧师朝你微笑
+Kydeon,凯迪恩
+The scarred and graying veteran smiles varmly towards you,这位伤痕累累、头发花白的老兵向你温暖地微笑。
 Calipero,卡利佩罗
-Lyra,利拉
+Lyra,莱拉
 Malachai,马拉凯
-Driina,德里娜
-The imposing cleric turns to face you,那位威严的牧师转过身面对你
-"There's a steely resolve in her eyes, but she gives you a warm, if sad smile by way of greeting",她眼中带着坚定，但依旧对你报以温暖而略带悲伤的微笑
-Embla,伊姆bla
+Driina,德莉娜
+The imposing cleric turns to face you,这位威严的牧师转身面对你。
+"There's a steely resolve in her eyes, but she gives you a warm, if sad smile by way of greeting","""她的眼中透着钢铁般的决心，但她以温暖而略带悲伤的微笑向你致意。"""
+Embla,恩布拉
 Bernard,伯纳德
-Barmaid,侍酒女
-Baroness of Firgol,菲戈尔伯爵夫人
-PERT THE BEEKEEPER,裴特养蜂人
-Pert the Beekeeper,裴特养蜂人
+Barmaid,酒吧女侍
+Baroness of Firgol,菲尔戈男爵夫人
+Pert the Beekeeper,养蜂人珀特
 Ari,阿里
-Cass,卡斯
-Temmy,蒂米
+Cass,卡丝
+Temmy,泰米
 Jeb,杰布
-Vendor,商贩
+Vendor,商人
 Klara,克拉拉
-Majordomo,首席仆人
+Majordomo,大管家
 Drummer,鼓手
-Piper,吹笛人
-Lutist,小提琴手
+Piper,吹笛手
+Lutist,鲁特琴手
 Camilla,卡米拉
-Hierophant Drahl,传道者德拉
-Albert,亚伯特
-Blacksmith,锻铁匠
-Quartermaster,供给官
-Clothier,衣服商
-Julia,朱莉娅
-Ylia,伊莉亚
-Martha,玛莎
-Frantzo,弗朗佐
-Captain Vivian,维维安船长
-BOBBERT THE RECRUIT,波伯特·新兵
-Bobbert the Recruit,沃伯特 新兵
+Hierophant Drahl,大祭司德拉尔
+Albert,阿尔伯特
+Blacksmith,铁匠
+Quartermaster,军需官
+Clothier,裁缝
+Julia,茱莉亚
+Ylia,伊莉娅
+Martha,马萨
+Frantzo,弗兰佐
+Captain Vivian,薇薇安队长
+Bobbert the Recruit,新兵博伯特
 Rat Queen,鼠后
-Esteban,埃斯泰班
-Armand,阿尔芒德
-Art Peddler,艺术商
+Esteban,埃斯特班
+Armand,阿曼德
+Art Peddler,艺术品小贩
 Merchant,商人
-BOR THE SEWERJACK,波尔，下水道之王
-Bor the Sewerjack,波尔，下水道之王
-Cora,科拉
-Natia,内蒂亚
+Bor the Sewerjack,下水道工博尔
+Cora,珂菈
+Natia,娜蒂亚
 Philip,菲利普
-Iago,伊阿哥
-Dono,朵诺
+Iago,伊阿戈
+Dono,多诺
 Anto,安托
-Zhara,札拉
+Zhara,扎拉
 Iben,伊本
-Chamberlain,使节
+Chamberlain,总管
 Markus,马库斯
-Chamberlain to the governor of Idra,爱德兰省长的使节
-Jakub,杰库布
-Ella,埃拉
-{addVocalBarkLocal|I've too much on my mind right now...},__PLACEHOLDER_0__
-Giorgy,吉奥里
-"A ragged man, caked in dirt",一个衣衫褴褛、满身泥土的男子
-Marita,马丽塔
+Chamberlain to the governor of Idra,伊德拉总督的总管
+Jakub,雅库布
+Ella,艾拉
+{addVocalBarkLocal|I've too much on my mind right now...},{addVocalBarkLocal|I've too much on my mind right now...}
+Giorgy,乔吉
+"A ragged man, caked in dirt","""一个衣衫褴褛、满身污垢的男人"""
+Marita,玛丽塔
 Lighthouse Keeper,灯塔看守人
-Lon,伦
-The camp's cook,集营的厨师
-Hannah,哈annah
-"On your way through the refugee camp you notice a woman and a pale-looking child huddled together beneath an old, worn blanket",在穿过难民营时，你注意到一名妇女和一个脸色苍白的孩子蜷缩在一块破旧的毯子下
+Lon,朗
+The camp's cook,营地的厨师
+Hannah,汉娜
+"On your way through the refugee camp you notice a woman and a pale-looking child huddled together beneath an old, worn blanket","""当你穿过难民营时，你注意到一个女人和一个脸色苍白的孩子蜷缩在一条破旧的毯子下。"""
 Shepherd,牧羊人
-Wreck Picker,废墟拾荒者
-Kat,卡特
-Maija,马ija
+Wreck Picker,残骸拾荒者
+Kat,卡蒂
+Maija,玛伊娅
 Andros,安德罗斯
-Marsa,马尔萨
-A young girl,一名年轻女孩
-She's ragged and far to lean but she is smiling from ear to ear as she clutches her stuffed animal,她衣衫褴褛，身体歪斜，但脸上带着灿烂的笑容，紧紧抱着她的毛绒玩具
-She's ragged and far to lean and looks like she's been crying recently,她衣衫褴褛，身体歪斜，看起来最近哭过
-Mother Katak,卡塔克妈妈
-"An old, silver-haired crone",一位年老的银发老妇
+Marsa,玛尔莎
+A young girl,一个小女孩
+She's ragged and far to lean but she is smiling from ear to ear as she clutches her stuffed animal,她衣衫褴褛、瘦得不成样子，但当她紧抱着毛绒玩具时，笑得合不拢嘴。
+She's ragged and far to lean and looks like she's been crying recently,她衣衫褴褛、瘦得不成样子，看起来最近哭过。
+Mother Katak,卡塔克嬷嬷
+"An old, silver-haired crone","""一个银发老妇"""
 Thomas,托马斯
-Oleg the Gray,奥列格·灰
-OLEG THE GRAY,奥列格·灰
-Red Kala,红卡拉
+Oleg the Gray,灰发奥列格
+Red Kala,红卡菈
 The Butcher,屠夫
-Roland,洛兰德
-Snow,雪
-"The man called ""Snow"" by his crew, was once the first mate of the Zephyr",他的船员们称他为“雪”，曾是疾风号的副船长
-Aaron,阿aron
-Leva,利瓦
-One of the wretched surviors from the Zephyr,疾风号上的一名悲惨幸存者
-"The woman looks torn, tattered and exhausted",这名女子看起来支离破碎、破烂不堪且精疲力尽
-"As you approach, she offers a tired, but grateful smile",当你走近时，她疲惫但感激地露出了微笑
+Roland,罗兰
+Snow,斯诺
+"The man called ""Snow"" by his crew, was once the first mate of the Zephyr","""这个被船员称为‘斯诺’的人，曾是西风号的大副。"""
+Aaron,亚伦
+Leva,莱瓦
+One of the wretched surviors from the Zephyr,西风号上可怜的幸存者之一
+"The woman looks torn, tattered and exhausted","""这个女人看起来衣衫破烂、精疲力竭。"""
+"As you approach, she offers a tired, but grateful smile","""当你走近时，她露出了疲惫但感激的微笑。"""
 Grigor,格里戈尔
-"The man looks torn, tattered and exhausted",这名男子看起来支离破碎、破烂不堪且精疲力尽
-As you approach the sailor shrinks back in terror whilst avoiding your gaze,当你走近水手时，他惊恐地后退，尽量避开你的目光
-"As you approach the sailor offers a tired, but grateful smile",当你走近水手时，他疲惫但感激地露出了微笑
-Jan,Jan
+"The man looks torn, tattered and exhausted","""这个男人看起来衣衫破烂、精疲力竭。"""
+As you approach the sailor shrinks back in terror whilst avoiding your gaze,当你走近时，那名水手惊恐地退缩，同时避开你的目光。
+"As you approach the sailor offers a tired, but grateful smile","""当你走近时，那名水手露出了疲惫但感激的微笑。"""
+Jan,扬
 Andry,安德里
 Carylla,卡莉拉
-Tycho,蒂科
-The Ancient King,古代国王
+Tycho,泰科
+The Ancient King,古王
 Joran the Usurper,篡位者约兰
-,
-Laborer (Human,普工（人类）
-CHITTERS-IN-DARKNESS,黑暗之呢喃者（侏儒）
+PERT THE BEEKEEPER,养蜂人珀特
+BOBBERT THE RECRUIT,新兵博伯特
+BOR THE SEWERJACK,下水道工博尔
+OLEG THE GRAY,灰发奥列格
+Laborer (Human,劳工（人类，
+CHITTERS-IN-DARKNESS,暗影低语者

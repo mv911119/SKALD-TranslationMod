@@ -13,6 +13,11 @@ namespace TranslationMod.Patches
 
         [HarmonyPatch(typeof(GlobalSettings.GamePlaySettings), "initialize")]
         [HarmonyPostfix]
+        /// <summary>
+        /// 在游戏玩法设置初始化后补充语言选项。
+        /// 流程：若设置中尚无语言项，则收集可用语言并构造 CarouselSetting，
+        /// 再按当前语言定位默认索引后插入设置列表。
+        /// </summary>
         public static void AddLanguageSetting(GlobalSettings.GamePlaySettings __instance)
         {
             if (__instance.getObject(GameConstants.LanguageSettingId) != null)

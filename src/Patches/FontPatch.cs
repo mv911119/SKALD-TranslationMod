@@ -8,6 +8,10 @@ namespace TranslationMod.Patches
     public static class FontPatch
     {
         [HarmonyTargetMethod]
+        /// <summary>
+        /// 定位 `FontContainer.getTinyFont` 作为补丁目标。
+        /// 流程：先通过反射找到类型，再解析目标方法，失败时输出日志。
+        /// </summary>
         private static MethodBase TargetMethod()
         {
             var fontContainerType = AccessTools.TypeByName("FontContainer");
@@ -28,6 +32,10 @@ namespace TranslationMod.Patches
         }
 
         [HarmonyPostfix]
+        /// <summary>
+        /// 在获取小字体后按需修正 `wordHeight`。
+        /// 流程：仅对中日韩等无字母语言生效，优先写字段，字段不可写时再尝试属性。
+        /// </summary>
         private static void Postfix(object __result)
         {
             try

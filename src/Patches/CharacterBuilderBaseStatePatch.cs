@@ -7,6 +7,10 @@ namespace TranslationMod.Patches
     {
         [HarmonyPatch("setGUIData")]
         [HarmonyPostfix]
+        /// <summary>
+        /// 在角色构建界面刷新 GUI 数据后，同步左右滚动条与当前可见列表。
+        /// 流程：读取列表与 GUI 控件，更新左侧滚动索引，重建可见按钮，再刷新右侧描述滚动条。
+        /// </summary>
         private static void SetGuiDataPostfix(object __instance)
         {
             try

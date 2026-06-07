@@ -20,33 +20,33 @@ namespace TranslationMod.Patches
     public static class UITextBlockSetContentPatch
     {
         /* ----------------------------------------------------------------- */
-        /* 1.  Lazy-инициализация переводчика                               */
+        /* 1.  延迟初始化翻译服务                                            */
         /* ----------------------------------------------------------------- */
 
         private static readonly Lazy<TranslationService> _translator =
             new(() => new TranslationService());
 
         /* ----------------------------------------------------------------- */
-        /* 1.0  Буфер для tooltip ключей: переведенный ключ -> оригинальный ключ */
+        /* 1.0  Tooltip 键映射缓冲：翻译后 key -> 原始 key                    */
         /* ----------------------------------------------------------------- */
         
         /// <summary>
-        /// Буфер tooltip ключей: переведенный ключ -> оригинальный ключ
+        /// Tooltip 键映射缓冲区，保存“翻译后 key -> 原始 key”的对应关系。
         /// </summary>
         public static readonly Dictionary<string, string> TooltipKeyBuffer = new();
         
         /// <summary>
-        /// Regex для извлечения tooltip ключей из тегов <tag>tooltipKey</tag>
+        /// 用于从 `<tag>tooltipKey</tag>` 中提取 tooltip 关键词的正则。
         /// </summary>
         private static readonly Regex TooltipTagRegex = new(@"<tag>([^<]+)</tag>", RegexOptions.Compiled);
         private static readonly Regex HashPatternRegex = new Regex(@"#[A-Za-z]{2,}", RegexOptions.Compiled);
         /// <summary>
-        /// Объект для синхронизации доступа к буферу
+        /// Tooltip 缓冲区访问锁。
         /// </summary>
         private static readonly object _tooltipBufferLock = new();
 
         /* ----------------------------------------------------------------- */
-        /* 1.1  Рефлексия для доступа к приватным полям и методам            */
+        /* 1.1  通过反射访问 UITextBlock 私有成员                             */
         /* ----------------------------------------------------------------- */
         
         private static FieldInfo _illuminatedImageField;
@@ -60,7 +60,7 @@ namespace TranslationMod.Patches
         private static MethodInfo _parseParagraphMethod;
         private static MethodInfo _pruneLengthMethod;
         
-        /// <summary>Ленивая инициализация FieldInfo для illuminatedImage</summary>
+        /// <summary>延迟获取 `illuminatedImage` 字段反射信息。</summary>
         private static FieldInfo IlluminatedImageField
         {
             get
@@ -71,7 +71,7 @@ namespace TranslationMod.Patches
             }
         }
         
-        /// <summary>Ленивая инициализация FieldInfo для font</summary>
+        /// <summary>延迟获取 `font` 字段反射信息。</summary>
         private static FieldInfo FontField
         {
             get
@@ -82,7 +82,7 @@ namespace TranslationMod.Patches
             }
         }
         
-        /// <summary>Ленивая инициализация FieldInfo для content</summary>
+        /// <summary>延迟获取 `content` 字段反射信息。</summary>
         private static FieldInfo ContentField
         {
             get
@@ -93,7 +93,7 @@ namespace TranslationMod.Patches
             }
         }
 
-        /// <summary>Ленивая инициализация FieldInfo для content</summary>
+        /// <summary>延迟获取 `toolTips` 字段反射信息。</summary>
         private static FieldInfo ToolTipField
         {
             get
@@ -104,7 +104,7 @@ namespace TranslationMod.Patches
             }
         }
         
-        /// <summary>Ленивая инициализация MethodInfo для preProcessString</summary>
+        /// <summary>延迟获取 `preProcessString` 方法反射信息。</summary>
         private static MethodInfo PreProcessStringMethod
         {
             get
@@ -115,7 +115,7 @@ namespace TranslationMod.Patches
             }
         }
         
-        /// <summary>Ленивая инициализация MethodInfo для identifyTooltipKeywords</summary>
+        /// <summary>延迟获取 `identifyTooltipKeywords` 方法反射信息。</summary>
         private static MethodInfo IdentifyTooltipKeywordsMethod
         {
             get
@@ -126,7 +126,7 @@ namespace TranslationMod.Patches
             }
         }
         
-        /// <summary>Ленивая инициализация MethodInfo для splitIntoParagraph</summary>
+        /// <summary>延迟获取 `splitIntoParagraph` 方法反射信息。</summary>
         private static MethodInfo SplitIntoParagraphMethod
         {
             get
@@ -137,7 +137,7 @@ namespace TranslationMod.Patches
             }
         }
         
-        /// <summary>Ленивая инициализация MethodInfo для parseParagraph</summary>
+        /// <summary>延迟获取 `parseParagraph` 方法反射信息。</summary>
         private static MethodInfo ParseParagraphMethod
         {
             get
@@ -148,7 +148,7 @@ namespace TranslationMod.Patches
             }
         }
         
-        /// <summary>Ленивая инициализация MethodInfo для pruneLength</summary>
+        /// <summary>延迟获取 `pruneLength` 方法反射信息。</summary>
         private static MethodInfo PruneLengthMethod
         {
             get
@@ -160,9 +160,13 @@ namespace TranslationMod.Patches
         }
 
         /* ----------------------------------------------------------------- */
-        /* 2.  Prefix: меняем аргумент метода и полная реимплементация       */
+        /* 2.  Prefix：接管 setContent 的翻译与渲染流程                       */
         /* ----------------------------------------------------------------- */
 
+        /// <summary>
+        /// `UITextBlock.setContent` 的前置补丁。
+        /// 流程：英文直接放行；其他语言先翻译文本，再走自定义的完整渲染流程并跳过原方法。
+        /// </summary>
         private static bool Prefix(UITextBlock __instance, string __0)
         {
             try
@@ -170,15 +174,15 @@ namespace TranslationMod.Patches
                 var currentLanguagePack = LanguageManager.GetCurrentLanguagePack();
                 if (currentLanguagePack == null || currentLanguagePack.Name.Equals("English", StringComparison.OrdinalIgnoreCase))
                 {
-                    return true; // Выполняем оригинальный метод
+                    return true; // 英文环境下继续执行原始方法
                 }
                 string processedText = StripHashTags(__0);
                 string translatedText = _translator.Value.Process(processedText);
                 //LogSetContentTrace(__0, translatedText);
-                // Затем полная реимплементация setContent с переведенным текстом
+                // 使用翻译后的文本执行自定义渲染流程
                 SetContentComplete(__instance, __0, translatedText);
                 
-                // Возвращаем false, чтобы пропустить оригинальный метод
+                // 已接管逻辑，跳过原方法
                 return false;
             }
             catch (Exception ex)
@@ -186,7 +190,7 @@ namespace TranslationMod.Patches
 #if DEBUG
                 TranslationMod.Logger?.LogError($"Error in custom setContent implementation: {ex.Message}");
 #endif
-                // В случае ошибки позволяем выполниться оригинальному методу
+                // 自定义流程异常时回退原方法
                 return true;
             }
         }
@@ -206,7 +210,11 @@ namespace TranslationMod.Patches
             }
         }
         
-        /// <summary>Полная реимплементация UITextBlock.setContent</summary>
+        /// <summary>
+        /// 重新实现 `UITextBlock.setContent` 的主要流程。
+        /// 流程：清理旧元素，写入内容与字体，处理首字装饰、tooltip 标签、多段落解析，
+        /// 最后执行裁剪与对齐。
+        /// </summary>
         private static void SetContentComplete(UITextBlock instance, string input, string translated)
         {
             try

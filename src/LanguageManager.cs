@@ -11,7 +11,8 @@ using TranslationMod.Patches;
 namespace TranslationMod
 {
     /// <summary>
-    /// Manager for handling languages and language packs
+    /// 语言管理器。
+    /// 负责维护当前语言状态、加载语言包、同步游戏设置，并向外广播语言切换事件。
     /// </summary>
     public static class LanguageManager
     {
@@ -21,25 +22,29 @@ namespace TranslationMod
         private static FieldInfo stateField;
         private static FieldInfo alternativesField;
         
-        // Current language determined by game (stored in memory, not in config)
+        // 当前语言由游戏状态决定，仅保存在内存中
         private static string _currentLanguageCode = ConfigKeys.EnglishLanguageCode;
         private static string _currentLanguageName = ConfigKeys.EnglishLanguageName;
         
-        // Language packs cache
+        // 已加载语言包缓存
         private static readonly ConcurrentDictionary<string, LanguagePack> _languagePacks = new();
         private static string _pluginDirectory;
 
+        /// <summary>
+        /// 初始化语言系统。
+        /// 流程：定位插件目录，通过反射缓存游戏语言设置相关字段，
+        /// 再初始化字体补丁，为后续语言切换和字体替换做准备。
+        /// </summary>
         public static void Initialize()
         {
             if (_isLanguageReady) return;
 
             try
             {
-                // Initialize plugin directory path
+                // 初始化插件目录路径
                 _pluginDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
                 
-                // Use reflection to get "description" of private fields
-                // that we need to read values from CarouselSetting.
+                // 通过反射获取 CarouselSetting 的私有字段，后续用来读取语言选项状态
                 var carouselSettingType = AccessTools.Inner(typeof(GlobalSettings.SettingsCollection), GameConstants.CarouselSettingType);
                 if (carouselSettingType == null)
                 {
@@ -56,7 +61,7 @@ namespace TranslationMod
                     return;
                 }
                 
-                // Initialize font patch  
+                // 初始化字体补丁
                 FontAssetPatch.Initialize();
                 
                 _isLanguageReady = true;
@@ -71,9 +76,11 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Switches plugin language. Loads new language pack and notifies subscribers.
+        /// 切换当前语言。
+        /// 流程：先根据语言名解析语言代码，再刷新当前内存状态，
+        /// 加载对应语言包，最后通知订阅者执行界面和字体刷新。
         /// </summary>
-        /// <param name="newLanguageName">New language name (e.g., "Russian")</param>
+        /// <param name="newLanguageName">新的语言显示名</param>
         public static void SwitchLanguage(string newLanguageName)
         {
 #if DEBUG
@@ -83,7 +90,7 @@ namespace TranslationMod
             string newLanguageCode = GetLanguageCodeByName(newLanguageName) 
                                      ?? ConfigKeys.EnglishLanguageCode;
 
-            // Save current language for internal use (in memory, not in config)
+            // 将当前语言状态保存到内存，供翻译与字体逻辑读取
             _currentLanguageCode = newLanguageCode;
             _currentLanguageName = newLanguageName;
             
@@ -96,8 +103,8 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Gets current language code (e.g., "ru").
-        /// Language is determined by the game, not plugin config.
+        /// 获取当前语言代码。
+        /// 该值以游戏当前语言设置为准，而不是插件配置文件。
         /// </summary>
         public static string GetCurrentLanguageCode()
         {
@@ -105,8 +112,8 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Gets current language name (e.g., "Russian").
-        /// Language is determined by the game, not plugin config.
+        /// 获取当前语言名称。
+        /// 该值以游戏当前语言设置为准，而不是插件配置文件。
         /// </summary>
         public static string GetCurrentLanguage()
         {
@@ -126,7 +133,8 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Gets currently loaded language pack.
+        /// 获取当前已加载的语言包。
+        /// 若系统尚未初始化或当前为英文，则可能返回空。
         /// </summary>
         public static LanguagePack GetCurrentLanguagePack()
         {
@@ -139,7 +147,8 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Trigger language change event
+        /// 主动触发语言切换事件。
+        /// 用于在不重新解析语言的情况下，强制刷新依赖语言状态的组件。
         /// </summary>
         public static void TriggerLanguageChange()
         {
@@ -150,10 +159,11 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Updates current language without loading language pack (for game synchronization)
+        /// 仅更新当前语言状态，不主动加载语言包。
+        /// 主要用于与游戏配置做同步时，先修正内存中的语言信息。
         /// </summary>
-        /// <param name="languageName">Language name</param>
-        /// <param name="languageCode">Language code (optional)</param>
+        /// <param name="languageName">语言名称</param>
+        /// <param name="languageCode">语言代码，可为空</param>
         internal static void UpdateCurrentLanguage(string languageName, string languageCode = null)
         {
             if (string.IsNullOrEmpty(languageName))
@@ -167,7 +177,7 @@ namespace TranslationMod
             }
             else
             {
-                // If code is not specified, determine it by name
+                // 未显式提供语言代码时，根据名称反查
                 _currentLanguageCode = GetLanguageCodeByName(languageName) 
                                      ?? ConfigKeys.EnglishLanguageCode;
             }
@@ -178,7 +188,9 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Synchronizes LanguageManager state with current game settings
+        /// 将语言管理器状态与当前游戏设置同步。
+        /// 流程：读取游戏设置中的语言选项，解析当前项，
+        /// 成功则执行切换，失败则回退到英文。
         /// </summary>
         public static void SynchronizeWithGame()
         {
@@ -205,7 +217,7 @@ namespace TranslationMod
                     return;
                 }
 
-                // Extract current language from game setting
+                // 从游戏设置对象中提取当前语言名称
                 string currentGameLanguage = ExtractLanguageFromSetting(languageSetting);
                 if (!string.IsNullOrEmpty(currentGameLanguage))
                 {
@@ -223,13 +235,14 @@ namespace TranslationMod
             catch (Exception e)
             {
                 TranslationMod.Logger?.LogError($"[LanguageManager] Error during game synchronization: {e.Message}");
-                // Set English as safe fallback
+                // 异常时回退为英文，保证系统处于可用状态
                 UpdateCurrentLanguage(ConfigKeys.EnglishLanguageName, ConfigKeys.EnglishLanguageCode);
             }
         }
 
         /// <summary>
-        /// Extracts language name from settings object
+        /// 从游戏语言设置对象中提取当前语言名称。
+        /// 流程：反射读取当前索引和可选项列表，再根据索引取出选中的语言名。
         /// </summary>
         private static string ExtractLanguageFromSetting(object languageSetting)
         {
@@ -239,7 +252,7 @@ namespace TranslationMod
                 
                 var instanceType = languageSetting.GetType();
                 
-                // Получаем текущее состояние и список альтернатив
+                // 读取当前选项索引与候选语言列表
                 var stateField = AccessTools.Field(instanceType, GameConstants.CarouselStateField);
                 var alternativesField = AccessTools.Field(instanceType, GameConstants.CarouselAlternativesField);
                 
@@ -276,9 +289,11 @@ namespace TranslationMod
         }
         
         /// <summary>
-        /// Loads language pack by language code
+        /// 按语言代码加载语言包。
+        /// 流程：英文直接清空缓存返回；否则扫描语言包目录，
+        /// 找到匹配代码的包后实例化并缓存。
         /// </summary>
-        /// <param name="languageCode">Language code (e.g., "ru")</param>
+        /// <param name="languageCode">语言代码</param>
         public static void LoadLanguagePackByCode(string languageCode)
         {
             if (string.IsNullOrEmpty(languageCode) || languageCode.Equals(ConfigKeys.EnglishLanguageCode, StringComparison.OrdinalIgnoreCase))
@@ -339,10 +354,9 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Gets language pack by language code
+        /// 根据语言代码获取已缓存的语言包。
+        /// 英文或未找到时返回空。
         /// </summary>
-        /// <param name="languageCode">Language code (e.g., "ru")</param>
-        /// <returns>Language pack or null for English/non-existing language</returns>
         public static LanguagePack GetLanguagePack(string languageCode)
         {
             if (string.IsNullOrEmpty(languageCode) || languageCode.Equals(ConfigKeys.EnglishLanguageCode, StringComparison.OrdinalIgnoreCase))
@@ -353,7 +367,8 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Get all available language packs (scans LanguagePacks folder)
+        /// 获取可用语言名称列表。
+        /// 流程：扫描语言包目录，读取每个包的配置，并收集有效包的显示名。
         /// </summary>
         public static List<string> GetAvailableLanguageNames()
         {
@@ -403,7 +418,8 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Get language code by its display name (scans folders)
+        /// 根据语言显示名查找语言代码。
+        /// 流程：遍历语言包目录并读取配置，找到同名包后返回其代码。
         /// </summary>
         public static string GetLanguageCodeByName(string name)
         {
@@ -455,7 +471,8 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Get plugin directory (for internal use)
+        /// 获取插件根目录。
+        /// 供其他模块拼接字体、翻译文件等资源路径时使用。
         /// </summary>
         public static string GetPluginDirectory()
         {
@@ -463,7 +480,8 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Check if specified language code is supported (language pack folder exists)
+        /// 判断指定语言代码是否受支持。
+        /// 流程：英文恒为支持，其他语言通过扫描语言包目录确认是否存在有效包。
         /// </summary>
         public static bool IsLanguageSupported(string languageCode)
         {

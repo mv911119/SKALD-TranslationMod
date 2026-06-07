@@ -1,20 +1,20 @@
 original,translate
 #General,#通用
 Picked up,捡起
-Something just struck the ship!,什么东西刚刚击中了船！
-Locked!,锁定了！
-Equipped {ITEM},装备了 {ITEM}
-Unequipped {ITEM},卸下装备了 {ITEM}
-I spotted something!,我发现了什么！
-You add,你为队伍增加了
-to your party,成员
-is now leading the party!,现在正带领队伍！
+Something just struck the ship!,有什么东西刚刚撞到了船！
+Locked!,锁住了！
+Equipped {ITEM},装备了{ITEM}
+Unequipped {ITEM},卸下了{ITEM}
+I spotted something!,我发现了一些东西！
+You add,你添加了
+to your party,到你的队伍
+is now leading the party!,现在领导着队伍！
 Game Saved,游戏已保存
-I don't see any enemies!,看不到敌人！
+I don't see any enemies!,我没看到任何敌人！
 Picked up some items,捡起了一些物品
-Cannot use a ranged weapon in melee,近战中不能使用远程武器
-It's too dark to make out anything!,太暗了，什么都看不清！
-Used {ITEM},使用了 {ITEM}
+Cannot use a ranged weapon in melee,无法在近战中使用远程武器
+It's too dark to make out anything!,太黑了，什么都看不清！
+Used {ITEM},使用了{ITEM}
 Crafted,制作了
-Can't be far now?,离目的地应该不远了吧？
-Added Ability,增强了能力
+Can't be far now?,应该不远了吧？
+Added Ability,添加能力

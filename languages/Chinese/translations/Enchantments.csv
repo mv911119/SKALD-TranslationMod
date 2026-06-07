@@ -1,66 +1,66 @@
 original,translate
-#General Enchantments,#通用法术
+#General Enchantments,#通用附魔
 Agility,敏捷
-Adds +1 to Agility,敏捷+1
-Athletics,力量
-Adds +1 to Athletics,力量+1
-Awareness,觉醒
-Adds +1 to Awareness,觉醒+1
-Crafting,制作
-Adds +1 to Crafting,制作+1
-Defence,防御
-Adds +1 to Dodge,闪避+1
-Diplomacy,交际
-Adds +1 to Diplomacy,交际+1
-Fortitude,坚韧
-Adds +1 to Fortitude,坚韧+1
-Healing,治疗
-Adds +1 to Healing,治疗+1
-Heroic,英雄
-Adds +1 to all five Primary Attributes,主属性+1（力量、敏捷、智力、体质、智慧）
-Initiative,行动力
-Adds +2 to Initiative,增加2点敏捷
+Adds +1 to Agility,敏捷 +1
+Fortitude,体质
+Adds +1 to Fortitude,体质 +1
 Intellect,智力
-Adds +1 to Intellect,增加1点智力
-Lore,知识
-Adds +1 to Lore,增加1点知识
-Presence,威严
-Adds +1 to Presence,增加1点威严
-Protection,防御
-"adds +1 to Will, Toughness and Dodge",增加1点意志、坚韧和闪避
-Speed,速度
-Adds +1 to Movement Speed,增加1点移动速度
-Stealth,潜行
-Adds +1 to Stealth,增加1点潜行
+Adds +1 to Intellect,智力 +1
+Presence,感知
+Adds +1 to Presence,感知 +1
 Strength,力量
-Adds +1 to Strength,增加1点力量
-Survival,生存
-Adds +1 to Survival,增加1点生存
-Thievery,盗窃
-Adds +1 to Thievery,增加1点盗窃
+Adds +1 to Strength,力量 +1
+Initiative,先攻
+Adds +2 to Initiative,先攻 +2
+Speed,速度
+Adds +1 to Movement Speed,移动速度 +1
+Heroic,英雄主义
+Adds +1 to all five Primary Attributes,所有五项主属性 +1
+Protection,保护
+"adds +1 to Will, Toughness and Dodge",意志、坚韧和闪避 +1
+Defence,防御
+Adds +1 to Dodge,闪避 +1
 Toughness,坚韧
-Adds +1 to Toughness,增加1点坚韧
-Willpower,忍耐力
-Adds +1 to Willpower,增加1点忍耐力
+Adds +1 to Toughness,坚韧 +1
+Willpower,意志
+Adds +1 to Willpower,意志 +1
+Athletics,运动
+Adds +1 to Athletics,运动 +1
+Awareness,察觉
+Adds +1 to Awareness,察觉 +1
+Crafting,制作
+Adds +1 to Crafting,制作 +1
+Diplomacy,交涉
+Adds +1 to Diplomacy,交涉 +1
+Healing,医疗
+Adds +1 to Healing,医疗 +1
+Lore,学识
+Adds +1 to Lore,学识 +1
+Stealth,潜行
+Adds +1 to Stealth,潜行 +1
+Survival,生存
+Adds +1 to Survival,生存 +1
+Thievery,偷窃
+Adds +1 to Thievery,偷窃 +1
 #Weapon Enchantments,#武器附魔
-Accuracy,准确度
+Accuracy,命中
 This Weapon has +2 To Hit,此武器命中+2
-Accuracy and Damage,准确度与伤害
-This Weapon does +1 base damage and has +2 To Hit,此武器基础伤害+1且命中+2
-Greater Accuracy and Damage,更高准确度与伤害
-This Weapon does +3 base damage and has +3 To Hit,此武器基础伤害+3且命中+3
-Accuracy - Greater,准确度 - 更高
+Accuracy and Damage,命中与伤害
+This Weapon does +1 base damage and has +2 To Hit,此武器基础伤害+1，命中+2
+Greater Accuracy and Damage,高级命中与伤害
+This Weapon does +3 base damage and has +3 To Hit,此武器基础伤害+3，命中+3
+Accuracy - Greater,高级命中
 This Weapon has +3 To Hit,此武器命中+3
-Acid Attack,酸性攻击
-A small amount of extra acid-damage is caused on a hit,攻击命中时造成少量额外酸性伤害
-Frost Attack,冰霜攻击
-A small amount of extra cold-damage is caused on a hit,攻击命中时造成少量额外寒冷伤害
-Keen,锋利
+Acid Attack,酸液攻击
+A small amount of extra acid-damage is caused on a hit,命中时造成少量额外强酸伤害
+Frost Attack,寒霜攻击
+A small amount of extra cold-damage is caused on a hit,命中时造成少量额外寒冷伤害
+Keen,敏锐
 This Weapon does +1 base damage,此武器基础伤害+1
-Keen - Greater,锋利 - 更高
+Keen - Greater,高级敏锐
 This Weapon does +3 base damage,此武器基础伤害+3
 Lightning Attack,闪电攻击
-A small amount of extra lightning-damage is caused on a hit,攻击命中时造成少量额外雷电伤害
+A small amount of extra lightning-damage is caused on a hit,命中时造成少量额外闪电伤害
 Fire Attack,火焰攻击
-A small amount of extra fire-damage is caused on a hit,攻击命中时造成少量额外火焰伤害
-Increases the Dodge of the wielder by +1,提高使用者的闪避值+1
+A small amount of extra fire-damage is caused on a hit,命中时造成少量额外火焰伤害
+Increases the Dodge of the wielder by +1,使持有者的闪避+1

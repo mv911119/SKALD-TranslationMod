@@ -7,35 +7,35 @@ using TranslationMod.Configuration;
 namespace TranslationMod.Patches
 {
     /// <summary>
-    /// Harmony patch intercepting BarkControl.Bark constructor
-    /// and logging the message parameter, with translation support.
+    /// 对 `BarkControl.Bark` 构造函数做前置拦截。
+    /// 负责在气泡文本创建前翻译消息，并按需记录日志避免重复输出。
     /// </summary>
     [HarmonyPatch]
     public static class BarkPatch
     {
         /// <summary>
-        /// Set of already logged messages for deduplication
+        /// 已记录消息集合，用于去重日志。
         /// </summary>
         private static readonly HashSet<string> _loggedMessages = new HashSet<string>();
         
         /// <summary>
-        /// Object for synchronizing access to _loggedMessages
+        /// `_loggedMessages` 的同步锁对象。
         /// </summary>
         private static readonly object _lockObject = new object();
         
         /// <summary>
-        /// Lazy initialization of translation service
+        /// 延迟初始化翻译服务，避免补丁加载时过早创建依赖。
         /// </summary>
         private static readonly Lazy<TranslationService> _translator =
             new(() => new TranslationService());
         /// <summary>
-        /// Define target method for patch - Bark class constructor
+        /// 解析补丁目标构造函数。
+        /// 流程：先找到 `BarkControl` 的内部 `Bark` 类型，再匹配指定参数签名的构造函数。
         /// </summary>
-        /// <returns>MethodInfo of Bark constructor</returns>
         [HarmonyTargetMethod]
         static System.Reflection.MethodBase TargetMethod()
         {
-            // Get BarkControl type
+            // 获取 BarkControl 类型
             var barkControlType = AccessTools.TypeByName("BarkControl");
             if (barkControlType == null)
             {
@@ -43,7 +43,7 @@ namespace TranslationMod.Patches
                 return null;
             }
 
-            // Find nested protected Bark class
+            // 查找内部 Bark 类型
             var barkType = barkControlType.GetNestedType("Bark", System.Reflection.BindingFlags.NonPublic);
             if (barkType == null)
             {
@@ -51,7 +51,7 @@ namespace TranslationMod.Patches
                 return null;
             }
 
-            // Get constructor with required signature
+            // 获取目标构造函数签名
             var constructor = AccessTools.Constructor(barkType, new Type[] {
                 typeof(string),  // message
                 typeof(int),     // x
@@ -74,65 +74,59 @@ namespace TranslationMod.Patches
         }
 
         /// <summary>
-        /// Prefix patch - outputs informational message to plugin logs
+        /// 构造函数前置逻辑。
+        /// 流程：保留原消息用于日志，必要时翻译文本，再决定是否记录一次去重日志，
+        /// 最后继续执行原始构造函数。
         /// </summary>
-        /// <param name="__0">message parameter</param>
-        /// <param name="__1">x parameter</param>
-        /// <param name="__2">y parameter</param>
-        /// <param name="__3">textColor parameter</param>
-        /// <param name="__4">shadowColor parameter</param>
-        /// <param name="__5">delay parameter</param>
-        /// <returns>true to continue execution of original constructor</returns>
         [HarmonyPrefix]
         static bool Prefix(ref string __0, int __1, int __2, Color __3, Color __4, int __5)
         {
             try
             {
-                // Save original message for logging
+                // 保存原始消息，便于日志对比
                 string originalMessage = __0;
                 
-                // Check current language - if not English, translate message
+                // 非英文语言下先翻译消息内容
                 var currentLanguagePack = LanguageManager.GetCurrentLanguagePack();
                 if (currentLanguagePack != null && !currentLanguagePack.Name.Equals("English", StringComparison.OrdinalIgnoreCase))
                 {
-                    // Translate message
+                    // 直接替换构造函数入参，使原逻辑消费翻译后的文本
                     string translatedMessage = _translator.Value.Process(__0);
                     __0 = translatedMessage; // Change parameter to pass translated text to constructor
                 }
                 
-                // Check if we need to log this message (deduplication)
+                // 需要时才记录一次日志，避免刷屏
                 if (ShouldLogMessage(originalMessage))
                 {
 #if DEBUG
                     if (originalMessage != __0)
                     {
-                        // Log with translation information
+                        // 记录翻译前后对照
                         TranslationMod.Logger?.LogInfo($"[BarkPatch] Bark constructor called with message: '{originalMessage}' -> '{__0}' at position ({__1}, {__2}) with delay: {__5}");
                     }
                     else
                     {
-                        // Log without translation
+                        // 记录未翻译原文
                         TranslationMod.Logger?.LogInfo($"[BarkPatch] Bark constructor called with message: '{originalMessage}' at position ({__1}, {__2}) with delay: {__5}");
                     }
 #endif
                 }
                 
-                // Return true to allow original constructor to execute
+                // 继续执行原始构造函数
                 return true;
             }
             catch (Exception ex)
             {
                 TranslationMod.Logger?.LogError($"[BarkPatch] Error in Bark constructor prefix: {ex.Message}");
-                // In case of error, still allow original constructor to execute
+                // 出错时也放行原构造函数，避免影响游戏显示
                 return true;
             }
         }
 
         /// <summary>
-        /// Checks if message should be logged (deduplication)
+        /// 判断消息是否需要写入日志。
+        /// 流程：过滤空值后在锁内执行去重检查，首次出现则加入集合并返回真。
         /// </summary>
-        /// <param name="message">Message to check</param>
-        /// <returns>true if message should be logged, false if it was already logged</returns>
         private static bool ShouldLogMessage(string message)
         {
             if (string.IsNullOrEmpty(message))
@@ -142,13 +136,13 @@ namespace TranslationMod.Patches
 
             lock (_lockObject)
             {
-                // If message was already logged, don't log it again
+                // 已记录过的消息不再重复输出
                 if (_loggedMessages.Contains(message))
                 {
                     return false;
                 }
 
-                // Add message to set of logged messages
+                // 首次出现时加入集合
                 _loggedMessages.Add(message);
                 return true;
             }

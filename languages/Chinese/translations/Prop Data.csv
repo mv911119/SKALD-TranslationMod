@@ -1,326 +1,329 @@
 original,translate
-#Beds,#床位
+#Beds,#床
 Bed,床
-Bedroll,床铺卷
+Bedroll,睡袋
 #Containers,#容器
-Armor Stand,防具架
-Armor Stands,防具架
+Armor Stand,盔甲架
+Armor Stands,盔甲架
 Backpack,背包
-Arrows,箭矢
-A Barrel,一桶
-"A barrel of standard Imperial measurements, used to carry cargo on Guild ships",一桶标准帝国内陆测量单位，用公会船只运输货物
+Arrows,箭头
+A Barrel,一个桶
+"A barrel of standard Imperial measurements, used to carry cargo on Guild ships",一个标准帝国尺寸的桶，用于在公会船只上运载货物
 Barrels,桶
 Bookshelf,书架
-Box,箱子
-A solid box,一个坚固的箱子
-Brandy Crates,一个简陋的木箱
-Cabinet,橱柜
-A Chest,一个箱子
+Box,盒子
+A solid box,一个结实的盒子
+Brandy Crates,白兰地酒箱
+Cabinet,柜子
+A Chest,箱子
 A sturdy wooden chest,一个坚固的木箱
-A shoddy wooden chest,一个简陋的木箱
-Cocoon,蛹
+A shoddy wooden chest,一个劣质的木箱
+Cocoon,茧
 The Butcher,屠夫
 Corpse,尸体
 Sailor's Corpse,水手的尸体
-Kala,卡拉
+Kala,卡菈
 Oleg,奥列格
-Mauled Corpses,残酷的尸体
-A Crate,一个箱子
-A well made wooden crate that carries the brand of the Nautical Guild,一个做工精良的木箱，上面刻有航海公会的标志
-Crates,箱子
+Mauled Corpses,被残杀的尸体
+A Crate,一个板条箱
+A well made wooden crate that carries the brand of the Nautical Guild,一个制作精良的木制板条箱，带有航海行会的标记
+Crates,板条箱
 Small wooden crates,小木箱
-Alcove,凹槽
-Shelves,书架
+Alcove,壁龛
+Shelves,架子
 Desk,桌子
 Apothecary's Desk,药剂师的桌子
 Flower,花
-Secret Compartment,秘密隔层
+Secret Compartment,秘密隔间
 Your Luggage,你的行李
 A very sturdy wooden chest,一个非常坚固的木箱
 A sturdy chest,一个坚固的箱子
-Table of Notes,笔记桌
-Sacks,背包
-Sarcophagus,棺椁
+Table of Notes,笔记列表
+Sacks,袋子
+Sarcophagus,石棺
 Reagent Shelf,试剂架
-Smuggler's Corpse,毒贩的尸体
+Smuggler's Corpse,走私者的尸体
 Table,桌子
 Surgical Tools,手术工具
-#Decoratives,#装饰品
+#Decoratives,"#装饰品,"
 Cave-In,塌陷
-Aquarium,水族箱
-Cauldron,锅
-An empty cauldron,空锅
+Aquarium,水族馆
+Cauldron,大锅
+An empty cauldron,一口空的大锅
 Eyes,眼睛
 Fountain,喷泉
 Glowstaff,发光法杖
-Reefs,珊瑚礁
-Empty Grave,空坟墓
-Pile of Straw,一堆稻草
-Infestation,侵扰
+Reefs,礁石
+Empty Grave,空墓
+Pile of Straw,稻草堆
+Infestation,虫群
 Ancient Pottery,古代陶器
-"Ancient clay pottery covered in strange, ornate circular patterns",覆盖着奇怪的、装饰性的圆形图案的古代陶器
-Hole,窟窿
-Scarecrow,假人稻草人
-#Doors,#扇门
-Barred Gate,带锁的门
+"Ancient clay pottery covered in strange, ornate circular patterns",覆盖着奇特华丽圆形图案的古代陶器
+Hole,洞
+Scarecrow,稻草人
+#Doors,#门
+Barred Gate,栅栏门
 Door,门
-Gate,门
+Gate,大门
 A Door,一扇门
-A double wooden door,一扇双木门
-A simple wooden door,一扇简单的木门
+A double wooden door,一扇双开木门
+A simple wooden door,一扇简易木门
 A flimsy wooden door,一扇脆弱的木门
-A Hidden Door,隐藏的门
-Stone Slab,岩石板
-"A massive, reinforced door",一扇加固的大门
-This door appears to be barricaded from the other side,从另一侧似乎被加固了
-It cannot be opened from this side,无法从这边打开
-Barred Door,带锁的门
-Inn Door,酒馆门
-Portal,门户
+A Hidden Door,一扇暗门
+Stone Slab,石板
+"A massive, reinforced door",一扇巨大加固门
+This door appears to be barricaded from the other side,这扇门似乎从另一侧被堵住了
+It cannot be opened from this side,无法从这一侧打开
+Barred Door,栅栏门
+Inn Door,旅店门
+Portal,传送门
 Web,网
-The web of some giant arachnid,一些巨大蜘蛛的网
-#Inspectables,#可检查物品
-The piece of paper seems to contain a work order,这张纸似乎包含了一份工作指令
-"and as can clearly be observed, the tunnel’s support pillar is close to giving in",且可以清楚地观察到，隧道的支撑柱即将倒塌
-"If this last piece of support was to be removed, it is highly likely that the tunnel would collapse completely",如果移除最后一根支撑柱，隧道很可能完全坍塌
-continue the previous day’s work of expanding the tunnel eastwards,继续前一天的工作，向东方扩展隧道
-I believe you should be very close to breaking through,我认为你们即将突破
-Doing so will allow us to create a short-cut to the mine’s entrance and I don’t need to tell you how much this would improve logistics,这样可以让我们创建一条通往矿场入口的捷径，你不需要我告诉你这会如何改善后勤
-Barricade,阻塞
-A barricade constructed from debris blocks this path,用废墟堆砌的障碍堵住了这条道路
-It is too large to dismantle before retaking the city and for now you must find some way around it,在重新夺回城市之前无法拆除，现在你们必须找到绕过它的方法
+The web of some giant arachnid,某种巨型蛛形纲动物的网
+#Inspectables,#可调查物
+The piece of paper seems to contain a work order,这张纸似乎包含一份工作指令
+"and as can clearly be observed, the tunnel’s support pillar is close to giving in",正如可以清楚观察到的，隧道的支撑柱即将坍塌
+"If this last piece of support was to be removed, it is highly likely that the tunnel would collapse completely",如果移除这最后一处支撑，隧道极有可能完全坍塌
+continue the previous day’s work of expanding the tunnel eastwards,继续前一天向东扩建隧道的工作
+I believe you should be very close to breaking through,我相信你们应该非常接近打通了
+Doing so will allow us to create a short-cut to the mine’s entrance and I don’t need to tell you how much this would improve logistics,这样做将使我们能够开辟一条通往矿井入口的捷径，无需我多言这将如何改善后勤
+Barricade,路障
+A barricade constructed from debris blocks this path,一道由瓦砾堆成的路障挡住了这条路
+It is too large to dismantle before retaking the city and for now you must find some way around it,在夺回城市之前它过于庞大无法拆除，目前你必须找到绕过它的方法
 Cave In,塌方
-A portion of the cave has collapsed behind you,你身后的一部分洞穴发生了塌方
-There is no going back this way,无法从这条路返回
+A portion of the cave has collapsed behind you,你身后的一部分洞穴已经坍塌
+There is no going back this way,这条路无法回头
 Spider Corpse,蜘蛛尸体
-The mauled corpse of a giant spider,一只巨蜘蛛被重创的尸体
+The mauled corpse of a giant spider,一只巨蜘蛛被撕咬过的尸体
 Grave,坟墓
-A fresh grave with a simple marker made of sticks,一座新坟，用树枝制成简单的标记
-No name can be found upon it,无法找到上面的名字
-The corpse belongs to a graying old man,尸体属于一位年迈的老人
-His face is serene and there is nothing to indicate he did not die of natural causes,他的脸平静安详，没有任何迹象表明他不是自然死亡
-"Leaning over the body however, you spot thin strands of some bizarre purplish fungal growth protruding from the man's mouth and nose",然而，你俯身查看，发现那人嘴和鼻孔中长出了一些奇怪的紫色菌类生长物。
-"Strange vines of some unknown, purplish growth bursts forth from the masonry",一些未知的紫色藤蔓从石墙上突然爆开。
-"As you lean in, fine strands reach greedily towards you",当你凑近时，细长的丝状物贪婪地向你伸来。
-You recoil in disgust and decide it’s best to not touch the growths,你感到厌恶地后退，决定最好别碰这些生长物。
-Dead Body,遇害者
-A body lies broken upon the ground,一具尸体横躺在地上。
-"Though it has been gnawed by hounds, it seems clear that this person fell or jumped from the cliffs above",虽然被野狗啃咬过，但显然这个人是从上方的悬崖上坠落或跳下来的。
-Old Crates,老旧的木箱
-Old and ruined shipping crates litter this part of the cave,这个洞穴的这一部分散落着一些老旧破烂的货箱。
-Only smugglers would use a place like this to store their goods,只有走私者才会用这样的地方来储存货物。
-"Perhaps there are other, similar caches to be found on the Outer Isles?",或许在外岛还有其他类似的藏匿地点？
-A Note,一张纸条
-A note is scrawled in crude letters,用粗糙的笔迹潦草地写着一张纸条。
-Kook!,胡说八道！
-I cannot stand another meal of Salted Fish!,我再也吃不下咸鱼了！
-Armour stands,防具架
-"Take head, or git a dagger in the eye ye cheap basterd",拿头，否则我会用匕首刺瞎你的眼睛，贱人。
-Strange Jar,奇怪的瓶子
-An oddly shaped container of some unknown design,一个形状奇特、设计未知的容器。
-"The surface is smooth and metallic, but not of a material you recognize",表面光滑且金属质感，但材质你从未见过。
-"Though the artifact is without a scratch, it still somehow conveys impossible age",尽管这件神器没有任何划痕，但它仍然传递着不可思议的古老气息
-Librarian’s Journal,图书管理员的日记
-A book lies open on the librarian’s desk,一本打开的书放在图书管理员的书桌上
-"Brother Auran has once again made off with the key to the forbidden section, claiming it is ‘much more convenient for both me and him’ that he keeps it for the duration of his studies",哥伦已经再次偷走了禁书区的钥匙，声称“对他和我都更方便的是他在这段时间内保管钥匙”
-He’s assured me it’s well hidden in his study in the eastern tower whilst not in use,他保证说，当钥匙不用时，他会把它藏在东塔的书房里
-Bloody fool,糟糕透顶
-I’ll need to send lay-brother Theo to recover it next time Auran is sleeping,下次哥伦睡觉时，我得派临时修士西奥去取回钥匙
-Sea-Caves,海洞
-The sea-caves lie abandoned and closed off,海洞被遗弃且封闭
-Scribbled in a shaky hand on ancient parchment is the following verse,古旧羊皮纸上用颤抖的笔迹写着以下诗句
-Walk the path in humble fate Contemplate the hidden gate,踏着谦卑的道路前行 寻找隐藏的门户
-Let the watchers show the way Like time flows ‘round the wheel of day,让守望者指引道路 就像时间在日夜轮回中流转
-To heed the silent sleepers call And enter into the Dreaming Hall,听从沉默守卫的呼唤 并进入梦境殿堂
-Ink and Paper,墨水和纸张
-Ink and paper that appears to have been abandoned mid-use,看起来像是有人在中途放弃的墨水和纸张
-It seems someone was copying the mosaic on the floor,看起来有人在抄写地上的镶嵌图案
+A fresh grave with a simple marker made of sticks,一座新坟，立着用树枝做的简陋标记
+No name can be found upon it,上面找不到名字
+The corpse belongs to a graying old man,尸体属于一位头发花白的老人
+His face is serene and there is nothing to indicate he did not die of natural causes,他的面容安详，没有任何迹象表明他不是自然死亡
+"Leaning over the body however, you spot thin strands of some bizarre purplish fungal growth protruding from the man's mouth and nose",然而，俯身查看时，你发现一些奇怪的紫色真菌细丝从男人的口鼻中伸出
+"Strange vines of some unknown, purplish growth bursts forth from the masonry",某种未知的紫色生长物从砖石中迸发出来，形如怪藤
+"As you lean in, fine strands reach greedily towards you",当你靠近时，纤细的菌丝贪婪地向你伸来
+You recoil in disgust and decide it’s best to not touch the growths,你厌恶地后退，决定最好别碰这些生长物
+Dead Body,尸体
+A body lies broken upon the ground,一具破碎的尸体躺在地上
+"Though it has been gnawed by hounds, it seems clear that this person fell or jumped from the cliffs above",尽管已被野狗啃咬，但显然此人是从上方的悬崖坠落或跳下的
+Old Crates,旧板条箱
+Old and ruined shipping crates litter this part of the cave,破旧的运输板条箱散落在洞穴的这一区域
+Only smugglers would use a place like this to store their goods,只有走私者才会用这种地方存放货物
+"Perhaps there are other, similar caches to be found on the Outer Isles?",也许在外岛群还能找到其他类似的藏匿点？
+A Note,一张便条
+A note is scrawled in crude letters,一张用潦草字迹写成的便条
+Kook!,库克！
+I cannot stand another meal of Salted Fish!,我再也受不了吃咸鱼了！
+"There is a limet to how long a man can live on salt, potatoes and perklin",一个人靠盐、土豆和珀克林鱼能活多久是有限度的
+"Take head, or git a dagger in the eye ye cheap basterd",当心点，否则就给你这吝啬鬼眼上插一刀
+Strange Jar,奇异罐
+An oddly shaped container of some unknown design,一个形状奇特、设计未知的容器
+"The surface is smooth and metallic, but not of a material you recognize",表面光滑且呈金属质感，但并非你认识的任何材料
+"Though the artifact is without a scratch, it still somehow conveys impossible age",尽管这件器物毫无划痕，却莫名透露出不可思议的古老
+Librarian’s Journal,藏书管理员日志
+A book lies open on the librarian’s desk,一本书摊开在藏书管理员的桌上
+"Brother Auran has once again made off with the key to the forbidden section, claiming it is ‘much more convenient for both me and him’ that he keeps it for the duration of his studies",奥兰修士又一次拿走了禁书区的钥匙，声称在他研习期间由他保管‘对我俩都方便得多’
+He’s assured me it’s well hidden in his study in the eastern tower whilst not in use,他向我保证不用时会妥善藏在他东塔的书房里
+Bloody fool,该死的蠢货
+I’ll need to send lay-brother Theo to recover it next time Auran is sleeping,下次奥兰睡觉时我得派俗修士西奥去取回来
+Sea-Caves,海蚀洞窟
+The sea-caves lie abandoned and closed off,海蚀洞窟已被废弃并封闭
+Scribbled in a shaky hand on ancient parchment is the following verse,古老的羊皮纸上用颤抖的笔迹潦草地写着如下诗句
+Walk the path in humble fate Contemplate the hidden gate,以谦卑的命运行走此路 沉思那隐藏的大门
+Let the watchers show the way Like time flows ‘round the wheel of day,让守望者指引方向 如时光流转于日轮之周
+To heed the silent sleepers call And enter into the Dreaming Hall,聆听沉默沉睡者的呼唤 进入梦厅
+Ink and Paper,墨水和纸
+Ink and paper that appears to have been abandoned mid-use,似乎使用中途被丢弃的墨水和纸
+It seems someone was copying the mosaic on the floor,看来有人在临摹地板上的马赛克图案
 Grotesque Relief,怪诞浮雕
-The sarcophagus has the following description,这具石棺有这样的描述
-Carroleth the Manyfaced - First Grandmaster of the Order of the Crystal Eye,卡罗莱特·多面体 - 晶眼秩序的第一代首席大师
-Rothrax the Gray - Second Grandmaster of the Order of the Crystal Eye,灰色罗特拉克斯 - 晶眼秩序的第二代首席大师
-Kalamar the Wise - Third Grandmaster of the Order of the Crystal Eye,卡拉马尔智者 - 光之眼秩序第三代大祭司
-Secret Passage,秘道
-The relief of this altarpiece seems to shift and squirm in the dancing light,这座祭坛的浮雕似乎在舞动的光影中扭曲移动
-"What’s more, there appears to be a hidden passage behind it",更重要的是，似乎有一条隐藏的通道在其后方
-No way of opening it can be seen nearby,附近没有发现开启它的方法
-Pile of Ash,堆积的灰烬
-This cave opens up into the sheer cliff wall beneath the tower,这个洞穴通向塔下陡峭的悬崖壁
-Piled on the ledge is a great heap of ash that the wind occasionally carries away in great wisps,堆积在突出的岩壁上的是大量的灰烬，偶尔被风卷走，形成缕缕灰烬
-Carefully you prod the pile only to find a small handful of scorched human bones and teeth,轻轻触碰这堆灰烬，却发现少量烧焦的人类骨骼和牙齿
-"Looking around, you see a great in the ceiling above from which the ash appears to have been dumped",四周观察，你发现上方的天花板有一个大洞，灰烬似乎是从那里倾倒下来的
-"A large square slab with small holes carved in it appears to be placed over some sort of shaft, sealing it shut",一个带有小孔的大方形石板似乎覆盖在一个通道上，将其密封
-You attempt to look through one of the holes but are knocked back by an unbearable stench emitting from below,你试图从一个孔中窥视，却被下方无法忍受的恶臭击退
-But wait?,等一等？
-Was there something else?,还有其他东西吗？
-Movement?,有动静吗？
-The slab seems too heavy to lift and just as well,这块石板太重，无法移动，而且最好如此
-You have an overwhelming feeling that what is trapped in the shaft below was not meant for mortal eyes to see and is best left in the dark,你有一种强烈的预感，认为被封在下方通道中的东西不应该被凡人的眼睛看到，最好让它留在黑暗中
+The sarcophagus has the following description,石棺上刻有如下描述
+Carroleth the Manyfaced - First Grandmaster of the Order of the Crystal Eye,千面者卡罗莱斯 - 水晶之眼骑士团首任宗师
+Rothrax the Gray - Second Grandmaster of the Order of the Crystal Eye,灰者罗斯拉克斯 - 水晶之眼骑士团第二任宗师
+Kalamar the Wise - Third Grandmaster of the Order of the Crystal Eye,智者卡拉玛 - 水晶之眼骑士团第三任宗师
+Secret Passage,秘密通道
+The relief of this altarpiece seems to shift and squirm in the dancing light,这座祭坛浮雕在摇曳的光线中似乎变幻蠕动
+"What’s more, there appears to be a hidden passage behind it",而且，它后面似乎有一条隐藏的通道
+No way of opening it can be seen nearby,附近看不到任何打开它的方法
+Pile of Ash,灰烬堆
+This cave opens up into the sheer cliff wall beneath the tower,这个洞穴通向塔楼下方陡峭的悬崖壁
+Piled on the ledge is a great heap of ash that the wind occasionally carries away in great wisps,岩架上堆积着一大堆灰烬，风不时将其卷起缕缕吹散
+Carefully you prod the pile only to find a small handful of scorched human bones and teeth,你小心地拨弄灰堆，只发现一小把烧焦的人骨和牙齿
+"Looking around, you see a great in the ceiling above from which the ash appears to have been dumped",环顾四周，你看到上方天花板有一个大洞，灰烬似乎就是从那里倾倒下来的
+"A large square slab with small holes carved in it appears to be placed over some sort of shaft, sealing it shut",一块刻有小孔的大方石板似乎盖在某种竖井上，将其封死
+You attempt to look through one of the holes but are knocked back by an unbearable stench emitting from below,你试图透过一个小孔往里看，却被下方散发出的难以忍受的恶臭逼退
+But wait?,但是等等？
+Was there something else?,还有别的东西吗？
+Movement?,有动静？
+The slab seems too heavy to lift and just as well,石板似乎太重无法抬起，这样也好
+You have an overwhelming feeling that what is trapped in the shaft below was not meant for mortal eyes to see and is best left in the dark,你有一种强烈的感觉，被困在下方竖井里的东西不是凡人该看的，最好让它留在黑暗中
 A Desk,一张书桌
-A desk with a maritime navigation map,一张航海图的书桌
-The map is labled 'The Outer Isles' and a course is drawn towards an island named 'Idra',地图上标记着“外岛”，并绘制了一条通往名为“伊德拉”的岛屿的航线
-A Grisly Scene,残酷的场景
-You recognize the corpse of one of the crew-mates,你认出这具尸体是船员之一
-A young man of barely 16 years called Sullum,一个 barely 16 岁的年轻人，名叫 Sullum
-The youth has been mauled to death by what you assume are the grotesquely altered rats you encounterd just minutes ago,这个年轻人被你刚才几分钟前遇到的那些畸形的大老鼠残害致死
-The corpse is still warm,尸体仍然温热
-#Interactables,#交互物
+A desk with a maritime navigation map,一张书桌，上面放着一幅航海图
+The map is labled 'The Outer Isles' and a course is drawn towards an island named 'Idra',地图上标注着“外岛群”，并画有一条通往名为“伊德拉”的岛屿的航线
+A Grisly Scene,惨不忍睹的现场
+You recognize the corpse of one of the crew-mates,你认出其中一具尸体是船员同伴
+A young man of barely 16 years called Sullum,一个年仅十六岁、名叫萨勒姆的年轻人
+The youth has been mauled to death by what you assume are the grotesquely altered rats you encounterd just minutes ago,这个年轻人被撕咬致死，你推测凶手正是几分钟前遭遇的那些怪异变种老鼠
+The corpse is still warm,尸体尚有余温
+Armour stands,盔甲架
+#Interactables,#可互动对象
 A Cat,一只猫
-A cat watches you intently,一只猫正盯着你看
-Chain,链条
-Beehive,蜜蜂巢
+A cat watches you intently,一只猫专注地看着你
+Chain,链子
+Beehive,蜂巢
 Benches,长凳
 Drinks,饮料
 Food,食物
-A King in Yellow,黄色之王
+A King in Yellow,黄衣之王
 Stage,舞台
 Stairways,楼梯
 Mine Entrance,矿井入口
 Grindstone,磨刀石
-A grindstone used for sharpening weapons,用于磨砺武器的磨刀石
-Entrance to Tunnels,地下隧道入口
-The Fishermen's Gate,渔人之门
-A Prisoner,狱卒
+A grindstone used for sharpening weapons,用于磨利武器的磨刀石
+Entrance to Tunnels,隧道入口
+The Fishermen's Gate,渔夫之门
+A Prisoner,一名囚犯
 Dead Horse,死马
-Scraps of Meat,骨头碎片
-Jakub and Ella,雅各布和埃拉
-The Ganglion,脑球
+Scraps of Meat,碎肉块
+Jakub and Ella,雅库布和艾拉
+The Ganglion,神经节
 A Well,一口井
 Dessicated Corpse,干尸
-Ladder,拉梯
+Ladder,梯子
 Telescope,望远镜
-Cato's Study,塞托的书房
-Prisoner,狱卒
-A Map,地图
+Cato's Study,卡托的书房
+Prisoner,囚犯
+A Map,一张地图
 Faulty Support,不稳固的支撑
-Weakened Wall,裂墙
-Mole Burrow,鼹鼠洞
-A Monolith,巨石碑
-Portcullis,门吊
-Ancient Monolith,古代巨石碑
-Golden Tomb,金墓
-Gong,钟
+Weakened Wall,脆弱墙体
+Mole Burrow,鼹鼠洞穴
+A Monolith,一块巨石
+Portcullis,落栅门
+Ancient Monolith,古老巨石
+Golden Tomb,金色墓穴
+Gong,锣
 A Statue,一座雕像
 Rope,绳索
 A Painting,一幅画
 Helm,头盔
 Shrine of Agility,敏捷神龛
 Shrine of Fortitude,坚韧神龛
-Shrine of Intellect,智慧神龛
-Shrine of Presence,威严神龛
+Shrine of Intellect,智力神龛
+Shrine of Presence,魅力神龛
 Shrine of Strength,力量神龛
-Driina,德鲁伊尼
+Driina,德莉娜
 Pool,水池
 A Stange Statue,一座奇怪的雕像
 Console,控制台
-Strange Basins,奇怪的浴盆
-Vomit Cap cluster,呕吐帽群
+Strange Basins,奇异盆
+Vomit Cap cluster,呕吐菌帽簇
 Waterfall,瀑布
 Winch,绞盘
-Drainage,排水系统
+Drainage,排水口
 Elevator,升降机
-A Strange Machine,奇异的机器
-Protoplasmic Catalyzer,原生催化器
-Book,书籍
-Reflecting Pool,反光池
+A Strange Machine,一台奇怪的机器
+Protoplasmic Catalyzer,原生质催化器
+Book,书
+Reflecting Pool,反射池
 #LightSources,#光源
 Bees,蜜蜂
-Brazier,烛台
-Camp Fire,露营火
+Brazier,火盆
+Camp Fire,篝火
 Candles,蜡烛
 Candle,蜡烛
 Flies,苍蝇
-Fire,火焰
+Fire,火
 Fireflies,萤火虫
 Glow Globe,发光球
 Model,模型
-Lightcaster,发光器
-Stake,撬棍
+Lightcaster,光铸者
+Stake,木桩
 Torch,火把
-A torch hangs on the wall,一支火把挂在墙上
-Light,光源
+A torch hangs on the wall,墙上挂着一支火把
+Light,光
 #Pickups,#拾取物
 Carrots,胡萝卜
 Cheese Wheel,奶酪轮
 Fish,鱼
-Gullyfern,谷地蕨
-Legionnaire’s Rest,雅典卫士之息
-Sorrow-Eater,悲伤吞噬者
-Starspawn,星裔
-Sunmouth,日口
+Gullyfern,沟蕨
+Legionnaire’s Rest,归战花
+Sorrow-Eater,悲噬花
+Starspawn,星泪花
+Sunmouth,向阳吻
 Apples,苹果
-Pears,梨
+Pears,梨子
 Eggs,鸡蛋
-Cured Hams,风干火腿
-Lantern,灯笼
-Leeks,韭菜
-Patch of Cavechild,洞穴孩子之斑块
-Patch of Glowmen,发光人之斑块
-Fellbell,跌铃
-Laughtercap,笑菇
-Morel,牛肝菌
-Punny Bun,笨笨卷
-Wyrdloaf,奇缘面包
+Cured Hams,熏火腿
+Lantern,提灯
+Leeks,韭葱
+Patch of Cavechild,一簇洞穴之子
+Patch of Glowmen,一簇发光人
+Fellbell,山铃菇
+Laughtercap,笑帽菇
+Morel,羊肚菌
+Punny Bun,双关面包
+Wyrdloaf,威德洛夫菇
 Bird's Nest,鸟巢
 Onions,洋葱
-Pick-Axe,开山镐
+Pick-Axe,镐子
 Potatos,土豆
-Ripe Pumpkin,成熟南瓜
-Recipe,食谱
-Rotten Log,腐朽木头
+Ripe Pumpkin,熟南瓜
+Recipe,配方
+Rotten Log,腐木
 A Badge,一枚徽章
-Shovel,锄头
+Shovel,铲子
 Vessels,容器
 Lotus Pool,莲花池
-#TestProps,#测试道具
+#TestProps,"#测试道具,"
 Broken Bridge,断桥
-The bridge ahead is broken,前方的桥梁已经断裂
-Perhaps you can jump the gap?,也许你可以跳过这个缺口？
-Climbing Holds,攀爬点
-You can climb down this wall,你可以攀下这面墙
-You can climb the wall ahead,你可以攀上前面的墙
-Stack of Boxes,箱子堆
-#Triggers,触发器数量
-{notHasJournalEntry|JOU_CrabCaveEntrance},__PLACEHOLDER_0__
-A Survivor,幸存者
-#Warps,转移数量
+The bridge ahead is broken,前方的桥断了
+Perhaps you can jump the gap?,也许你能跳过缺口？
+Climbing Holds,攀爬支点
+You can climb down this wall,你可以从这面墙爬下去
+You can climb the wall ahead,你可以爬上前面那堵墙
+"Using the rope, you can descend the wall",使用绳索，你可以从墙上降下
+Stack of Boxes,一堆箱子
+Using the stack of boxes you can reach the rope and try to climb the wall,借助这堆箱子你可以够到绳索并尝试爬上墙
+#Triggers,#Triggers
+{notHasJournalEntry|JOU_CrabCaveEntrance},{notHasJournalEntry|JOU_CrabCaveEntrance}
+A Survivor,一名幸存者
+#Warps,#传送
 Entrance,入口
 Stairs,楼梯
-A set of stairs leading to the deck above,通往上层甲板的楼梯
-Stairs Up,楼梯上
-Cave Entrance,山洞入口
+A set of stairs leading to the deck above,一段通往上层甲板的楼梯
+Stairs Up,上行楼梯
+Cave Entrance,洞穴入口
 Exit,出口
-A set of stairs leading to the deck below,通往下层甲板的楼梯
-Stairs Down,楼梯下
-Trapdoor,陷阱门
+A set of stairs leading to the deck below,一段通往下层甲板的楼梯
+Stairs Down,下行楼梯
+Trapdoor,活板门
 Castle Entrance,城堡入口
 Castle Exit,城堡出口
-Catacomb Entrance,坑道入口
-Exit to Temple,神殿出口
-Grate,栅栏
-Secret Door,秘道
-Firgol,菲戈尔
-Adler's Helm,阿德勒的头盔
-Horryn,哈罗因
-A Hidden Glen,一个隐秘的溪谷
-Abandoned Farm,一座废弃的农舍
-A Refugee Camp,一个难民营地
-A Forest Glade,一片森林空地
-The Wreck of the Zephyr,海风号的残骸
+Catacomb Entrance,地下墓穴入口
+Exit to Temple,通往神殿的出口
+Grate,格栅
+Secret Door,密门
+Firgol,菲尔戈
+Adler's Helm,鹰盔堡
+Horryn,霍林
+A Hidden Glen,一处隐藏的幽谷
+Abandoned Farm,废弃农庄
+A Refugee Camp,难民营
+A Forest Glade,林间空地
+The Wreck of the Zephyr,西风号残骸
 A Lighthouse,一座灯塔
-The Black Priory,黑色修道院
-Sea Caves,海洞
-A Tower,一座塔楼
-Rope and Bucket,绳索和桶
+The Black Priory,黑修院
+Sea Caves,海蚀洞
+A Tower,一座塔
+Rope and Bucket,绳索与桶
 Ladders,梯子
 #WorkBenches,#工作台
-Workbench,工作台
-Alchemist's Tools,炼金术士工具
-A cauldron for cooking,一个烹饪用的锅
+Alchemist's Tools,炼金术士的工具
+A cauldron for cooking,用于烹饪的大锅
 Pot,锅
-An pot that can be used for cooking,一个可以用作烹饪的锅
+An pot that can be used for cooking,一个可用于烹饪的锅
 Oven,烤炉
-An oven that can be used for cooking,可用于烹饪的烤炉
-A Comfortable Camp,舒适营地
-A Rough Camp,粗糙营地
+An oven that can be used for cooking,一个可用于烹饪的烤炉
+Workbench,工作台
+A Comfortable Camp,舒适的营地
+A Rough Camp,简陋的营地
 Party Management,队伍管理

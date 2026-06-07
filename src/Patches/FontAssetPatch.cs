@@ -11,9 +11,13 @@ namespace TranslationMod.Patches
     public static class FontAssetPatch
     {
         private static bool _isSubscribed = false;
-        // Было ли выполнено предварительное чтение шрифтов
+        // 标记是否已经完成字体预加载
         private static bool _fontsPreloaded = false;
 
+        /// <summary>
+        /// 初始化字体资源补丁。
+        /// 流程：订阅语言切换事件，并立即预加载当前语言所需字体贴图。
+        /// </summary>
         public static void Initialize()
         {
             if (_isSubscribed) return;
@@ -26,6 +30,10 @@ namespace TranslationMod.Patches
             PreloadFonts();
         }
 
+        /// <summary>
+        /// 响应语言切换事件。
+        /// 流程：清空字体替换状态并重新预加载新语言对应字体。
+        /// </summary>
         private static void OnLanguageChangedHandler()
         {
             ClearReplacedFonts();
@@ -34,6 +42,10 @@ namespace TranslationMod.Patches
 #endif
         }
         
+        /// <summary>
+        /// 清除当前字体预加载状态并重新加载。
+        /// 用于语言切换后强制刷新字体缓存。
+        /// </summary>
         public static void ClearReplacedFonts()
         {
             _fontsPreloaded = false;
@@ -43,34 +55,37 @@ namespace TranslationMod.Patches
 #endif
         }
         
+        /// <summary>
+        /// 读取 PNG 文件并构造成游戏可用的 `TextureData`。
+        /// 流程：加载字节流，创建临时纹理，按游戏原逻辑生成 `TextureData`，最后释放临时资源。
+        /// </summary>
         private static TextureTools.TextureData LoadPngAsTextureData(string filePath)
         {
             try
             {
                 byte[] fileData = File.ReadAllBytes(filePath);
                 
-                // Создаем текстуру точно так же, как это делает игра
+                // 按游戏原生方式创建纹理对象
                 Texture2D texture = new Texture2D(1, 1, TextureFormat.RGBA32, false);
-                texture.filterMode = FilterMode.Point; // Пиксельная графика - отключаем сглаживание
+                texture.filterMode = FilterMode.Point; // 像素风资源关闭平滑
                 texture.wrapMode = TextureWrapMode.Clamp;
                 
                 if (texture.LoadImage(fileData))
                 {
-                    // Применяем изменения
+                    // 应用贴图数据
                     texture.Apply(false, false);
                     
-                    // Создаем TextureData ТОЧНО ТАК ЖЕ, как это делает оригинальная игра
-                    // Используем оригинальный конструктор TextureData(Texture2D texture)
+                    // 使用游戏原有构造方式生成 TextureData
                     var textureData = new TextureTools.TextureData(texture);
                     
-                    // Освобождаем временную текстуру
+                    // 释放临时纹理
                     UnityEngine.Object.Destroy(texture);
                     return textureData;
                 }
                 else
                 {
                     TranslationMod.Logger?.LogError($"[FontAssetPatch] Failed to load image data from '{filePath}'. File might be corrupted or not a valid PNG.");
-                    UnityEngine.Object.Destroy(texture); // Освобождаем ресурсы
+                    UnityEngine.Object.Destroy(texture); // 释放资源
                 }
             }
             catch (IOException e)
@@ -85,16 +100,14 @@ namespace TranslationMod.Patches
         }
 
         /// <summary>
-        /// Adds custom texture to game buffer via reflection
+        /// 通过反射将自定义字体贴图注入游戏纹理缓冲区。
+        /// 流程：找到全局图片缓存与 `addTexture` 方法，再以指定键名写入。
         /// </summary>
-        /// <param name="path">Path to original file</param>
-        /// <param name="textureData">Custom texture data</param>
-        /// <returns>true if successfully added to buffer</returns>
         private static bool AddTextureToGameBuffer(string path, TextureTools.TextureData textureData)
         {
             try
             {
-                // Получаем поле fullImageBuffer через рефлексию
+                // 通过反射获取全局贴图缓冲区
                 var bufferField = AccessTools.Field(typeof(TextureTools), "fullImageBuffer");
                 if (bufferField == null)
                 {
@@ -109,7 +122,7 @@ namespace TranslationMod.Patches
                     return false;
                 }
 
-                // Получаем метод addTexture через рефлексию
+                // 通过反射定位 addTexture 方法
                 var addTextureMethod = AccessTools.Method(bufferInstance.GetType(), "addTexture");
                 if (addTextureMethod == null)
                 {
@@ -117,7 +130,7 @@ namespace TranslationMod.Patches
                     return false;
                 }
 
-                // Вызываем addTexture с нашими параметрами
+                // 用自定义路径与贴图数据写入缓冲区
                 addTextureMethod.Invoke(bufferInstance, new object[] { path, textureData });
                 
 #if DEBUG
@@ -133,14 +146,15 @@ namespace TranslationMod.Patches
         }
 
         /// <summary>
-        /// Force loading of all target fonts into buffer during initialization.
+        /// 预加载目标字体到游戏缓冲区。
+        /// 流程：先清理旧缓冲，再遍历语言包字体目录，读取目标 PNG，
+        /// 按游戏期望的资源键名注入缓存。
         /// </summary>
         private static void PreloadFonts()
         {
             if (_fontsPreloaded) return;
 
-            // Очищаем все внутренние буферы до инъекции кастомных шрифтов,
-            // чтобы гарантировать, что игра будет формировать суб-спрайты из новых текстур
+            // 注入前先清空内部缓冲，确保后续子图从新贴图生成
             TextureTools.clearBuffer();
             try
             {
@@ -164,17 +178,16 @@ namespace TranslationMod.Patches
 
                     if (!System.IO.File.Exists(customFontPathPng))
                     {
-                        continue; // в пакете может не быть всех файлов
+                        continue; // 语言包不一定包含所有目标字体
                     }
 
                     var textureData = LoadPngAsTextureData(customFontPathPng);
                     if (textureData == null)
                     {
-                        continue; // ошибка загрузки
+                        continue; // 当前文件加载失败则跳过
                     }
 
-                    // Путь-ключ в буфере должен совпадать с тем, что запрашивает игра:
-                    // Images/CustomFonts/<fontFile> (без .png)
+                    // 缓冲区键名需要与游戏请求的资源路径保持一致
                     string bufferKey = $"Images/CustomFonts/{fontFile}";
                     if (fontFile == "Logo")
                     {

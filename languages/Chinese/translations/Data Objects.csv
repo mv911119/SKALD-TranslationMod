@@ -1,423 +1,424 @@
 original,translate
-#Apperances,#出场
-Carylla,Carylla
+#Apperances,#外观
+Carylla,卡莉拉
 #Difficulties,#难度
-Narrative,故事
-Narrative mode is the difficulty for players who would like to experience the game’s story and setting with a minimum of focus on combat and grinding,故事模式是适合那些希望以最少的战斗和磨砺关注游戏故事和背景的玩家的难度设置
-Easy,简易
-Easy mode is a great way for players who are new to this style of roleplaying game to experience Skald,简易模式是适合新手玩家体验这种角色扮演游戏的好方式，让他们体验Skald
-Combat is forgiving and there should be little need to optimize character builds,战斗相对宽容，玩家不需要过多优化角色构建
-Dice rolls are weighted in the player’s favor,骰子投掷偏向玩家
-Normal,正常
-Normal mode is the game’s intended difficulty setting,正常模式是游戏预设的难度设置
-There is only very limited artificial smoothing of certain dice rolls,只有非常有限的骰子投掷的人工平滑
+Narrative,叙事
+Narrative mode is the difficulty for players who would like to experience the game’s story and setting with a minimum of focus on combat and grinding,叙事模式是为那些希望以最少关注战斗和刷怪来体验游戏故事与设定的玩家准备的难度
+Easy,简单
+Easy mode is a great way for players who are new to this style of roleplaying game to experience Skald,简单模式是让不熟悉此类角色扮演游戏的玩家体验Skald的绝佳方式
+Combat is forgiving and there should be little need to optimize character builds,战斗较为宽容，几乎不需要优化角色构建
+Dice rolls are weighted in the player’s favor,骰子掷出结果偏向玩家
+Normal,普通
+Normal mode is the game’s intended difficulty setting,普通模式是游戏预设的难度设置
+There is only very limited artificial smoothing of certain dice rolls,仅对某些骰子掷出结果进行了非常有限的人工平滑处理
 Hard,困难
-Hard mode is intended to offer the player a challenge without feeling unfair,困难模式旨在为玩家提供挑战而不显得不公平
-Dice rolls are slightly weighted in the opponent's favor making them more deadly,骰子投掷稍微偏向对手，使战斗更具致命性
+Hard mode is intended to offer the player a challenge without feeling unfair,困难模式旨在为玩家提供挑战，同时不会让人感觉不公平
+Dice rolls are slightly weighted in the opponent's favor making them more deadly,骰子掷出结果略微偏向对手，使其更加致命
 #Encounters,#遭遇
-Brigands,拦路强盗
-You’ve been beset by brigands!,你们遭到了拦路强盗的袭击！
-Stand and deliver!,站住，交出财物！
-Abandoned Cargo,被弃置的货物
-There is some abandoned cargo strewn on the road ahead of you,你面前的路上散落着一些被遗弃的货物
-Horrors from the deep,深渊中的恐怖生物
-You're being attacked by enormous fell-crabs!,你正被巨大的恶蟹攻击！
-Crawlers,蠕虫
-Foul creatures swarm from holes in the ground!,糟糕的生物从地下的洞穴中蜂拥而出！
+Brigands,强盗
+You’ve been beset by brigands!,你遭到了强盗的袭击！
+Stand and deliver!,站住，留下买路财！
+Abandoned Cargo,遗弃货物
+There is some abandoned cargo strewn on the road ahead of you,前方的道路上散落着一些遗弃货物
+Horrors from the deep,深海恐怖
+You're being attacked by enormous fell-crabs!,你正遭到巨大的凶煞螃蟹攻击！
+Crawlers,爬行者
+Foul creatures swarm from holes in the ground!,污秽的生物从地洞中蜂拥而出！
 Devolved,退化者
-"More beast than man, devolved troglodytes charge towards you!",更多的野兽多于人类，退化者 troglodytes 向你冲锋！
+"More beast than man, devolved troglodytes charge towards you!",“与其说是人，不如说是野兽，退化的穴居人向你冲来！”
 Flotsam,漂浮物
-You come across some flotsam,你发现了一些漂浮物
+You come across some flotsam,你遇到了一些漂浮物
+Giant Insects,巨型昆虫
+Giant insects scurry towards you!,巨型昆虫向你疾冲而来！
+Giant insects swarm you!,巨型昆虫蜂拥向你袭来！
+White Hounds,白野狗
+Foul slavering beasts barrel towards you!,污秽流涎的野兽向你猛冲过来！
+Crabs,螃蟹
+You're being swarmed by monsterously over-grown crabs!,你正被异常巨大的螃蟹群包围！
+Rot Crabs,腐化螃蟹
+Horribly changes crustaceans shamble towards you!,可怕变异的甲壳类生物蹒跚向你走来！
+Spider Crabs,蜘蛛蟹
+You're being charged by Spider-Crabs!,你正遭到蜘蛛蟹的冲锋！
+Fell Hounds,凶煞野狗
+You've been beset by prowling Fell-Hounds!,你遭到了潜行的凶煞野狗的袭击！
+Fell Hogs,凶煞野猪
+Fell hogs have caught your scent!,凶煞野猪嗅到了你的气味！
+Rats!,老鼠！
+You're being swarmed by monsterously over-grown rats!,你正被异常巨大的老鼠群包围！
+Reavers,劫掠者
+You've been waylaid by Reavers!,你遭到了劫掠者的伏击！
+Reaver Patrol,劫掠者巡逻队
+Reaver Raiding-Party,劫掠者突袭队
+Giant Lizards,巨型蜥蜴
+The lizards' jaws snap greedily as reptilian eyes fix you,蜥蜴的嘴巴贪婪地开合，爬行动物的眼睛紧盯着你
+Wandering Merchant,流浪商人
+A wandering armorer approaches!,一位流浪护甲匠走了过来！
+A wandering arms merchant approaches!,一位流浪武器商人走了过来！
+A wandering food merchant approaches!,一位流浪食品商人走了过来！
+A wandering potion merchant approaches!,一位流浪药水商人走了过来！
+A wandering reagent merchant approaches!,一位流浪药材商人走了过来！
+A wandering spell merchant approaches!,一位流浪法术商人走了过来！
+A wandering trinket merchant approaches!,一位流浪饰品商人走了过来！
+Shades,暗影
+"Darker than night, these creatures are pure malice",“比黑夜更黑暗，这些生物纯粹是恶意”
+Snakes,蛇
+There are snakes in the grass!,草丛里有蛇！
+Serpents,巨蛇
+Overgrown serpents slither towards you!,过度生长的巨蛇蜿蜒向你爬来！
+Slithering Horrors,滑行恐怖
+Snow-Lizards,雪蜥蜴
+"Large, horned lizards leap from the snow to ambush you!",“巨大的有角蜥蜴从雪中跃出，伏击你！”
+Creatures From Beyond,异界生物
+The Dragon is awakening!,龙正在苏醒！
+Giant Spiders,巨型蜘蛛
+Venom drips from snapping jaws as monstrous spiders swarm towards you,毒液从开合的颚中滴落，巨大的蜘蛛蜂拥向你袭来
+Enormous Spiders,庞大蜘蛛
+Venom drips from snapping jaws as monstrously huge spiders swarm towards you,毒液从开合的颚中滴落，异常庞大的蜘蛛蜂拥向你袭来
+The Frozen Dead,冰冻行尸
+The restless corpses of those claimed by the frozen wastes shamble towards you,那些被冰冻荒原夺去生命的不安尸体蹒跚向你走来
 Avoid,避开
 You avoid the encounter,你避开了这次遭遇
-Giant Insects,巨型昆虫
-Giant insects scurry towards you!,巨型昆虫向你爬来！
-Giant insects swarm you!,巨型昆虫蜂拥向你！
-White Hounds,白狗
-Foul slavering beasts barrel towards you!,糟糕的流口水野兽向你冲来！
-Crabs,蟹类
-You're being swarmed by monsterously over-grown crabs!,你被巨大的畸形螃蟹淹没！
-Rot Crabs,腐烂螃蟹
-Horribly changes crustaceans shamble towards you!,变异的甲壳类生物蹒跚向你走来！
-Spider Crabs,蜘蛛蟹
-You're being charged by Spider-Crabs!,你被蜘蛛蟹冲击了！
-Fell Hounds,深渊猎犬
-You've been beset by prowling Fell-Hounds!,你被潜行的深渊猎犬围攻了！
-Fell Hogs,深渊猪
-Fell hogs have caught your scent!,深渊猪嗅到了你的气味！
-Rats!,老鼠！
-You're being swarmed by monsterously over-grown rats!,你被巨大的老鼠群淹没！
-Reavers,海盗
-You've been waylaid by Reavers!,你被海盗袭击了！
-Reaver Patrol,海盗巡逻队
-Reaver Raiding-Party,海盗劫匪小队
-Giant Lizards,巨蜥
-The lizards' jaws snap greedily as reptilian eyes fix you,巨蜥的 jaws 狠狠地咬下，爬行类的眼睛紧紧盯着你
-Wandering Merchant,游商
-A wandering armorer approaches!,一个游走的甲胄匠人接近了！
-A wandering arms merchant approaches!,一个游走的武器商接近了！
-A wandering food merchant approaches!,一个游走的食物商接近了！
-A wandering potion merchant approaches!,一个游走的药剂商接近了！
-A wandering reagent merchant approaches!,一个游走的试剂商接近了！
-A wandering spell merchant approaches!,一位游走的法术商人出现了！
-A wandering trinket merchant approaches!,一位游走的饰品商人出现了！
-Shades,阴魂
-"Darker than night, these creatures are pure malice",比夜更黑暗，这些生物纯粹是恶意
-Snakes,蛇
-There are snakes in the grass!,草丛中有蛇！
-Serpents,蛇
-Overgrown serpents slither towards you!,长大的蛇蜿蜒向你爬来！
-Slithering Horrors,蜿蜒恐怖生物
-Snow-Lizards,冰龙蜥
-"Large, horned lizards leap from the snow to ambush you!",大型长角蜥蜴从雪中跃出，意图伏击你！
-Creatures From Beyond,超越者生物
-The Dragon is awakening!,龙苏醒了！
-Giant Spiders,巨型蜘蛛
-Venom drips from snapping jaws as monstrous spiders swarm towards you,咬合的利齿滴下毒液，巨大的蜘蛛群向你涌来
-Enormous Spiders,巨型蜘蛛
-Venom drips from snapping jaws as monstrously huge spiders swarm towards you,咬合的利齿滴下毒液，异常巨大的蜘蛛群向你涌来
-The Frozen Dead,冰封死者
-The restless corpses of those claimed by the frozen wastes shamble towards you,被冰封荒原夺去生命的不安息亡灵蹒跚向你走来
-#Factions,#派系
-Factions,派系
-Unaligned,无派系
-Village of Firgol,菲戈尔村
-Nautical Guild,海上公会
-House Berryn,伯林家族
-Iago's Crew,伊戈的船员
-Idran Refugees,艾德兰难民
-The Hundred Sons,百子会
-Zephyr Crew,赛斐尔船员
-The Rat Queen's Court,老鼠王的宫廷
-Oleg the Gray,奥列格·灰烬
-Queen Kala,卡拉女王
+#Factions,#势力
+Village of Firgol,菲尔戈村
+Nautical Guild,航海行会
+House Berryn,贝林家族
+Iago's Crew,伊阿戈船员
+Idran Refugees,伊德拉难民
+The Hundred Sons,百子众
+Zephyr Crew,西风号船员
+The Rat Queen's Court,鼠后宫廷
+Oleg the Gray,灰发奥列格
+Queen Kala,卡菈女王
 The Butcher,屠夫
-Reavers of Idra,艾德拉掠夺者
-Zephyr Survivors,赛斐尔幸存者
+Reavers of Idra,伊德拉劫掠者
+Zephyr Survivors,西风号幸存者
+Factions,势力
+Unaligned,无阵营
 #Map Meta-Data,#地图元数据
-Firgol,菲戈尔
-Before you lies a small village surrounded by fields and orchards,你面前是一个小村庄，四周是田野和果园
-The air is laden with the scent of fruit and the laughter of children and the pastoral bliss stands in stark contrast to the rest of the Outer Isles,空气中弥漫着水果的香气和孩子们的欢笑声，田园般的宁静与外岛的其他地方形成了鲜明的对比
+Firgol,菲尔戈
+Before you lies a small village surrounded by fields and orchards,在你面前是一座被田野和果园环绕的小村庄
+The air is laden with the scent of fruit and the laughter of children and the pastoral bliss stands in stark contrast to the rest of the Outer Isles,空气中弥漫着果香和孩童的欢笑声，这片田园的幸福与外岛群的其他地方形成了鲜明对比
 The Manor,庄园
 The Mines,矿洞
-Adler's Helm,阿德勒的头盔
-Before you lies what appears to be closer to a fortified mining-camp than a town,你面前的似乎更像是一座加固的采矿营地，而不是城镇
-The most striking detail are the wrecks of abandoned ships that lie just outside the town’s harbor,最引人注目的细节是停泊在城镇港口外的废弃船只残骸
-Horryn,哈罗因
-The Underhalls,地下厅
-Horryn Castle,哈罗因城堡
-The Crypt,坟墓
-Horryn Sewers,哈罗因下水道
-The Womb,孵生地
-Walls of Horryn,哈罗因的城墙
-"At the end of the rugged peninsula lies the small, walled fishing village of Horryn",在崎岖的半岛尽头，坐落着一座小而被围墙环绕的渔村——哈罗因
-"Once home to hundreds, the town now lies seemingly deserted",从前这里住着数百人，现在城镇似乎荒废无人
-"Whatever fate has befallen this place, you must be on you guard if you choose to enter it",无论这个地方发生了什么，如果你选择进入，一定要保持警惕
+Adler's Helm,鹰盔堡
+Before you lies what appears to be closer to a fortified mining-camp than a town,在你面前的更像是一座设防的采矿营地，而非城镇
+The most striking detail are the wrecks of abandoned ships that lie just outside the town’s harbor,最引人注目的细节是那些废弃船只的残骸，就散落在城镇港口之外
+Horryn,霍林
+The Underhalls,地下大厅
+Horryn Castle,霍林城堡
+The Crypt,墓室
+Horryn Sewers,霍林下水道
+The Womb,产房
+Walls of Horryn,霍林城墙
+"At the end of the rugged peninsula lies the small, walled fishing village of Horryn","""在崎岖半岛的尽头，坐落着有围墙的小渔村霍林"""
+"Once home to hundreds, the town now lies seemingly deserted","""这里曾居住着数百人，如今城镇似乎已荒废"""
+"Whatever fate has befallen this place, you must be on you guard if you choose to enter it","""无论此地遭遇了何种命运，你若选择进入，务必保持警惕"""
 The Coastal Pass,海岸隘口
-The Deep Forest,深林
-"Besides the buzzing of insects and croaking of toads, the forest is disconcertingly quiet",除了昆虫的嗡嗡声和蟾蜍的呱呱声，这片森林出奇地安静
-The foliage seems to thin slightly in this area and to the north-east you can make out a faint wisp of smoke rising from a chimney,林木似乎在这个区域稍微稀疏了一些，东北方向隐约可以看到烟囱冒出的一丝烟雾
-"The foliage does however, seem to thin slightly in this area and to the north-east you can make out a faint wisp of smoke rising from a chimney",林木似乎在这个区域稍微稀疏了一些，东北方向隐约可以看到烟囱冒出的一丝烟雾
-Forest Caves,森林洞穴
-The Hidden Glen,隐秘谷地
-A hidden glen nestled between two mountains,两座山峰之间的隐秘谷地
-"Had you not known to look for it, you would have easily missed it",如果你不知道要寻找它，很容易就会错过
-Shores of Idra,艾德拉海岸
-Ahead of you lies the windswept shore where you landed on Idra and the abandoned farmsteam,你面前是被风吹拂的海岸，你在这里登陆艾德拉并发现了一座废弃的农场
-The Foul Caves,腐臭洞穴
-Lighthouse Exterior,灯塔外观
-An ancient lighthouse rises steeply from the bluffs ahead of you,一座古老的灯塔从你面前的悬崖上陡峭地升起
-"The beacon is still lit, though it flickers weakly",灯火仍然亮着，但闪烁得微弱
+The Deep Forest,幽深森林
+"Besides the buzzing of insects and croaking of toads, the forest is disconcertingly quiet","""除了昆虫的嗡嗡声和蟾蜍的呱呱声，森林安静得令人不安"""
+The foliage seems to thin slightly in this area and to the north-east you can make out a faint wisp of smoke rising from a chimney,这一带的枝叶似乎略微稀疏，向东北方你能辨认出一缕轻烟从烟囱升起
+"The foliage does however, seem to thin slightly in this area and to the north-east you can make out a faint wisp of smoke rising from a chimney","""不过，这一带的枝叶确实似乎略微稀疏，向东北方你能辨认出一缕轻烟从烟囱升起"""
+Forest Caves,林间洞穴
+The Hidden Glen,隐秘幽谷
+A hidden glen nestled between two mountains,一个隐藏在两座山之间的幽谷
+"Had you not known to look for it, you would have easily missed it","""若非知道要寻找它，你很容易就会错过"""
+Shores of Idra,伊德拉海岸
+Ahead of you lies the windswept shore where you landed on Idra and the abandoned farmsteam,前方是你登陆伊德拉时的那片被风吹拂的海岸，以及那座废弃的农庄
+The Foul Caves,污秽洞窟
+Lighthouse Exterior,灯塔外围
+An ancient lighthouse rises steeply from the bluffs ahead of you,一座古老的灯塔从前方的悬崖上陡峭地耸立
+"The beacon is still lit, though it flickers weakly","""灯塔的灯火依然亮着，尽管微弱地闪烁着"""
 Under the Lighthouse,灯塔下方
 Lighthouse,灯塔
 Refugee Camp,难民营
-"Before you, the unmistakable mess, squalor and desperation of a refugee camp sprawls around a small farmstead like a festering wound",你面前，难民营的混乱、肮脏和绝望如同溃烂的伤口，围绕着一座小农场蔓延开来
-Coastal Road,海岸道路
-Sea-Caves,海洞
-"A huge sea-cave, created by eons of the sea’s relentless attack on the rock, gapes in the cliffs ahead",巨大的海洞，由数万年海洋的不断侵蚀在悬崖上形成，前方的岩石峭壁上豁然张开
-"If you take great care, a narrow trail allows you to enter it",如果你小心谨慎，狭窄的小径允许你进入洞内
-Wreck Site,残骸现场
-Broken bodies and debris litter the rocky shores of Idra,碎裂的尸体和残骸散落在艾德拉的岩石海岸上
-"In the distance, you can make out what appears to be the remains of the Zephyr's hull",在远处，你可以看出那似乎是“西风”号船体的残骸
-Wreckage,废墟
-The Berryn Estate,柏林庄园
-The Cellar,地下室
-The Outer Isles,外岛
-Outer Isles,外岛
-Excavation Site,掘址
-Priory Crypt,修道院墓室
-The Black Priory,永恒之门修道院
-A grim edifice rises from the wastelands,一片阴森的建筑从荒原中拔地而起
-"Its walls are weatherbeaten and its empty windows glare at you like dead, black eyes",它的墙壁被风吹雨打，空洞的窗户犹如死一般的黑眼珠盯着你
-"Abandoned as it may seem, there is nevertheless some siren call that bids you venture inside… and below",尽管看似荒废，但仍然有一种神秘的召唤让你踏入其中……甚至是更深处
+"Before you, the unmistakable mess, squalor and desperation of a refugee camp sprawls around a small farmstead like a festering wound","""在你面前，难民营那显而易见的混乱、肮脏与绝望，像一道溃烂的伤口般围绕着一座小农庄蔓延开来"""
+Coastal Road,滨海道路
+Sea-Caves,海蚀洞窟
+"A huge sea-cave, created by eons of the sea’s relentless attack on the rock, gapes in the cliffs ahead","""一个巨大的海蚀洞窟，由大海亿万年来对岩石的无情侵蚀形成，在前方的悬崖上豁然洞开"""
+"If you take great care, a narrow trail allows you to enter it","""若你万分小心，一条狭窄的小径能让你进入其中"""
+Wreck Site,失事地点
+Broken bodies and debris litter the rocky shores of Idra,破碎的尸骸与残骸散落在伊德拉的岩石海岸上
+"In the distance, you can make out what appears to be the remains of the Zephyr's hull","""在远处，你能辨认出似乎是西风号船体的残骸"""
+Wreckage,残骸
+The Berryn Estate,贝林庄园
+The Cellar,地窖
+The Outer Isles,外岛群
+Outer Isles,外岛群
+Excavation Site,挖掘现场
+Priory Crypt,修院墓室
+The Black Priory,黑修院
+A grim edifice rises from the wastelands,一座阴森的建筑从荒原上拔地而起
+"Its walls are weatherbeaten and its empty windows glare at you like dead, black eyes","""它的墙壁饱经风霜，空洞的窗户像死寂的黑色眼睛般瞪视着你"""
+"Abandoned as it may seem, there is nevertheless some siren call that bids you venture inside… and below","""尽管看似已被遗弃，却仍有某种塞壬般的呼唤，诱使你深入其中……乃至地下"""
 The Eternity Gate,永恒之门
 Forest,森林
-A Twisted Forest,曲折的森林
-A Field,一片田地
-Hills,山丘
+A Twisted Forest,扭曲森林
+A Field,一片田野
+Hills,丘陵
 Road,道路
 Shore,海岸
-Tundra,草原
+Tundra,苔原
 Ship's Deck,船甲板
-Zephyr's Hold,赛菲亚要塞
-Low Hills,低丘陵
-Zephyr's Lower Deck,赛菲亚下层甲板
-The Wreck,沉船
+Zephyr's Hold,西风号货舱
+Zephyr's Lower Deck,西风号下层甲板
+The Wreck,残骸
 Shrine of Agility,敏捷神龛
 Shrine of Fortitude,坚韧神龛
-Shrine of Intellect,智慧神龛
-Shrine of Presence,影响力神龛
+Shrine of Intellect,智力神龛
+Shrine of Presence,魅力神龛
 Shrine of Strength,力量神龛
-Lorem Ipsum,填充物
-The Weathermaiden,气象女神
-Tower Dungeon,塔地下城
-Lower Dungeon,下层地下城
+Lorem Ipsum,乱数假文
+The Weathermaiden,天候少女号
+Tower Dungeon,高塔地牢
+Lower Dungeon,下层地牢
 Tower of Ash,灰烬之塔
-A lone tower pierces the skies as it rises above you,一座孤独的塔楼矗立在你上方，直插云霄
-"From some unseen aperture in the cliffs upon which it stands, the wind carries a cloud of fine gray ash",它矗立在悬崖之上，从某个看不见的裂缝中，风吹来一片细腻的灰烬
-"Bitter and unwelcome, the residue sticks in your mouth and eyes",苦涩且不受欢迎，这些灰烬粘在你的口中和眼中
+A lone tower pierces the skies as it rises above you,一座孤塔刺破苍穹，耸立在你上方
+"From some unseen aperture in the cliffs upon which it stands, the wind carries a cloud of fine gray ash","""从它所矗立的悬崖上某个看不见的孔洞中，风携来一团细密的灰色灰烬"""
+"Bitter and unwelcome, the residue sticks in your mouth and eyes","""苦涩而令人不快，这些残留物粘在你的嘴里和眼中"""
+Low Hills,低矮丘陵
 #Stores,#商店
-Arra's Goods,阿拉的货品
-Esteban's Concoction,埃斯泰班的秘制药剂
-The Narwhale,独角鲸
-Martha's Flophouse,玛莎的小客栈
-Maija's Goods,芭姬亚的货品
-Quartermaster,仓库管理员
+Arra's Goods,阿拉杂货铺
+Esteban's Concoction,埃斯特班炼剂坊
+The Narwhale,独角鲸酒馆
+Martha's Flophouse,马萨旅舍
+Maija's Goods,玛伊娅杂货铺
+Quartermaster,军需官
 #String Lists,#字符串列表
-Welcome!,欢迎光临！
+Welcome!,欢迎！
 Have a seat!,请坐！
-I'll be with you in a moment!,我一会儿就来！
+I'll be with you in a moment!,我马上就来！
 Hi there!,你好！
-Hic,喂
+Hic,嗝
 I'm cold,我好冷
-Spare a coin?,能借我一个金币吗？
-So hungry,我肯定很荣幸
-My insides hurt,嗯？
-Should you be here?,你不应该在这里
-Don't tell me you've an audience?,你不会是有什么观众吧？
-"Charmed, I'm sure",我肯定很荣幸
+Spare a coin?,施舍个硬币吧？
+So hungry,好饿
+My insides hurt,我肚子疼
+Should you be here?,你该在这儿吗？
+Don't tell me you've an audience?,别告诉我你还有观众？
+"Charmed, I'm sure",幸会，我相信
 Hm?,嗯？
-Woof,吠
-You pet the dog,你摸了狗
-Ho!,哈！
-Come here!,过来！
-Come here whelp!,小崽子，过来！
-Do I hear chanting up ahead?,听到前面有吟唱的声音吗？
-Got work for me?,你有活儿给我干吗？
-Come hither,来吧
-I have no time for talk right now!,我现在没时间说话！
-Talk to the chamberlain if you need something,如果你需要什么，去找执事谈谈
-Bloody vermin!,糟糕的害虫！
-Oh my poor boy,哦，我的可怜的孩子
-I've too much on my mind right now,我现在思绪万千
-Sigh,我们已经没有什么可谈的了
-We have nothing more to talk about,岛上有一些不属于这里的雇佣兵
-There are mercenaries on the island that don't belong here,据说他们扎营在修道院的地盘上
-Rumors have it they are encamped on the Priory grounds,我不知道他们为什么在这里，但肯定和最近发生的事情有关
-I have no idea why they're here but they have to have something to do with what's happening,我不相信农民的山羊死了！
-I don't believe the farmer's goats are dead!,我听说有人看到农民的儿子在霍林倒下时把动物赶进了山里
-I heard someone say she saw the famer's son drive the animals into the mountains when Horryn fell,他怎么能躲在食物里，而我们却饿肚子？
-How can he hide away food while we starve?,他怎么能藏起食物，而我们在挨饿？
-"Governor spent more time out at his estate, east of here than at his offices in Horryn!",州长花在东边庄园的时间比在霍林办公的时间还要多！
-"He's probably dead now though, and good riddance to him!",他现在可能已经死了，而且最好如此！
-They say smugglers use the caves in the mountains to the west,据说走私者会使用西边山中的洞穴。
+There are mercenaries on the island that don't belong here,岛上有不属于这里的雇佣兵
+Rumors have it they are encamped on the Priory grounds,传闻他们在修道院的地盘上扎营
+I have no idea why they're here but they have to have something to do with what's happening,我不知道他们为什么在这里，但他们肯定和正在发生的事情有关
+I don't believe the farmer's goats are dead!,我不相信农夫的羊死了！
+I heard someone say she saw the famer's son drive the animals into the mountains when Horryn fell,我听人说她看见农夫的儿子在霍林陷落时把牲口赶进了山里
+How can he hide away food while we starve?,我们饿着肚子，他怎么能把食物藏起来？
+"Governor spent more time out at his estate, east of here than at his offices in Horryn!",总督待在他东边庄园的时间比在霍林的办公室还多！
+"He's probably dead now though, and good riddance to him!",不过他可能已经死了，真是死得好！
+They say smugglers use the caves in the mountains to the west,他们说走私者利用西边山里的洞穴
 Maybe they have food?,也许他们有食物？
-Ships came to the island a few weeks ago,几周前有船只来到这座岛上。
-"They didn't dock in Horryn, but sailed up towards the Priory",他们没有停靠在霍里恩，而是驶向了修道院。
-Maybe they managed to land there?,也许他们成功登陆了？
-Though I don't know how,虽然我不知道具体是怎么回事。
-The northern coast is all steep cliffs and rocks,北部海岸全是陡峭的悬崖和岩石。
-The fishermen began seeing 'something' in the oceans a few weeks ago,几周前，渔民们开始在海洋中看到一些奇怪的东西。
-Then the boats started disappearing!,然后船只开始神秘失踪！
-Now we're trapped here!,现在我们被困在这里！
-Just waiting to die!,只是等待死亡的到来！
-When is the Empire coming for us?,什么时候帝国会来救我们？
-How can they even know something is wrong?,他们怎么可能知道出了什么问题？
-"And if they did, they say a horror stalks the seas around Horryn!",而且如果他们知道，据说有一股恐怖力量在霍里恩周围的海域徘徊！
-I'm not sleeping well,我最近睡眠不好。
-My dreams,我的梦魇。
-They are,是关于...
-"Ugh, why am I telling you this?",唉，我为什么要告诉你这些？
-We're defenceless sitting here!,我们坐在这里毫无防御能力！
-And where is the governor and the guards?,而且总督和卫兵在哪里？
-Dead I suppose,想来是死了
+Ships came to the island a few weeks ago,几周前有船来过岛上
+"They didn't dock in Horryn, but sailed up towards the Priory",他们没有停靠霍林港，而是驶向了修道院
+Maybe they managed to land there?,也许他们设法在那里登陆了？
+Though I don't know how,虽然我不知道怎么做到的
+The northern coast is all steep cliffs and rocks,北海岸全是陡峭的悬崖和岩石
+The fishermen began seeing 'something' in the oceans a few weeks ago,几周前渔民开始在海洋里看见“什么东西”
+Then the boats started disappearing!,然后船就开始消失了！
+Now we're trapped here!,现在我们被困在这里了！
+Just waiting to die!,只能等死！
+When is the Empire coming for us?,帝国什么时候来救我们？
+How can they even know something is wrong?,他们怎么可能知道出事了？
+"And if they did, they say a horror stalks the seas around Horryn!",就算他们知道，听说霍林周围的海域有恐怖之物在游荡！
+I'm not sleeping well,我睡不好
+My dreams,我的梦
+They are,它们
+"Ugh, why am I telling you this?",呃，我跟你说这些干嘛？
+We're defenceless sitting here!,我们坐在这里毫无防备！
+And where is the governor and the guards?,总督和守卫都去哪儿了？
+Dead I suppose,我想是死了
 People have started to get sick,人们开始生病了
-Just look at poor Hannah's boy,只看看可怜的汉娜的孩子
+Just look at poor Hannah's boy,看看可怜的汉娜的孩子
 Thank you for finding food,谢谢你找到食物
 I'm so hungry,我好饿
-All those people lost,那么多人失去了
-What's happening to us?,我们发生了什么？
+All those people lost,那么多人丧生
+What's happening to us?,我们到底怎么了？
 Do you have any food?,你有食物吗？
 I feel better,我感觉好多了
-Ugh,嗫
-Feels like the world's ending!,好像世界末日来临了！
-Leave me alone,离我远点
+Ugh,呃
+Feels like the world's ending!,感觉像是世界末日！
+Leave me alone,别烦我
 Please help us!,请帮帮我们！
-These caves are beginning to wear on me,这些洞穴开始让我感到疲惫了
-I wish we could get out of here soon,我希望我们能尽快离开这里
-Hold on... did you hear something?,等一下……你听到什么了吗？
+These caves are beginning to wear on me,这些洞穴开始让我受不了了
+I wish we could get out of here soon,真希望我们能快点离开这里
+Hold on... did you hear something?,等等……你听到什么了吗？
 Have you been to see the queen yet?,你去见过女王了吗？
-Freythens or Imperials,弗雷廷人或帝国人
-I don't care 's long as the coin is good!,我不在乎，只要硬币好使就行！
-Sitting on a cargo like this is making me nervous,坐在这样的货船上让我感到不安
-Hope we get out to sea again soon!,希望我们能尽快再次出海！
-They say the world's ending out there,他们说外面的世界就要结束了
+Freythens or Imperials,弗雷森还是帝国军
+I don't care 's long as the coin is good!,只要钱给够，我无所谓！
+Sitting on a cargo like this is making me nervous,守着这样的货物让我紧张
+Hope we get out to sea again soon!,希望我们很快能再次出海！
+They say the world's ending out there,他们说外面的世界末日了
 I don't care - I just want to get out of here!,我不在乎——我只想离开这里！
-"In our line of work, strangers are bad news",在我们这一行，陌生人都是不好的消息
-Keep away from me or we'll have words,离我远点，不然我们会有话说
+"In our line of work, strangers are bad news",在我们这行，陌生人是坏消息
+Keep away from me or we'll have words,离我远点，不然就吵一架
 Mommy!,妈妈！
 I want to go home!,我想回家！
 I don't want to be here!,我不想待在这里！
 I'm afraid!,我害怕！
 I want my mommy!,我要妈妈！
-I can't wait for Carnivale!,我迫不及待想要参加狂欢节！
-I'm so excited!,我太兴奋了！
-I'm going to eat so much cake!,我要吃好多蛋糕！
-Tihi!,咔嚓！
-Are you going to Carnivale?,你要参加狂欢节吗？
+I can't wait for Carnivale!,我等不及狂欢节了！
+I'm so excited!,我好兴奋！
+I'm going to eat so much cake!,我要吃好多好多蛋糕！
+Tihi!,嘻嘻！
+Are you going to Carnivale?,你去狂欢节吗？
 Wanna play?,想玩吗？
-Is it Carnivale now?,现在是狂欢节吗？
-My head hurts,我的头好疼
-I'm afraid of the dark,我害怕黑暗
-Gahhh!,啊哈！
-Cough,咳嗽
-I have bad dreams,我做噩梦了
+Is it Carnivale now?,现在是狂欢节了吗？
+My head hurts,我头疼
+I'm afraid of the dark,我怕黑
+Gahhh!,嘎啊啊！
+Cough,咳咳
+I have bad dreams,我做噩梦
 Wee!,哇！
-Carnivale!,卡尔纳莱！
-I want more cake!,我想要更多的蛋糕！
-Honey-cake is the best!,蜂蜜蛋糕最好吃！
-Greetings m'lord,伟大的大人好
-Greetings m'lady,伟大的女士好
+Carnivale!,狂欢节！
+I want more cake!,我还要蛋糕！
+Honey-cake is the best!,蜂蜜蛋糕最棒了！
+Greetings m'lord,您好，大人
+Greetings m'lady,您好，女士
 Hello,你好
-I'm excited for the Carnivale,我很期待卡尔纳莱
-The Baron is a good man!,那位伯爵是个好人！
-Have you tried the local cider,你尝尝当地的苹果酒
-Firgol is such a peaceful place,菲戈尔是个宁静的地方
+I'm excited for the Carnivale,我对狂欢节很期待
+The Baron is a good man!,男爵是个好人！
+Have you tried the local cider?,您尝过本地的苹果酒吗？
+Firgol is such a peaceful place,菲尔戈真是个宁静的地方
 You saved us!,你救了我们！
 What happened?,发生了什么？
-"Thank the Golden, the children are safe!",感谢金色女神，孩子们平安无事！
-I don't really sleep anymore,我现在真的不怎么睡觉了
+"Thank the Golden, the children are safe!",感谢黄金之神，孩子们平安无事！
+I don't really sleep anymore,我基本不睡觉了
 Nightmares are back,噩梦又回来了
-My head hurts!,我的头好疼！
-I feel sick!,我感觉不舒服！
-Hi,你好
-I'm not supposed to talk to strangers,不该和陌生人说话
+My head hurts!,我头疼！
+I feel sick!,我觉得恶心！
+Hi,嗨
+I'm not supposed to talk to strangers,我不该和陌生人说话
 You look strange,你看起来很奇怪
-My stomach hurts,我的胃好痛
+My stomach hurts,我肚子疼
 Do you have nightmares too?,你也做噩梦吗？
-Good to be back,回来了真好
-Hello there m'lord,伟大的大人，你好
-Hello there m'lady,伟大的女士，你好
-M'lord,大人好
-M'lady,女士好
-How could this happen?,这是怎么回事？
-What's next?,接下来呢？
-The stench,这股恶臭
-"Ugh, I'm hungry",呕，我饿了
+Good to be back,回来真好
+Hello there m'lord,您好，大人
+Hello there m'lady,您好，女士
+M'lord,大人
+M'lady,女士
+How could this happen?,怎么会发生这种事？
+What's next?,接下来会怎样？
+The stench,这臭味
+"Ugh, I'm hungry",呃，我饿了
 What?,什么？
 My knee,我的膝盖
-I used to be an adventurer,我曾经是一名冒险者
-I’ve got my eye on you!,我盯着你呢！
-No funny business!,不要搞什么鬼！
+I used to be an adventurer,我曾经是个冒险者
+I’ve got my eye on you!,我在盯着你呢！
+No funny business!,别耍花招！
 Hmm?,嗯？
-It’s good to have the Captain back!,欢迎船长回来！
-I wonder what happened to the Captain?,奇怪，船长去哪儿了？
-Farewell and adieu to ye ladies of Vauul,再见，瓦乌尔的女士们
-I can't wait to set sail!,我迫不及待要起航了！
-I could do with some rum!,我想喝点朗姆酒！
-How long do we have to stay here?,我们要在这里待多久？
-Burp,喂哈
+It’s good to have the Captain back!,船长回来真好！
+I wonder what happened to the Captain?,不知道船长发生了什么事？
+I can't wait to set sail!,我等不及要起航了！
+I could do with some rum!,我想来点朗姆酒！
+How long do we have to stay here?,我们还得在这里待多久？
+Burp,嗝
 You look like a landlubber!,你看起来像个旱鸭子！
-What've we got here then?,这里有什么？
-Curses!!,疾风迅雷！
-Something smells rotten!,有什么东西闻起来很糟糕！
-What've we got here then,这里有什么？
-Talk to the Queen if you want something!,如果你想得到什么，就去和女王谈谈吧！
-I have only the finest for sale!,我只出售最好的东西！
-Come here you little bastard,你这个小混蛋，过来！
-Come!,来吧！
-See items most bizarre and mysterious!,看看这些奇异的物品吧！
-Looking for some steel,想要一些钢铁吗？
-Git yer sausages here!,快来买香肠吧！
-What a mess,一团糟
-Don't expect service!,别指望服务了！
-Give us a kiss!,给我们一个吻！
-A word!,一句话！
-Looking for a bed,寻找床位
-Dum-di-dum,咔哒咔哒
-stranger still is,更加陌生
-Get your greens here!,这里有新鲜蔬菜！
-Get your cider here!,这里有苹果酒！
-Cluck,咕咕
-Bwak,喔哇
-I found an egg!,我发现了一个蛋！
-"Well, hello there!",嗨，你好！
-I'd prefer to leave the hive alone!,我宁愿独自留在蜂巢里！
-Ouch!,噢！
-Well now,现在
-The Baron and Baroness welcomes you,男爵和女爵欢迎你
-"They say practice makes perfect, and maybe they’re right; it seems all those hours spent honing your skills are starting to pay off",他们说熟能生巧，也许他们是对的；似乎那些花费在磨练技能的时间开始有所回报
-"Keep it up, and soon you’ll be well on your way to mastery!",保持下去，很快你就会接近精通了！
-Did this stuff used to be difficult?,这些东西以前是不是很难？
-"You cannot remember, for right now, you are quickly becoming one of the best in your field",你此刻记不得了，因为你正迅速成为你领域中最好的之一
-Your progress seems to have slowed to a frustrating crawl,你的进步似乎变得令人沮丧地缓慢
-"Alas, shuffling forward is always better than standing still",唉，缓慢前进总比原地踏步要好
-"How foolish you were, to think yourself at the top of your game",你真是太愚蠢了，以为自己已经登峰造极
-"If your journey so far has taught you anything, it is that there is always someone better, someone stronger",如果到目前为止你的旅程教会了你什么，那就是总有比你更强的人
-"The question is not if you are strong enough to beat them, but if you are strong enough to try",关键不在于你是否足够强大去击败他们，而在于你是否足够强大去尝试
-Giving up has never been an option,放弃从来都不是一个选项
-But perhaps a long bath and a good meal wouldn’t go amiss,也许一次长时间的沐浴和一顿丰盛的餐食也不会是坏事
-"Your latest trials have left you exhausted, yet the perseverance it has taken to push on has left you stronger than ever",你最近的试炼使你筋疲力尽，但坚持不懈地继续前进使你比以往任何时候都要强大
-"But despite this victory, a single thought plagues you: how much more can you push until there is nothing left?",但尽管如此，一个念头仍困扰着你：你能再推多久，直到一无所有？
-"No one can make it through this world alone, and lately you find yourself thinking of those who have helped you on your journey",没有人能独自穿越这个世界，最近你发现自己时常想起那些帮助过你的人
-"Perhaps one day, when this is all over, you can find a way to repay them",或许有一天，当这一切结束时，你可以找到一种方式来回报他们
-The person you were when you began this journey is now nothing but a distant memory,你开始这段旅程时的人已经变成了遥远的记忆
-"You are irrevocably changed, and no matter what comes next, you will never be who you once were",你已经不可逆转地改变了，无论接下来发生什么，你都不会再是曾经的你
-You’ve spent countless hours forging yourself into the person you are today,你花费了无数个小时锻造成了今天这个你
-Now all that’s left to do is the hardest thing of all: trust in yourself,现在剩下的就是最艰难的事情了：相信自己
-"Soon your journey will be at its end, and though victory is nigh, you cannot help but wonder: what will it cost?",不久你的旅程将要结束，虽然胜利在即，你却不禁疑惑：这会付出怎样的代价？
-"For the first time in your life, you are overcome with a sense of purpose",在你生命中第一次，你被一种使命感所淹没
-"The path ahead will undoubtedly be difficult, but you are certain it is the one you are supposed to take",前方的道路必定艰难，但你确信这就是你应当走的路
-"You have mastered all that you have set your mind to, yet the sweetness of your victory is tainted by the knowledge that once you have reached the top, there is nowhere else to go but down",你已经掌握了你所设定的一切目标，然而胜利的甜蜜却被知道一旦到达顶峰，就无处可去的现实所玷污
-"Every step forward is worth celebrating, no matter how small",每一步前进都值得庆祝，无论多么微小
+Farewell and adieu to ye ladies of Vauul,别了，瓦乌尔的女士们，再见
+"They say practice makes perfect, and maybe they’re right; it seems all those hours spent honing your skills are starting to pay off",都说熟能生巧，也许他们说得对；看来那些磨练技能的时光开始有所回报了
+"Keep it up, and soon you’ll be well on your way to mastery!",继续保持，你很快就会走向精通！
+Did this stuff used to be difficult?,这些东西以前很难吗？
+"You cannot remember, for right now, you are quickly becoming one of the best in your field",你记不清了，因为现在，你正迅速成为你所在领域的佼佼者
+Your progress seems to have slowed to a frustrating crawl,你的进步似乎慢得令人沮丧
+"Alas, shuffling forward is always better than standing still",唉，蹒跚前行总好过原地踏步
+"How foolish you were, to think yourself at the top of your game",你曾以为自己技艺登峰造极，多么愚蠢
+"If your journey so far has taught you anything, it is that there is always someone better, someone stronger",如果至今的旅程教会了你什么，那就是总有人比你更优秀，更强大
+"The question is not if you are strong enough to beat them, but if you are strong enough to try",问题不在于你是否强大到能打败他们，而在于你是否强大到敢于尝试
+Giving up has never been an option,放弃从来都不是选项
+But perhaps a long bath and a good meal wouldn’t go amiss,但也许泡个长澡、吃顿好饭不会有什么坏处
+"Your latest trials have left you exhausted, yet the perseverance it has taken to push on has left you stronger than ever",最近的考验让你筋疲力尽，但坚持前行所需的毅力让你比以往更强大
+"But despite this victory, a single thought plagues you: how much more can you push until there is nothing left?",但尽管取得了这场胜利，一个念头困扰着你：你还能再拼多久，直到油尽灯枯？
+"No one can make it through this world alone, and lately you find yourself thinking of those who have helped you on your journey",没有人能独自闯过这个世界，最近你发现自己想起了那些在旅途中帮助过你的人
+"Perhaps one day, when this is all over, you can find a way to repay them",也许有一天，当这一切结束时，你能找到报答他们的方法
+The person you were when you began this journey is now nothing but a distant memory,你开始这段旅程时的自己，如今只是一个遥远的记忆
+"You are irrevocably changed, and no matter what comes next, you will never be who you once were",你已经无可挽回地改变了，无论未来如何，你永远不会再是过去的你
+You’ve spent countless hours forging yourself into the person you are today,你花了无数时间把自己锻造成今天的样子
+Now all that’s left to do is the hardest thing of all: trust in yourself,现在剩下要做的，是最困难的事：相信自己
+"Soon your journey will be at its end, and though victory is nigh, you cannot help but wonder: what will it cost?",你的旅程即将结束，尽管胜利在望，你仍不禁想知道：代价会是什么？
+"For the first time in your life, you are overcome with a sense of purpose",有生以来第一次，你被一种使命感所淹没
+"The path ahead will undoubtedly be difficult, but you are certain it is the one you are supposed to take",前路无疑会艰难，但你确信这就是你该走的路
+"You have mastered all that you have set your mind to, yet the sweetness of your victory is tainted by the knowledge that once you have reached the top, there is nowhere else to go but down",你已精通所有立志之事，然而胜利的甘甜被一个认知所玷污：一旦到达顶峰，便只有下坡路可走
+"Every step forward is worth celebrating, no matter how small",每一步前进都值得庆祝，无论多小
 "Keep going, and soon the path behind you will be longer than the path ahead",继续前进，很快你身后的路就会比前方的路更长
-You can feel yourself growing stronger with every trial you face,你能在每一次试炼中感受到自己变得越来越强大
-"Each adventure leaves you just a little faster, a little braver",每一次冒险都会让你变得稍微快一点，稍微勇敢一点
-What more are you capable of?,你还能做到更多吗？
-Adrenaline floods your veins,肾上腺素充斥着你的血管
-"The tasks that once seemed so difficult now come naturally to you, leaving you with an insatiable urge to learn something new",以前看似如此艰难的任务现在变得自然起来，让你有强烈的欲望去学习新的东西
-The possibilities ahead of you seem as endless as your potential - who knows what adventures lay ahead?,面前的可能性似乎和你的潜力一样无穷无尽——谁知道接下来会有什么冒险在等着你？
-Who knew the human body was capable of such feats?,谁知道人类的身体竟然能完成如此壮举？
-"You can feel yourself changing, the layers of your old self shedding away into something new",你能感受到自己正在改变，旧日的自我层层剥落，变成全新的自己
-Something better,更好的自己
-"It amazes you how each adventure manages to present you with a new challenge, reminding you that there is always something more to learn",你惊讶于每一次冒险都给你带来新的挑战，提醒你总有一样东西值得你去学习
-Each dawn is a new chance to perfect your skills,每一个黎明都是磨练技能的新机会
-"You’re not sure you’ve ever worked this hard for anything before, and you’re not about to give up now",你不确定自己是否为了任何事情如此努力过，但现在绝不会放弃
-Greeting brother!,欢迎兄弟！
-Greeting sister!,欢迎姐妹！
-Do you think we'll get off this island?,你认为我们能从这个岛上脱身吗？
-I really wanted to see the shrines,我真的想看看那些神龛
-Haven't we been tested enough?,我们不是已经经历了足够的考验了吗？
-A blessing upon you!,神恩赐予你！
-Huh?,哦？
-We have the word from the deep!,我们得到了来自深渊的消息！
-Bow your head before before our chieftain!,向我们的酋长低头致敬！
-The fuck you want?,你想干什么？
-Look at me funny and I'll gut you!,你要是继续盯着我看，我就宰了你！
-Hhhh,哈哈
-Ahhh,啊哈
-Gahhh,哇哈
-Mhhhh,哈哈
-Steel Thyself!,坚定心志！
-Draw Steel!,拔出武器！
-Make Ready!,准备战斗！
+You can feel yourself growing stronger with every trial you face,你能感觉到每经历一次考验，自己就变得更强
+"Each adventure leaves you just a little faster, a little braver",每次冒险都让你更快一点，更勇敢一点
+What more are you capable of?,你还能做到什么？
+Adrenaline floods your veins,肾上腺素涌遍你的血管
+"The tasks that once seemed so difficult now come naturally to you, leaving you with an insatiable urge to learn something new",曾经看似困难的任务现在对你来说轻而易举，让你产生了学习新东西的强烈渴望
+The possibilities ahead of you seem as endless as your potential - who knows what adventures lay ahead?,前方的可能性如同你的潜力一样无穷无尽——谁知道前方有什么冒险在等着？
+Who knew the human body was capable of such feats?,谁知道人类的身体竟能达成如此专长？
+"You can feel yourself changing, the layers of your old self shedding away into something new",你能感觉到自己在改变，旧我的层层外壳剥落，化为新生
+Something better,某种更好的东西
+"It amazes you how each adventure manages to present you with a new challenge, reminding you that there is always something more to learn",令你惊讶的是，每次冒险总能带来新的挑战，提醒你总有更多东西要学
+Each dawn is a new chance to perfect your skills,每个黎明都是精进技能的新机会
+"You’re not sure you’ve ever worked this hard for anything before, and you’re not about to give up now",你不确定自己以前是否曾为任何事如此努力过，而现在你也不打算放弃
+Greeting brother!,你好，兄弟！
+Greeting sister!,你好，姐妹！
+Do you think we'll get off this island?,你觉得我们能离开这个岛吗？
+I really wanted to see the shrines,我真的很想去看看那些神龛
+Haven't we been tested enough?,我们受的考验还不够吗？
+A blessing upon you!,祝福你！
+Huh?,哈？
+We have the word from the deep!,我们从深渊得到了神谕！
+Bow your head before before our chieftain!,在我们酋长面前低下头！
+The fuck you want?,你他妈想干嘛？
+Look at me funny and I'll gut you!,敢用滑稽的眼神看我，我就把你开膛！
+Hhhh,呵
+Ahhh,啊
+Gahhh,嘎
+Mhhhh,嗯
+Steel Thyself!,坚定自己！
+Draw Steel!,拔剑！
+Make Ready!,准备！
 Death or Glory!,死亡或荣耀！
-To the Last!,奋战到底！
-Blood Will Flow!,血流成河！
-It’s good to be sailing again!,再次扬帆航行真好！
+To the Last!,至死方休！
+Blood Will Flow!,鲜血将流！
+It’s good to be sailing again!,再次航行真好！
 Aye?,嗯？
-Seasick?,晕船吗？
-Found your sea legs?,你找到海腿了吗？
-#Variables,#Variables
+Seasick?,晕船？
+Found your sea legs?,习惯海上生活了？
+Woof,汪
+You pet the dog,你摸了摸狗
+Ho!,嗬！
+Come here!,过来！
+Come here whelp!,过来，小崽子！
+Do I hear chanting up ahead?,我听到前面有吟唱声吗？
+Got work for me?,有活给我干吗？
+Come hither,过来
+I have no time for talk right now!,我现在没时间说话！
+Talk to the chamberlain if you need something,如果你需要什么，去找总管
+Bloody vermin!,该死的虫群！
+Oh my poor boy,哦，我可怜的孩子
+I've too much on my mind right now,我现在心事重重
+Sigh,唉
+We have nothing more to talk about,我们没什么可谈的了
+Have you tried the local cider,你尝过本地的苹果酒吗
+What've we got here then?,那我们这儿有什么？
+Curses!!,该死！！
+Something smells rotten!,有东西发臭了！
+What've we got here then,那我们这儿有什么
+Talk to the Queen if you want something!,如果你想要什么，去找女王！
+I have only the finest for sale!,我只卖最好的！
+Come here you little bastard,过来，你这个小混蛋
+Come!,来！
+See items most bizarre and mysterious!,来看看最奇异神秘的物品！
+Looking for some steel,想找点钢制武器？
+Git yer sausages here!,来买香肠咯！
+What a mess,真是一团糟
+Don't expect service!,别指望服务！
+Give us a kiss!,亲一个！
+A word!,说句话！
+Looking for a bed,想找个床铺
+Dum-di-dum,哼着小调
+stranger still is,更奇怪的是
+Get your greens here!,来买蔬菜咯！
+Get your cider here!,来买苹果酒咯！
+Cluck,咯咯
+Bwak,呱呱
+I found an egg!,我找到一颗蛋！
+"Well, hello there!",哎呀，你好啊！
+I'd prefer to leave the hive alone!,我宁愿离蜂巢远点！
+Ouch!,哎哟！
+Well now,好了
+The Baron and Baroness welcomes you,男爵和男爵夫人欢迎您
+#Variables,#变量
 None,无
-Faction has turned HOSTILE,派系已经转变为敌对状态
+Faction has turned HOSTILE,势力已变为敌对

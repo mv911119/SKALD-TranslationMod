@@ -7,32 +7,33 @@ using TranslationMod.Configuration;
 namespace TranslationMod.Patches
 {
     /// <summary>
-    /// Harmony patch для перехвата ToolTipControl.ToolTipCategory.getToolTip
-    /// ЭТАП 2: Обрабатывает клики на переведенные ключевые слова и находит tooltip для оригинальных.
-    /// Работает совместно с TooltipKeywordsPatch, который делает слова кликабельными.
-    /// Использует буфер tooltip ключей из UITextBlockSetContentPatch.
+    /// Tooltip 翻译补丁。
+    /// 负责在点击已翻译的关键词时，把它映射回原始 key，
+    /// 再调用游戏原始 tooltip 逻辑，保证中文界面下提示仍然可用。
     /// </summary>
     [HarmonyPatch]
     public static class TooltipTranslationPatch
     {
         /// <summary>
-        /// Lazy-инициализация сервиса перевода
+        /// 延迟初始化翻译服务。
         /// </summary>
         private static readonly Lazy<TranslationService> _translator =
             new(() => new TranslationService());
 
         /// <summary>
-        /// Объект для синхронизации
+        /// 访问 tooltip 映射缓冲区时使用的锁对象。
         /// </summary>
         private static readonly object _lockObject = new();
 
         /// <summary>
-        /// Определяем целевой метод для патча
+        /// 定位 tooltip 查询方法。
+        /// 流程：先找到 `ToolTipControl` 的内部 `ToolTipCategory` 类型，
+        /// 再解析 `getToolTip(string)` 方法。
         /// </summary>
         [HarmonyTargetMethod]
         static MethodBase TargetMethod()
         {
-            // Ищем ToolTipControl.ToolTipCategory.getToolTip
+            // 查找 ToolTipControl.ToolTipCategory.getToolTip
             var toolTipControlType = AccessTools.TypeByName("ToolTipControl");
             if (toolTipControlType == null)
             {
@@ -61,14 +62,16 @@ namespace TranslationMod.Patches
         }
 
         /// <summary>
-        /// Prefix patch - перехватывает вызов getToolTip и заменяет переведенные ключевые слова
+        /// 前置拦截 tooltip 查询。
+        /// 流程：根据翻译后的关键词查询原始 key，命中时调用原方法返回结果，
+        /// 未命中则回退到原始流程。
         /// </summary>
         [HarmonyPrefix]
         static bool Prefix(object __instance, string keyword, ref object __result)
         {
             try
             {
-                // Используем буфер tooltip ключей из UITextBlockSetContentPatch
+                // 使用 `UITextBlockSetContentPatch` 维护的 tooltip key 映射
                 string originalKeyword = null;
                 bool hasMapping = false;
                 
@@ -82,23 +85,23 @@ namespace TranslationMod.Patches
 #if DEBUG
             TranslationMod.Logger?.LogDebug($"[TooltipTranslationPatch] No mapping found for keyword: '{keyword}', using original method");
 #endif
-                    return true; // Выполняем оригинальный метод
+                    return true; // 未命中映射时继续执行原方法
                 }
 
 #if DEBUG
             TranslationMod.Logger?.LogInfo($"[TooltipTranslationPatch] Translating tooltip keyword: '{keyword}' -> '{originalKeyword}'");
 #endif
 
-                // Вызываем оригинальный метод с оригинальным ключевым словом
+                // 用原始关键词调用游戏原方法
                 var originalMethod = TargetMethod();
                 __result = originalMethod.Invoke(__instance, new object[] { originalKeyword });
                 
-                return false; // Пропускаем оригинальный метод
+                return false; // 已得到结果，跳过原始调用
             }
             catch (Exception ex)
             {
                 TranslationMod.Logger?.LogError($"[TooltipTranslationPatch] Error in Prefix: {ex.Message}");
-                return true; // Выполняем оригинальный метод в случае ошибки
+                return true; // 异常时回退到原始逻辑
             }
         }
     }

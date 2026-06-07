@@ -1,111 +1,1121 @@
 original,translate
-#General,#通用
-Victory!,胜利！
-Combat!,战斗！
-There are no enemies. Press ENTER to leave combat!,没有敌人。按 ENTER 键离开战斗！
-Auto-resolving round!,自动解决回合！
-Press any key to stop!,按任意键停止！
-The combatants stare at each other from across the battlefield,参战者在战场上对视
-The party has been attacked!,队伍遭到攻击！
-Prepare for combat!,准备战斗！
-REMEMBER: You can press RETURN on your turn to auto-resolve combat!,记住：在你的回合中按 RETURN 键可以自动解决战斗！
-Round,回合
-Deploy Your Party!,部署你的队伍！
-Begin Combat!,开始战斗！
-Deploy your party and press {ITEM},部署你的队伍并按 {ITEM}
-Deploy Party,部署队伍
-Out of range,超出范围
-Pass turn and defend,交出回合并防御
-Open the current character's Inventory,打开当前角色的装备栏
-Hold action until end of turn,保持动作直到回合结束
-Slashing Damage,刀砍伤害
-Bloodied!,血量下降！
-Charge {ITEM},冲击 __PLACEHOLDER_0__
-Select an Item to use,选择一个物品使用
-View combat log,查看战斗日志
-Repeat last action,重复上次行动
-No Maneuvers to perform,没有可执行的格斗技巧
-No spells available,没有可用的法术
-Perform attack,进行攻击
-Select a Maneuver to perform,选择一个要执行的格斗技巧
-Fire-Spit,火焰吐息
-Electric Damage,电击伤害
-Fire Damage,火焰伤害
-An option!,一个选项！
-Critical Hit!,临界暴击！
-Hostile,敌对
-Not Alert,不警戒
-Alerted,已警戒
-Shifting,移动中
-is Flat-Footed,处于措手不及状态
-Out of ammo!,弹药用尽！
-#Combat Log Misc,#战斗日志 其他
-Combat Log,战斗日志
-hits,中招
-Hidden,隐藏
-Miss,未中
-misses,未中
-took damage,受伤
-Clear Log,清除日志
-is Dead,已死亡
-Targets user,目标是用户
-takes takes damage from,从...受伤害
-Incoming damage,进攻伤害
-Incoming amount,进攻量
-Damage Taken,受到伤害
-Target took extra damamge,目标受到额外伤害
-Armor Soak reduced damage by,防具吸收减少了...伤害
-ATTACK ROLL MODIFIERS,攻击骰修正
-Weapon Accuracy,武器精度
-DEFENCE ROLL MODIFIERS,防御骰修正
-gained the condition,获得条件
-automatically hit,自动命中的
-Base Backstab Bonus,基础偷袭加值
-Weapon Backstab Mod,武器偷袭修正
-BACKSTABBED,被偷袭
-2d6,2d6
-Homer forces himself forwards!,奥梅尔强迫自己向前冲！
-forwards!,！
-is Knocked Out,被击倒
-Cooldown,冷却
-Cooldown: 1 turn,冷却：1回合
-Cooldown: 2 turns,冷却：2回合
-Cooldown: 3 turns,冷却：3回合
-Aura effect,附魔效果
-Flanked,夹击
-Cannot fire in melee!,不能近战射击！
-Out of ammo!,弹药用尽！
-Can't reach target!,无法到达目标！
-Damage reduced by,伤害减免{VALUE}点
-Ammo Accuracy,弹药精度
-fights defensivly and gains +3 to Dodge until next turn!,采取防御姿态，直到下个回合结束前获得+3闪避加值！
-Ready,准备
-Criticals,临界
-Critical Hits,临界击中
-Sleep,睡眠
-Resistant,抵抗
-Vulnerable,易伤
-Immune,免疫
-RESISTANCES,抵抗
-VULNERABILITIES,易伤
-IMMUNITIES,免疫
-Move/Atc,移动/攻击
-Characters resistance is 100%,角色的抵抗值为100%
-Damage reduced to,伤害减少至
-Non-Magical,非魔法
-Gained,获得
-XP!,经验值！
-GP,铜币
-Removes Conditions,解除条件
-Disengages,解脱
-Disengaging,正在解脱
-turns,轮次
-Time Use,时间使用
-Confirm,确认
-Spell,法术
-Cost,成本
-Att,攻击
-#Combat Log,战斗日志#
+#Combatant acts,#战斗员行动
+{PLAYER} acts,{PLAYER}行动
+Kat acts,卡蒂行动
+Roland acts,罗兰行动
+Driina acts,德莉娜行动
+Iben acts,伊本行动
+Iago acts,伊阿戈行动
+Embla acts,恩布拉行动
+Giant Bat acts,巨蝙蝠行动
+Giant Beetle acts,巨甲虫行动
+Rhino Beetle acts,犀甲虫行动
+Carrion Crawler acts,腐尸爬行者行动
+Giant Centipede acts,巨蜈蚣行动
+Fell Crab acts,凶煞蟹行动
+Corpse Eater acts,食尸者行动
+Giant Crab acts,巨螃蟹行动
+Crab acts,螃蟹行动
+Rot Crab acts,腐烂蟹行动
+Spider Crab acts,蜘蛛蟹行动
+Brood Guard acts,巢穴守卫行动
+Father acts,【父亲】行动
+Deep One Priestess acts,深潜者女祭司行动
+Deep One Queen acts,深潜者女王行动
+Deep One Warrior acts,深潜者战士行动
+Devolved acts,退化体行动
+Ghoul acts,食尸鬼行动
+Frost Ghoul acts,寒霜食尸鬼行动
+Giant Gnat acts,巨型蠓虫行动
+Cave Gnat acts,洞穴蠓虫行动
+Fell Hog acts,凶煞野猪行动
+Dire Hound acts,凶暴野狗行动
+Fell Hound acts,凶煞野狗行动
+Ice Hound acts,冰原野狗行动
+Ice Strider acts,冰上漫步者行动
+Shadow Stalker acts,暗影猎手行动
+Giant Leech acts,巨型水蛭行动
+Albino Leech acts,白化水蛭行动
+Bloodletter acts,放血者行动
+Fell Lizard acts,凶煞蜥蜴行动
+Alpha Lizard acts,阿尔法蜥蜴行动
+Giant Lizard acts,巨蜥行动
+Ice Salamander acts,冰火蜥蜴行动
+Mold Child acts,霉菌幼体行动
+Ooze acts,软泥怪行动
+Flesh Ooze acts,血肉软泥怪行动
+Medusa Jelly acts,美杜莎果冻行动
+Risen Ooze acts,复生软泥怪行动
+Magma Ooze acts,岩浆软泥怪行动
+Magmite acts,岩浆怪行动
+Large Ooze acts,大型软泥怪行动
+Giant Rat acts,巨鼠行动
+Dire Rat acts,凶暴鼠行动
+Chitters-In-Darkness acts,暗影低语者行动
+Rabid Rat acts,狂怒鼠行动
+Shade acts,幽影行动
+Dire Serpent acts,凶暴蛇行动
+Fell Serpent acts,凶煞蛇行动
+Giant Snake acts,巨蛇行动
+Fleshstrider acts,血肉行者行动
+Flying Polyp acts,飞行息肉行动
+Dragon's Herald acts,龙使行动
+Evolved acts,进化体行动
+Newborne acts,新生儿行动
+Vessel acts,容器行动
+Stalker acts,猎手行动
+Giant Spider acts,巨蜘蛛行动
+Large Spider acts,大蜘蛛行动
+Shambler acts,行尸行动
+Frost Shambler acts,寒霜行尸行动
+Reaver Berserker acts,劫掠者狂战士行动
+Brigand Archer acts,强盗弓箭手行动
+Brigand Rogue acts,强盗游荡者行动
+Brigand Swordsman acts,强盗剑士行动
+Mad Sailor acts,疯水手行动
+Mad Sailo acts,疯水手行动
+Guild Magos acts,公会法师行动
+Guild Mag acts,公会法师行动
+Wight acts,尸妖行动
+Feral Clone acts,野性克隆体行动
+Jester acts,弄臣行动
+Reaver Brute acts,掠夺者蛮兵行动
+Reaver Scout acts,劫掠者侦察兵行动
+Reaver acts,劫掠者行动
+Reaver Blackguard acts,劫掠者黑卫行动
+Reaver Mystic acts,劫掠者秘术师行动
+Cultist acts,邪教徒行动
+Bobbert the Recruit acts,新兵博伯特行动
+Wreck Picker acts,残骸拾荒者行动
+Oleg the Gray acts,灰发奥列格行动
+Red Kala acts,红卡菈行动
+The Butcher acts,屠夫行动
+Snow acts,斯诺行动
+The Ancient King acts,古王行动
+Joran the Usurper acts,篡位者约兰行动
+Baroness acts,男爵夫人行动
+Handmaid acts,侍女行动
+Majordomo acts,大管家行动
+#Combatant begun,#战斗者开始
+{PLAYER} begun,{PLAYER}开始
+Kat begun,卡蒂开始
+Roland begun,罗兰开始
+Driina begun,德莉娜开始
+Iben begun,伊本开始
+Iago begun,伊阿戈开始
+Embla begun,恩布拉开始
+Giant Bat begun,巨蝙蝠开始
+Giant Beetle begun,巨甲虫开始
+Rhino Beetle begun,犀甲虫开始
+Carrion Crawler begun,腐尸爬行者开始
+Giant Centipede begun,巨蜈蚣开始
+Fell Crab begun,凶煞蟹开始
+Corpse Eater begun,食尸者开始
+Giant Crab begun,巨螃蟹开始
+Crab begun,螃蟹开始
+Rot Crab begun,腐烂蟹开始
+Spider Crab begun,蜘蛛蟹开始
+Brood Guard begun,巢穴守卫开始
+Father begun,【父亲】开始
+Deep One Priestess begun,深潜者女祭司开始
+Deep One Queen begun,深潜者女王开始
+Deep One Warrior begun,深潜者战士开始
+Devolved begun,退化者开始
+Ghoul begun,食尸鬼开始
+Frost Ghoul begun,寒霜食尸鬼开始
+Giant Gnat begun,巨型蠓虫开始
+Cave Gnat begun,洞穴蠓虫开始
+Fell Hog begun,凶煞野猪开始
+Dire Hound begun,凶暴野狗开始
+Fell Hound begun,凶煞野狗开始
+Ice Hound begun,冰原野狗开始
+Ice Strider begun,冰上漫步者开始
+Shadow Stalker begun,暗影猎手开始
+Giant Leech begun,巨型水蛭开始
+Albino Leech begun,白化水蛭开始
+Bloodletter begun,放血者开始
+Fell Lizard begun,凶煞蜥蜴开始
+Alpha Lizard begun,阿尔法蜥蜴开始
+Giant Lizard begun,巨蜥开始
+Ice Salamander begun,冰火蜥蜴开始
+Mold Child begun,霉菌幼体开始
+Ooze begun,软泥怪开始
+Flesh Ooze begun,血肉软泥怪开始
+Medusa Jelly begun,美杜莎果冻开始
+Risen Ooze begun,复生软泥怪开始
+Magma Ooze begun,岩浆软泥怪开始
+Magmite begun,岩浆虫开始
+Large Ooze begun,大型软泥怪开始
+Giant Rat begun,巨鼠开始
+Dire Rat begun,凶暴鼠开始
+Chitters-In-Darkness begun,暗影低语者开始
+Rabid Rat begun,狂怒鼠开始
+Shade begun,颜色开始
+Dire Serpent begun,凶暴蛇开始
+Fell Serpent begun,凶煞蛇开始
+Giant Snake begun,巨蛇开始
+Fleshstrider begun,血肉行者开始
+Flying Polyp begun,飞天水螅开始
+Dragon's Herald begun,龙使开始
+Evolved begun,进化体开始
+Newborne begun,新生儿开始
+Vessel begun,容器开始
+Stalker begun,猎手开始
+Giant Spider begun,巨蜘蛛开始
+Large Spider begun,大蜘蛛开始
+Shambler begun,行尸开始
+Frost Shambler begun,寒霜行尸开始
+Reaver Berserker begun,劫掠者狂战士开始
+Brigand Archer begun,强盗弓箭手开始
+Brigand Rogue begun,强盗游荡者开始
+Brigand Swordsman begun,强盗剑士开始
+Mad Sailor begun,疯水手开始
+Mad Sailo begun,疯水手开始
+Guild Magos begun,公会法师开始
+Guild Mag begun,公会法师开始
+Wight begun,尸妖开始
+Feral Clone begun,野性克隆体开始
+Jester begun,弄臣开始
+Reaver Brute begun,掠夺者蛮兵开始
+Reaver Scout begun,劫掠者侦察兵开始
+Reaver begun,劫掠者开始
+Reaver Blackguard begun,劫掠者黑卫开始
+Reaver Mystic begun,劫掠者秘术师开始
+Cultist begun,邪教徒开始
+Bobbert the Recruit begun,新兵博伯特开始
+Wreck Picker begun,残骸拾荒者开始
+Oleg the Gray begun,灰发奥列格开始
+Red Kala begun,红卡菈开始
+The Butcher begun,屠夫开始
+Snow begun,斯诺开始
+The Ancient King begun,古王开始
+Joran the Usurper begun,篡位者约兰开始
+Baroness begun,男爵夫人开始
+Handmaid begun,侍女开始
+Majordomo begun,大管家开始
+#Combatant defends,#战斗员防御
+{PLAYER} Defends,{PLAYER} 防御
+Kat Defends,卡蒂 防御
+Roland Defends,罗兰 防御
+Driina Defends,德莉娜 防御
+Iben Defends,伊本 防御
+Iago Defends,伊阿戈 防御
+Embla Defends,恩布拉 防御
+#Combatant Disengages,#战斗人员脱离
+{PLAYER} Disengages,{PLAYER} 脱离
+Kat Disengages,卡蒂 脱离
+Roland Disengages,罗兰 脱离
+Driina Disengages,德莉娜 脱离
+Iben Disengages,伊本 脱离
+Iago Disengages,伊阿戈 脱离
+Embla Disengages,恩布拉 脱离
+#Combatant does not have a valid target!,#战斗者没有有效目标！
+{PLAYER} does not have a valid target!,{PLAYER}没有有效目标！
+Kat does not have a valid target!,卡蒂没有有效目标！
+Roland does not have a valid target!,罗兰没有有效目标！
+Driina does not have a valid target!,德莉娜没有有效目标！
+Iben does not have a valid target!,伊本没有有效目标！
+Iago does not have a valid target!,伊阿戈没有有效目标！
+Embla does not have a valid target!,恩布拉没有有效目标！
+Giant Bat does not have a valid target!,巨蝙蝠没有有效目标！
+Giant Beetle does not have a valid target!,巨甲虫没有有效目标！
+Rhino Beetle does not have a valid target!,犀甲虫没有有效目标！
+Carrion Crawler does not have a valid target!,腐尸爬行者没有有效目标！
+Giant Centipede does not have a valid target!,巨蜈蚣没有有效目标！
+Fell Crab does not have a valid target!,凶煞蟹没有有效目标！
+Corpse Eater does not have a valid target!,食尸者没有有效目标！
+Giant Crab does not have a valid target!,巨螃蟹没有有效目标！
+Crab does not have a valid target!,螃蟹没有有效目标！
+Rot Crab does not have a valid target!,腐烂蟹没有有效目标！
+Spider Crab does not have a valid target!,蜘蛛蟹没有有效目标！
+Brood Guard does not have a valid target!,巢穴守卫没有有效目标！
+Father does not have a valid target!,【父亲】没有有效目标！
+Deep One Priestess does not have a valid target!,深潜者女祭司没有有效目标！
+Deep One Queen does not have a valid target!,深潜者女王没有有效目标！
+Deep One Warrior does not have a valid target!,深潜者战士没有有效目标！
+Devolved does not have a valid target!,退化者没有有效目标！
+Ghoul does not have a valid target!,食尸鬼没有有效目标！
+Frost Ghoul does not have a valid target!,寒霜食尸鬼没有有效目标！
+Giant Gnat does not have a valid target!,巨型蠓虫没有有效目标！
+Cave Gnat does not have a valid target!,洞穴蠓虫没有有效目标！
+Fell Hog does not have a valid target!,凶煞野猪没有有效目标！
+Dire Hound does not have a valid target!,凶暴野狗没有有效目标！
+Fell Hound does not have a valid target!,凶煞野狗没有有效目标！
+Ice Hound does not have a valid target!,冰原野狗没有有效目标！
+Ice Strider does not have a valid target!,冰上漫步者没有有效目标！
+Shadow Stalker does not have a valid target!,暗影猎手没有有效目标！
+Giant Leech does not have a valid target!,巨型水蛭没有有效目标！
+Albino Leech does not have a valid target!,白化水蛭没有有效目标！
+Bloodletter does not have a valid target!,放血者没有有效目标！
+Fell Lizard does not have a valid target!,凶煞蜥蜴没有有效目标！
+Alpha Lizard does not have a valid target!,阿尔法蜥蜴没有有效目标！
+Giant Lizard does not have a valid target!,巨蜥没有有效目标！
+Ice Salamander does not have a valid target!,冰火蜥蜴没有有效目标！
+Mold Child does not have a valid target!,霉菌幼体没有有效目标！
+Ooze does not have a valid target!,软泥怪没有有效目标！
+Flesh Ooze does not have a valid target!,血肉软泥怪没有有效目标！
+Medusa Jelly does not have a valid target!,美杜莎果冻没有有效目标！
+Risen Ooze does not have a valid target!,复生软泥怪没有有效目标！
+Magma Ooze does not have a valid target!,岩浆软泥怪没有有效目标！
+Magmite does not have a valid target!,岩浆虫没有有效目标！
+Large Ooze does not have a valid target!,大型软泥怪没有有效目标！
+Giant Rat does not have a valid target!,巨鼠没有有效目标！
+Dire Rat does not have a valid target!,凶暴鼠没有有效目标！
+Chitters-In-Darkness does not have a valid target!,暗影低语者没有有效目标！
+Rabid Rat does not have a valid target!,狂怒鼠没有有效目标！
+Shade does not have a valid target!,幽影没有有效目标！
+Dire Serpent does not have a valid target!,凶暴蛇没有有效目标！
+Fell Serpent does not have a valid target!,凶煞蛇没有有效目标！
+Giant Snake does not have a valid target!,巨蛇没有有效目标！
+Fleshstrider does not have a valid target!,血肉行者没有有效目标！
+Flying Polyp does not have a valid target!,飞行水螅体没有有效目标！
+Dragon's Herald does not have a valid target!,龙使没有有效目标！
+Evolved does not have a valid target!,进化者没有有效目标！
+Newborne does not have a valid target!,新生儿没有有效目标！
+Vessel does not have a valid target!,容器没有有效目标！
+Stalker does not have a valid target!,猎手没有有效目标！
+Giant Spider does not have a valid target!,巨蜘蛛没有有效目标！
+Large Spider does not have a valid target!,大蜘蛛没有有效目标！
+Shambler does not have a valid target!,行尸没有有效目标！
+Frost Shambler does not have a valid target!,寒霜行尸没有有效目标！
+Reaver Berserker does not have a valid target!,劫掠者狂战士没有有效目标！
+Brigand Archer does not have a valid target!,强盗弓箭手没有有效目标！
+Brigand Rogue does not have a valid target!,强盗游荡者没有有效目标！
+Brigand Swordsman does not have a valid target!,强盗剑士没有有效目标！
+Mad Sailor does not have a valid target!,疯水手没有有效目标！
+Mad Sailo does not have a valid target!,疯水手没有有效目标！
+Guild Magos does not have a valid target!,公会法师没有有效目标！
+Guild Mag does not have a valid target!,公会法师没有有效目标！
+Wight does not have a valid target!,尸妖没有有效目标！
+Feral Clone does not have a valid target!,野性克隆体没有有效目标！
+Jester does not have a valid target!,弄臣没有有效目标！
+Reaver Brute does not have a valid target!,掠夺者蛮兵没有有效目标！
+Reaver Scout does not have a valid target!,劫掠者侦察兵没有有效目标！
+Reaver does not have a valid target!,劫掠者没有有效目标！
+Reaver Blackguard does not have a valid target!,劫掠者黑卫没有有效目标！
+Reaver Mystic does not have a valid target!,劫掠者秘术师没有有效目标！
+Cultist does not have a valid target!,邪教徒没有有效目标！
+Bobbert the Recruit does not have a valid target!,新兵博伯特没有有效目标！
+Wreck Picker does not have a valid target!,残骸拾荒者没有有效目标！
+Oleg the Gray does not have a valid target!,灰发奥列格没有有效目标！
+Red Kala does not have a valid target!,红卡菈没有有效目标！
+The Butcher does not have a valid target!,屠夫没有有效目标！
+Snow does not have a valid target!,斯诺没有有效目标！
+The Ancient King does not have a valid target!,古王没有有效目标！
+Joran the Usurper does not have a valid target!,篡位者约兰没有有效目标！
+Baroness does not have a valid target!,男爵夫人没有有效目标！
+Handmaid does not have a valid target!,侍女没有有效目标！
+Majordomo does not have a valid target!,大管家没有有效目标！
+#Combatant holds his action,#战斗员暂缓行动，
+{PLAYER} holds his action,{PLAYER}暂缓行动，
+{PLAYER} holds her action,{PLAYER}暂缓行动，
+Kat holds her action,卡蒂暂缓行动，
+Roland holds his action,罗兰暂缓行动，
+Driina holds her action,德莉娜暂缓行动，
+Iben holds his action,伊本暂缓行动，
+Iago holds his action,伊阿戈暂缓行动，
+Embla holds her action,恩布拉暂缓行动，
+#Combatant immune to,#战斗员免疫于
+{PLAYER} immune to,{PLAYER}免疫于
+Kat immune to,卡蒂免疫于
+Roland immune to,罗兰免疫于
+Driina immune to,德莉娜免疫于
+Iben immune to,伊本免疫于
+Iago immune to,伊阿戈免疫于
+Embla immune to,恩布拉免疫于
+Giant Bat immune to,巨蝙蝠免疫于
+Giant Beetle immune to,巨甲虫免疫于
+Rhino Beetle immune to,犀甲虫免疫于
+Carrion Crawler immune to,腐尸爬行者免疫于
+Giant Centipede immune to,巨蜈蚣免疫于
+Fell Crab immune to,凶煞蟹免疫于
+Corpse Eater immune to,食尸者免疫于
+Giant Crab immune to,巨螃蟹免疫于
+Crab immune to,螃蟹免疫于
+Rot Crab immune to,腐烂蟹免疫于
+Spider Crab immune to,蜘蛛蟹免疫于
+Brood Guard immune to,巢穴守卫免疫于
+Father immune to,【父亲】免疫于
+Deep One Priestess immune to,深潜者女祭司免疫于
+Deep One Queen immune to,深潜者女王免疫于
+Deep One Warrior immune to,深潜者战士免疫于
+Devolved immune to,退化者免疫于
+Ghoul immune to,食尸鬼免疫于
+Frost Ghoul immune to,寒霜食尸鬼免疫于
+Giant Gnat immune to,巨型蠓虫免疫于
+Cave Gnat immune to,洞穴蠓虫免疫于
+Fell Hog immune to,凶煞野猪免疫于
+Dire Hound immune to,凶暴野狗免疫于
+Fell Hound immune to,凶煞野狗免疫于
+Ice Hound immune to,冰原野狗免疫于
+Ice Strider immune to,冰上漫步者免疫于
+Shadow Stalker immune to,暗影猎手免疫于
+Giant Leech immune to,巨型水蛭免疫于
+Albino Leech immune to,白化水蛭免疫于
+Bloodletter immune to,放血者免疫于
+Fell Lizard immune to,凶煞蜥蜴免疫于
+Alpha Lizard immune to,阿尔法蜥蜴免疫于
+Giant Lizard immune to,巨蜥免疫于
+Ice Salamander immune to,冰火蜥蜴免疫于
+Mold Child immune to,霉菌幼体免疫于
+Ooze immune to,软泥怪免疫于
+Flesh Ooze immune to,血肉软泥怪免疫于
+Medusa Jelly immune to,美杜莎果冻免疫于
+Risen Ooze immune to,复生软泥怪免疫于
+Magma Ooze immune to,岩浆软泥怪免疫于
+Magmite immune to,岩浆虫免疫于
+Large Ooze immune to,大型软泥怪免疫于
+Giant Rat immune to,巨鼠免疫于
+Dire Rat immune to,凶暴鼠免疫于
+Chitters-In-Darkness immune to,暗影低语者免疫于
+Rabid Rat immune to,狂怒鼠免疫于
+Shade immune to,颜色免疫于
+Dire Serpent immune to,凶暴蛇免疫于
+Fell Serpent immune to,凶煞蛇免疫于
+Giant Snake immune to,巨蛇免疫于
+Fleshstrider immune to,血肉行者免疫于
+Flying Polyp immune to,飞行息肉免疫于
+Dragon's Herald immune to,龙使免疫于
+Evolved immune to,进化者免疫于
+Newborne immune to,新生儿免疫于
+Vessel immune to,容器免疫于
+Stalker immune to,猎手免疫于
+Giant Spider immune to,巨蜘蛛免疫于
+Large Spider immune to,大蜘蛛免疫于
+Shambler immune to,行尸免疫于
+Frost Shambler immune to,寒霜行尸免疫于
+Reaver Berserker immune to,劫掠者狂战士免疫于
+Brigand Archer immune to,强盗弓箭手免疫于
+Brigand Rogue immune to,强盗游荡者免疫于
+Brigand Swordsman immune to,强盗剑士免疫于
+Mad Sailor immune to,疯水手免疫于
+Mad Sailo immune to,疯水手免疫于
+Guild Magos immune to,公会法师免疫于
+Guild Mag immune to,公会法师免疫于
+Wight immune to,尸妖免疫于
+Feral Clone immune to,野性克隆体免疫于
+Jester immune to,弄臣免疫于
+Reaver Brute immune to,掠夺者蛮兵免疫于
+Reaver Scout immune to,劫掠者侦察兵免疫于
+Reaver immune to,劫掠者免疫于
+Reaver Blackguard immune to,劫掠者黑卫免疫于
+Reaver Mystic immune to,劫掠者秘术师免疫于
+Cultist immune to,邪教徒免疫于
+Bobbert the Recruit immune to,新兵博伯特免疫于
+Wreck Picker immune to,残骸拾荒者免疫于
+Oleg the Gray immune to,灰发奥列格免疫于
+Red Kala immune to,红卡菈免疫于
+The Butcher immune to,屠夫免疫于
+Snow immune to,斯诺免疫于
+The Ancient King immune to,古王免疫于
+Joran the Usurper immune to,篡位者约兰免疫于
+Baroness immune to,男爵夫人免疫于
+Handmaid immune to,侍女免疫于
+Majordomo immune to,大管家免疫于
+#Combatant immune to the condition,#免疫该状态的战斗单位
+{PLAYER} immune to the condition,{PLAYER}免疫该状态
+Kat immune to the condition,卡蒂免疫该状态
+Roland immune to the condition,罗兰免疫该状态
+Driina immune to the condition,德莉娜免疫该状态
+Iben immune to the condition,伊本免疫该状态
+Iago immune to the condition,伊阿戈免疫该状态
+Embla immune to the condition,恩布拉免疫该状态
+Giant Bat immune to the condition,巨蝙蝠免疫该状态
+Giant Beetle immune to the condition,巨甲虫免疫该状态
+Rhino Beetle immune to the condition,犀甲虫免疫该状态
+Carrion Crawler immune to the condition,腐尸爬行者免疫该状态
+Giant Centipede immune to the condition,巨蜈蚣免疫该状态
+Fell Crab immune to the condition,凶煞蟹免疫该状态
+Corpse Eater immune to the condition,食尸者免疫该状态
+Giant Crab immune to the condition,巨螃蟹免疫该状态
+Crab immune to the condition,螃蟹免疫该状态
+Rot Crab immune to the condition,腐烂蟹免疫该状态
+Spider Crab immune to the condition,蜘蛛蟹免疫该状态
+Brood Guard immune to the condition,巢穴守卫免疫该状态
+Father immune to the condition,【父亲】免疫该状态
+Deep One Priestess immune to the condition,深潜者女祭司免疫该状态
+Deep One Queen immune to the condition,深潜者女王免疫该状态
+Deep One Warrior immune to the condition,深潜者战士免疫该状态
+Devolved immune to the condition,退化者免疫该状态
+Ghoul immune to the condition,食尸鬼免疫该状态
+Frost Ghoul immune to the condition,寒霜食尸鬼免疫该状态
+Giant Gnat immune to the condition,巨型蠓虫免疫该状态
+Cave Gnat immune to the condition,洞穴蠓虫免疫该状态
+Fell Hog immune to the condition,凶煞野猪免疫该状态
+Dire Hound immune to the condition,凶暴野狗免疫该状态
+Fell Hound immune to the condition,凶煞野狗免疫该状态
+Ice Hound immune to the condition,冰原野狗免疫该状态
+Ice Strider immune to the condition,冰上漫步者免疫该状态
+Shadow Stalker immune to the condition,暗影猎手免疫该状态
+Giant Leech immune to the condition,巨型水蛭免疫该状态
+Albino Leech immune to the condition,白化水蛭免疫该状态
+Bloodletter immune to the condition,放血者免疫该状态
+Fell Lizard immune to the condition,凶煞蜥蜴免疫该状态
+Alpha Lizard immune to the condition,阿尔法蜥蜴免疫该状态
+Giant Lizard immune to the condition,巨蜥免疫该状态
+Ice Salamander immune to the condition,冰火蜥蜴免疫该状态
+Mold Child immune to the condition,霉菌幼体免疫该状态
+Ooze immune to the condition,软泥怪免疫该状态
+Flesh Ooze immune to the condition,血肉软泥怪免疫该状态
+Medusa Jelly immune to the condition,美杜莎果冻免疫该状态
+Risen Ooze immune to the condition,复生软泥怪免疫该状态
+Magma Ooze immune to the condition,岩浆软泥怪免疫该状态
+Magmite immune to the condition,岩浆怪免疫该状态
+Large Ooze immune to the condition,大型软泥怪免疫该状态
+Giant Rat immune to the condition,巨鼠免疫该状态
+Dire Rat immune to the condition,凶暴鼠免疫该状态
+Chitters-In-Darkness immune to the condition,暗影低语者免疫该状态
+Rabid Rat immune to the condition,狂怒鼠免疫该状态
+Shade immune to the condition,幽影免疫该状态
+Dire Serpent immune to the condition,凶暴蛇免疫该状态
+Fell Serpent immune to the condition,凶煞蛇免疫该状态
+Giant Snake immune to the condition,巨蛇免疫该状态
+Fleshstrider immune to the condition,血肉行者免疫该状态
+Flying Polyp immune to the condition,飞天水螅免疫该状态
+Dragon's Herald immune to the condition,龙使免疫该状态
+Evolved immune to the condition,进化体免疫该状态
+Newborne immune to the condition,新生儿免疫该状态
+Vessel immune to the condition,容器免疫该状态
+Stalker immune to the condition,猎手免疫该状态
+Giant Spider immune to the condition,巨蜘蛛免疫该状态
+Large Spider immune to the condition,大蜘蛛免疫该状态
+Shambler immune to the condition,行尸免疫该状态
+Frost Shambler immune to the condition,寒霜行尸免疫该状态
+Reaver Berserker immune to the condition,劫掠者狂战士免疫该状态
+Brigand Archer immune to the condition,强盗弓箭手免疫该状态
+Brigand Rogue immune to the condition,强盗游荡者免疫该状态
+Brigand Swordsman immune to the condition,强盗剑士免疫该状态
+Mad Sailor immune to the condition,疯水手免疫该状态
+Mad Sailo immune to the condition,疯水手免疫该状态
+Guild Magos immune to the condition,公会法师免疫该状态
+Guild Mag immune to the condition,公会法师免疫该状态
+Wight immune to the condition,尸妖免疫该状态
+Feral Clone immune to the condition,野性克隆体免疫该状态
+Jester immune to the condition,弄臣免疫该状态
+Reaver Brute immune to the condition,掠夺者蛮兵免疫该状态
+Reaver Scout immune to the condition,劫掠者侦察兵免疫该状态
+Reaver immune to the condition,劫掠者免疫该状态
+Reaver Blackguard immune to the condition,劫掠者黑卫免疫该状态
+Reaver Mystic immune to the condition,劫掠者秘术师免疫该状态
+Cultist immune to the condition,邪教徒免疫该状态
+Bobbert the Recruit immune to the condition,新兵博伯特免疫该状态
+Wreck Picker immune to the condition,残骸拾荒者免疫该状态
+Oleg the Gray immune to the condition,灰发奥列格免疫该状态
+Red Kala immune to the condition,红卡菈免疫该状态
+The Butcher immune to the condition,屠夫免疫该状态
+Snow immune to the condition,斯诺免疫该状态
+The Ancient King immune to the condition,古王免疫该状态
+Joran the Usurper immune to the condition,篡位者约兰免疫该状态
+Baroness immune to the condition,男爵夫人免疫该状态
+Handmaid immune to the condition,侍女免疫该状态
+Majordomo immune to the condition,大管家免疫该状态
+#Combatant immune to the condition,#免疫该状态的战斗单位
+{PLAYER} immune to the condition,{PLAYER}免疫该状态
+Kat immune to the condition,卡蒂免疫该状态
+Roland immune to the condition,罗兰免疫该状态
+Driina immune to the condition,德莉娜免疫该状态
+Iben immune to the condition,伊本免疫该状态
+Iago immune to the condition,伊阿戈免疫该状态
+Embla immune to the condition,恩布拉免疫该状态
+Giant Bat immune to the condition,巨蝙蝠免疫该状态
+Giant Beetle immune to the condition,巨甲虫免疫该状态
+Rhino Beetle immune to the condition,犀甲虫免疫该状态
+Carrion Crawler immune to the condition,腐尸爬行者免疫该状态
+Giant Centipede immune to the condition,巨蜈蚣免疫该状态
+Fell Crab immune to the condition,凶煞蟹免疫该状态
+Corpse Eater immune to the condition,食尸者免疫该状态
+Giant Crab immune to the condition,巨螃蟹免疫该状态
+Crab immune to the condition,螃蟹免疫该状态
+Rot Crab immune to the condition,腐烂蟹免疫该状态
+Spider Crab immune to the condition,蜘蛛蟹免疫该状态
+Brood Guard immune to the condition,巢穴守卫免疫该状态
+Father immune to the condition,【父亲】免疫该状态
+Deep One Priestess immune to the condition,深潜者女祭司免疫该状态
+Deep One Queen immune to the condition,深潜者女王免疫该状态
+Deep One Warrior immune to the condition,深潜者战士免疫该状态
+Devolved immune to the condition,退化者免疫该状态
+Ghoul immune to the condition,食尸鬼免疫该状态
+Frost Ghoul immune to the condition,寒霜食尸鬼免疫该状态
+Giant Gnat immune to the condition,巨型蠓虫免疫该状态
+Cave Gnat immune to the condition,洞穴蠓虫免疫该状态
+Fell Hog immune to the condition,凶煞野猪免疫该状态
+Dire Hound immune to the condition,凶暴野狗免疫该状态
+Fell Hound immune to the condition,凶煞野狗免疫该状态
+Ice Hound immune to the condition,冰原野狗免疫该状态
+Ice Strider immune to the condition,冰上漫步者免疫该状态
+Shadow Stalker immune to the condition,暗影猎手免疫该状态
+Giant Leech immune to the condition,巨型水蛭免疫该状态
+Albino Leech immune to the condition,白化水蛭免疫该状态
+Bloodletter immune to the condition,放血者免疫该状态
+Fell Lizard immune to the condition,凶煞蜥蜴免疫该状态
+Alpha Lizard immune to the condition,阿尔法蜥蜴免疫该状态
+Giant Lizard immune to the condition,巨蜥免疫该状态
+Ice Salamander immune to the condition,冰火蜥蜴免疫该状态
+Mold Child immune to the condition,霉菌幼体免疫该状态
+Ooze immune to the condition,软泥怪免疫该状态
+Flesh Ooze immune to the condition,血肉软泥怪免疫该状态
+Medusa Jelly immune to the condition,美杜莎果冻免疫该状态
+Risen Ooze immune to the condition,复生软泥怪免疫该状态
+Magma Ooze immune to the condition,岩浆软泥怪免疫该状态
+Magmite immune to the condition,岩浆怪免疫该状态
+Large Ooze immune to the condition,大型软泥怪免疫该状态
+Giant Rat immune to the condition,巨鼠免疫该状态
+Dire Rat immune to the condition,凶暴鼠免疫该状态
+Chitters-In-Darkness immune to the condition,暗影低语者免疫该状态
+Rabid Rat immune to the condition,狂怒鼠免疫该状态
+Shade immune to the condition,幽影免疫该状态
+Dire Serpent immune to the condition,凶暴蛇免疫该状态
+Fell Serpent immune to the condition,凶煞蛇免疫该状态
+Giant Snake immune to the condition,巨蛇免疫该状态
+Fleshstrider immune to the condition,血肉行者免疫该状态
+Flying Polyp immune to the condition,飞天水螅免疫该状态
+Dragon's Herald immune to the condition,龙使免疫该状态
+Evolved immune to the condition,进化体免疫该状态
+Newborne immune to the condition,新生儿免疫该状态
+Vessel immune to the condition,容器免疫该状态
+Stalker immune to the condition,猎手免疫该状态
+Giant Spider immune to the condition,巨蜘蛛免疫该状态
+Large Spider immune to the condition,大蜘蛛免疫该状态
+Shambler immune to the condition,行尸免疫该状态
+Frost Shambler immune to the condition,寒霜行尸免疫该状态
+Reaver Berserker immune to the condition,劫掠者狂战士免疫该状态
+Brigand Archer immune to the condition,强盗弓箭手免疫该状态
+Brigand Rogue immune to the condition,强盗游荡者免疫该状态
+Brigand Swordsman immune to the condition,强盗剑士免疫该状态
+Mad Sailor immune to the condition,疯水手免疫该状态
+Mad Sailo immune to the condition,疯水手免疫该状态
+Guild Magos immune to the condition,公会法师免疫该状态
+Guild Mag immune to the condition,公会法师免疫该状态
+Wight immune to the condition,尸妖免疫该状态
+Feral Clone immune to the condition,野性克隆体免疫该状态
+Jester immune to the condition,弄臣免疫该状态
+Reaver Brute immune to the condition,掠夺者蛮兵免疫该状态
+Reaver Scout immune to the condition,劫掠者侦察兵免疫该状态
+Reaver immune to the condition,劫掠者免疫该状态
+Reaver Blackguard immune to the condition,劫掠者黑卫免疫该状态
+Reaver Mystic immune to the condition,劫掠者秘术师免疫该状态
+Cultist immune to the condition,邪教徒免疫该状态
+Bobbert the Recruit immune to the condition,新兵博伯特免疫该状态
+Wreck Picker immune to the condition,残骸拾荒者免疫该状态
+Oleg the Gray immune to the condition,灰发奥列格免疫该状态
+Red Kala immune to the condition,红卡菈免疫该状态
+The Butcher immune to the condition,屠夫免疫该状态
+Snow immune to the condition,斯诺免疫该状态
+The Ancient King immune to the condition,古王免疫该状态
+Joran the Usurper immune to the condition,篡位者约兰免疫该状态
+Baroness immune to the condition,男爵夫人免疫该状态
+Handmaid immune to the condition,侍女免疫该状态
+Majordomo immune to the condition,大管家免疫该状态
+#Combatant is occupied!,#战斗单位被占用！
+{PLAYER} is occupied!,{PLAYER}被占用！
+Kat is occupied!,卡蒂被占用！
+Roland is occupied!,罗兰被占用！
+Driina is occupied!,德莉娜被占用！
+Iben is occupied!,伊本被占用！
+Iago is occupied!,伊阿戈被占用！
+Embla is occupied!,恩布拉被占用！
+Giant Bat is occupied!,巨蝙蝠被占用！
+Giant Beetle is occupied!,巨甲虫被占用！
+Rhino Beetle is occupied!,犀甲虫被占用！
+Carrion Crawler is occupied!,腐尸爬行者被占用！
+Giant Centipede is occupied!,巨蜈蚣被占用！
+Fell Crab is occupied!,凶煞蟹被占用！
+Corpse Eater is occupied!,食尸者被占用！
+Giant Crab is occupied!,巨螃蟹被占用！
+Crab is occupied!,螃蟹被占用！
+Rot Crab is occupied!,腐烂蟹被占用！
+Spider Crab is occupied!,蜘蛛蟹被占用！
+Brood Guard is occupied!,巢穴守卫被占用！
+Father is occupied!,【父亲】被占用！
+Deep One Priestess is occupied!,深潜者女祭司被占用！
+Deep One Queen is occupied!,深潜者女王被占用！
+Deep One Warrior is occupied!,深潜者战士被占用！
+Devolved is occupied!,退化者被占用！
+Ghoul is occupied!,食尸鬼被占用！
+Frost Ghoul is occupied!,寒霜食尸鬼被占用！
+Giant Gnat is occupied!,巨型蠓虫被占用！
+Cave Gnat is occupied!,洞穴蠓虫被占用！
+Fell Hog is occupied!,凶煞野猪被占用！
+Dire Hound is occupied!,凶暴野狗被占用！
+Fell Hound is occupied!,凶煞野狗被占用！
+Ice Hound is occupied!,冰原野狗被占用！
+Ice Strider is occupied!,冰上漫步者被占用！
+Shadow Stalker is occupied!,暗影猎手被占用！
+Giant Leech is occupied!,巨型水蛭被占用！
+Albino Leech is occupied!,白化水蛭被占用！
+Bloodletter is occupied!,放血者被占用！
+Fell Lizard is occupied!,凶煞蜥蜴被占用！
+Alpha Lizard is occupied!,阿尔法蜥蜴被占用！
+Giant Lizard is occupied!,巨蜥被占用！
+Ice Salamander is occupied!,冰火蜥蜴被占用！
+Mold Child is occupied!,霉菌幼体被占用！
+Ooze is occupied!,软泥怪被占用！
+Flesh Ooze is occupied!,血肉软泥怪被占用！
+Medusa Jelly is occupied!,美杜莎果冻被占用！
+Risen Ooze is occupied!,复生软泥怪被占用！
+Magma Ooze is occupied!,岩浆软泥怪被占用！
+Magmite is occupied!,岩浆虫被占用！
+Large Ooze is occupied!,大型软泥怪被占用！
+Giant Rat is occupied!,巨鼠被占用！
+Dire Rat is occupied!,凶暴鼠被占用！
+Chitters-In-Darkness is occupied!,暗影低语者被占用！
+Rabid Rat is occupied!,狂怒鼠被占用！
+Shade is occupied!,幽影被占用！
+Dire Serpent is occupied!,凶暴蛇被占用！
+Fell Serpent is occupied!,凶煞蛇被占用！
+Giant Snake is occupied!,巨蛇被占用！
+Fleshstrider is occupied!,血肉行者被占用！
+Flying Polyp is occupied!,飞行息肉被占用！
+Dragon's Herald is occupied!,龙使被占用！
+Evolved is occupied!,进化者被占用！
+Newborne is occupied!,新生儿被占用！
+Vessel is occupied!,容器被占用！
+Stalker is occupied!,猎手被占用！
+Giant Spider is occupied!,巨蜘蛛被占用！
+Large Spider is occupied!,大蜘蛛被占用！
+Shambler is occupied!,行尸被占用！
+Frost Shambler is occupied!,寒霜行尸被占用！
+Reaver Berserker is occupied!,劫掠者狂战士被占用！
+Brigand Archer is occupied!,强盗弓箭手被占用！
+Brigand Rogue is occupied!,强盗游荡者被占用！
+Brigand Swordsman is occupied!,强盗剑士被占用！
+Mad Sailor is occupied!,疯水手被占用！
+Mad Sailo is occupied!,疯水手被占用！
+Guild Magos is occupied!,公会法师被占用！
+Guild Mag is occupied!,公会法师被占用！
+Wight is occupied!,尸妖被占用！
+Feral Clone is occupied!,野性克隆体被占用！
+Jester is occupied!,弄臣被占用！
+Reaver Brute is occupied!,掠夺者蛮兵被占用！
+Reaver Scout is occupied!,劫掠者侦察兵被占用！
+Reaver is occupied!,劫掠者被占用！
+Reaver Blackguard is occupied!,劫掠者黑卫被占用！
+Reaver Mystic is occupied!,劫掠者秘术师被占用！
+Cultist is occupied!,邪教徒被占用！
+Bobbert the Recruit is occupied!,新兵博伯特被占用！
+Wreck Picker is occupied!,残骸拾荒者被占用！
+Oleg the Gray is occupied!,灰发奥列格被占用！
+Red Kala is occupied!,红卡菈被占用！
+The Butcher is occupied!,屠夫被占用！
+Snow is occupied!,斯诺被占用！
+The Ancient King is occupied!,古王被占用！
+Joran the Usurper is occupied!,篡位者约兰被占用！
+Baroness is occupied!,男爵夫人被占用！
+Handmaid is occupied!,侍女被占用！
+Majordomo is occupied!,大管家被占用！
+#Combatant is out of ammo!,#战斗员弹药耗尽！
+{PLAYER} is out of ammo!,{PLAYER}弹药耗尽！
+Kat is out of ammo!,卡蒂弹药耗尽！
+Roland is out of ammo!,罗兰弹药耗尽！
+Driina is out of ammo!,德莉娜弹药耗尽！
+Iben is out of ammo!,伊本弹药耗尽！
+Iago is out of ammo!,伊阿戈弹药耗尽！
+Embla is out of ammo!,恩布拉弹药耗尽！
+#Combatant passes!,#战斗员跳过！
+{PLAYER} passes!,{PLAYER}跳过！
+Kat passes!,卡蒂跳过！
+Roland passes!,罗兰跳过！
+Driina passes!,德莉娜跳过！
+Iben passes!,伊本跳过！
+Iago passes!,伊阿戈跳过！
+Embla passes!,恩布拉跳过！
+#Combatant recovers from surprise!,#战斗员从突袭中恢复过来！
+{PLAYER} recovers from surprise!,{PLAYER}从突袭中恢复过来！
+Kat  recovers from surprise!,卡蒂从突袭中恢复过来！
+Roland recovers from surprise!,罗兰从突袭中恢复过来！
+Driina recovers from surprise!,德莉娜从突袭中恢复过来！
+Iben recovers from surprise!,伊本从突袭中恢复过来！
+Iago recovers from surprise!,伊阿戈从突袭中恢复过来！
+Embla recovers from surprise!,恩布拉从突袭中恢复过来！
+Giant Bat recovers from surprise!,巨蝙蝠从突袭中恢复过来！
+Giant Beetle recovers from surprise!,巨甲虫从突袭中恢复过来！
+Rhino Beetle recovers from surprise!,犀甲虫从突袭中恢复过来！
+Carrion Crawler recovers from surprise!,腐尸爬行者从突袭中恢复过来！
+Giant Centipede recovers from surprise!,巨蜈蚣从突袭中恢复过来！
+Fell Crab recovers from surprise!,凶煞蟹从突袭中恢复过来！
+Corpse Eater recovers from surprise!,食尸者从突袭中恢复过来！
+Giant Crab recovers from surprise!,巨螃蟹从突袭中恢复过来！
+Crab recovers from surprise!,螃蟹从突袭中恢复过来！
+Rot Crab recovers from surprise!,腐烂蟹从突袭中恢复过来！
+Spider Crab recovers from surprise!,蜘蛛蟹从突袭中恢复过来！
+Brood Guard recovers from surprise!,巢穴守卫从突袭中恢复过来！
+Father recovers from surprise!,【父亲】从突袭中恢复过来！
+Deep One Priestess recovers from surprise!,深潜者女祭司从突袭中恢复过来！
+Deep One Queen recovers from surprise!,深潜者女王从突袭中恢复过来！
+Deep One Warrior recovers from surprise!,深潜者战士从突袭中恢复过来！
+Devolved recovers from surprise!,退化者从突袭中恢复过来！
+Ghoul recovers from surprise!,食尸鬼从突袭中恢复过来！
+Frost Ghoul recovers from surprise!,寒霜食尸鬼从突袭中恢复过来！
+Giant Gnat recovers from surprise!,巨型蠓虫从突袭中恢复过来！
+Cave Gnat recovers from surprise!,洞穴蠓虫从突袭中恢复过来！
+Fell Hog recovers from surprise!,凶煞野猪从突袭中恢复过来！
+Dire Hound recovers from surprise!,凶暴野狗从突袭中恢复过来！
+Fell Hound recovers from surprise!,凶煞野狗从突袭中恢复过来！
+Ice Hound recovers from surprise!,冰原野狗从突袭中恢复过来！
+Ice Strider recovers from surprise!,冰上漫步者从突袭中恢复过来！
+Shadow Stalker recovers from surprise!,暗影猎手从突袭中恢复过来！
+Giant Leech recovers from surprise!,巨型水蛭从突袭中恢复过来！
+Albino Leech recovers from surprise!,白化水蛭从突袭中恢复过来！
+Bloodletter recovers from surprise!,放血者从突袭中恢复过来！
+Fell Lizard recovers from surprise!,凶煞蜥蜴从突袭中恢复过来！
+Alpha Lizard recovers from surprise!,阿尔法蜥蜴从突袭中恢复过来！
+Giant Lizard recovers from surprise!,巨蜥从突袭中恢复过来！
+Ice Salamander recovers from surprise!,冰火蜥蜴从突袭中恢复过来！
+Mold Child recovers from surprise!,霉菌幼体从突袭中恢复过来！
+Ooze recovers from surprise!,软泥怪从突袭中恢复过来！
+Flesh Ooze recovers from surprise!,血肉软泥怪从突袭中恢复过来！
+Medusa Jelly recovers from surprise!,美杜莎果冻从突袭中恢复过来！
+Risen Ooze recovers from surprise!,复生软泥怪从突袭中恢复过来！
+Magma Ooze recovers from surprise!,岩浆软泥怪从突袭中恢复过来！
+Magmite recovers from surprise!,岩浆虫从突袭中恢复过来！
+Large Ooze recovers from surprise!,大型软泥怪从突袭中恢复过来！
+Giant Rat recovers from surprise!,巨鼠从突袭中恢复过来！
+Dire Rat recovers from surprise!,凶暴鼠从突袭中恢复过来！
+Chitters-In-Darkness recovers from surprise!,暗影低语者从突袭中恢复过来！
+Rabid Rat recovers from surprise!,狂怒鼠从突袭中恢复过来！
+Shade recovers from surprise!,幽影从突袭中恢复过来！
+Dire Serpent recovers from surprise!,凶暴蛇从突袭中恢复过来！
+Fell Serpent recovers from surprise!,凶煞蛇从突袭中恢复过来！
+Giant Snake recovers from surprise!,巨蛇从突袭中恢复过来！
+Fleshstrider recovers from surprise!,血肉行者从突袭中恢复过来！
+Flying Polyp recovers from surprise!,飞行水螅体从突袭中恢复过来！
+Dragon's Herald recovers from surprise!,龙使从突袭中恢复过来！
+Evolved recovers from surprise!,进化者从突袭中恢复过来！
+Newborne recovers from surprise!,新生儿从突袭中恢复过来！
+Vessel recovers from surprise!,容器从突袭中恢复过来！
+Stalker recovers from surprise!,猎手从突袭中恢复过来！
+Giant Spider recovers from surprise!,巨蜘蛛从突袭中恢复过来！
+Large Spider recovers from surprise!,大蜘蛛从突袭中恢复过来！
+Shambler recovers from surprise!,行尸从突袭中恢复过来！
+Frost Shambler recovers from surprise!,寒霜行尸从突袭中恢复过来！
+Reaver Berserker recovers from surprise!,劫掠者狂战士从突袭中恢复过来！
+Brigand Archer recovers from surprise!,强盗弓箭手从突袭中恢复过来！
+Brigand Rogue recovers from surprise!,强盗游荡者从突袭中恢复过来！
+Brigand Swordsman recovers from surprise!,强盗剑士从突袭中恢复过来！
+Mad Sailor recovers from surprise!,疯水手从突袭中恢复过来！
+Mad Sailo recovers from surprise!,疯水手从突袭中恢复过来！
+Guild Magos recovers from surprise!,公会法师从突袭中恢复过来！
+Guild Mag recovers from surprise!,公会法师从突袭中恢复过来！
+Wight recovers from surprise!,尸妖从突袭中恢复过来！
+Feral Clone recovers from surprise!,野性克隆体从突袭中恢复过来！
+Jester recovers from surprise!,弄臣从突袭中恢复过来！
+Reaver Brute recovers from surprise!,掠夺者蛮兵从突袭中恢复过来！
+Reaver Scout recovers from surprise!,劫掠者侦察兵从突袭中恢复过来！
+Reaver recovers from surprise!,劫掠者从突袭中恢复过来！
+Reaver Blackguard recovers from surprise!,劫掠者黑卫从突袭中恢复过来！
+Reaver Mystic recovers from surprise!,劫掠者秘术师从突袭中恢复过来！
+Cultist recovers from surprise!,邪教徒从突袭中恢复过来！
+Bobbert the Recruit recovers from surprise!,新兵博伯特从突袭中恢复过来！
+Wreck Picker recovers from surprise!,残骸拾荒者从突袭中恢复过来！
+Oleg the Gray recovers from surprise!,灰发奥列格从突袭中恢复过来！
+Red Kala recovers from surprise!,红卡菈从突袭中恢复过来！
+The Butcher recovers from surprise!,屠夫从突袭中恢复过来！
+Snow recovers from surprise!,斯诺从突袭中恢复过来！
+The Ancient King recovers from surprise!,古王从突袭中恢复过来！
+Joran the Usurper recovers from surprise!,篡位者约兰从突袭中恢复过来！
+Baroness recovers from surprise!,男爵夫人从突袭中恢复过来！
+Handmaid recovers from surprise!,侍女从突袭中恢复过来！
+Majordomo recovers from surprise!,大管家从突袭中恢复过来！
+#Combatant Shifts,#战斗员切换
+{PLAYER} Shifts,{PLAYER}切换
+Kat Shifts,卡蒂切换
+Roland Shifts,罗兰切换
+Driina Shifts,德莉娜切换
+Iben Shifts,伊本切换
+Iago Shifts,伊阿戈切换
+Embla Shifts,恩布拉切换
+#Combatant used Maneuver,#战斗员使用了战技
+{PLAYER} used Maneuver,{PLAYER}使用了战技
+Kat used Maneuver,卡蒂使用了战技
+Roland used Maneuver,罗兰使用了战技
+Driina used Maneuver,德莉娜使用了战技
+Iben used Maneuver,伊本使用了战技
+Iago used Maneuver,伊阿戈使用了战技
+Embla used Maneuver,恩布拉使用了战技
+Giant Bat used Maneuver,巨蝙蝠使用了战技
+Giant Beetle used Maneuver,巨甲虫使用了战技
+Rhino Beetle used Maneuver,犀甲虫使用了战技
+Carrion Crawler used Maneuver,腐尸爬行者使用了战技
+Giant Centipede used Maneuver,巨蜈蚣使用了战技
+Fell Crab used Maneuver,凶煞蟹使用了战技
+Corpse Eater used Maneuver,食尸者使用了战技
+Giant Crab used Maneuver,巨螃蟹使用了战技
+Crab used Maneuver,螃蟹使用了战技
+Rot Crab used Maneuver,腐烂蟹使用了战技
+Spider Crab used Maneuver,蜘蛛蟹使用了战技
+Brood Guard used Maneuver,巢穴守卫使用了战技
+Father used Maneuver,【父亲】使用了战技
+Deep One Priestess used Maneuver,深潜者女祭司使用了战技
+Deep One Queen used Maneuver,深潜者女王使用了战技
+Deep One Warrior used Maneuver,深潜者战士使用了战技
+Devolved used Maneuver,退化者使用了战技
+Ghoul used Maneuver,食尸鬼使用了战技
+Frost Ghoul used Maneuver,寒霜食尸鬼使用了战技
+Giant Gnat used Maneuver,巨型蠓虫使用了战技
+Cave Gnat used Maneuver,洞穴蠓虫使用了战技
+Fell Hog used Maneuver,凶煞野猪使用了战技
+Dire Hound used Maneuver,凶暴野狗使用了战技
+Fell Hound used Maneuver,凶煞野狗使用了战技
+Ice Hound used Maneuver,冰原野狗使用了战技
+Ice Strider used Maneuver,冰上漫步者使用了战技
+Shadow Stalker used Maneuver,暗影猎手使用了战技
+Giant Leech used Maneuver,巨型水蛭使用了战技
+Albino Leech used Maneuver,白化水蛭使用了战技
+Bloodletter used Maneuver,放血者使用了战技
+Fell Lizard used Maneuver,凶煞蜥蜴使用了战技
+Alpha Lizard used Maneuver,阿尔法蜥蜴使用了战技
+Giant Lizard used Maneuver,巨蜥使用了战技
+Ice Salamander used Maneuver,冰火蜥蜴使用了战技
+Mold Child used Maneuver,霉菌幼体使用了战技
+Ooze used Maneuver,软泥怪使用了战技
+Flesh Ooze used Maneuver,血肉软泥怪使用了战技
+Medusa Jelly used Maneuver,美杜莎果冻使用了战技
+Risen Ooze used Maneuver,复生软泥怪使用了战技
+Magma Ooze used Maneuver,岩浆软泥怪使用了战技
+Magmite used Maneuver,岩浆虫使用了战技
+Large Ooze used Maneuver,大型软泥怪使用了战技
+Giant Rat used Maneuver,巨鼠使用了战技
+Dire Rat used Maneuver,凶暴鼠使用了战技
+Chitters-In-Darkness used Maneuver,暗影低语者使用了战技
+Rabid Rat used Maneuver,狂怒鼠使用了战技
+Shade used Maneuver,阴影使用了战技
+Dire Serpent used Maneuver,凶暴蛇使用了战技
+Fell Serpent used Maneuver,凶煞蛇使用了战技
+Giant Snake used Maneuver,巨蛇使用了战技
+Fleshstrider used Maneuver,血肉行者使用了战技
+Flying Polyp used Maneuver,飞行息肉使用了战技
+Dragon's Herald used Maneuver,龙使使用了战技
+Evolved used Maneuver,进化者使用了战技
+Newborne used Maneuver,新生儿使用了战技
+Vessel used Maneuver,容器使用了战技
+Stalker used Maneuver,猎手使用了战技
+Giant Spider used Maneuver,巨蜘蛛使用了战技
+Large Spider used Maneuver,大蜘蛛使用了战技
+Shambler used Maneuver,行尸使用了战技
+Frost Shambler used Maneuver,寒霜行尸使用了战技
+Reaver Berserker used Maneuver,劫掠者狂战士使用了战技
+Brigand Archer used Maneuver,强盗弓箭手使用了战技
+Brigand Rogue used Maneuver,强盗游荡者使用了战技
+Brigand Swordsman used Maneuver,强盗剑士使用了战技
+Mad Sailor used Maneuver,疯水手使用了战技
+Mad Sailo used Maneuver,疯水手使用了战技
+Guild Magos used Maneuver,公会法师使用了战技
+Guild Mag used Maneuver,公会法师使用了战技
+Wight used Maneuver,尸妖使用了战技
+Feral Clone used Maneuver,野性克隆体使用了战技
+Jester used Maneuver,弄臣使用了战技
+Reaver Brute used Maneuver,掠夺者蛮兵使用了战技
+Reaver Scout used Maneuver,劫掠者侦察兵使用了战技
+Reaver used Maneuver,劫掠者使用了战技
+Reaver Blackguard used Maneuver,劫掠者黑卫使用了战技
+Reaver Mystic used Maneuver,劫掠者秘术师使用了战技
+Cultist used Maneuver,邪教徒使用了战技
+Bobbert the Recruit used Maneuver,新兵博伯特使用了战技
+Wreck Picker used Maneuver,残骸拾荒者使用了战技
+Oleg the Gray used Maneuver,灰发奥列格使用了战技
+Red Kala used Maneuver,红卡菈使用了战技
+The Butcher used Maneuver,屠夫使用了战技
+Snow used Maneuver,斯诺使用了战技
+The Ancient King used Maneuver,古王使用了战技
+Joran the Usurper used Maneuver,篡位者约兰使用了战技
+Baroness used Maneuver,男爵夫人使用了战技
+Handmaid used Maneuver,侍女使用了战技
+Majordomo used Maneuver,大管家使用了战技
+#Combatant used Spell,#战斗者使用了法术
+{PLAYER} used Spell,{PLAYER} 使用了法术
+Kat used Spell,卡蒂 使用了法术
+Roland used Spell,罗兰 使用了法术
+Driina used Spell,德莉娜 使用了法术
+Iben used Spell,伊本 使用了法术
+Iago used Spell,伊阿戈 使用了法术
+Embla used Spell,恩布拉 使用了法术
+Giant Bat used Spell,巨蝙蝠 使用了法术
+Giant Beetle used Spell,巨甲虫 使用了法术
+Rhino Beetle used Spell,犀甲虫 使用了法术
+Carrion Crawler used Spell,腐尸爬行者 使用了法术
+Giant Centipede used Spell,巨蜈蚣 使用了法术
+Fell Crab used Spell,凶煞蟹 使用了法术
+Corpse Eater used Spell,食尸者 使用了法术
+Giant Crab used Spell,巨螃蟹 使用了法术
+Crab used Spell,螃蟹 使用了法术
+Rot Crab used Spell,腐烂蟹 使用了法术
+Spider Crab used Spell,蜘蛛蟹 使用了法术
+Brood Guard used Spell,巢穴守卫 使用了法术
+Father used Spell,【父亲】 使用了法术
+Deep One Priestess used Spell,深潜者女祭司 使用了法术
+Deep One Queen used Spell,深潜者女王 使用了法术
+Deep One Warrior used Spell,深潜者战士 使用了法术
+Devolved used Spell,退化者 使用了法术
+Ghoul used Spell,食尸鬼 使用了法术
+Frost Ghoul used Spell,寒霜食尸鬼 使用了法术
+Giant Gnat used Spell,巨型蠓虫 使用了法术
+Cave Gnat used Spell,洞穴蠓虫 使用了法术
+Fell Hog used Spell,凶煞野猪 使用了法术
+Dire Hound used Spell,凶暴野狗 使用了法术
+Fell Hound used Spell,凶煞野狗 使用了法术
+Ice Hound used Spell,冰原野狗 使用了法术
+Ice Strider used Spell,冰上漫步者 使用了法术
+Shadow Stalker used Spell,暗影猎手 使用了法术
+Giant Leech used Spell,巨型水蛭 使用了法术
+Albino Leech used Spell,白化水蛭 使用了法术
+Bloodletter used Spell,放血者 使用了法术
+Fell Lizard used Spell,凶煞蜥蜴 使用了法术
+Alpha Lizard used Spell,阿尔法蜥蜴 使用了法术
+Giant Lizard used Spell,巨蜥 使用了法术
+Ice Salamander used Spell,冰火蜥蜴 使用了法术
+Mold Child used Spell,霉菌幼体 使用了法术
+Ooze used Spell,软泥怪 使用了法术
+Flesh Ooze used Spell,血肉软泥怪 使用了法术
+Medusa Jelly used Spell,美杜莎果冻 使用了法术
+Risen Ooze used Spell,复生软泥怪 使用了法术
+Magma Ooze used Spell,岩浆软泥怪 使用了法术
+Magmite used Spell,岩浆虫 使用了法术
+Large Ooze used Spell,大型软泥怪 使用了法术
+Giant Rat used Spell,巨鼠 使用了法术
+Dire Rat used Spell,凶暴鼠 使用了法术
+Chitters-In-Darkness used Spell,暗影低语者 使用了法术
+Rabid Rat used Spell,狂怒鼠 使用了法术
+Shade used Spell,颜色 使用了法术
+Dire Serpent used Spell,凶暴蛇 使用了法术
+Fell Serpent used Spell,凶煞蛇 使用了法术
+Giant Snake used Spell,巨蛇 使用了法术
+Fleshstrider used Spell,血肉行者 使用了法术
+Flying Polyp used Spell,飞行息肉 使用了法术
+Dragon's Herald used Spell,龙使 使用了法术
+Evolved used Spell,进化者 使用了法术
+Newborne used Spell,新生儿 使用了法术
+Vessel used Spell,容器 使用了法术
+Stalker used Spell,猎手 使用了法术
+Giant Spider used Spell,巨蜘蛛 使用了法术
+Large Spider used Spell,大蜘蛛 使用了法术
+Shambler used Spell,行尸 使用了法术
+Frost Shambler used Spell,寒霜行尸 使用了法术
+Reaver Berserker used Spell,劫掠者狂战士 使用了法术
+Brigand Archer used Spell,强盗弓箭手 使用了法术
+Brigand Rogue used Spell,强盗游荡者 使用了法术
+Brigand Swordsman used Spell,强盗剑士 使用了法术
+Mad Sailor used Spell,疯水手 使用了法术
+Mad Sailo used Spell,疯赛洛 使用了法术
+Guild Magos used Spell,公会法师 使用了法术
+Guild Mag used Spell,公会法师 使用了法术
+Wight used Spell,尸妖 使用了法术
+Feral Clone used Spell,野性克隆体 使用了法术
+Jester used Spell,弄臣 使用了法术
+Reaver Brute used Spell,掠夺者蛮兵 使用了法术
+Reaver Scout used Spell,劫掠者侦察兵 使用了法术
+Reaver used Spell,劫掠者 使用了法术
+Reaver Blackguard used Spell,劫掠者黑卫 使用了法术
+Reaver Mystic used Spell,劫掠者秘术师 使用了法术
+Cultist used Spell,邪教徒 使用了法术
+Bobbert the Recruit used Spell,新兵博伯特 使用了法术
+Wreck Picker used Spell,残骸拾荒者 使用了法术
+Oleg the Gray used Spell,灰发奥列格 使用了法术
+Red Kala used Spell,红卡菈 使用了法术
+The Butcher used Spell,屠夫 使用了法术
+Snow used Spell,斯诺 使用了法术
+The Ancient King used Spell,古王 使用了法术
+Joran the Usurper used Spell,篡位者约兰 使用了法术
+Baroness used Spell,男爵夫人 使用了法术
+Handmaid used Spell,侍女 使用了法术
+Majordomo used Spell,大管家 使用了法术
+Majordomo used Triggered Ability,大管家 使用了触发能力
+#Combatant used Triggered Ability,#战斗员使用了触发能力
+{PLAYER} used Triggered Ability,{PLAYER}使用了触发能力
+Kat used Triggered Ability,卡蒂使用了触发能力
+Roland used Triggered Ability,罗兰使用了触发能力
+Driina used Triggered Ability,德莉娜使用了触发能力
+Iben used Triggered Ability,伊本使用了触发能力
+Iago used Triggered Ability,伊阿戈使用了触发能力
+Embla used Triggered Ability,恩布拉使用了触发能力
+Giant Bat used Triggered Ability,巨蝙蝠使用了触发能力
+Giant Beetle used Triggered Ability,巨甲虫使用了触发能力
+Rhino Beetle used Triggered Ability,犀甲虫使用了触发能力
+Carrion Crawler used Triggered Ability,腐尸爬行者使用了触发能力
+Giant Centipede used Triggered Ability,巨蜈蚣使用了触发能力
+Fell Crab used Triggered Ability,凶煞蟹使用了触发能力
+Corpse Eater used Triggered Ability,食尸者使用了触发能力
+Giant Crab used Triggered Ability,巨螃蟹使用了触发能力
+Crab used Triggered Ability,螃蟹使用了触发能力
+Rot Crab used Triggered Ability,腐烂蟹使用了触发能力
+Spider Crab used Triggered Ability,蜘蛛蟹使用了触发能力
+Brood Guard used Triggered Ability,巢穴守卫使用了触发能力
+Father used Triggered Ability,【父亲】使用了触发能力
+Deep One Priestess used Triggered Ability,深潜者女祭司使用了触发能力
+Deep One Queen used Triggered Ability,深潜者女王使用了触发能力
+Deep One Warrior used Triggered Ability,深潜者战士使用了触发能力
+Devolved used Triggered Ability,退化者使用了触发能力
+Ghoul used Triggered Ability,食尸鬼使用了触发能力
+Frost Ghoul used Triggered Ability,寒霜食尸鬼使用了触发能力
+Giant Gnat used Triggered Ability,巨型蠓虫使用了触发能力
+Cave Gnat used Triggered Ability,洞穴蠓虫使用了触发能力
+Fell Hog used Triggered Ability,凶煞野猪使用了触发能力
+Dire Hound used Triggered Ability,凶暴野狗使用了触发能力
+Fell Hound used Triggered Ability,凶煞野狗使用了触发能力
+Ice Hound used Triggered Ability,冰原野狗使用了触发能力
+Ice Strider used Triggered Ability,冰上漫步者使用了触发能力
+Shadow Stalker used Triggered Ability,暗影猎手使用了触发能力
+Giant Leech used Triggered Ability,巨型水蛭使用了触发能力
+Albino Leech used Triggered Ability,白化水蛭使用了触发能力
+Bloodletter used Triggered Ability,放血者使用了触发能力
+Fell Lizard used Triggered Ability,凶煞蜥蜴使用了触发能力
+Alpha Lizard used Triggered Ability,阿尔法蜥蜴使用了触发能力
+Giant Lizard used Triggered Ability,巨蜥使用了触发能力
+Ice Salamander used Triggered Ability,冰火蜥蜴使用了触发能力
+Mold Child used Triggered Ability,霉菌幼体使用了触发能力
+Ooze used Triggered Ability,软泥怪使用了触发能力
+Flesh Ooze used Triggered Ability,血肉软泥怪使用了触发能力
+Medusa Jelly used Triggered Ability,美杜莎果冻使用了触发能力
+Risen Ooze used Triggered Ability,复生软泥怪使用了触发能力
+Magma Ooze used Triggered Ability,岩浆软泥怪使用了触发能力
+Magmite used Triggered Ability,岩浆虫使用了触发能力
+Large Ooze used Triggered Ability,大型软泥怪使用了触发能力
+Giant Rat used Triggered Ability,巨鼠使用了触发能力
+Dire Rat used Triggered Ability,凶暴鼠使用了触发能力
+Chitters-In-Darkness used Triggered Ability,暗影低语者使用了触发能力
+Rabid Rat used Triggered Ability,狂怒鼠使用了触发能力
+Shade used Triggered Ability,颜色使用了触发能力
+Dire Serpent used Triggered Ability,凶暴蛇使用了触发能力
+Fell Serpent used Triggered Ability,凶煞蛇使用了触发能力
+Giant Snake used Triggered Ability,巨蛇使用了触发能力
+Fleshstrider used Triggered Ability,血肉行者使用了触发能力
+Flying Polyp used Triggered Ability,飞行息肉使用了触发能力
+Dragon's Herald used Triggered Ability,龙使使用了触发能力
+Evolved used Triggered Ability,进化者使用了触发能力
+Newborne used Triggered Ability,新生儿使用了触发能力
+Vessel used Triggered Ability,容器使用了触发能力
+Stalker used Triggered Ability,猎手使用了触发能力
+Giant Spider used Triggered Ability,巨蜘蛛使用了触发能力
+Large Spider used Triggered Ability,大蜘蛛使用了触发能力
+Shambler used Triggered Ability,行尸使用了触发能力
+Frost Shambler used Triggered Ability,寒霜行尸使用了触发能力
+Reaver Berserker used Triggered Ability,劫掠者狂战士使用了触发能力
+Brigand Archer used Triggered Ability,强盗弓箭手使用了触发能力
+Brigand Rogue used Triggered Ability,强盗游荡者使用了触发能力
+Brigand Swordsman used Triggered Ability,强盗剑士使用了触发能力
+Mad Sailor used Triggered Ability,疯水手使用了触发能力
+Mad Sailo used Triggered Ability,疯水手使用了触发能力
+Guild Magos used Triggered Ability,公会法师使用了触发能力
+Guild Mag used Triggered Ability,公会法师使用了触发能力
+Wight used Triggered Ability,尸妖使用了触发能力
+Feral Clone used Triggered Ability,野性克隆体使用了触发能力
+Jester used Triggered Ability,弄臣使用了触发能力
+Reaver Brute used Triggered Ability,掠夺者蛮兵使用了触发能力
+Reaver Scout used Triggered Ability,劫掠者侦察兵使用了触发能力
+Reaver used Triggered Ability,劫掠者使用了触发能力
+Reaver Blackguard used Triggered Ability,劫掠者黑卫使用了触发能力
+Reaver Mystic used Triggered Ability,劫掠者秘术师使用了触发能力
+Cultist used Triggered Ability,邪教徒使用了触发能力
+Bobbert the Recruit used Triggered Ability,新兵博伯特使用了触发能力
+Wreck Picker used Triggered Ability,残骸拾荒者使用了触发能力
+Oleg the Gray used Triggered Ability,灰发奥列格使用了触发能力
+Red Kala used Triggered Ability,红卡菈使用了触发能力
+The Butcher used Triggered Ability,屠夫使用了触发能力
+Snow used Triggered Ability,斯诺使用了触发能力
+The Ancient King used Triggered Ability,古王使用了触发能力
+Joran the Usurper used Triggered Ability,篡位者约兰使用了触发能力
+Baroness used Triggered Ability,男爵夫人使用了触发能力
+Handmaid used Triggered Ability,侍女使用了触发能力
+#Combat Log,#战斗日志
 Soak: -1,吸收：-1
 Soak: -2,吸收：-2
 Soak: -3,吸收：-3
@@ -119,1184 +1129,175 @@ Soak: -10,吸收：-10
 Soak: -11,吸收：-11
 Soak: -12,吸收：-12
 Soak: -13,吸收：-13
-Soak: -14,吞噬: -14
-Soak: -15,吞噬: -15
-Soak: -16,吞噬: -16
-Slashing Damage,斩击伤害
-Blunt Damage,冲击伤害
+Soak: -14,吸收：-14
+Soak: -15,吸收：-15
+Soak: -16,吸收：-16
+Slashing Damage,挥砍伤害
+Blunt Damage,钝击伤害
 Piercing Damage,穿刺伤害
-Magical Damage,法术伤害
+Magical Damage,魔法伤害
 Cold Damage,寒冷伤害
-Acid Damage,酸性伤害
-Kinetic Damage,超凡伤害
+Acid Damage,强酸伤害
+Kinetic Damage,动能伤害
 Sublime Damage,神圣伤害
-Electric Damage,电击伤害
+Electric Damage,闪电伤害
 Fire Damage,火焰伤害
-Psychic Damage,心理伤害
-Slashing Dmg,斩击伤害
-Blunt Dmg,冲击伤害
+Psychic Damage,心灵伤害
+Slashing Dmg,挥砍伤害
+Blunt Dmg,钝击伤害
 Piercing Dmg,穿刺伤害
-Magical Dmg,法术伤害
+Magical Dmg,魔法伤害
 Cold Dmg,寒冷伤害
-Acid Dmg,酸性伤害
+Acid Dmg,强酸伤害
 Kinetic Dmg,动能伤害
-Sublime Dmg,绝美伤害
-Electric Dmg,电击伤害
+Sublime Dmg,神圣伤害
+Electric Dmg,闪电伤害
 Fire Dmg,火焰伤害
 Psychic Dmg,心灵伤害
 Non-Magical Dmg,非魔法伤害
-Resistant to Slashing Damage,抵抗割伤伤害
+Resistant to Slashing Damage,抵抗挥砍伤害
 Resistant to Blunt Damage,抵抗钝击伤害
 Resistant to Piercing Damage,抵抗穿刺伤害
 Resistant to Magical Damage,抵抗魔法伤害
 Resistant to Cold Damage,抵抗寒冷伤害
-Resistant to Acid Damage,抵抗酸性伤害
+Resistant to Acid Damage,抵抗强酸伤害
 Resistant to Kinetic Damage,抵抗动能伤害
-Resistant to Sublime Damage,抵抗绝美伤害
-Resistant to Electric Damage,抵抗电击伤害
+Resistant to Sublime Damage,抵抗神圣伤害
+Resistant to Electric Damage,抵抗闪电伤害
 Resistant to Fire Damage,抵抗火焰伤害
 Resistant to Psychic Damage,抵抗心灵伤害
 Resistant to Non-Magical Damage,抵抗非魔法伤害
 Resistant to Physical Damage,抵抗物理伤害
-Vulnerable to Slashing Damage,易受割伤伤害
-Vulnerable to Blunt Damage,易受钝击伤害影响
-Vulnerable to Piercing Damage,易受穿刺伤害影响
-Vulnerable to Magical Damage,易受魔法伤害影响
-Vulnerable to Cold Damage,易受寒冷伤害影响
-Vulnerable to Acid Damage,易受酸性伤害影响
-Vulnerable to Kinetic Damage,易受动能伤害影响
-Vulnerable to Sublime Damage,易受超凡伤害影响
-Vulnerable to Electric Damage,易受电击伤害影响
-Vulnerable to Fire Damage,易受火焰伤害影响
-Vulnerable to Psychic Damage,易受心灵伤害影响
-Vulnerable to Non-Magical Damage,易受非魔法伤害影响
-Vulnerable to Physical Damage,易受物理伤害影响
-Immune to Slashing Damage,对割伤伤害免疫
-Immune to Blunt Damage,对钝击伤害免疫
-Immune to Piercing Damage,对穿刺伤害免疫
-Immune to Magical Damage,对魔法伤害免疫
-Immune to Cold Damage,对寒冷伤害免疫
-Immune to Acid Damage,对酸性伤害免疫
-Immune to Kinetic Damage,对动能伤害免疫
-Immune to Sublime Damage,对超凡伤害免疫
-Immune to Electric Damage,免受电伤
-Immune to Fire Damage,免受火伤
-Immune to Psychic Damage,免受心灵伤害
-Immune to Non-Magical Damage,免受非魔法伤害
-Immune to Physical Damage,免受物理伤害
-#Combatant is out of ammo!,#参战者弹药用尽！
-{PLAYER} is out of ammo!,__PLACEHOLDER_0__ 弹药用尽！
-Kat is out of ammo!,卡特弹药用尽！
-Roland is out of ammo!,罗兰弹药用尽！
-Driina is out of ammo!,德里娜弹药用尽！
-Iben is out of ammo!,伊本弹药用尽！
-Iago is out of ammo!,伊戈弹药用尽！
-Embla is out of ammo!,埃姆拉弹药用尽！
-#Combatant passes!,#参战者通过了！
-{PLAYER} passes!,__PLACEHOLDER_0__ 通过了！
-Kat passes!,卡特通过了！
-Roland passes!,罗兰通过了！
-Driina passes!,德里娜通过了！
-Iben passes!,伊本通过了！
-Iago passes!,伊戈通过了！
-Embla passes!,伊姆拉通过了！
-#Combatant Shifts,#战斗者变换
-{PLAYER} Shifts,__PLACEHOLDER_0__ 变换
-Kat Shifts,卡特变换
-Roland Shifts,罗兰变换
-Driina Shifts,德里娜变换
-Iben Shifts,伊本变换
-Iago Shifts,伊戈变换
-Embla Shifts,伊姆拉变换
-#Combatant defends,#战斗者防御
-{PLAYER} Defends,__PLACEHOLDER_0__ 防御
-Kat Defends,卡特防御
-Roland Defends,罗兰防御
-Driina Defends,德里娜防御
-Iben Defends,伊本防御
-Iago Defends,伊戈防御
-Embla Defends,伊姆拉防御
-#Combatant Disengages,#战斗者脱离战斗
-{PLAYER} Disengages,__PLACEHOLDER_0__ 脱离战斗
-Kat Disengages,卡特脱离战斗
-Roland Disengages,罗兰解除动作
-Driina Disengages,德里娜解除动作
-Iben Disengages,伊本解除动作
-Iago Disengages,伊戈解除动作
-Embla Disengages,伊姆拉解除动作
-#Combatant holds his action,#参战者保留动作
-{PLAYER} holds his action,__PLACEHOLDER_0__ 保留动作
-{PLAYER} holds her action,__PLACEHOLDER_0__ 保留动作
-Kat holds her action,卡特保留动作
-Roland holds his action,罗兰保留动作
-Driina holds her action,德里娜保留动作
-Iben holds his action,伊本保留动作
-Iago holds his action,伊戈保留动作
-Embla holds her action,伊姆拉保留动作
-#Combatant acts,#参战者行动
-{PLAYER} acts,__PLACEHOLDER_0__ 行动
-Kat acts,卡特行动
-Roland acts,罗兰行动
-Driina acts,德里娜行动
-Iben acts,伊本行动
-Iago acts,Iago 行动
-Embla acts,Embla 行动
-Giant Bat acts,巨蝙蝠 行动
-Giant Beetle acts,巨甲虫 行动
-Rhino Beetle acts,巨犀甲虫 行动
-Carrion Crawler acts,腐肉爬行者 行动
-Giant Centipede acts,巨蝎子 行动
-Fell Crab acts,深海蟹 行动
-Corpse Eater acts,尸体食者 行动
-Giant Crab acts,巨蟹 行动
-Crab acts,蟹 行动
-Rot Crab acts,腐烂蟹 行动
-Spider Crab acts,巨蟹 行动
-Brood Guard acts,群落卫士 行动
-Father acts,父亲 行动
-Deep One Priestess acts,深海女祭司 行动
-Deep One Queen acts,深海女王 行动
-Deep One Warrior acts,深海战士 行动
-Devolved acts,退化者 行动
-Ghoul acts,吠尸 行动
-Frost Ghoul acts,冰尸的行为
-Giant Gnat acts,巨型蚊子的行为
-Cave Gnat acts,山洞蚊子的行为
-Fell Hog acts,深渊野猪的行为
-Dire Hound acts,巨型猎犬的行为
-Fell Hound acts,深渊猎犬的行为
-Ice Hound acts,冰霜猎犬的行为
-Ice Strider acts,冰霜行者的行为
-Shadow Stalker acts,影行者的行为
-Giant Leech acts,巨型吸血藤的行为
-Albino Leech acts,白化吸血藤的行为
-Bloodletter acts,血书兽的行为
-Fell Lizard acts,深渊蜥蜴的行为
-Alpha Lizard acts,领主蜥蜴的行为
-Giant Lizard acts,巨型蜥蜴的行为
-Ice Salamander acts,冰霜火蜥蜴的行为
-Mold Child acts,藻人幼体的行为
-Ooze acts,浑浊物的行为
-Flesh Ooze acts,肉状浑浊物的行为
-Medusa Jelly acts,美杜莎果冻兽的行为
-Risen Ooze acts,复生的黏液行动
-Magma Ooze acts,熔岩黏液行动
-Magmite acts,熔岩黏液行动
-Large Ooze acts,大型黏液行动
-Giant Rat acts,巨鼠行动
-Dire Rat acts,恶魔鼠行动
-Chitters-In-Darkness acts,黑暗低语者行动
-Rabid Rat acts,狂暴鼠行动
-Shade acts,阴影行动
-Dire Serpent acts,恶魔蟒行动
-Fell Serpent acts,恶魔蟒行动
-Giant Snake acts,巨型蟒蛇行动
-Fleshstrider acts,肉行者行动
-Flying Polyp acts,飞行的水泡行动
-Dragon's Herald acts,龙的使者行动
-Evolved acts,进化行动
-Newborne acts,新生行动
-Vessel acts,容器行动
-Stalker acts,潜行者行动
-Giant Spider acts,巨型蜘蛛行动
-Large Spider acts,大蜘蛛行动
-Shambler acts,摇摇晃晃者行动
-Frost Shambler acts,冰霜摇摇晃晃者行动
-Reaver Berserker acts,攫取狂战士行动
-Brigand Archer acts,地下盗贼弓箭手行动
-Brigand Rogue acts,地下盗贼盗贼行动
-Brigand Swordsman acts,地下盗贼剑士行动
-Mad Sailor acts,疯狂水手行动
-Mad Sailo acts,疯狂水手行动
-Guild Magos acts,行会魔导士行动
-Guild Mag acts,行会魔导士行动
-Wight acts,僵尸行动
-Feral Clone acts,野性克隆体行动
-Jester acts,小丑行动
-Reaver Brute acts,攫取野蛮人行动
-Reaver Scout acts,攫取侦察兵行动
-Reaver acts,攫取者行动
-Reaver Blackguard acts,攫取黑卫士行动
-Reaver Mystic acts,攫取神秘学士行动
-Cultist acts,教派信徒行动
-Bobbert the Recruit acts,招募兵鲍伯伯特行动
-Wreck Picker acts,破坏拾荒者行动
-Oleg the Gray acts,灰色奥列格行动
-Red Kala acts,红色卡拉行动
-The Butcher acts,屠夫行动
-Snow acts,雪人行动
-The Ancient King acts,古老国王行动
-Joran the Usurper acts,篡位者约兰行动
-Baroness acts,邦夫人行动
-Handmaid acts,女仆行动
-Majordomo acts,家庭总管行动
-#Combatant begun,#战斗者开始
-{PLAYER} begun,__PLACEHOLDER_0__ 开始
-Kat begun,卡特开始
-Roland begun,罗兰开始
-Driina begun,迪里娜开始
-Iben begun,伊本开始
-Iago begun,伊阿哥开始
-Embla begun,伊姆拉开始
-Giant Bat begun,巨型蝙蝠开始
-Giant Beetle begun,巨型甲虫开始行动
-Rhino Beetle begun,犀牛甲虫开始行动
-Carrion Crawler begun,腐肉爬行者开始行动
-Giant Centipede begun,巨型蜈蚣开始行动
-Fell Crab begun,坠落螃蟹开始行动
-Corpse Eater begun,尸体食者开始行动
-Giant Crab begun,巨型螃蟹开始行动
-Crab begun,螃蟹开始行动
-Rot Crab begun,腐烂螃蟹开始行动
-Spider Crab begun,巨型蟹开始行动
-Brood Guard begun,群落卫士开始行动
-Father begun,父亲开始行动
-Deep One Priestess begun,深海女祭司开始行动
-Deep One Queen begun,深海女王开始行动
-Deep One Warrior begun,深海战士开始行动
-Devolved begun,退化者开始行动
-Ghoul begun,吠lok开始行动
-Frost Ghoul begun,寒冰吠lok开始行动
-Giant Gnat begun,巨型蚋开始行动
-Cave Gnat begun,山洞蚋开始行动
-Fell Hog begun,残暴野猪开始行动
-Dire Hound begun,巨狼开始行动
-Fell Hound begun,残暴狼开始行动
-Ice Hound begun,冰狼开始行动
-Ice Strider begun,冰行者开始行动
-Shadow Stalker begun,阴影追踪者开始行动
-Giant Leech begun,巨型蚂蟥开始行动
-Albino Leech begun,白化蚂蟥开始行动
-Bloodletter begun,血书者开始行动
-Fell Lizard begun,残暴蜥蜴开始行动
-Alpha Lizard begun,领主蜥蜴开始行动
-Giant Lizard begun,巨型蜥蜴开始行动
-Ice Salamander begun,冰元素蜥蜴开始行动
-Mold Child begun,藻人开始行动
-Ooze begun,浑浊物开始行动
-Flesh Ooze begun,肉状浑浊物开始行动
-Medusa Jelly begun,美杜莎果冻开始行动
-Risen Ooze begun,复生浑浊物开始行动
-Magma Ooze begun,熔岩浑浊物开始行动
-Magmite begun,熔铁开始行动
-Large Ooze begun,大型黏液开始行动
-Giant Rat begun,巨鼠开始行动
-Dire Rat begun,恶魔鼠开始行动
-Chitters-In-Darkness begun,黑暗耳语者开始行动
-Rabid Rat begun,疯狂鼠开始行动
-Shade begun,阴影开始行动
-Dire Serpent begun,恶魔蟒开始行动
-Fell Serpent begun,残酷蟒开始行动
-Giant Snake begun,巨蛇开始行动
-Fleshstrider begun,肉行者开始行动
-Flying Polyp begun,飞行的水泡开始行动
-Dragon's Herald begun,龙的使者开始行动
-Evolved begun,进化开始
-Newborne begun,新生者开始
-Vessel begun,载体开始
-Stalker begun,跟踪者开始行动
-Giant Spider begun,巨魔蜘蛛开始行动
-Large Spider begun,大型蜘蛛开始行动
-Shambler begun,摇摇晃晃者开始行动
-Frost Shambler begun,寒冰摇摇晃晃者开始行动
-Reaver Berserker begun,残暴掠夺者狂战士开始行动
-Brigand Archer begun,海盗弓手开始行动
-Brigand Rogue begun,海盗盗贼开始行动
-Brigand Swordsman begun,海盗剑士开始行动
-Mad Sailor begun,疯狂水手开始行动
-Mad Sailo begun,疯狂水手开始行动
-Guild Magos begun,行会法师开始行动
-Guild Mag begun,行会法师开始行动
-Wight begun,魔尸开始行动
-Feral Clone begun,野性克隆体开始行动
-Jester begun,小丑开始行动
-Reaver Brute begun,残暴掠夺者猛男开始行动
-Reaver Scout begun,残暴掠夺者侦察兵开始行动
-Reaver begun,残暴掠夺者开始行动
-Reaver Blackguard begun,残暴掠夺者黑卫开始行动
-Reaver Mystic begun,残暴掠夺者灵能者开始行动
-Cultist begun,教派成员开始行动
-Bobbert the Recruit begun,沃伯特新兵开始行动
-Wreck Picker begun,废墟拾荒者开始行动
-Oleg the Gray begun,格雷奥列开始行动
-Red Kala begun,红卡拉开始了
-The Butcher begun,屠夫开始了
-Snow begun,雪开始了
-The Ancient King begun,古老国王开始了
-Joran the Usurper begun,约ran篡位者开始了
-Baroness begun,伯爵夫人开始了
-Handmaid begun,女仆开始了
-Majordomo begun,总管开始了
-#Combatant recovers from surprise!,#参战者从惊讶中恢复过来！
-{PLAYER} recovers from surprise!,__PLACEHOLDER_0__ 从惊讶中恢复过来！
-Kat  recovers from surprise!,卡特从惊讶中恢复过来！
-Roland recovers from surprise!,罗兰从惊讶中恢复过来！
-Driina recovers from surprise!,德里娜从惊讶中恢复过来！
-Iben recovers from surprise!,伊本从惊讶中恢复过来！
-Iago recovers from surprise!,伊阿哥从惊讶中恢复过来！
-Embla recovers from surprise!,伊姆拉从惊讶中恢复过来！
-Giant Bat recovers from surprise!,巨蝙蝠从惊讶中恢复过来！
-Giant Beetle recovers from surprise!,巨甲虫从惊讶中恢复过来！
-Rhino Beetle recovers from surprise!,犀金龟从惊讶中恢复过来！
-Carrion Crawler recovers from surprise!,腐肉爬行者从惊讶中恢复过来！
-Giant Centipede recovers from surprise!,巨蝎从惊讶中恢复过来！
-Fell Crab recovers from surprise!,巨型螃蟹从惊讶中恢复过来！
-Corpse Eater recovers from surprise!,尸体吞噬者从惊讶中恢复过来！
-Giant Crab recovers from surprise!,巨型螃蟹从惊讶中恢复过来！
-Crab recovers from surprise!,螃蟹从惊讶中恢复过来！
-Rot Crab recovers from surprise!,腐烂螃蟹从惊讶中恢复过来！
-Spider Crab recovers from surprise!,石蟹从惊讶中恢复过来！
-Brood Guard recovers from surprise!,群落卫士从惊讶中恢复过来！
-Father recovers from surprise!,父亲从惊讶中恢复过来！
-Deep One Priestess recovers from surprise!,深渊女祭司从惊讶中恢复过来！
-Deep One Queen recovers from surprise!,深渊女王从惊讶中恢复过来！
-Deep One Warrior recovers from surprise!,深渊战士从惊讶中恢复过来！
-Devolved recovers from surprise!,退化者从惊讶中恢复过来！
-Ghoul recovers from surprise!,地ombie从惊讶中恢复过来！
-Frost Ghoul recovers from surprise!,寒霜地ombie从惊讶中恢复过来！
-Giant Gnat recovers from surprise!,巨型蚊子从惊讶中恢复过来！
-Cave Gnat recovers from surprise!,山洞蚊子从惊讶中恢复过来！
-Fell Hog recovers from surprise!,巨型野猪从惊讶中恢复过来！
-Dire Hound recovers from surprise!,残暴猎犬从惊讶中恢复过来！
-Fell Hound recovers from surprise!,巨型猎犬从惊讶中恢复过来！
-Ice Hound recovers from surprise!,冰狼恢复了惊喜状态！
-Ice Strider recovers from surprise!,冰行者恢复了惊喜状态！
-Shadow Stalker recovers from surprise!,阴影追踪者恢复了惊喜状态！
-Giant Leech recovers from surprise!,巨型吸血虫恢复了惊喜状态！
-Albino Leech recovers from surprise!,白化吸血虫恢复了惊喜状态！
-Bloodletter recovers from surprise!,血书者恢复了惊喜状态！
-Fell Lizard recovers from surprise!,堕落蜥蜴恢复了惊喜状态！
-Alpha Lizard recovers from surprise!,雌雄同体蜥蜴恢复了惊喜状态！
-Giant Lizard recovers from surprise!,巨型蜥蜴恢复了惊喜状态！
-Ice Salamander recovers from surprise!,冰龙蜥恢复了惊喜状态！
-Mold Child recovers from surprise!,藻人恢复了惊喜状态！
-Ooze recovers from surprise!,浑浊物恢复了惊喜状态！
-Flesh Ooze recovers from surprise!,石化触手恢复了惊喜状态！
-Medusa Jelly recovers from surprise!,巨型浑浊物恢复了惊喜状态！
-Risen Ooze recovers from surprise!,火山浑浊物恢复了惊喜状态！
-Magma Ooze recovers from surprise!,火石恢复了惊喜状态！
-Magmite recovers from surprise!,大型浑浊物恢复了惊喜状态！
-Large Ooze recovers from surprise!,巨型老鼠恢复了惊喜状态！
-Giant Rat recovers from surprise!,巨型野鼠恢复了惊喜状态！
-Dire Rat recovers from surprise!,巨型野鼠恢复了惊喜状态！
-Chitters-In-Darkness recovers from surprise!,黑暗之呢喃从惊讶中恢复过来！
-Rabid Rat recovers from surprise!,狂暴鼠从惊讶中恢复过来！
-Shade recovers from surprise!,阴影从惊讶中恢复过来！
-Dire Serpent recovers from surprise!,残酷巨蛇从惊讶中恢复过来！
-Fell Serpent recovers from surprise!,恶魔巨蛇从惊讶中恢复过来！
-Giant Snake recovers from surprise!,巨型蟒蛇从惊讶中恢复过来！
-Fleshstrider recovers from surprise!,肉行者从惊讶中恢复过来！
-Flying Polyp recovers from surprise!,飞行的多泡体从惊讶中恢复过来！
-Dragon's Herald recovers from surprise!,龙使者从惊讶中恢复过来！
-Evolved recovers from surprise!,进化者从惊讶中恢复过来！
-Newborne recovers from surprise!,新生者从惊讶中恢复过来！
-Vessel recovers from surprise!,载体从惊讶中恢复过来！
-Stalker recovers from surprise!,潜行者从惊讶中恢复过来！
-Giant Spider recovers from surprise!,巨型蜘蛛从惊讶中恢复过来！
-Large Spider recovers from surprise!,大型蜘蛛从惊讶中恢复过来！
-Shambler recovers from surprise!,摇摇晃晃者从惊讶中恢复过来！
-Frost Shambler recovers from surprise!,寒霜摇摇晃晃者从惊讶中恢复过来！
-Reaver Berserker recovers from surprise!,攫取狂战士从惊讶中恢复过来！
-Brigand Archer recovers from surprise!,海盗弓手从惊讶中恢复过来！
-Brigand Rogue recovers from surprise!,海盗盗贼从惊讶中恢复过来！
-Brigand Swordsman recovers from surprise!,暴徒剑士从惊讶中恢复过来！
-Mad Sailor recovers from surprise!,疯狂水手从惊讶中恢复过来！
-Mad Sailo recovers from surprise!,疯狂水手从惊讶中恢复过来！
-Guild Magos recovers from surprise!,行会魔导士从惊讶中恢复过来！
-Guild Mag recovers from surprise!,行会魔导士从惊讶中恢复过来！
-Wight recovers from surprise!,鬼影从惊讶中恢复过来！
-Feral Clone recovers from surprise!,野性克隆体从惊讶中恢复过来！
-Jester recovers from surprise!,小丑从惊讶中恢复过来！
-Reaver Brute recovers from surprise!,剥夺者猛士从惊讶中恢复过来！
-Reaver Scout recovers from surprise!,剥夺者斥候从惊讶中恢复过来！
-Reaver recovers from surprise!,剥夺者从惊讶中恢复过来！
-Reaver Blackguard recovers from surprise!,剥夺者黑卫从惊讶中恢复过来！
-Reaver Mystic recovers from surprise!,剥夺者神秘学者从惊讶中恢复过来！
-Cultist recovers from surprise!,教派教徒从惊讶中恢复过来！
-Bobbert the Recruit recovers from surprise!,招募兵鲍勃伯特从惊讶中恢复过来！
-Wreck Picker recovers from surprise!,残骸拾荒者从惊讶中恢复过来！
-Oleg the Gray recovers from surprise!,灰色奥列格从惊讶中恢复过来！
-Red Kala recovers from surprise!,红色卡拉从惊讶中恢复过来！
-The Butcher recovers from surprise!,屠夫从惊讶中恢复过来！
-Snow recovers from surprise!,雪从惊讶中恢复过来！
-The Ancient King recovers from surprise!,古老的国王从惊讶中恢复过来！
-Joran the Usurper recovers from surprise!,篡位者乔兰从惊讶中恢复过来！
-Baroness recovers from surprise!,邦女爵从惊讶中恢复过来！
-Handmaid recovers from surprise!,女侍从惊讶中恢复过来！
-Majordomo recovers from surprise!,家宰从惊讶中恢复过来！
-#Combatant is occupied!,#Combatant is occupied!
-{PLAYER} is occupied!,战斗者被占据！
-Kat is occupied!,__PLACEHOLDER_0__ is occupied!
-Roland is occupied!,__PLACEHOLDER_0__被占据！
-Driina is occupied!,凯特被占据！
-Iben is occupied!,罗兰被占据！
-Iago is occupied!,德莉娜被占据！
-Embla is occupied!,伊本被占据！
-Giant Bat is occupied!,伊阿哥被占据！
-Giant Beetle is occupied!,伊姆拉被占据！
-Rhino Beetle is occupied!,巨蝙蝠被占据！
-Carrion Crawler is occupied!,巨型甲虫被占据！
-Giant Centipede is occupied!,犀牛甲虫被占据！
-Fell Crab is occupied!,腐肉爬行者被占据！
-Corpse Eater is occupied!,巨型百足虫被占据！
-Giant Crab is occupied!,大螃蟹被占据了！
-Crab is occupied!,螃蟹被占据了！
-Rot Crab is occupied!,腐烂螃蟹被占据了！
-Spider Crab is occupied!,石蟹被占据了！
-Brood Guard is occupied!,群落卫士被占据了！
-Father is occupied!,父亲被占据了！
-Deep One Priestess is occupied!,深海祭司被占据了！
-Deep One Queen is occupied!,深海女王被占据了！
-Deep One Warrior is occupied!,深海战士被占据了！
-Devolved is occupied!,退化者被占据了！
-Ghoul is occupied!,腐尸人被占据了！
-Frost Ghoul is occupied!,寒霜腐尸人被占据了！
-Giant Gnat is occupied!,巨型蚊子被占据了！
-Cave Gnat is occupied!,山洞蚊子被占据了！
-Fell Hog is occupied!,凶恶野猪被占据了！
-Dire Hound is occupied!,狼犬被占据了！
-Fell Hound is occupied!,凶恶犬被占据了！
-Ice Hound is occupied!,冰霜犬被占据了！
-Ice Strider is occupied!,冰行者被占据了！
-Shadow Stalker is occupied!,影行者被占据了！
-Giant Leech is occupied!,巨魔吸血鬼已占据！
-Albino Leech is occupied!,白化魔吸血鬼已占据！
-Bloodletter is occupied!,血书兽已占据！
-Fell Lizard is occupied!,残暴蜥蜴人已占据！
-Alpha Lizard is occupied!,雅法蜥蜴人已占据！
-Giant Lizard is occupied!,巨型蜥蜴人已占据！
-Ice Salamander is occupied!,冰焰蜥蜴人已占据！
-Mold Child is occupied!,藻人幼体已占据！
-Ooze is occupied!,糊状物已占据！
-Flesh Ooze is occupied!,肉状物已占据！
-Medusa Jelly is occupied!,美杜莎果冻已占据！
-Risen Ooze is occupied!,复生糊状物已占据！
-Magma Ooze is occupied!,熔岩糊状物已占据！
-Magmite is occupied!,熔岩体已占据！
-Large Ooze is occupied!,大型糊状物已占据！
-Giant Rat is occupied!,巨型老鼠已占据！
-Dire Rat is occupied!,残暴老鼠已占据！
-Chitters-In-Darkness is occupied!,黑暗耳语者已占据！
-Rabid Rat is occupied!,狂暴老鼠已占据！
-Shade is occupied!,阴影已占据！
-Dire Serpent is occupied!,无情巨蛇占位！
-Fell Serpent is occupied!,恶名蛇占位！
-Giant Snake is occupied!,巨型蟒蛇占位！
-Fleshstrider is occupied!,肉行者占位！
-Flying Polyp is occupied!,飞行触手占位！
-Dragon's Herald is occupied!,龙使占位！
-Evolved is occupied!,进化中占位！
-Newborne is occupied!,新生者占位！
-Vessel is occupied!,载体占位！
-Stalker is occupied!,跟踪者占位！
-Giant Spider is occupied!,巨型蜘蛛占位！
-Large Spider is occupied!,大型蜘蛛占位！
-Shambler is occupied!,摇摇晃晃者占位！
-Frost Shambler is occupied!,寒霜摇摇晃晃者占位！
-Reaver Berserker is occupied!,攫取狂战士占位！
-Brigand Archer is occupied!,海盗弓箭手占位！
-Brigand Rogue is occupied!,海盗盗贼占位！
-Brigand Swordsman is occupied!,海盗剑士占位！
-Mad Sailor is occupied!,狂暴水手占位！
-Mad Sailo is occupied!,狂暴水手占位！
-Guild Magos is occupied!,行会魔导士已满员！
-Guild Mag is occupied!,行会魔导士已满员！
-Wight is occupied!,阴尸已满员！
-Feral Clone is occupied!,野性克隆体已满员！
-Jester is occupied!,小丑已满员！
-Reaver Brute is occupied!,破坏者猛士已满员！
-Reaver Scout is occupied!,破坏者斥候已满员！
-Reaver is occupied!,破坏者已满员！
-Reaver Blackguard is occupied!,破坏者黑卫已满员！
-Reaver Mystic is occupied!,破坏者灵士已满员！
-Cultist is occupied!,教派成员已满员！
-Bobbert the Recruit is occupied!,招募兵鲍勃伯特已满员！
-Wreck Picker is occupied!,破坏拾荒者已满员！
-Oleg the Gray is occupied!,格雷奥列格已满员！
-Red Kala is occupied!,红卡拉已满员！
-The Butcher is occupied!,屠夫已满员！
-Snow is occupied!,雪已满员！
-The Ancient King is occupied!,古老国王已满员！
-Joran the Usurper is occupied!,乌索普者已满员！
-Baroness is occupied!,伯爵夫人已满员！
-Handmaid is occupied!,宫女已占位！
-Majordomo is occupied!,家宰已占位！
-#Combatant does not have a valid target!,#战斗者没有有效的目标！
-{PLAYER} does not have a valid target!,__PLACEHOLDER_0__ 没有有效的目标！
-Kat does not have a valid target!,凯特没有有效的目标！
-Roland does not have a valid target!,罗兰没有有效的目标！
-Driina does not have a valid target!,德瑞娜没有有效的目标！
-Iben does not have a valid target!,伊本没有有效的目标！
-Iago does not have a valid target!,伊阿哥没有有效的目标！
-Embla does not have a valid target!,伊姆拉没有有效的目标！
-Giant Bat does not have a valid target!,巨蝙蝠没有有效的目标！
-Giant Beetle does not have a valid target!,巨型甲虫没有有效的目标！
-Rhino Beetle does not have a valid target!,巨角甲虫没有有效的目标！
-Carrion Crawler does not have a valid target!,腐肉蠕虫没有有效的目标！
-Giant Centipede does not have a valid target!,巨型百足虫没有有效的目标！
-Fell Crab does not have a valid target!,恶灵蟹没有有效的目标！
-Corpse Eater does not have a valid target!,尸体食者没有有效的目标！
-Giant Crab does not have a valid target!,巨型螃蟹没有有效的目标！
-Crab does not have a valid target!,螃蟹没有有效的目标！
-Rot Crab does not have a valid target!,腐烂螃蟹没有有效的目标！
-Spider Crab does not have a valid target!,网球蟹没有有效的目标！
-Brood Guard does not have a valid target!,群落卫士没有有效的目标！
-Father does not have a valid target!,父亲没有有效的目标！
-Deep One Priestess does not have a valid target!,深海祭司没有有效的目标！
-Deep One Queen does not have a valid target!,深海女王没有有效的目标！
-Deep One Warrior does not have a valid target!,深海战士没有有效的目标！
-Devolved does not have a valid target!,退化者没有有效的目标！
-Ghoul does not have a valid target!,僵尸蝇没有有效的目标！
-Frost Ghoul does not have a valid target!,寒霜僵尸蝇没有有效的目标！
-Giant Gnat does not have a valid target!,巨型蚊蚋没有有效的目标！
-Cave Gnat does not have a valid target!,山洞蚊蚋没有有效的目标！
-Fell Hog does not have a valid target!,深渊野猪没有有效的目标！
-Dire Hound does not have a valid target!,残酷猎犬没有有效的目标！
-Fell Hound does not have a valid target!,深渊猎犬没有有效的目标！
-Ice Hound does not have a valid target!,寒冰猎犬没有有效的目标！
-Ice Strider does not have a valid target!,寒冰行者没有有效的目标！
-Shadow Stalker does not have a valid target!,影踪追踪者没有有效的目标！
-Giant Leech does not have a valid target!,巨型血吸虫没有有效的目标！
-Albino Leech does not have a valid target!,白化血吸虫没有有效的目标！
-Bloodletter does not have a valid target!,血书者没有有效的目标！
-Fell Lizard does not have a valid target!,坠落的蜥蜴没有有效的目标！
-Alpha Lizard does not have a valid target!,阿尔法蜥蜴没有有效的目标！
-Giant Lizard does not have a valid target!,巨型蜥蜴没有有效的目标！
-Ice Salamander does not have a valid target!,冰霜蜥蜴没有有效的目标！
-Mold Child does not have a valid target!,藻人没有有效的目标！
-Ooze does not have a valid target!,黏液怪没有有效的目标！
-Flesh Ooze does not have a valid target!,肉状黏液怪没有有效的目标！
-Medusa Jelly does not have a valid target!,石化凝胶没有有效的目标！
-Risen Ooze does not have a valid target!,复活的黏液怪没有有效的目标！
-Magma Ooze does not have a valid target!,熔岩黏液怪没有有效的目标！
-Magmite does not have a valid target!,熔岩人没有有效的目标！
-Large Ooze does not have a valid target!,大型黏液怪没有有效的目标！
-Giant Rat does not have a valid target!,巨型老鼠没有有效的目标！
-Dire Rat does not have a valid target!,恶魔老鼠没有有效的目标！
-Chitters-In-Darkness does not have a valid target!,黑暗中的细语者没有有效的目标！
-Rabid Rat does not have a valid target!,狂暴老鼠没有有效的目标！
-Shade does not have a valid target!,阴影没有有效的目标！
-Dire Serpent does not have a valid target!,恶魔巨蛇没有有效的目标！
-Fell Serpent does not have a valid target!,坠落的巨蛇没有有效的目标！
-Giant Snake does not have a valid target!,巨型蟒蛇没有有效的目标！
-Fleshstrider does not have a valid target!,肉行者没有有效的目标！
-Flying Polyp does not have a valid target!,飞行的多足虫没有有效的目标！
-Dragon's Herald does not have a valid target!,龙使没有有效的目标！
-Evolved does not have a valid target!,进化者没有有效的目标！
-Newborne does not have a valid target!,新生者没有有效的目标！
-Vessel does not have a valid target!,容器没有有效的目标！
-Stalker does not have a valid target!,跟踪者没有有效的目标！
-Giant Spider does not have a valid target!,大型蜘蛛没有有效的目标！
-Large Spider does not have a valid target!,大型蜘蛛没有有效的目标！（重复）
-Shambler does not have a valid target!,摇摇晃晃者没有有效的目标！
-Frost Shambler does not have a valid target!,冰霜摇摇晃晃者没有有效的目标！
-Reaver Berserker does not have a valid target!,攻掠狂暴者没有有效的目标！
-Brigand Archer does not have a valid target!,海盗弓箭手没有有效的目标！
-Brigand Rogue does not have a valid target!,海盗盗贼没有有效的目标！
-Brigand Swordsman does not have a valid target!,海盗剑士没有有效的目标！
-Mad Sailor does not have a valid target!,疯狂水手没有有效的目标！
-Mad Sailo does not have a valid target!,疯狂水手没有有效的目标！（重复）
-Guild Magos does not have a valid target!,行会魔导士没有有效的目标！
-Guild Mag does not have a valid target!,行会魔没有有效的目标！（重复）
-Wight does not have a valid target!,僵尸灵没有有效的目标！
-Feral Clone does not have a valid target!,狂暴克隆没有有效的目标！
-Jester does not have a valid target!,小丑没有有效的目标！
-Reaver Brute does not have a valid target!,拆解壮汉没有有效的目标！
-Reaver Scout does not have a valid target!,拆解斥候没有有效的目标！
-Reaver does not have a valid target!,拆解者没有有效的目标！
-Reaver Blackguard does not have a valid target!,拆解黑卫士没有有效的目标！
-Reaver Mystic does not have a valid target!,拆解术士没有有效的目标！
-Cultist does not have a valid target!,教派成员没有有效的目标！
-Bobbert the Recruit does not have a valid target!,招募兵鲍勃特没有有效的目标！
-Wreck Picker does not have a valid target!,拆解拾荒者没有有效的目标！
-Oleg the Gray does not have a valid target!,格雷奥列格没有有效的目标！
-Red Kala does not have a valid target!,红卡拉没有有效的目标！
-The Butcher does not have a valid target!,屠夫没有有效的目标！
-Snow does not have a valid target!,雪没有有效的目标！
-The Ancient King does not have a valid target!,古老国王没有有效的目标！
-Joran the Usurper does not have a valid target!,乔兰篡位者没有有效的目标！
-Baroness does not have a valid target!,邦女爵没有有效的目标！
-Handmaid does not have a valid target!,女仆没有有效的目标！
-Majordomo does not have a valid target!,家丁没有有效的目标！
-#Combatant used Maneuver,#战斗者使用了格斗技巧
-{PLAYER} used Maneuver,{PLACEHOLDER_0} 使用了格斗技巧
-Kat used Maneuver,凯特使用了格斗技巧
-Roland used Maneuver,罗兰使用了格斗技巧
-Driina used Maneuver,德里娜使用了格斗技巧
-Iben used Maneuver,伊本使用了格斗技巧
-Iago used Maneuver,伊阿哥使用了格斗技巧
-Embla used Maneuver,伊姆bla使用了格斗技巧
-Giant Bat used Maneuver,巨蝙蝠使用了格斗技巧
-Giant Beetle used Maneuver,巨型甲虫使用了格斗技巧
-Rhino Beetle used Maneuver,巨角甲虫使用了格斗技巧
-Carrion Crawler used Maneuver,腐肉爬行者使用了格斗技巧
-Giant Centipede used Maneuver,巨型蜈蚣使用了格斗技巧
-Fell Crab used Maneuver,恶魔螃蟹使用了格斗技巧
-Corpse Eater used Maneuver,尸体吞噬者使用了格斗技巧
-Giant Crab used Maneuver,巨型螃蟹使用了格斗技巧
-Crab used Maneuver,螃蟹使用了格斗技巧
-Rot Crab used Maneuver,腐烂螃蟹使用了格斗技巧
-Spider Crab used Maneuver,巨型寄居蟹使用了格斗技巧
-Brood Guard used Maneuver,群落卫士使用了格斗技巧
-Father used Maneuver,父亲使用了格斗技巧
-Deep One Priestess used Maneuver,深海女祭司使用了格斗技巧
-Deep One Queen used Maneuver,深海女王使用了格斗技巧
-Deep One Warrior used Maneuver,深海战士使用了格斗技巧
-Devolved used Maneuver,变异生物使用了格斗技巧
-Ghoul used Maneuver,地鬼使用了格斗技巧
-Frost Ghoul used Maneuver,冰霜地鬼使用了格斗技巧
-Giant Gnat used Maneuver,巨型蚊蚋使用了格斗技巧
-Cave Gnat used Maneuver,山洞蚊蚋使用了格斗技巧
-Fell Hog used Maneuver,残暴野猪使用了格斗技巧
-Dire Hound used Maneuver,残暴猎犬使用了格斗技巧
-Fell Hound used Maneuver,残暴猎犬使用了格斗技巧
-Ice Hound used Maneuver,冰霜猎犬使用了格斗技巧
-Ice Strider used Maneuver,冰霜行者使用了格斗技巧
-Shadow Stalker used Maneuver,影行者使用了格斗技巧
-Giant Leech used Maneuver,巨型吸血藤使用了格斗技巧
-Albino Leech used Maneuver,白化吸血藤使用了格斗技巧
-Bloodletter used Maneuver,血书使用了格斗技巧
-Fell Lizard used Maneuver,残暴蜥蜴使用了格斗技巧
-Alpha Lizard used Maneuver,领主蜥蜴使用了格斗技巧
-Giant Lizard used Maneuver,巨型蜥蜴使用了格斗技巧
-Ice Salamander used Maneuver,冰元素使用了技巧
-Mold Child used Maneuver,泥足生物使用了技巧
-Ooze used Maneuver,脂膏生物使用了技巧
-Flesh Ooze used Maneuver,肉脂膏生物使用了技巧
-Medusa Jelly used Maneuver,巨型凝胶生物使用了技巧
-Risen Ooze used Maneuver,复生脂膏生物使用了技巧
-Magma Ooze used Maneuver,熔岩脂膏生物使用了技巧
-Magmite used Maneuver,熔铁使用了技巧
-Large Ooze used Maneuver,大型脂膏生物使用了技巧
-Giant Rat used Maneuver,大鼠使用了技巧
-Dire Rat used Maneuver,巨型鼠使用了技巧
-Chitters-In-Darkness used Maneuver,黑暗中的窃窃私语者使用了技巧
-Rabid Rat used Maneuver,狂暴鼠使用了技巧
-Shade used Maneuver,阴影使用了技巧
-Dire Serpent used Maneuver,巨型毒蛇使用了技巧
-Fell Serpent used Maneuver,恶魔毒蛇使用了技巧
-Giant Snake used Maneuver,巨型蟒蛇使用了技巧
-Fleshstrider used Maneuver,肉行者使用了技巧
-Flying Polyp used Maneuver,飞行的水泡使用了技巧
-Dragon's Herald used Maneuver,龙的使者使用了技巧
-Evolved used Maneuver,进化者使用了动作
-Newborne used Maneuver,新生者使用了动作
-Vessel used Maneuver,载具使用了动作
-Stalker used Maneuver,跟踪者使用了动作
-Giant Spider used Maneuver,巨型蜘蛛使用了动作
-Large Spider used Maneuver,大型蜘蛛使用了动作
-Shambler used Maneuver,摇摇晃晃者使用了动作
-Frost Shambler used Maneuver,寒霜摇摇晃晃者使用了动作
-Reaver Berserker used Maneuver,攫取狂战士使用了动作
-Brigand Archer used Maneuver,海盗弓手使用了动作
-Brigand Rogue used Maneuver,海盗盗贼使用了动作
-Brigand Swordsman used Maneuver,海盗剑士使用了动作
-Mad Sailor used Maneuver,疯狂水手使用了动作
-Mad Sailo used Maneuver,疯狂水手使用了动作
-Guild Magos used Maneuver,行会魔导士使用了动作
-Guild Mag used Maneuver,行会法师使用了动作
-Wight used Maneuver,白骨鬼使用了动作
-Feral Clone used Maneuver,野性克隆体使用了动作
-Jester used Maneuver,小丑使用了动作
-Reaver Brute used Maneuver,攫取野蛮人使用了动作
-Reaver Scout used Maneuver,狩猎掠夺者使用了格斗技巧
-Reaver used Maneuver,掠夺者使用了格斗技巧
-Reaver Blackguard used Maneuver,黑卫掠夺者使用了格斗技巧
-Reaver Mystic used Maneuver,神秘掠夺者使用了格斗技巧
-Cultist used Maneuver,教派成员使用了格斗技巧
-Bobbert the Recruit used Maneuver,招募兵鲍伯特使用了格斗技巧
-Wreck Picker used Maneuver,毁坏拾荒者使用了格斗技巧
-Oleg the Gray used Maneuver,灰色奥列格使用了格斗技巧
-Red Kala used Maneuver,红色卡拉使用了格斗技巧
-The Butcher used Maneuver,屠夫使用了格斗技巧
-Snow used Maneuver,雪使用了格斗技巧
-The Ancient King used Maneuver,古老国王使用了格斗技巧
-Joran the Usurper used Maneuver,乔兰篡位者使用了格斗技巧
-Baroness used Maneuver,伯爵夫人使用了格斗技巧
-Handmaid used Maneuver,女仆使用了格斗技巧
-Majordomo used Maneuver,家政主管使用了格斗技巧
-#Combatant used Triggered Ability,#Combatant 触发了触发能力
-{PLAYER} used Triggered Ability,__PLACEHOLDER_0__ 触发了触发能力
-Kat used Triggered Ability,凯特使用了触发能力
-Roland used Triggered Ability,罗兰使用了触发能力
-Driina used Triggered Ability,Driina 使用了触发能力
-Iben used Triggered Ability,Iben 使用了触发能力
-Iago used Triggered Ability,Iago 使用了触发能力
-Embla used Triggered Ability,Embla 使用了触发能力
-Giant Bat used Triggered Ability,巨蝙蝠 使用了触发能力
-Giant Beetle used Triggered Ability,巨甲虫 使用了触发能力
-Rhino Beetle used Triggered Ability,犀金龟 使用了触发能力
-Carrion Crawler used Triggered Ability,腐肉爬行者 使用了触发能力
-Giant Centipede used Triggered Ability,巨蝎 使用了触发能力
-Fell Crab used Triggered Ability,深渊螃蟹 使用了触发能力
-Corpse Eater used Triggered Ability,尸体食者 使用了触发能力
-Giant Crab used Triggered Ability,巨蟹 使用了触发能力
-Crab used Triggered Ability,蟹 使用了触发能力
-Rot Crab used Triggered Ability,腐烂螃蟹 使用了触发能力
-Spider Crab used Triggered Ability,巨型蟹 使用了触发能力
-Brood Guard used Triggered Ability,群落卫士 使用了触发能力
-Father used Triggered Ability,父亲 使用了触发能力
-Deep One Priestess used Triggered Ability,深海祭司 使用了触发能力
-Deep One Queen used Triggered Ability,深海女王 使用了触发能力
-Deep One Warrior used Triggered Ability,深海战士 使用了触发能力
-Devolved used Triggered Ability,退化者触发了触发能力
-Ghoul used Triggered Ability,地鬼触发了触发能力
-Frost Ghoul used Triggered Ability,寒霜地鬼触发了触发能力
-Giant Gnat used Triggered Ability,巨人蚊子触发了触发能力
-Cave Gnat used Triggered Ability,山洞蚊子触发了触发能力
-Fell Hog used Triggered Ability,深渊猪触发了触发能力
-Dire Hound used Triggered Ability,Dire狼狗触发了触发能力
-Fell Hound used Triggered Ability,深渊狼狗触发了触发能力
-Ice Hound used Triggered Ability,寒霜狼狗触发了触发能力
-Ice Strider used Triggered Ability,冰行者触发了触发能力
-Shadow Stalker used Triggered Ability,影踪追踪者触发了触发能力
-Giant Leech used Triggered Ability,巨人吸血藤触发了触发能力
-Albino Leech used Triggered Ability,白化吸血藤触发了触发能力
-Bloodletter used Triggered Ability,血书者触发了触发能力
-Fell Lizard used Triggered Ability,深渊蜥蜴触发了触发能力
-Alpha Lizard used Triggered Ability,雌雄同体蜥蜴触发了触发能力
-Giant Lizard used Triggered Ability,巨人蜥蜴触发了触发能力
-Ice Salamander used Triggered Ability,寒霜火蜥蜴触发了触发能力
-Mold Child used Triggered Ability,藻人子婴触发了触发能力
-Ooze used Triggered Ability,藻人触发了触发能力
-Flesh Ooze used Triggered Ability,肉状物触发了能力
-Medusa Jelly used Triggered Ability,石像地精触发了能力
-Risen Ooze used Triggered Ability,复活的肉状物触发了能力
-Magma Ooze used Triggered Ability,熔岩肉状物触发了能力
-Magmite used Triggered Ability,火熔岩触发了能力
-Large Ooze used Triggered Ability,大型肉状物触发了能力
-Giant Rat used Triggered Ability,大鼠触发了能力
-Dire Rat used Triggered Ability,Dire鼠触发了能力
-Chitters-In-Darkness used Triggered Ability,黑暗之唧唧触发了能力
-Rabid Rat used Triggered Ability,狂暴鼠触发了能力
-Shade used Triggered Ability,阴影触发了能力
-Dire Serpent used Triggered Ability,Dire蛇触发了能力
-Fell Serpent used Triggered Ability,恶魔蛇触发了能力
-Giant Snake used Triggered Ability,大蛇触发了能力
-Fleshstrider used Triggered Ability,肉足行者触发了能力
-Flying Polyp used Triggered Ability,飞行的多莉普触发了能力
-Dragon's Herald used Triggered Ability,龙使者触发了能力
-Evolved used Triggered Ability,升级触发了能力
-Newborne used Triggered Ability,新生者触发了能力
-Vessel used Triggered Ability,容器触发了能力
-Stalker used Triggered Ability,侦查者触发了触发能力
-Giant Spider used Triggered Ability,巨型蜘蛛触发了触发能力
-Large Spider used Triggered Ability,大型蜘蛛触发了触发能力
-Shambler used Triggered Ability,摇摇晃晃者触发了触发能力
-Frost Shambler used Triggered Ability,寒霜摇摇晃晃者触发了触发能力
-Reaver Berserker used Triggered Ability,奴役狂战士触发了触发能力
-Brigand Archer used Triggered Ability,海盗弓手触发了触发能力
-Brigand Rogue used Triggered Ability,海盗盗贼触发了触发能力
-Brigand Swordsman used Triggered Ability,海盗剑士触发了触发能力
-Mad Sailor used Triggered Ability,疯狂水手触发了触发能力
-Mad Sailo used Triggered Ability,疯狂水手触发了触发能力
-Guild Magos used Triggered Ability,行会魔导士触发了触发能力
-Guild Mag used Triggered Ability,行会魔导士触发了触发能力
-Wight used Triggered Ability,僵尸领主触发了触发能力
-Feral Clone used Triggered Ability,野性克隆体触发了触发能力
-Jester used Triggered Ability,小丑触发了触发能力
-Reaver Brute used Triggered Ability,奴役粗暴者触发了触发能力
-Reaver Scout used Triggered Ability,奴役斥候触发了触发能力
-Reaver used Triggered Ability,奴役者触发了触发能力
-Reaver Blackguard used Triggered Ability,奴役黑卫士触发了触发能力
-Reaver Mystic used Triggered Ability,残暴秘法师触发了能力
-Cultist used Triggered Ability,教派成员触发了能力
-Bobbert the Recruit used Triggered Ability,招募兵鲍伯特触发了能力
-Wreck Picker used Triggered Ability,破坏拾荒者触发了能力
-Oleg the Gray used Triggered Ability,灰色奥列格触发了能力
-Red Kala used Triggered Ability,红色卡拉触发了能力
-The Butcher used Triggered Ability,屠夫触发了能力
-Snow used Triggered Ability,雪触发了能力
-The Ancient King used Triggered Ability,古老国王触发了能力
-Joran the Usurper used Triggered Ability,乔兰篡位者触发了能力
-Baroness used Triggered Ability,伯爵夫人触发了能力
-Handmaid used Triggered Ability,女仆触发了能力
-#Combatant used Spell,战斗者施放了法术
-{PLAYER} used Spell,__PLACEHOLDER_0__施放了法术
-Kat used Spell,卡特施放了法术
-Roland used Spell,罗兰施放了法术
-Driina used Spell,德里娜施放了法术
-Iben used Spell,伊本施放了法术
-Iago used Spell,伊戈施放了法术
-Embla used Spell,伊姆拉施放了法术
-Giant Bat used Spell,巨蝙蝠使用了法术
-Giant Beetle used Spell,巨型甲虫使用了法术
-Rhino Beetle used Spell,巨型角甲虫使用了法术
-Carrion Crawler used Spell,腐肉爬行者使用了法术
-Giant Centipede used Spell,巨型蜈蚣使用了法术
-Fell Crab used Spell,跌落螃蟹使用了法术
-Corpse Eater used Spell,尸体吞噬者使用了法术
-Giant Crab used Spell,巨型螃蟹使用了法术
-Crab used Spell,螃蟹使用了法术
-Rot Crab used Spell,腐烂螃蟹使用了法术
-Spider Crab used Spell,巨型石蟹使用了法术
-Brood Guard used Spell,群落卫士使用了法术
-Father used Spell,父亲使用了法术
-Deep One Priestess used Spell,深海祭司使用了法术
-Deep One Queen used Spell,深海女王使用了法术
-Deep One Warrior used Spell,深海战士使用了法术
-Devolved used Spell,退化者使用了法术
-Ghoul used Spell,脚尸使用了法术
-Frost Ghoul used Spell,寒霜脚尸使用了法术
-Giant Gnat used Spell,巨型蚋使用了法术
-Cave Gnat used Spell,洞穴蚊虫施放了法术
-Fell Hog used Spell,深渊野猪施放了法术
-Dire Hound used Spell,亡灵猎犬施放了法术
-Fell Hound used Spell,深渊犬施放了法术
-Ice Hound used Spell,冰霜猎犬施放了法术
-Ice Strider used Spell,冰霜行者施放了法术
-Shadow Stalker used Spell,阴影追踪者施放了法术
-Giant Leech used Spell,巨型吸血蚂蟥施放了法术
-Albino Leech used Spell,白化吸血蚂蟥施放了法术
-Bloodletter used Spell,吸血鬼施放了法术
-Fell Lizard used Spell,深渊蜥蜴施放了法术
-Alpha Lizard used Spell,雅法拉蜥蜴施放了法术
-Giant Lizard used Spell,巨型蜥蜴施放了法术
-Ice Salamander used Spell,冰霜蜥蜴施放了法术
-Mold Child used Spell,藻人施放了法术
-Ooze used Spell,浑浊物施放了法术
-Flesh Ooze used Spell,石化触手施放了法术
-Medusa Jelly used Spell,石化凝胶施放了法术
-Risen Ooze used Spell,复生浑浊物施放了法术
-Magma Ooze used Spell,熔岩浑浊物施放了法术
-Magmite used Spell,火山民施放了法术
-Large Ooze used Spell,大黏液怪施放了法术
-Giant Rat used Spell,巨鼠施放了法术
-Dire Rat used Spell,Dire Rat施放了法术
-Chitters-In-Darkness used Spell,Chitters-In-Darkness施放了法术
-Rabid Rat used Spell,疯狂鼠施放了法术
-Shade used Spell,阴影施放了法术
-Dire Serpent used Spell,Dire Serpent施放了法术
-Fell Serpent used Spell,Fell Serpent施放了法术
-Giant Snake used Spell,巨型蛇施放了法术
-Fleshstrider used Spell,肉行者施放了法术
-Flying Polyp used Spell,飞行的多胞体施放了法术
-Dragon's Herald used Spell,龙的使者施放了法术
-Evolved used Spell,进化了施放了法术
-Newborne used Spell,新生者施放了法术
-Vessel used Spell,载体施放了法术
-Stalker used Spell,跟踪者施放了法术
-Giant Spider used Spell,巨型蜘蛛施放了法术
-Large Spider used Spell,大型蜘蛛施放了法术
-Shambler used Spell,摇摇晃晃者施放了法术
-Frost Shambler used Spell,冰行者使用了法术
-Reaver Berserker used Spell,破坏狂 Berserker 使用了法术
-Brigand Archer used Spell,地盗弓手使用了法术
-Brigand Rogue used Spell,地盗盗贼使用了法术
-Brigand Swordsman used Spell,地盗剑士使用了法术
-Mad Sailor used Spell,疯狂水手使用了法术
-Mad Sailo used Spell,疯狂水手使用了法术
-Guild Magos used Spell,行会魔导士使用了法术
-Guild Mag used Spell,行会法师使用了法术
-Wight used Spell,魈使用了法术
-Feral Clone used Spell,猛兽克隆体使用了法术
-Jester used Spell,小丑使用了法术
-Reaver Brute used Spell,破坏狂野蛮人使用了法术
-Reaver Scout used Spell,破坏狂斥候使用了法术
-Reaver used Spell,破坏狂使用了法术
-Reaver Blackguard used Spell,破坏狂黑卫士使用了法术
-Reaver Mystic used Spell,破坏狂灵能者使用了法术
-Cultist used Spell,教派成员使用了法术
-Bobbert the Recruit used Spell,招募兵鲍勃伯特使用了法术
-Wreck Picker used Spell,残骸拾荒者使用了法术
-Oleg the Gray used Spell,奥列格·灰影施放了法术
-Red Kala used Spell,红卡拉施放了法术
-The Butcher used Spell,屠夫施放了法术
-Snow used Spell,雪施放了法术
-The Ancient King used Spell,古老的国王施放了法术
-Joran the Usurper used Spell,约ran篡位者施放了法术
-Baroness used Spell,邦夫人施放了法术
-Handmaid used Spell,女仆施放了法术
-Majordomo used Spell,总管施放了法术
-Majordomo used Triggered Ability,总管触发了能力
-#Combatant immune to the condition,#Combatant免疫此状态
-{PLAYER} immune to the condition,__PLACEHOLDER_0__免疫此状态
-Kat immune to the condition,卡特免疫此状态
-Roland immune to the condition,罗兰免疫此状态
-Driina immune to the condition,德里娜免疫此状态
-Iben immune to the condition,伊本免疫此状态
-Iago immune to the condition,伊格免疫此状态
-Embla immune to the condition,伊姆拉免疫此状态
-Giant Bat immune to the condition,巨型蝙蝠免疫此状态
-Giant Beetle immune to the condition,巨型甲虫免疫此状态
-Rhino Beetle immune to the condition,犀牛甲虫对该状态免疫
-Carrion Crawler immune to the condition,腐肉爬行者对该状态免疫
-Giant Centipede immune to the condition,巨型蜈蚣对该状态免疫
-Fell Crab immune to the condition,深渊螃蟹对该状态免疫
-Corpse Eater immune to the condition,尸体吞噬者对该状态免疫
-Giant Crab immune to the condition,巨型螃蟹对该状态免疫
-Crab immune to the condition,螃蟹对该状态免疫
-Rot Crab immune to the condition,腐烂螃蟹对该状态免疫
-Spider Crab immune to the condition,石蟹对该状态免疫
-Brood Guard immune to the condition,群落卫士对该状态免疫
-Father immune to the condition,父亲对该状态免疫
-Deep One Priestess immune to the condition,深海祭司对该状态免疫
-Deep One Queen immune to the condition,深海女王对该状态免疫
-Deep One Warrior immune to the condition,深海战士对该状态免疫
-Devolved immune to the condition,退化者对该状态免疫
-Ghoul immune to the condition,尸鬼对该状态免疫
-Frost Ghoul immune to the condition,寒冰尸鬼对该状态免疫
-Giant Gnat immune to the condition,巨型蚊子对该状态免疫
-Cave Gnat immune to the condition,山洞蚊子对该状态免疫
-Fell Hog immune to the condition,深渊野猪对该状态免疫
-Dire Hound immune to the condition,威猛猎犬免疫此状态
-Fell Hound immune to the condition,凶猛猎犬免疫此状态
-Ice Hound immune to the condition,冰霜猎犬免疫此状态
-Ice Strider immune to the condition,冰霜行者免疫此状态
-Shadow Stalker immune to the condition,阴影追踪者免疫此状态
-Giant Leech immune to the condition,巨型血吸虫免疫此状态
-Albino Leech immune to the condition,白化血吸虫免疫此状态
-Bloodletter immune to the condition,血泵免疫此状态
-Fell Lizard immune to the condition,凶猛蜥蜴免疫此状态
-Alpha Lizard immune to the condition,雌雄同体蜥蜴免疫此状态
-Giant Lizard immune to the condition,巨型蜥蜴免疫此状态
-Ice Salamander immune to the condition,冰霜火蜥蜴免疫此状态
-Mold Child immune to the condition,藻人免疫此状态
-Ooze immune to the condition,浑浊物免疫此状态
-Flesh Ooze immune to the condition,肉状浑浊物免疫此状态
-Medusa Jelly immune to the condition,墨鱼果冻免疫此状态
-Risen Ooze immune to the condition,复活浑浊物免疫此状态
-Magma Ooze immune to the condition,熔岩浑浊物免疫此状态
-Magmite immune to the condition,熔岩物免疫此状态
-Large Ooze immune to the condition,大型浑浊物免疫此状态
-Giant Rat immune to the condition,巨鼠对该状态免疫
-Dire Rat immune to the condition,巨型鼠对该状态免疫
-Chitters-In-Darkness immune to the condition,黑暗呢喃对该状态免疫
-Rabid Rat immune to the condition,狂暴鼠对该状态免疫
-Shade immune to the condition,阴影对该状态免疫
-Dire Serpent immune to the condition,巨型毒蛇对该状态免疫
-Fell Serpent immune to the condition,残酷毒蛇对该状态免疫
-Giant Snake immune to the condition,巨型蟒蛇对该状态免疫
-Fleshstrider immune to the condition,肉行者对该状态免疫
-Flying Polyp immune to the condition,飞行的多足生物对该状态免疫
-Dragon's Herald immune to the condition,龙的使者对该状态免疫
-Evolved immune to the condition,进化生物对该状态免疫
-Newborne immune to the condition,新生生物对该状态免疫
-Vessel immune to the condition,容器对该状态免疫
-Stalker immune to the condition,跟踪者对该状态免疫
-Giant Spider immune to the condition,巨型蜘蛛对该状态免疫
-Large Spider immune to the condition,大型蜘蛛对该状态免疫
-Shambler immune to the condition,摇摇晃晃者对该状态免疫
-Frost Shambler immune to the condition,寒冰摇摇晃晃者对该状态免疫
-Reaver Berserker immune to the condition,攫取狂战士对该状态免疫
-Brigand Archer immune to the condition,强盗弓箭手免疫此状态
-Brigand Rogue immune to the condition,强盗盗贼免疫此状态
-Brigand Swordsman immune to the condition,强盗剑士免疫此状态
-Mad Sailor immune to the condition,疯狂水手免疫此状态
-Mad Sailo immune to the condition,疯狂水手免疫此状态
-Guild Magos immune to the condition,行会魔导士免疫此状态
-Guild Mag immune to the condition,行会法师免疫此状态
-Wight immune to the condition,鬼影免疫此状态
-Feral Clone immune to the condition,野性克隆体免疫此状态
-Jester immune to the condition,小丑免疫此状态
-Reaver Brute immune to the condition,拆船壮汉免疫此状态
-Reaver Scout immune to the condition,拆船斥候免疫此状态
-Reaver immune to the condition,拆船者免疫此状态
-Reaver Blackguard immune to the condition,拆船者恶僧免疫此状态
-Reaver Mystic immune to the condition,拆船者巫师免疫此状态
-Cultist immune to the condition,教派信徒免疫此状态
-Bobbert the Recruit immune to the condition,招募兵鲍伯特免疫此状态
-Wreck Picker immune to the condition,拆船拾荒者免疫此状态
-Oleg the Gray immune to the condition,格雷奥列格免疫此状态
-Red Kala immune to the condition,红卡拉免疫此状态
-The Butcher immune to the condition,屠夫免疫于该状态
-Snow immune to the condition,雪免疫于该状态
-The Ancient King immune to the condition,古老国王免疫于该状态
-Joran the Usurper immune to the condition,掠夺者乔兰免疫于该状态
-Baroness immune to the condition,邦女公爵免疫于该状态
-Handmaid immune to the condition,女侍女免疫于该状态
-Majordomo immune to the condition,家臣免疫于该状态
-#Combatant immune to,#战斗者免疫于
-{PLAYER} immune to,__PLACEHOLDER_0__免疫于
-Kat immune to,卡特免疫于
-Roland immune to,罗兰免疫于
-Driina immune to,德里娜免疫于
-Iben immune to,伊本免疫于
-Iago immune to,伊戈免疫于
-Embla immune to,伊姆拉免疫于
-Giant Bat immune to,巨蝙蝠免疫于
-Giant Beetle immune to,巨型甲虫免疫于
-Rhino Beetle immune to,犀牛甲虫免疫于
-Carrion Crawler immune to,腐肉爬行者免疫于
-Giant Centipede immune to,巨型百足虫免疫于
-Fell Crab immune to,巨蟹免疫于
-Corpse Eater immune to,尸体吞噬者免疫于
-Giant Crab immune to,巨型螃蟹免疫于
-Crab immune to,螃蟹免疫于
-Rot Crab immune to,腐烂螃蟹免疫于
-Spider Crab immune to,巨型蜘蛛蟹免疫于
-Brood Guard immune to,群落卫士免疫于
-Father immune to,父亲免疫于
-Deep One Priestess immune to,深海祭司免疫于
-Deep One Queen immune to,深海女王免疫于
-Deep One Warrior immune to,深海战士免疫于
-Devolved immune to,退化者免疫于
-Ghoul immune to,僵尸狼免疫于
-Frost Ghoul immune to,寒霜僵尸狼免疫于
-Giant Gnat immune to,巨型蚊子免疫于
-Cave Gnat immune to,山洞蚊子免疫于
-Fell Hog immune to,巨型野猪免疫于
-Dire Hound immune to,残暴猎犬免疫于
-Fell Hound immune to,巨型猎犬免疫于
-Ice Hound immune to,冰霜猎犬免疫于
-Ice Strider immune to,冰行者免疫于
-Shadow Stalker immune to,阴影追踪者免疫于
-Giant Leech immune to,巨型吸血虫免疫于
-Albino Leech immune to,白化吸血虫免疫于
-Bloodletter immune to,血书者免疫于
-Fell Lizard immune to,恶灵蜥蜴免疫于
-Alpha Lizard immune to,雅法蜥蜴免疫于
-Giant Lizard immune to,巨型蜥蜴免疫于
-Ice Salamander immune to,冰龙蜥免疫于
-Mold Child immune to,藻人免疫于
-Ooze immune to,藻类生物免疫于
-Flesh Ooze immune to,肉质藻类生物免疫于
-Medusa Jelly immune to,墨鱼果冻生物免疫于
-Risen Ooze immune to,复苏藻类生物免疫于
-Magma Ooze immune to,熔岩藻类生物免疫于
-Magmite immune to,火石免疫于
-Large Ooze immune to,大型藻类生物免疫于
-Giant Rat immune to,巨型老鼠免疫于
-Dire Rat immune to,恶魔老鼠免疫于
-Chitters-In-Darkness immune to,黑暗中的吱吱声免疫于
-Rabid Rat immune to,狂暴的rats免疫于
-Shade immune to,阴影免疫于
-Dire Serpent immune to,残酷的毒蛇免疫于
-Fell Serpent immune to,强烈的毒蛇免疫于
-Giant Snake immune to,巨型毒蛇免疫于
-Fleshstrider immune to,肉行者免疫于
-Flying Polyp immune to,飞行的多孔菌免疫于
-Dragon's Herald immune to,龙的使者免疫于
-Evolved immune to,进化免疫于
-Newborne immune to,新生免疫于
-Vessel immune to,载体免疫于
-Stalker immune to,跟踪者免疫于
-Giant Spider immune to,巨型蜘蛛免疫于
-Large Spider immune to,大型蜘蛛免疫于
-Shambler immune to,摇摇晃晃者免疫于
-Frost Shambler immune to,冰霜摇摇晃晃者免疫于
-Reaver Berserker immune to,攻掠狂暴者免疫于
-Brigand Archer immune to,海盗弓箭手免疫于
-Brigand Rogue immune to,海盗盗贼免疫于
-Brigand Swordsman immune to,海盗剑士免疫于
-Mad Sailor immune to,疯狂水手免疫于
-Mad Sailo immune to,疯狂水手免疫于
-Guild Magos immune to,行会魔导士免疫于
-Guild Mag immune to,行会魔导士免疫于
-Wight immune to,僵尸王免疫于
-Feral Clone immune to,野性克隆体免疫于
-Jester immune to,小丑免疫于
-Reaver Brute immune to,拆卸野蛮人免疫于
-Reaver Scout immune to,拆卸斥候免疫于
-Reaver immune to,拆卸者免疫于
-Reaver Blackguard immune to,拆卸者黑卫兵免疫于
-Reaver Mystic immune to,拆卸者灵能者免疫于
-Cultist immune to,教派成员免疫于
-Bobbert the Recruit immune to,沃伯特新兵免疫于
-Wreck Picker immune to,拆卸拾荒者免疫于
-Oleg the Gray immune to,格里格奥尔灰烬免疫于
-Red Kala immune to,红卡拉免疫于
-The Butcher immune to,屠夫免疫于
-Snow immune to,雪免疫于
-The Ancient King immune to,古老国王免疫于
-Joran the Usurper immune to,约ran篡位者免疫于
-Baroness immune to,伯爵夫人免疫于
-Handmaid immune to,女仆免疫于
-Majordomo immune to,家庭总管免疫于
-#Combatant immune to the condition,#Combatant免疫于某种状态
-{PLAYER} immune to the condition,__PLACEHOLDER_0__免疫于某种状态
-Kat immune to the condition,卡特免疫于某种状态
-Roland immune to the condition,罗兰免疫于某种状态
-Driina immune to the condition,德里娜免疫于某种状态
-Iben immune to the condition,伊本免疫于某种状态
-Iago immune to the condition,伊阿哥免疫于某种状态
-Embla immune to the condition,伊姆拉免疫于某种状态
-Giant Bat immune to the condition,巨型蝙蝠免疫于某种状态
-Giant Beetle immune to the condition,巨型甲虫免疫于某种状态
-Rhino Beetle immune to the condition,巨型犀金虫免疫于某种状态
-Carrion Crawler immune to the condition,腐肉爬行者免疫于某种状态
-Giant Centipede immune to the condition,巨型蜈蚣免疫于某种状态
-Fell Crab immune to the condition,恶狼蟹免疫于某种状态
-Corpse Eater immune to the condition,尸体吞噬者免疫于某种状态
-Giant Crab immune to the condition,巨型螃蟹免疫于某种状态
-Crab immune to the condition,螃蟹对该状态免疫
-Rot Crab immune to the condition,腐烂螃蟹对该状态免疫
-Spider Crab immune to the condition,石蟹对该状态免疫
-Brood Guard immune to the condition,群落卫士对该状态免疫
-Father immune to the condition,父亲对该状态免疫
-Deep One Priestess immune to the condition,深海祭司对该状态免疫
-Deep One Queen immune to the condition,深海女王对该状态免疫
-Deep One Warrior immune to the condition,深海战士对该状态免疫
-Devolved immune to the condition,退化生物对该状态免疫
-Ghoul immune to the condition,地ombie对该状态免疫
-Frost Ghoul immune to the condition,寒冰地ombie对该状态免疫
-Giant Gnat immune to the condition,巨型蚊子对该状态免疫
-Cave Gnat immune to the condition,山洞蚊子对该状态免疫
-Fell Hog immune to the condition,深渊野猪对该状态免疫
-Dire Hound immune to the condition,野犬对该状态免疫
-Fell Hound immune to the condition,深渊犬对该状态免疫
-Ice Hound immune to the condition,寒冰犬对该状态免疫
-Ice Strider immune to the condition,寒冰行者对该状态免疫
-Shadow Stalker immune to the condition,影踪追踪者对该状态免疫
-Giant Leech immune to the condition,巨型血吸虫对该状态免疫
-Albino Leech immune to the condition,白化吸血虫对该状态免疫
-Bloodletter immune to the condition,血书虫对该状态免疫
-Fell Lizard immune to the condition,恶魔蜥蜴对该状态免疫
-Alpha Lizard immune to the condition,雌雄同体蜥蜴对该状态免疫
-Giant Lizard immune to the condition,巨型蜥蜴对该状态免疫
-Ice Salamander immune to the condition,冰火蜥蜴对该状态免疫
-Mold Child immune to the condition,霉菌子代对该状态免疫
-Ooze immune to the condition,脂膏怪对该状态免疫
-Flesh Ooze immune to the condition,肉脂膏怪对该状态免疫
-Medusa Jelly immune to the condition,巨型水母对该状态免疫
-Risen Ooze immune to the condition,复生脂膏怪对该状态免疫
-Magma Ooze immune to the condition,火山脂膏怪对该状态免疫
-Magmite immune to the condition,火山熔岩对该状态免疫
-Large Ooze immune to the condition,大型脂膏怪对该状态免疫
-Giant Rat immune to the condition,巨型老鼠对该状态免疫
-Dire Rat immune to the condition,恶魔老鼠对该状态免疫
-Chitters-In-Darkness immune to the condition,黑暗之耳对该状态免疫
-Rabid Rat immune to the condition,疯狂老鼠对该状态免疫
-Shade immune to the condition,阴影对该状态免疫
-Dire Serpent immune to the condition,恶魔巨蛇对该状态免疫
-Fell Serpent immune to the condition,坠落巨蛇对该状态免疫
-Giant Snake immune to the condition,巨型蟒蛇对该状态免疫
-Fleshstrider immune to the condition,肉行者对该状态免疫
-Flying Polyp immune to the condition,飞行的水泡菇对该状态免疫
-Dragon's Herald immune to the condition,龙之使者对该状态免疫
-Evolved immune to the condition,进化者对该状态免疫
-Newborne immune to the condition,新生者对该状态免疫
-Vessel immune to the condition,载体对该状态免疫
-Stalker immune to the condition,跟踪者对该状态免疫
-Giant Spider immune to the condition,巨型蜘蛛对该状态免疫
-Large Spider immune to the condition,大型蜘蛛对该状态免疫
-Shambler immune to the condition,摇摇者对该状态免疫
-Frost Shambler immune to the condition,冰霜摇摇者对该状态免疫
-Reaver Berserker immune to the condition,攫取狂战士对该状态免疫
-Brigand Archer immune to the condition,海盗弓手对该状态免疫
-Brigand Rogue immune to the condition,海盗盗贼对该状态免疫
-Brigand Swordsman immune to the condition,海盗剑士对该状态免疫
-Mad Sailor immune to the condition,疯狂水手对该状态免疫
-Mad Sailo immune to the condition,疯狂水手对该状态免疫
-Guild Magos immune to the condition,行会魔导士对该状态免疫
-Guild Mag immune to the condition,行会法师对该状态免疫
-Wight immune to the condition,阴尸对该状态免疫
-Feral Clone immune to the condition,野性分身对该状态免疫
-Jester immune to the condition,小丑对该状态免疫
-Reaver Brute immune to the condition,残暴掠夺者对该状态免疫
-Reaver Scout immune to the condition,掠夺者斥候对该状态免疫
-Reaver immune to the condition,掠夺者对该状态免疫
-Reaver Blackguard immune to the condition,黑卫掠夺者对该状态免疫
-Reaver Mystic immune to the condition,心灵法师掠夺者对该状态免疫
-Cultist immune to the condition,教派成员对该状态免疫
-Bobbert the Recruit immune to the condition,招募兵鲍伯特对该状态免疫
-Wreck Picker immune to the condition,毁灭拾荒者对该状态免疫
-Oleg the Gray immune to the condition,灰色奥列格对该状态免疫
-Red Kala immune to the condition,红色卡拉对该状态免疫
-The Butcher immune to the condition,屠夫对该状态免疫
-Snow immune to the condition,雪对该状态免疫
-The Ancient King immune to the condition,古老国王对该状态免疫
-Joran the Usurper immune to the condition,乔兰篡位者对该状态免疫
-Baroness immune to the condition,女伯爵对该状态免疫
-Handmaid immune to the condition,女仆对该状态免疫
-Majordomo immune to the condition,大总管对该状态免疫
+Vulnerable to Slashing Damage,易受挥砍伤害
+Vulnerable to Blunt Damage,易受钝击伤害
+Vulnerable to Piercing Damage,易受穿刺伤害
+Vulnerable to Magical Damage,易受魔法伤害
+Vulnerable to Cold Damage,易受寒冷伤害
+Vulnerable to Acid Damage,易受强酸伤害
+Vulnerable to Kinetic Damage,易受动能伤害
+Vulnerable to Sublime Damage,易受神圣伤害
+Vulnerable to Electric Damage,易受闪电伤害
+Vulnerable to Fire Damage,易受火焰伤害
+Vulnerable to Psychic Damage,易受心灵伤害
+Vulnerable to Non-Magical Damage,易受非魔法伤害
+Vulnerable to Physical Damage,易受物理伤害
+Immune to Slashing Damage,免疫挥砍伤害
+Immune to Blunt Damage,免疫钝击伤害
+Immune to Piercing Damage,免疫穿刺伤害
+Immune to Magical Damage,免疫魔法伤害
+Immune to Cold Damage,免疫寒冷伤害
+Immune to Acid Damage,免疫强酸伤害
+Immune to Kinetic Damage,免疫动能伤害
+Immune to Sublime Damage,免疫神圣伤害
+Immune to Electric Damage,免疫闪电伤害
+Immune to Fire Damage,免疫火焰伤害
+Immune to Psychic Damage,免疫心灵伤害
+Immune to Non-Magical Damage,免疫非魔法伤害
+Immune to Physical Damage,免疫物理伤害
+#Combat Log Misc,#战斗日志 杂项
+Combat Log,战斗日志
+hits,命中
+Hidden,隐藏
+Miss,未命中
+misses,未命中
+took damage,受到伤害
+Clear Log,清除日志
+is Dead,已死亡
+Targets user,以自身为目标
+takes takes damage from,受到来自的伤害
+Incoming damage,受到的伤害
+Incoming amount,受到的伤害量
+Damage Taken,承受的伤害
+Target took extra damamge,目标受到额外伤害
+Armor Soak reduced damage by,护甲吸收减少了伤害
+ATTACK ROLL MODIFIERS,攻击检定修正
+Weapon Accuracy,武器命中
+DEFENCE ROLL MODIFIERS,防御检定修正
+gained the condition,获得了状态
+automatically hit,自动命中
+Base Backstab Bonus,基础背刺加成
+Weapon Backstab Mod,武器背刺修正
+BACKSTABBED,背刺
+2d6,2d6
+Homer forces himself forwards!,霍默奋力向前！
+forwards!,向前！
+is Knocked Out,被击倒
+Cooldown,冷却
+Cooldown: 1 turn,冷却：1回合
+Cooldown: 2 turns,冷却：2回合
+Cooldown: 3 turns,冷却：3回合
+Aura effect,光环效果
+Flanked,被夹击
+Cannot fire in melee!,近战中无法射击！
+Out of ammo!,弹药耗尽！
+Can't reach target!,无法触及目标！
+Damage reduced by,伤害降低
+Ammo Accuracy,弹药命中
+fights defensivly and gains +3 to Dodge until next turn!,采取防御姿态，闪避+3，持续至下回合！
+Ready,准备就绪
+Criticals,暴击
+Critical Hits,暴击
+Sleep,睡眠
+Resistant,抗性
+Vulnerable,易伤
+Immune,免疫
+RESISTANCES,抗性
+VULNERABILITIES,易伤
+IMMUNITIES,免疫
+Move/Atc,移动/攻击
+Characters resistance is 100%,角色抗性为100%
+Damage reduced to,伤害降低至
+Non-Magical,非魔法
+Gained,获得
+XP!,经验值！
+GP,金币
+Removes Conditions,移除状态
+Disengages,脱离
+Disengaging,脱离中
+turns,回合
+Time Use,时间消耗
+Confirm,确认
+Spell,法术
+Cost,消耗
+Att,攻击
+#General,#通用
+Victory!,胜利！
+Combat!,战斗！
+There are no enemies. Press ENTER to leave combat!,没有敌人。按回车键离开战斗！
+Auto-resolving round!,自动结算回合！
+Press any key to stop!,按任意键停止！
+The combatants stare at each other from across the battlefield,战斗双方隔着战场对峙着
+The party has been attacked!,队伍遭到攻击！
+Prepare for combat!,准备战斗！
+REMEMBER: You can press RETURN on your turn to auto-resolve combat!,记住：你可以在你的回合按回车键自动结算战斗！
+Round,回合
+Deploy Your Party!,部署你的队伍！
+Begin Combat!,开始战斗！
+Deploy your party and press {ITEM},部署你的队伍并按{ITEM}
+Deploy Party,部署队伍
+Out of range,超出范围
+Pass turn and defend,跳过回合并防御
+Open the current character's Inventory,打开当前角色的背包
+Hold action until end of turn,保持行动直到回合结束
+Slashing Damage,挥砍伤害
+Bloodied!,浴血！
+Charge {ITEM},冲锋 {ITEM}
+Select an Item to use,选择要使用的物品
+View combat log,查看战斗日志
+Repeat last action,重复上次行动
+No Maneuvers to perform,无战技可用
+No spells available,无法术可用
+Perform attack,执行攻击
+Select a Maneuver to perform,选择要使用的战技
+Fire-Spit,火焰吐息
+Electric Damage,闪电伤害
+Fire Damage,火焰伤害
+Mercenary begun,佣兵登场
+An option!,一个选项！
+Critical Hit!,暴击！
+Hostile,敌对
+Not Alert,未警觉
+Alerted,已警觉
+Shifting,移位
+is Flat-Footed,措手不及
+Out of ammo!,弹药耗尽！

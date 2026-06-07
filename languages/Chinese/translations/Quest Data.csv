@@ -1,455 +1,467 @@
-original,translate,
-#General,#通用,
-Quest Started,任务开始,
-Side Quest Started,边线任务开始,
-Sub-Quest Started,分支任务开始,
-Quest Completed,任务完成,
-Side Quest Completed,边线任务完成,
-Sub-Quest Completed,分支任务完成,
-Quest Failed,任务失败,
-Side Quest Failed,边线任务失败,
-Sub-Quest Failed,分支任务失败,
-MAIN QUESTS,主任务,
-SIDE QUESTS,边线任务,
-COMPLETED,完成,
-FAILED,失败,
-Success,成功,
-Failed,失败,
-Main quests that have not yet been completed,尚未完成的主要任务,
-Side-quests that have not yet been completed,尚未完成的边线任务,
-Quests that have been completed,已完成的任务,
-Quests that have failed,失败的任务,
-# Tilde Sub Quests,# 波浪符 副任务,
-~ The Summoning Chamber,~ 召唤室,
-~ Down Below,~ 下方,
-~ Salts of Elthanyr,~ 埃尔than瑞的盐,
-~ Eat!,~ 吃！,
-~ The Surprise,~ 意外之喜,
-~ The Brewer,~ 酿酒师,
-~ The Cook,~ 厨师,
-~ The Weaver,~ 织工,
-~ To the Tower,~ 去塔楼,
-~ Shrine of Agility,~ 敏捷圣所,
-~ Shrine of Fortitude,~ 坚毅圣所,
-~ Shrine of Intellect,~ 智慧圣所,
-~ Shrine of Presence,~ 影响力圣所,
-~ Shrine of Strength,~ 力量圣所,
-~ Talk to Markus,~ 与马库斯交谈,
-~ Talk to Drahl,~ 与德拉尔交谈,
-~ The Secret Tunnel,~ 秘密地道,
-~ The Queen's Request,~ 王后的请求,
-~ Mouths to Feed,~ 要养活的人口,
-~ Outbreak,~ 疫病爆发,
-~ Hidden Clues,~ 隐藏的线索,
-~ Buried Secrets,~ 被埋的秘密,
-~ An Evening Meal,~ 晚餐时光,
-~ The Hedge Maze,~ 草丛迷宫,
-#Main Quests,#主线任务,
-A Twilight Meeting,一次黄昏会面,
-I’ve been summoned to the estate of the lord Cato Berryn,我被召唤到了卡托·贝林庄园,
-My father’s old patron,我父亲的老赞助人,
-"Though I grew up here, I’ve not been back for decades due to the unfortunate manner in which my father left the service of House Berryn",尽管我在这里长大，但因为父亲离开贝林家族的方式不幸，我已经几十年没有回去了,
-I do not know why Cato summons me now and I must venture to find out,我不知道卡托现在为什么召唤我，我必须前去探个究竟,
-The lord Berryn has tasked me to find his daughter,贝林领主让我去找他的女儿,
-"My childhood friend, Embal",我儿时的朋友，伊姆巴尔,
-Rescue Embla,营救伊姆布拉,
-"My father's old patron, Lord Cato Berryn, has tasked me to rescue his daughter from the island of Idra",我父亲的老赞助人，卡托·贝林领主，让我去岛上的伊德拉营救他的女儿,
-She was last seen in the city of Horryn and I must search for clues as to her fate,她最后是在霍林城被看到的，我必须寻找关于她命运的线索,
-I found Embla in the town of Horryn,我在霍林城找到了伊姆布拉,
-Events have conspired however to make it impossible to return to the mainland,但事件的进展使得返回大陆变得不可能,
-Instead we must venture to end the madness that has engulfed the region,我们必须前往终结笼罩这片地区的疯狂,
-This quest has failed,这个任务失败了,
-Refugees of Horryn,海罗因难民,
-"Marcus the Chamberlain, the de-facto leader of the refugees, has pleaded with me to help the camp",马库斯勋爵，难民实际上的领导者，恳求我帮助营地,
-Food is running low and he’s requested I talk to Frantzo,食物快用完了，他请求我去找弗朗佐谈谈,
-There is also a disease outbreak in camp and I should talk to Drahl the cleric about that,营地里还爆发了疾病，我应该去找德拉尔牧师谈谈这个问题,
-Both can be found in the camp,他们都可以在营地找到,
-I’ve done what I can for the camp and the refugees have certainly been given a fighting chance,我已经尽力帮助营地和难民了，难民们确实有了抵抗的机会,
-Mouths to Feed,需要养活的人,
-"Frantzo, the camp’s cook and de-facto quartermaster, needs me to find food supplies for the refugees",弗朗佐，营地的厨师兼实际上的物资官，需要我为难民找到食物补给,
-He needs a large supply of it and soon as people have begun dying from starvation,他需要大量的食物，并且尽快，因为人们已经开始因饥饿而死亡,
-I’ve provided the Frantzo with the food he needs to keep the refugees fed for the foreseeable future,我已经为弗朗佐提供了足够的食物，以确保难民在未来一段时间内都能得到喂养,
-Jakub's Goats,卡朱伯的山羊,
-Frantzo suggests looking into the farmer’s missing herd of goats,弗朗佐建议调查那位农民失踪的山羊群,
-He suspects the farmer hid them away to keep them from being eaten by starving refugees,他怀疑那位农民把山羊藏起来了，以防止它们被饥饿的难民吃掉,
-Bring the Goats to Camp,带山羊回营地,
-I found Jakub's hidden goats up in a secluded mountain glen,我在偏远的山间谷地找到了卡朱伯隐藏的山羊群,
-Now I must bring the herd of goats to the refugee camp,现在我必须把山羊群带到难民营地,
-If I don't get Jakub to agree first there may be consequences,如果我不先说服卡朱伯，可能会有后果,
-Convince Jakub,说服卡朱伯,
-Perhaps I should talk to Jakub and see if convince him to let me bring the goats back to camp,或许我应该去找卡朱伯，看看能否说服他让我把山羊带回营地,
-"Jakub, the Idran goat farmer, has come to his senses and agreed to let me bring the goats to camp so they can be eaten",卡朱伯，伊德拉山羊农民，已经醒悟过来，同意让我把山羊带回到营地，好让它们被食用,
-He asks that I go and help his son,他要求我去帮助他的儿子,
-Return to Frantzo,回到弗朗佐,
-I must return to Frantzo and tell him that I've brought Jakub's goats to camp,我必须回到弗朗佐并向他报告我已经把雅各布的羊带到营地的消息,
-Search for the Goats,寻找羊群,
-I need to start by looking for a clue as to where the herd could be located,我需要先寻找一些线索，以确定羊群可能的位置,
-An Alternate Supply,替代补给,
-Look for an alternate solution to the food-crisis in the refugee camp,寻找解决难民营食物危机的替代方案,
-Sea's Bounty,海洋的恩赐,
-The quartermaster of the Weathermaiden has enough food-supplies to feed the refugee camp,天气使者号的军需官有足够的食物补给可以喂饱难民营,
-The downside is it will cost me 500 pieces of gold,问题是这将花费我500个金币,
-I’ve acquired the food-supplies needed to feed the refugees,我已经获得了喂养难民所需的食物补给,
-Now all that remains is to return to Frantzo and tell him the good news,现在只剩下回到弗朗佐并向他报告这个好消息了,
-Outbreak,疫情,
-"There is an outbreak in camp and the aged cleric, Drahl, has asked me to help him look for a cure",难民营里爆发了疫情，年迈的牧师德拉尔请我帮他寻找治疗方法,
-He suggests I start by talking to Hannah,他建议我先去找汉娜谈谈,
-The mother of a sick child who appears to have a suggestion for a cure,一个生病孩子的母亲，似乎对治疗方法有所建议,
-She can be found in a cottage south of camp,她住在营南边的一个小屋里,
-I provided Drahl with a cure for the outbreak and it appears to be having the intended effect,我为德拉尔提供了治疗疫情的药剂，看来效果不错,
-A Mother's Love,母亲的爱,
-A young mother in the refugee camp has pleeded with me to help save her child,一个年轻的母亲在难民营里恳求我帮助救她的孩子,
-The boy's fallen ill and she begs me to seek out an old crone living in the forest in the islands interior,那个男孩生病了，她恳求我去找岛内地森林里住着的一个老巫婆,
-She would know how to help,她会知道如何帮助的,
-"Though the old woman had gone insane, I was able to get medicine for the child",尽管那老妇人已经疯了，我还是设法为孩子弄到了药,
-I was unable to get medicine for Hannah in time,我没能及时为哈annah弄到药,
-Both mother and child passed,母亲和孩子都去世了,
-"Having gotten his medicine, Hannah's boy is looking better already",哈annah的男孩已经看起来好多了，因为他得到了药,
-The Un-Born,未出生者,
-Mother Katak will help with the outbreak in camp,卡塔克妈妈会帮助解决营地的疫情,
-"To make medicine she has asked me to find ""the un-born of the scaled ones""",为了制作药剂，她让我去找“鳞族的未出生者”,
-"Apparently they dwell nearby: ""north of the great oak and past the fetid pools""",据说它们就住在附近：“大橡树北面，以及那些恶臭的池塘之后”,
-THE UN-BORN,未出生者,
-"To make medicine she has asked me to find ""the un-born of the scaled ones",为了制作药剂，她让我去找“鳞族的未出生者”,
-"Apparently they dwell nearby: ""north of the great oak and past the fetid pools",据说它们就住在附近：“大橡树北面，以及那些恶臭的池塘之后”,
-I recovered eggs from a pack of giant lizards and delivered them to the mad old hag,我从一群巨蜥中找回了蛋，并交给了那个疯癫的老巫婆,
-You need to find 1 GiantLizardEgg,你需要找到 1 个巨蜥蛋,
-You found GiantLizardEgg!,你找到了巨蜥蛋！,
-The Eternity Gate,时空之门,
-I find myself naked and alone in the darkness,我赤身裸体地独自一人置身于黑暗之中,
-I can only surmise I am inside the strange structure that we found underneath the Black Priory,我只能猜测，我们是在黑修道院之下发现的那个奇怪建筑里,
-Truly this is a place where no mortal foot was ever meant to tread,确实，这里是一个凡人从未该踏上足迹的地方,
-I am undone,我败北了,
-Dust in an endless void,漫无边际的虚无之中的一粒尘埃,
-This will be my final entry,这将是我的最终记录,
-The Zephyr,瑞西弗,
-"I need to investigate what is happening with ""The Zephyr",我需要调查一下“瑞西弗”发生的事情,
-A mutiny had broken out as the crew refused to bring the ship closer to Idra,船员们拒绝将船只驶近伊德拉，船员中爆发了叛乱,
-They claimed the island was cursed,他们声称那座岛屿被诅咒了,
-"The zephyr was sunk by a terrible, un-namable creature of the deep",瑞西弗被一种深海中的可怕、无法命名的生物沉没了,
-Plateau of Madness,疯狂的高原,
-The Cabal expedition landed at the mining-village of Adler’s Helm,卡巴尔探险队在阿德勒之锤的采矿村登陆,
-I suspect we can find a way to ascend to the interior plateau on Gradla if we follow their trail to Adler's Helm and beyond,我怀疑如果我们跟随阿德勒之锤矿工们发现的古楼梯前往阿德勒之锤并继续前进，就能找到通往内部高原的途径,
-"Following the ancient stairs discovered by the miners of Adler’s Helm, we have reached the interior plateau",随着阿德勒之锤矿工们发现的古楼梯，我们已经抵达了内部高原,
-The Priory lies within reach,修道院近在咫尺,
-Retaking Horryn,收复霍里恩,
-"To retake Horryn, we must kill the three Reaver chiefs that occupy the city",要收复霍里恩，我们必须杀死占据城市的三位掠夺者首领,
-"The three are know as Oleg the Gray, Queen Kala and the Butcher",他们分别被称为灰色的奥列格、女王卡拉和屠夫,
-Iben cautions that the threesome is fierce and that we might use cunning and use their infighting to our advantage,伊本警告说，这三人非常凶猛，我们或许可以利用他们的内讧来对我们有利,
-Oleg the Gray,灰色的奥列格,
-Dead Queen Kala,已故的女王卡拉,
-Dead The Butcher,已故的屠夫,
-Dead,已死,
-Alive,生存,
-Alive The Butcher,生存的屠夫,
-Alive Queen Kala,生存的女王卡拉,
-We have retaken the outer city,我们已经夺回了外城,
-STORMING THE KEEP,攻占要塞,
-Storming the Keep,攻占要塞,
-"Though we have liberated the outer city, Horryn’s keep remains in the possession of the Reavers",尽管我们已经解放了外城，霍林的要塞仍然被掠夺者掌控,
-The keep is well protected from a frontal assault so we need to look for an alternate entrance,秘密地道,
-I successfully infiltrated the keep and slew the foul creature known as “Father,我成功潜入要塞并杀死了被称为“父亲”的邪恶生物,
-The Secret Tunnel,秘密地道,
-Hierophant Drahl believes a secret tunnel exists that connects the keep to the crypts underneath the temple,牧职者德拉尔认为存在一条秘密地道，将要塞与神殿下方的陵寝相连,
-The sacred crypts of the Sepulchites can be accessed from within the temple,西普鲁西特的圣陵可以从神殿内部进入,
-"Drahl suspects that if a secret tunnel does indeed exist, it probably lies in the deeper sections of the crypts",德拉尔怀疑如果秘密地道确实存在，它很可能位于陵寝的深处,
-"Though the crypt was overrun by foul undead creatures, we did indeed find the secret tunnel",尽管陵寝被邪恶的不死生物占领，我们确实找到了秘密地道,
-Talk to Drahl,与德拉尔交谈,
-"According to Markus, Hierophant Drahl might know of a secret entrance into the keep",据马库斯说，牧职者德拉尔可能知道一条进入要塞的秘密入口,
-The Hierophant can be found in front of the newly liberated temple,牧职者位于新解放的神殿前,
-I met and talked to the Hierophant,我遇见并与牧职者交谈了,
-TALK TO MARKUS,与马库斯交谈,
-Talk to Markus,与马库斯交谈,
-I’ve been told to meet Markus the Chamberlain at the inn that lies west of the city square in Horryn,我被告知要在霍里恩城市广场西边的旅店里与财政大臣马库斯会面,
-I suspect he has an idea about how to pierce the keep's defences,我怀疑他可能知道如何突破要塞的防御,
-I found and talked to Markus,我找到了马库斯并与其交谈,
-Untold Eons,未言明的万世,
-"We’ve penetrated the dungeons that lay beneath the Black Priory and entered into the black, timeless realms beyond",我们已经穿透了黑修道院下方的地下城，并进入了那片黑色、永恒的领域,
-Now it remains to be seen what untold secrets have lain hidden for so long,现在只剩下看看这些未言明的秘密究竟隐藏了多久,
-We found what the Cabal was excavating underneath the Priory,我们找到了邪教徒在黑修道院下方挖掘的东西,
-By the Golden how I wish we had let it lie in peace,金色之神啊，但愿我们当初让它安息,
-I fear there is no salvation for us now,我害怕我们现在已无救赎,
-The Priory Opens,黑修道院开启,
-We’ve entered the Black Priory,我们已经进入了黑修道院,
-"Whatever secrets the Cabal expedition found here, I suspect they lay beneath the priory",无论邪教徒在这里发现了什么秘密，我怀疑它们都藏在修道院之下,
-We must find a way to enter the dungeon below,我们必须找到进入下方地下城的方法,
-We have breached the lower level of the priory,我们已经突破了修道院的下层,
-To Sleep and Dream,睡眠与梦境,
-The secrets of the Priory are within reach,修道院的秘密触手可及,
-We must navigate the catacombs and reach the great secret that lies at its heart,我们必须穿过墓穴，抵达其核心的那个伟大秘密,
-May the Dead save us,但愿亡者能拯救我们,
-The secrets of this place are far deeper and more ancient than any of us could have guessed,这个地方的秘密远比我们任何人想象的都要深邃和古老,
-We descend now into a darkness from which I fear we’ll never re-emerge,我们现在正步入一片黑暗，我害怕我们再也不会从中走出,
-Upon Black Seas,黑海之上,
-I rescued Embla but we find that there is no way to return to the main-land whilst the Outer Isles is engulfed in this madness,我救出了伊姆布拉，但我们发现，在外岛陷入这场疯狂之前，我们无法返回大陆,
-Embla is convinced the calamity is somehow caused by the discovery of an ancient site known as “The Black Priory” on the island of Gradla,伊姆布拉确信这场灾难是由于发现了格拉达岛上的“黑修道院”这一古迹所致,
-Gradla is located to the north of Idra and we must find a ship and crew willing to take us there,格拉达位于伊德拉的北方，我们必须找到一艘愿意带我们去那里的船和船员,
-Gradla is within sight,格拉达就在眼前,
-Now we must make landfall and seek a way to reach the inland plateau,现在我们必须登陆，并寻找一条通往内陆高原的道路,
-#Side Quests,#支线任务,
-The Boar's Medicine,猪的药草,
-Kydeon asked me fetch a bottle of brandy from the wine cellar under the kitchen after I talk to Lyra,科德恩让我在与莉拉交谈后去厨房的地窖取一瓶白兰地,
-The old boar will sleep soundly tonight,老猪今晚会睡得很香,
-M' damn knees are acting up again,我的膝盖又开始疼了,
-Can't hardly sleep on account of the aches,疼得我几乎睡不着,
-"Let me tell you, I'd take an arrow in the leg any day",我告诉你，我宁可被箭射中腿,
-"If you're going over to the kitchen later for a bit of grub, a bottle of brandy from the wine-cellar would make me a happy man!",如果你稍后去厨房吃点东西，地窖里的一瓶白兰地会让我很高兴！,
-Kydeon shifts as if to emphasize his stiff knees,科德恩似乎在强调他的膝盖僵硬,
-Ha!,哈！,
-That's some fine foraging young whelp!,哼！你这个年轻小子，真会采集草药！,
-"Before you can get a word in, Kydeon snatches the bottle, uncorks it and drinks deeply",就在你还没来得及开口，科德恩已经抢过瓶子，拔开塞子，大口喝了起来,
-"The old man, eyes closed in relief, lets out a deep sigh",老人闭着眼睛，露出如释重负的表情，深深地叹了口气,
-May your sleep be dreamless,祝你一夜无梦,
-he speaks as if to himself,他似乎在自言自语,
-The Cellar,地窖,
-Look for your father in the cellar under the kitchen,在厨房下面的地窖中寻找你的父亲,
-You found your father,你找到了你的父亲,
-The Beast in the Hearth,炉火中的野兽,
-Lyra has betted with me to see if I can sneak into the hearth of the villa and confront the 'beast' that hides there,利拉和我打赌，看我是否能偷偷潜入别墅的炉火旁，并与藏匿其中的‘野兽’对峙,
-I won our wager and snuk into the hearth,我赢了赌注，并成功潜入了炉火旁,
-There I met a mercenary by the name or Roland Greyeye,在那里，我遇到了一名名叫罗兰·灰眼的佣兵,
-I failed to sneak into the hearth,我未能潜入炉火旁,
-Exploring the Grounds,探索庄园,
-"While I wait for the Lord Berryn to become available, I should look for some food and perhaps walk the gardens and hedge maze before I check back in with Lyra again",在我等待伯林爵士有空的时候，我应该找些食物，也许可以走走花园和迷宫，然后再去找利拉汇报,
-The lord of House Berryn is ready for me now,伯林家族的主人现在准备见我了,
-An Evening Meal,一个晚宴,
-I have been ordered to go procure a meal for myself from the kitchen as there is no saying how long I will be waiting,我被命令去厨房为自己准备一顿饭，因为不知道要等多久,
-I should talk to the chef,我应该去找厨师,
-Chef Armand taught me to make his famous melted cheese sandwiches,厨师阿曼德教我如何制作他著名的熔化奶酪三明治,
-"Surely, old Magda cries in the tomb at what her kitchen has come to",肯定是老玛格达在墓穴中哀叹她的厨房变成了什么样子,
-Chef Armand has offered to teach me how to make his famous cheese sandwich,厨师阿曼德愿意教我如何制作他著名的奶酪三明治,
-For starters I have to fetch cheddar cheese and cured ham from the cellar under the kitchen,作为开胃菜，我必须从厨房下面的地窖中取来切达奶酪和腌制火腿,
-My suggestion is thusly,我的建议是这样,
-"Whilst I stoke the fire, you run down in the pantry and fetch some cured ham and cheddar cheese",我去生火，你们则下到储藏室拿些熏火腿和切达奶酪,
-I will then teach you how to cook my renowned melted cheese sandwich and you shall never want for an evening meal for as long as you live!,然后我会教你烹饪我著名的熔化奶酪三明治，你将一辈子不再为晚餐发愁！,
-The Hedge Maze,草篱迷宫,
-Lyra suggests I should explore the hedge-maze in the villa grounds while I wait for master Cato to become ready,莉拉建议我探索别墅 grounds 里的草篱迷宫，因为我还得等待卡托大师准备就绪,
-"You managed to find ""Embla"" in the maze",你成功在迷宫中找到了“伊姆拉”,
-A Deeper Dark,深入黑暗,
-One of the lighthouse keepers went mad and killed himself after dreaming of a strange blade buried deep within the caves below the lighthouse,一位灯塔守卫在梦到灯塔下方洞穴深处埋藏着一把奇怪的刀后疯了并自杀,
-Perhaps that artifact should be recovered for safe-keeping... or use,或许那件神器应该被回收保管... 或者使用,
-The entrance to the caves is under the broken bridge,洞穴的入口在那座破桥之下,
-"I recovered a strange dagger from some sort of ancient, pre-Imperial, ritual chamber in the caves beneath the lighthouse",我在灯塔下方的洞穴里某个古老的、帝国之前的仪式室里找到了一把奇怪的短剑,
-Find Froggert!,找到弗戈特！,
-"Marsa, a young girl in the Idran camp, has lost her stuffed animal 'Froggert'",在伊德兰营地的一个名叫玛尔萨的年轻女孩丢失了她的毛绒动物“弗戈特”,
-Getting it back for her might be a small act of kindness in a sea of horrors,为她找回它可能是在一片恐怖中的一点善意,
-The wayward reptile has been recovered,迷途的爬行者已被找回,
-Marsa was overjoyed,玛尔萨欣喜若狂,
-It felt good to help,帮忙的感觉真好,
-Lost Sailors,失踪水手,
-I met a small group of surviving sailors from the Zephyr camped near the wreck,我在泽费尔营地附近遇到了一群幸存的水手,
-"Their de-facto leader, Snow, has asked that I send any survivors I find his way",他们的事实上的领导者雪恩请求我将找到的任何幸存者带给他,
-There should be at least 3 out there,至少要有3个,
-Found so far,目前发现的,
-I sent those I could find to Snow’s camp,我把能找到的人送到了雪的营地,
-"Though the group is still small, they certainly stand a better chance together than alone",虽然队伍还很小，但显然在一起的机会比单独行动要大得多,
-Sealed Away,被封印,
-"Kat from the Zephyr, suggests we should look to see if the captain’s seal survived the sinking",来自疾风号的凯特建议我们去看看船长的封印是否在沉船时幸存下来,
-"Though the captain died on the Zephyr, one of the other crew-members might have managed to bring it ashore",虽然船长在疾风号上去世了，但其他船员中可能有人把封印带上了岸,
-Kat suggests we start by examining a cave to the west,凯特建议我们先检查西边的一个洞穴,
-The seal is apparently quite valuable and the Nautical Guild would pay well to have it returned,这个封印显然很有价值，航海公会愿意出高价把它归还,
-We found the seal on one of the corpses in the cave,我们在洞穴中的尸体中找到了封印,
-I'll hold onto it and perhaps there is an opportunity to return it to the Nautical Guild if we ever make it back to the mainland,我会保管好它，如果有机会回到大陆，或许可以把它归还给航海公会,
-Rescue Natia,营救纳蒂亚,
-"Philip, a survivor from Horryn, has pleaded with me to try and rescue his wife Natia who is being dragged away the meet “The Father” inside the keep",来自霍里恩的菲利普恳求我尝试营救他的妻子纳蒂亚，她正被拖去见“父亲”守备,
-She has auburn hair,她有着红棕色的头发,
-I managed to save Natia but not without her suffering a grievous wound,我设法救出了纳蒂亚，但代价是她受了严重的伤,
-Thankfully I feel certain she will recover,幸运的是，我觉得她一定会康复,
-Philip took her to their small home near the Fisherman’s Gate,菲利普把她带到了渔人门附近的他们的小家,
-I failed to rescue Natia and she lost her life at the hands of a Reaver,我没能营救纳蒂亚，她在掠夺者手中丧生,
-Philip offered me a gold ring as reward for the rescue of his wife,菲利普给了我一枚金戒指作为营救他妻子的报酬,
-Badge of Honor,荣誉徽章,
-Encountered a ‘sewerjack’ under Horryn,在霍里恩遇到了一个下水道工人,
-He lost his badge in a scrap with some vermin in one of the side-tunnels east of where I met him,他在与一些啮齿类怪物的争斗中，在我遇到他的东侧隧道中丢失了他的徽章,
-It seems he would be very happy if we recovered it for him,看起来如果我们帮他找回，他会非常高兴,
-I recovered the badge for the sewerjack,我帮下水道工人找回了徽章,
-He couldn't offer much in the way of a reward but instead provided me with a hand drawn map of the sewers,他无法提供多少报酬，但给了我一张手绘的下水道地图,
-Timber!,木头！,
-A lumberjack and his son were attacked by monsters in the woods,一个伐木工和他的儿子在森林中被怪物袭击,
-The son got away but apparently his father didn’t,儿子逃走了，但显然他的父亲没有,
-The kid asked me to look for his father,小孩让我帮他找父亲,
-Apparently their camp can be found east of the big oak,据说他们的营地在大橡树东边可以找到,
-"Against all odds, I found the lumberjack alive in a giant spider cocoon",出乎意料的是，我在一只巨蜘蛛的茧中找到了活着的伐木工,
-He was grateful to be released and reunited with his son,他感激被释放并与儿子团聚,
-The Stargazer,星象家,
-"It seems Basilo, the wreck picker, has come across a chest of my belongings",看起来，废品商巴西洛发现了一箱我的物品,
-He’s agreed to turn it over if I help him,他同意归还这些物品，前提是我要帮他,
-It would appear an astronomer has set up a camp in the cliffs west of Basilo’s house,看来，一位天文学家在巴西洛家西边的悬崖上扎营了,
-He’s asked me to bring him the telescope from the camp,他让我去营地带给他望远镜,
-I brought Basilo the telescope and traded it for my belongings,我把望远镜带给巴西洛，然后用它换回了我的物品,
-Well of Tears,泪水之井,
-"Marita, a mourning mother, is being haunted by the laughter of her dead children coming from a well on her farm",马里塔，一位悲痛的母亲，她的农场里的井里传来死去孩子的笑声，让她魂不守舍,
-"Sadly, it seems to have driven her mad with grief",可惜，这似乎让她因悲伤而疯了,
-Perhaps there is a way for me to help her?,或许我能找到办法帮助她？,
-I ventured into the well and recovered the bones of Marita’s two children,我潜入井中，找回了马里塔两个孩子的骸骨,
-"In the darkness below, I encountered some kind of abominable mold creature that had the ability to mimic its victims",在下方的黑暗中，我遇到了某种畸形的霉菌生物，它能模仿它的受害者,
-I pray this is the last time I encounter such a horror,我祈祷这将是最后一次遇到这种恐怖的事物,
-Zephyr's Wreck,风信子号残骸,
-A group of Snow’s sailors disappeared whilst exploring the wreckage of the Zephyr,雪的船员们在探索风信子号残骸时神秘失踪,
-Snow asks that I investigate their fate,雪希望我能调查他们的下落,
-Examining the wreckage I came across a monstrously grown rat creature that spoke with the voice of a man,检查残骸时，我发现了一只异常巨大的老鼠生物，它用人的声音说话,
-I dispatched it though I came too late to save the lives of the lost sailors,我将其击退，但为时已晚，无法拯救那些失踪船员的生命,
-I best report back to Snow,我应该尽快向雪汇报,
-Snow could not pay me for my work but assures me the Nautical Guild will not forget my service,雪无法支付报酬，但保证海事公会不会忘记我的服务,
-The Lost Captain,失踪船长,
-"Zhara, this first mate of a stranded smuggler’s crew, has asked me to learn the fate of their captain, Iago",这位名叫朱拉的二副，来自搁浅走私船的船员，希望我能查明他们船长伊戈的下落,
-He traveled to Horryn to visit the city’s black market right before it fell and that is where I should search for him,他临行前去了霍林城的黑市，并在那里失踪，我应该去那里寻找他,
-The entrance to the black market can be found in the city’s sewers,黑市的入口位于城市下水道中,
-We found Captain Iago in chains in the Rat Queen's dungeons,我们在猫王的地牢中找到了被锁链束缚的伊戈船长,
-I should try to free him somehow as he has the potential to become a valuable ally,我应该设法将他解救出来，因为他有可能成为有价值的盟友,
-Sisters,姐妹,
-"A woman named Julia in Horryn, asked me to find her sister, Ylia, who lives in Firgol",霍林城的一位名叫朱莉娅的女子希望我能找到她的姐姐伊莉亚，她住在费戈尔,
-Julia is convinced her sister is worried about her safety considering last week’s events in Horryn,杰ulia确信她的妹妹因为上周在霍林发生的事情而担心她的安全,
-She wants me to inform Ylia that she is safe given the circumstances,她希望我告诉Ylia她现在安全了，考虑到这些情况,
-I met Ylia and talked to her but the encounter left me none the wiser,我见过Ylia并和她交谈过，但这次会面并没有让我明白什么,
-It seems Ylia is not only oblivious to the state of the Outer Isles,看来Ylia不仅对外岛的情况一无所知,
-She also insists that her sister was not late at all and was in fact due to arrive in a few days time,她还坚持说她的妹妹根本没有迟到，实际上应该在几天后到达,
-I’m not sure what to make of this,我不确定该相信什么,
-IAGO IN CHAINS,IAGO IN CHAINS,
-Iago in Chains,Iago in Chains,
-"I found Iago zha Droma, captain of the Weathermaiden, in chains in the black market of the Rat Queen",我在鼠后之市场中找到了被锁链束缚的Iago·扎·杜玛，‘天气女皇’号的船长,
-He begged me to intercede to the queen on his behalf,他恳求我为他向女王说情,
-"If I somehow manage to free him, he might make a valuable ally",如果我设法将他释放，他可能会成为有价值的盟友,
-Iago has been freed from the dungeons of the Rat-Queen,Iago已经从鼠后之牢狱中被释放,
-The Queen's Request,鼠后的要求,
-The Rat Queen has asked me to recover the Harbormaster's Ledger for her,鼠后让我为她找回灯塔管理员的账本,
-She recommends searching the eastern sea-tower,她建议我们去搜查东侧的海塔,
-We can find that by following the eastern jetty all the way around to the entrance of the harbor,我们可以通过沿着东侧的码头一直走到港口入口来找到那里,
-"I recovered the ledger and in return, the queen released Iago",我找回了账本，作为回报，女王释放了Iago,
-There is little love lost there,那里几乎没有共同点,
-Dying Light,日落时分,
-Mathias needs oil for the lighthouse,马蒂亚斯需要灯塔的油,
-I should search for it in the warehouses along the harbor in Horryn once I make my way there,我应该去霍ryn港口附近的仓库寻找,
-I found the oil and brought it to Mathias,我找到了油，并把它带给了马蒂亚斯,
-The lighthouse should be well stocked for now,现在灯塔应该储备充足,
-"To show his gratitude, Mathias gave me his old broadsword",为了表示感谢，马蒂亚斯给了我他的旧阔剑,
-Fate of the Santa Fury,圣塔 fury 之命运,
-"According to Carylla the mercenary captain, the wreck of the lost treasure-ship, the Santa Fury, is said to be located here on Idra",根据雇佣兵队长卡莉拉的说法，据说失落财船圣塔 fury 的残骸就位于伊德拉,
-Perhaps I could find it?,或许我能找到它？,
-Hidden Clues,隐藏的线索,
-"Carylla the mercenary captain says the Santa Fury is supposed to be found ""on dry land and near the lighthouse"" according to the rumor",根据卡莉拉的说法，圣塔 fury 据说应该“在陆地上，靠近灯塔”被找到,
-I should search for it,我应该去寻找,
-Found the Santa Fury - in a sense,找到了圣塔 fury — 从某种意义上说,
-Turns out there is a painting of the ship hanging in the lighthouse,原来灯塔里挂着这艘船的画像,
-On the back of the painting was a poem,画像的背后有一首诗,
-It seems like it might offer directions to something buried in the ground,看起来它可能提供了埋藏在地下的线索,
-Buried Secrets,埋藏的秘密,
-"From the back of the ""Santa Fury",从“圣塔 fury”的背后,"The Santa Fury made her flight"""
-"From the center of the three, The Santa Fury made her flight",在三者之中，圣塔 fury 开始她的飞行,
-"Setting out to hide her booty, All within the lighthouse's sight",出发隐藏她的战利品，都在灯塔的视野之内,
-"leagues south began her trip, ""5 east"" the Captain cried. 4 more north, our valiant ship, Our plunder we shall hide!",向南行驶了数个海里，船长喊道：“向东5个方向”。再向北4个方向，我们勇敢的船，我们将藏起我们的战利品！,
-Land ahoy!,岸边！,
-went up the roar,向咆哮声走去,
-We'll lay our treasure there!,我们要把财宝放在那里！,
-"Into the rising sun: 3 more, Then dig and have no fear!",向升起的太阳前进：再走三步，然后挖掘，不要害怕！,
-Pilgrimage,朝圣之旅,
-There are five pilgrim-shrines in the Outer Isles and I should attempt to visit all of them,外岛上有五座朝圣神殿，我应该尝试访问所有这些神殿,
-I’ve learned the prayer to recite at each of them,我已经学会了在每个神殿祈祷的祷文,
-Shrine of Agility,敏捷神殿,
-I should pray at the Shrine of Agility to receive its blessing,我应该在敏捷神殿祈祷以获得祝福,
-The shrine can be found on one of the small islands in the archipelago of the Outer Isles,神殿位于外岛群岛的一个小岛上,
-Shrine of Fortitude,坚韧神殿,
-I should pray at the Shrine of Fortitude to receive its blessing,我应该在坚韧神殿祈祷以获得祝福,
-"The shrine is said to be located somewhere on the island of Eryll, north of Idra",据说神殿位于伊尔岛的北边，伊德拉岛以北,
-Shrine of Intellect,智慧神殿,
-I should pray at the Shrine of Intellect to receive its blessing,我应该在智慧神殿祈祷以获得祝福,
-The shrine can be found on an island directly east of Idra,神殿位于伊德拉岛东边的一个岛上,
-Shrine of Presence,呈现神殿,
-I should pray at the Shrine of Presence to receive its blessing,我应该在呈现神殿祈祷以获得祝福,
-The shrine can be found on Idra - at the island’s northernmost point,神殿位于伊德拉岛的最北端,
-Shrine of Strength,力量神殿,
-I should pray at the Shrine of Strength to receive its blessing,我应该在力量神殿祈祷以获得祝福,
-"The shrine is said to be located on Gradla's western coast, near the volcano Karaban",神龛据说位于格拉达西海岸，靠近火山卡拉巴丹,
-Carnivale,卡尼瓦莱,
-Preparations,准备工作,
-The Baron and Baroness of Firgol are putting on a feast called the Carnivale for the commoners of the village of Firgol,菲戈尔伯爵和伯爵夫人正在为菲戈尔村的村民举办一场名为卡尼瓦莱的盛宴,
-"The preparations are taking a bit longer than expected however, and they’ve asked me to see if I can help out",然而准备工作比预期花费的时间更长，他们请我帮忙看看能否提供帮助,
-"The Baroness asked me to talk to Ari the brewer, Camilla the weaver and Klara the cook to see if they need my help",伯爵夫人让我去见酿酒师亚里、织工卡米拉和厨师克拉拉，看看他们是否需要帮助,
-All three can be found in the main village,三人都在主村可以找到,
-The Brewer,酿酒师,
-The Baroness of Firgol has asked me to talk to Ari the brewer to see if they need my help in finishing preparations for the Canivale,菲戈尔伯爵夫人让我去见酿酒师亚里，看看是否需要他在筹备卡尼瓦莱时提供帮助,
-TALK TO ARI,与亚里交谈,
-Talk to Ari,与亚里交谈,
-I need to seek out Ari the Brewer,我需要找到酿酒师亚里,
-He lives somewhere in the village of Firgol,他住在菲戈尔村的某个地方,
-GNAWING AT THE ROOTS,根须啃噬者,
-Gnawing at the Roots,根须啃噬者,
-Ari the Brewer in Firgol has asked me to find and clear three mole-burrows in his orchards,菲戈尔村的酿酒师亚里让我去找到并清理他果园里的三个鼹鼠洞,
-They may be well hidden so I might need to search for them,它们可能隐藏得很好，所以我可能需要搜寻一番,
-"Once I find them, I should use a shovel to collapse them",找到它们后，我应该用铲子将它们塌陷,
-Once I’m done I am to return to Ari,完成后，我需要返回亚里那里,
-The orchards are located north of Ari’s house in the village of Firgol,果园位于亚里家北面的菲戈尔村内,
-Burrows Found,发现地道,
-The Cook,厨师,
-The Baroness of Firgol has asked me to talk to Klara the cook to see if they need my help in finishing preparations for the Canivale,菲戈尔的女伯爵让我去找厨师克拉拉谈谈，看看是否需要我的帮助来完成狂欢节的准备工作,
-TALK TO KLARA,谈话对象：克拉拉,
-Talk to Klara,谈话对象：克拉拉,
-I need to seek out Klara the cook,我需要找到厨师克拉拉,
-She works at the inn in Firgol,她在菲戈尔的旅店里工作,
-Queen's Gambit,国王的开局,
-Klara the cook at the inn is preparing honey cakes for the carnivale,菲戈尔旅店里的厨师克拉拉正在为狂欢节准备蜂蜜蛋糕,
-She’s asked that I go to the beehives west of the village and fetch her at least one honeycomb of the local 'Firgol honey',她让我去村西的蜂巢，至少为她带回一块菲戈尔蜂蜜的蜂蜡,
-The Weaver,织布匠,
-The Baroness of Firgol has asked me to talk to Camilla the weaver to see if they need my help in finishing preparations for the Canivale,菲戈尔的女伯爵让我去找卡米拉，看看是否需要我的帮助来完成狂欢节的准备工作,
-TALK TO CAMILLA,谈话对象：卡米拉,
-Talk to Camilla,谈话对象：卡米拉,
-I need to seek out Camilla the weaver,我需要找到织布匠卡米拉,
-She lives somewhere in the village of Firgol,她住在菲戈尔村的某个地方,
-A Song for Camilla,为卡米拉作曲,
-Camilla the weaver has a crush on a woman named Cass,织布匠卡米拉喜欢一个名叫卡斯的女人,
-Unfortunately she fears her love is unrequited and has asked me to talk to Cass on her behalf,不幸的是，她担心自己的爱未被回应，让我替她去和卡斯谈谈,
-She suggests I search for Cass along the bed of the lake or creek that runs past Firgol,她建议我在菲戈尔湖或溪流的河床寻找卡斯,
-Such Wonders,如此奇观,
-Carnivale is upon you!,摊牌时间到了！,
-Eat!,吃吧！,
-Drink!,喝吧！,
-Revel!,纵情狂欢！,
-You must partake in all the wonders of the Carnivale!,你必须参与所有摊牌的奇观！,
-Try the drink at the Carnevale!,尝试摊牌上的饮品！,
-Sample the food at the Carnivale,尝尝摊牌上的食物,
-Give in to the music of the Carnivale,任由摊牌上的音乐感染你,
-The Surprise,意外之喜,
-Enjoy the rest of the night,享受这晚的余下时光,
-The Finale,终幕,
-Storm the Firgol manor,攻占费戈尔庄园,
-The Baron's Play,�伯爵的剧目,
-The Baron's play is about to begin,伯爵的剧目即将开始,
-Take your place in front of the stage,在舞台前就位,
-The Tower of Ash,灰烬之塔,
-We met a strange man on Idra who beseeched us to travel to an island just north of Idra called Eryll and seek out ‘The Tower of Ash’,在伊德拉，我们遇到了一个奇怪的男人，他恳求我们前往伊德拉北边的一个叫厄瑞尔的岛屿，寻找‘灰烬之塔’,
-Apparently his master is somehow in dire straits and in need of aid,据说他的主人目前处境危急，急需援助,
-"Though not much more could be learned from the man, I suspect his master may in fact be a Magos of quite some power",虽然从他那里得知的信息不多，但我怀疑他的主人可能是一位颇具实力的魔导士,
-TO THE TOWER,前往高塔,
-To the Tower,前往高塔,
-I've been asked to travel to the island of Eryll,我被要求前往厄里尔岛,
-It lies a short distance north of Idra but still south of Gradla,厄里尔岛位于伊德拉北面不远处，但仍然在格拉尔南面,
-There I must find ‘The Tower of Ash’ and venture to learn more of the plight of its ‘Master’,在那里我必须找到“灰烬高塔”，并冒险去了解其“主人”的困境,
-Down Below,前往地底,
-I met the strange apprentices of a Magos by the name of Calipero,我在高塔地下大厅遇见了一位名为卡拉佩罗的魔导士的奇异学徒,
-He seems to be missing in the halls underneath the tower and the apprentices are desperate to see him returned,似乎卡拉佩罗在地下大厅失踪了，学徒们迫切希望他能返回,
-The entrance to the dungeons below can be found under the mercury pool on the ground floor of the tower,地下牢房的入口位于高塔底层汞池下方,
-Apparently the entrance will somehow reveal itself if I blow the silver flute given to me by the apprentices,据说如果我吹奏学徒给我的银笛，入口会以某种方式显现,
-Salts of Elthanyr,埃尔坦尼盐,
-"As I entered the dungeon, I was contacted through magical means by Calipero himself",当我进入地牢时，卡拉佩罗通过魔法联系了我,
-It seems he is locked in an arcane stale-mate with some creature he tried to call forth from beyond,看起来他与某种他试图召唤的生物陷入了某种魔法僵局,
-To free himself he has asked that we create something called the Salts of Elthanyr and bring it to his summoning chambers beneath the main dungeon,为了自救，他要求我们制作所谓的“埃尔坦尼盐”，并将其带到地牢主牢房下的召唤室,
-Ingredient Hunt,寻找材料,
-To craft the Salts of Elthanyr I need to find the 'Protoplasmic Catalyzer' and add the following ingredients is this exact order,制作埃尔坦尼盐，我需要找到“原生催化器”，并按照以下顺序添加以下材料,
-First add Sylversalt,首先添加银盐,
-"Second, add Salamander’s Horn",其次，添加火蜥蜴角,
-"Finally, add Lotus Petals",最后，添加莲花花瓣,
-I'm sure these ingredients as well as the 'Protoplasmic Catalyzer' can be found in this very dungeon,我相信这些材料以及“原生催化器”都可以在这个地牢中找到,
-The Recipe,配方,
-For starters I need to find the recipe for Salts of Elthanyr,首先我需要找到埃尔than瑞盐的配方,
-Hopefully the recipe can be found somewhere in this dungeon,希望配方能在这个地下城里某个地方找到,
-The Summoning Chamber,召唤室,
-I've crafted the Salts of Elthanyr,我已经炼制了埃尔than瑞盐,
-Now I need to make my way down Calipero's Summoning Chambers and assist him as best I can,现在我需要前往卡拉佩罗的召唤室，并尽可能地帮助他,
-Vomit Cups,呕吐杯,
-"Esteban, the alchemist in the Underhalls under Horryn, has asked me to find some ‘vomit cup’ fungi for him",哈罗恩地下厅里的炼金术师埃斯贝安让我帮他找一些‘呕吐杯’真菌,
-They are large green fungi that smell horribly,它们是巨大的绿色真菌，气味极其难闻,
-He explains that they grow in caves adjoining the Underhalls,他解释说这些真菌生长在与地下厅相连的洞穴中,
-These caves can be accessed through a barred gate west of the Rat-Queens court,这些洞穴可以通过鼠后宫廷西边的铁栅门进入,
-The area is off-limits and a guard patrols it,该区域禁止进入，有守卫巡逻,
-"Once past the gate, I should make a left turn and find the chamber where the vomit cups grow",越过铁栅门后，我应该向左转，并找到呕吐杯生长的洞室,
-"Afterwards, I’ll return to Esteban for my rewards as well as access to his alchemical supplies",之后，我会回到埃斯贝安那里领取报酬并获得他的炼金材料使用权,
+original,translate
+#General,#通用
+Quest Started,任务开始
+Side Quest Started,支线任务开始
+Sub-Quest Started,子任务开始
+Quest Completed,任务完成
+Side Quest Completed,支线任务完成
+Sub-Quest Completed,子任务完成
+Quest Failed,任务失败
+Side Quest Failed,支线任务失败
+Sub-Quest Failed,子任务失败
+MAIN QUESTS,主线任务
+SIDE QUESTS,支线任务
+COMPLETED,已完成
+FAILED,已失败
+Success,成功
+Failed,失败
+Main quests that have not yet been completed,尚未完成的主线任务
+Side-quests that have not yet been completed,尚未完成的支线任务
+Quests that have been completed,已完成的任务
+Quests that have failed,已失败的任务
+#Main Quests,#主线任务
+A Twilight Meeting,黄昏会面
+I’ve been summoned to the estate of the lord Cato Berryn,我被传唤至卡托·贝林勋爵的庄园
+My father’s old patron,我父亲的旧主
+"Though I grew up here, I’ve not been back for decades due to the unfortunate manner in which my father left the service of House Berryn",尽管我在这里长大，但由于我父亲离开贝林家族时的不幸方式，我已经几十年没有回来了
+I do not know why Cato summons me now and I must venture to find out,我不知道卡托为何现在召见我，我必须前去一探究竟
+The lord Berryn has tasked me to find his daughter,贝林勋爵委托我寻找他的女儿
+"My childhood friend, Embal",我儿时的朋友，恩布拉
+Rescue Embla,营救恩布拉
+"My father's old patron, Lord Cato Berryn, has tasked me to rescue his daughter from the island of Idra",我父亲的旧主，卡托·贝林勋爵，委托我从伊德拉岛救出他的女儿
+She was last seen in the city of Horryn and I must search for clues as to her fate,她最后一次出现是在霍林城，我必须寻找关于她命运的线索
+I found Embla in the town of Horryn,我在霍林镇找到了恩布拉
+Events have conspired however to make it impossible to return to the mainland,然而事态的发展使得返回大陆变得不可能
+Instead we must venture to end the madness that has engulfed the region,相反，我们必须冒险去终结席卷这片地区的疯狂
+This quest has failed,此任务已失败
+Refugees of Horryn,霍林的难民
+"Marcus the Chamberlain, the de-facto leader of the refugees, has pleaded with me to help the camp",总管马库斯，难民营的实际领导者，恳求我帮助营地
+Food is running low and he’s requested I talk to Frantzo,食物短缺，他让我去找弗兰佐谈谈
+There is also a disease outbreak in camp and I should talk to Drahl the cleric about that,营地还爆发了疾病，我应该找牧师德拉尔谈谈此事
+Both can be found in the camp,两人都可以在营地找到
+I’ve done what I can for the camp and the refugees have certainly been given a fighting chance,我已为营地尽我所能，难民们无疑获得了生存的机会
+Mouths to Feed,嗷嗷待哺
+"Frantzo, the camp’s cook and de-facto quartermaster, needs me to find food supplies for the refugees",弗兰佐，营地的厨师兼实际上的军需官，需要我为难民寻找食物补给
+He needs a large supply of it and soon as people have begun dying from starvation,他需要大量补给，而且要快，因为已经开始有人饿死
+I’ve provided the Frantzo with the food he needs to keep the refugees fed for the foreseeable future,我已向弗兰佐提供了他所需的食物，足以在可预见的未来养活难民
+Jakub's Goats,雅库布的山羊
+Frantzo suggests looking into the farmer’s missing herd of goats,弗兰佐建议调查那位农夫丢失的山羊群
+He suspects the farmer hid them away to keep them from being eaten by starving refugees,他怀疑农夫把它们藏起来，以免被饥饿的难民吃掉
+Bring the Goats to Camp,把山羊带到营地
+I found Jakub's hidden goats up in a secluded mountain glen,我在一个僻静的山谷中找到了雅库布藏起来的山羊
+Now I must bring the herd of goats to the refugee camp,现在我必须把这群山羊带到难民营
+If I don't get Jakub to agree first there may be consequences,如果我不先让雅库布同意，可能会有后果
+Convince Jakub,说服雅库布
+Perhaps I should talk to Jakub and see if convince him to let me bring the goats back to camp,也许我应该和雅库布谈谈，看看能否说服他让我把山羊带回营地
+"Jakub, the Idran goat farmer, has come to his senses and agreed to let me bring the goats to camp so they can be eaten",雅库布，这位伊德拉的牧羊人，已经想通了，同意让我把山羊带到营地供人食用
+He asks that I go and help his son,他请求我去帮助他的儿子
+Return to Frantzo,返回弗兰佐处
+I must return to Frantzo and tell him that I've brought Jakub's goats to camp,我必须返回弗兰佐那里，告诉他我已经把雅库布的山羊带到了营地
+Search for the Goats,寻找山羊
+I need to start by looking for a clue as to where the herd could be located,我需要先寻找羊群可能在哪里的线索
+An Alternate Supply,替代供给
+Look for an alternate solution to the food-crisis in the refugee camp,寻找解决难民营食物危机的替代方案
+Sea's Bounty,海洋的恩赐
+The quartermaster of the Weathermaiden has enough food-supplies to feed the refugee camp,天候少女号的军需官有足够的食物补给来养活难民营
+The downside is it will cost me 500 pieces of gold,缺点是这将花费我500枚金币
+I’ve acquired the food-supplies needed to feed the refugees,我已获得养活难民所需的食物补给
+Now all that remains is to return to Frantzo and tell him the good news,现在剩下的就是返回弗兰佐那里，告诉他这个好消息
+Outbreak,疫情爆发
+"There is an outbreak in camp and the aged cleric, Drahl, has asked me to help him look for a cure",营地爆发了疫情，年迈的牧师德拉尔请我帮他寻找治疗方法
+He suggests I start by talking to Hannah,他建议我先去找汉娜谈谈
+The mother of a sick child who appears to have a suggestion for a cure,一位生病孩子的母亲，她似乎对治疗方法有所建议
+She can be found in a cottage south of camp,她可以在营地南边的一间小屋找到
+I provided Drahl with a cure for the outbreak and it appears to be having the intended effect,我向德拉尔提供了治疗疫情的方法，看来效果符合预期
+A Mother's Love,母爱
+A young mother in the refugee camp has pleeded with me to help save her child,难民营里一位年轻的母亲恳求我帮忙救她的孩子
+The boy's fallen ill and she begs me to seek out an old crone living in the forest in the islands interior,男孩病倒了，她恳求我去寻找住在岛屿内陆森林里的一位老妇
+She would know how to help,她会知道如何帮忙
+"Though the old woman had gone insane, I was able to get medicine for the child",尽管老妇人已经疯了，我还是为孩子弄到了药
+I was unable to get medicine for Hannah in time,我没能及时为汉娜弄到药
+Both mother and child passed,母子俩都去世了
+"Having gotten his medicine, Hannah's boy is looking better already",拿到药后，汉娜的男孩看起来已经好多了
+The Un-Born,未生者
+Mother Katak will help with the outbreak in camp,卡塔克嬷嬷会帮忙处理营地的疫情
+"To make medicine she has asked me to find ""the un-born of the scaled ones""",为了制药，她让我去找“鳞族之未生者”
+"Apparently they dwell nearby: ""north of the great oak and past the fetid pools""",显然它们就在附近：“大橡树以北，越过恶臭池塘”
+I recovered eggs from a pack of giant lizards and delivered them to the mad old hag,我从一群巨蜥那里取回了蛋，交给了那个疯老太婆
+You need to find 1 GiantLizardEgg,你需要找到1个巨蜥蛋
+You found GiantLizardEgg!,你找到了巨蜥蛋！
+The Eternity Gate,永恒之门
+I find myself naked and alone in the darkness,我发现自己赤身裸体，孤身一人身处黑暗之中
+I can only surmise I am inside the strange structure that we found underneath the Black Priory,我只能推测我身处我们在黑修院地下发现的奇异建筑内
+Truly this is a place where no mortal foot was ever meant to tread,这确实是一个凡人本不该踏足的地方
+I am undone,我完了
+Dust in an endless void,无尽虚空中的尘埃
+This will be my final entry,这将是我最后的记录
+The Zephyr,西风号
+"I need to investigate what is happening with ""The Zephyr",我需要调查“西风号”上发生了什么
+A mutiny had broken out as the crew refused to bring the ship closer to Idra,船员拒绝将船驶近伊德拉，一场暴动爆发了
+They claimed the island was cursed,他们声称这座岛被诅咒了
+"The zephyr was sunk by a terrible, un-namable creature of the deep",西风号被一头可怕、无法名状的深海生物击沉了
+Plateau of Madness,疯狂高原
+The Cabal expedition landed at the mining-village of Adler’s Helm,秘盟考察队在采矿小镇鹰盔堡登陆
+I suspect we can find a way to ascend to the interior plateau on Gradla if we follow their trail to Adler's Helm and beyond,我怀疑如果我们沿着他们的足迹前往鹰盔堡及更远的地方，就能找到登上格拉德拉内陆高原的路
+"Following the ancient stairs discovered by the miners of Adler’s Helm, we have reached the interior plateau",沿着鹰盔堡矿工发现的古老阶梯，我们到达了内陆高原
+The Priory lies within reach,修道院已近在咫尺
+Retaking Horryn,收复霍林
+"To retake Horryn, we must kill the three Reaver chiefs that occupy the city",要收复霍林，我们必须杀死占领该城的三名劫掠者首领
+"The three are know as Oleg the Gray, Queen Kala and the Butcher",这三者分别是灰发奥列格、卡菈女王和屠夫
+Iben cautions that the threesome is fierce and that we might use cunning and use their infighting to our advantage,伊本警告说这三人非常凶残，我们或许可以运用计谋，利用他们的内斗来取得优势
+Oleg the Gray,灰发奥列格
+Dead Queen Kala,卡菈女王已死
+Dead The Butcher,屠夫已死
+Dead,已死
+Alive,存活
+Alive The Butcher,屠夫存活
+Alive Queen Kala,卡菈女王存活
+We have retaken the outer city,我们已经收复了外城
+Storming the Keep,强攻要塞
+"Though we have liberated the outer city, Horryn’s keep remains in the possession of the Reavers",虽然我们解放了外城，霍林的要塞仍被劫掠者占据
+The keep is well protected from a frontal assault so we need to look for an alternate entrance,要塞正面防御严密，因此我们需要寻找其他入口
+I successfully infiltrated the keep and slew the foul creature known as “Father,我成功潜入了要塞，并杀死了那个被称为“父亲”的邪恶生物
+The Secret Tunnel,秘道
+Hierophant Drahl believes a secret tunnel exists that connects the keep to the crypts underneath the temple,大祭司德拉尔相信存在一条秘道，连接要塞和神殿地下的墓室
+The sacred crypts of the Sepulchites can be accessed from within the temple,葬仪修会的神圣墓室可以从神殿内部进入
+"Drahl suspects that if a secret tunnel does indeed exist, it probably lies in the deeper sections of the crypts",德拉尔怀疑，如果秘道确实存在，它很可能位于墓室更深处
+"Though the crypt was overrun by foul undead creatures, we did indeed find the secret tunnel",尽管墓室被邪恶的不死生物占据，我们确实找到了秘道
+Talk to Drahl,与德拉尔交谈
+"According to Markus, Hierophant Drahl might know of a secret entrance into the keep",据马库斯说，大祭司德拉尔可能知道进入要塞的秘密入口
+The Hierophant can be found in front of the newly liberated temple,大祭司可以在新解放的神殿前找到
+I met and talked to the Hierophant,我见到了大祭司并与他交谈
+Talk to Markus,与马库斯交谈
+I’ve been told to meet Markus the Chamberlain at the inn that lies west of the city square in Horryn,我被告知去霍林城市广场西边的旅店见总管马库斯
+I suspect he has an idea about how to pierce the keep's defences,我猜他有办法突破要塞的防御
+I found and talked to Markus,我找到了马库斯并与他交谈
+Untold Eons,无数纪元
+"We’ve penetrated the dungeons that lay beneath the Black Priory and entered into the black, timeless realms beyond",我们穿过了黑修院下方的地牢，进入了那黑暗、超越时间的领域
+Now it remains to be seen what untold secrets have lain hidden for so long,现在，就看那些隐藏了如此之久的无数秘密究竟是什么了
+We found what the Cabal was excavating underneath the Priory,我们发现了秘盟在修道院下方挖掘的东西
+By the Golden how I wish we had let it lie in peace,以黄金之名，我真希望我们当初让它安息
+I fear there is no salvation for us now,恐怕我们现在已无救赎
+The Priory Opens,修道院开启
+We’ve entered the Black Priory,我们进入了黑修院
+"Whatever secrets the Cabal expedition found here, I suspect they lay beneath the priory",无论秘盟考察队在这里发现了什么秘密，我怀疑它们就在修道院下方
+We must find a way to enter the dungeon below,我们必须找到进入下方地牢的路
+We have breached the lower level of the priory,我们已突破修道院的下层
+To Sleep and Dream,沉眠与梦
+The secrets of the Priory are within reach,修道院的秘密触手可及
+We must navigate the catacombs and reach the great secret that lies at its heart,我们必须穿过地下墓穴，抵达其核心的巨大秘密
+May the Dead save us,愿死者拯救我们
+The secrets of this place are far deeper and more ancient than any of us could have guessed,此地的秘密远比我们任何人猜测的更深邃、更古老
+We descend now into a darkness from which I fear we’ll never re-emerge,我们现在正坠入一片黑暗，恐怕再也无法重见天日
+Upon Black Seas,黑海之上
+I rescued Embla but we find that there is no way to return to the main-land whilst the Outer Isles is engulfed in this madness,我救出了恩布拉，但我们发现，在外岛被这片疯狂吞噬之际，无法返回大陆
+Embla is convinced the calamity is somehow caused by the discovery of an ancient site known as “The Black Priory” on the island of Gradla,恩布拉确信，这场灾难是由格拉德拉岛上名为“黑修院”的古代遗址的发现引起的
+Gradla is located to the north of Idra and we must find a ship and crew willing to take us there,格拉德拉位于伊德拉以北，我们必须找到一艘船和愿意载我们前往的船员
+Gradla is within sight,格拉德拉已进入视线
+Now we must make landfall and seek a way to reach the inland plateau,现在我们必须登陆，并寻找通往内陆高原的路
+THE UN-BORN,未生者
+"To make medicine she has asked me to find ""the un-born of the scaled ones",为了制药，她让我去找“鳞族之未生者”
+"Apparently they dwell nearby: ""north of the great oak and past the fetid pools",显然它们就在附近：“大橡树以北，越过恶臭池塘”
+STORMING THE KEEP,强攻要塞
+TALK TO MARKUS,与马库斯交谈
+#Side Quests,#支线任务
+The Boar's Medicine,“野猪”的药
+Kydeon asked me fetch a bottle of brandy from the wine cellar under the kitchen after I talk to Lyra,凯迪恩让我在和莱拉谈完后去厨房下面的酒窖拿一瓶白兰地
+The old boar will sleep soundly tonight,这头老野猪今晚能睡个好觉了
+M' damn knees are acting up again,我这该死的膝盖又犯毛病了
+Can't hardly sleep on account of the aches,疼得我几乎睡不着觉
+"Let me tell you, I'd take an arrow in the leg any day",我跟你说，我宁愿腿上挨一箭
+"If you're going over to the kitchen later for a bit of grub, a bottle of brandy from the wine-cellar would make me a happy man!",要是你等会儿去厨房弄点吃的，顺便从酒窖带瓶白兰地，那我可就太高兴了！
+Kydeon shifts as if to emphasize his stiff knees,凯迪恩挪了挪身子，仿佛在强调他那僵硬的膝盖
+Ha!,哈！
+That's some fine foraging young whelp!,干得漂亮，小崽子！
+"Before you can get a word in, Kydeon snatches the bottle, uncorks it and drinks deeply",你还没来得及开口，凯迪恩就一把夺过酒瓶，拔开塞子，痛饮起来
+"The old man, eyes closed in relief, lets out a deep sigh",老人闭上双眼，如释重负，发出一声深沉的叹息
+May your sleep be dreamless,愿你一夜无梦
+he speaks as if to himself,他像是在自言自语
+The Cellar,地窖
+Look for your father in the cellar under the kitchen,去厨房下面的地窖找你的父亲
+You found your father,你找到了你的父亲
+The Beast in the Hearth,壁炉里的小畜生
+Lyra has betted with me to see if I can sneak into the hearth of the villa and confront the 'beast' that hides there,莱拉和我打了个赌，看我能不能溜进庄园的壁炉，去会会藏在那里的“小畜生”
+I won our wager and snuk into the hearth,我赢了赌约，溜进了壁炉
+There I met a mercenary by the name or Roland Greyeye,在那里我遇到了一个名叫罗兰·灰眼的雇佣兵
+I failed to sneak into the hearth,我没能溜进壁炉
+Exploring the Grounds,探索庄园
+"While I wait for the Lord Berryn to become available, I should look for some food and perhaps walk the gardens and hedge maze before I check back in with Lyra again",在等贝林勋爵有空的时候，我应该找点吃的，或许还可以逛逛花园和树篱迷宫，然后再去找莱拉
+The lord of House Berryn is ready for me now,贝林家族的领主现在准备好见我了
+An Evening Meal,晚餐
+I have been ordered to go procure a meal for myself from the kitchen as there is no saying how long I will be waiting,我奉命去厨房给自己弄点吃的，因为不知道要等多久
+I should talk to the chef,我应该和厨师谈谈
+Chef Armand taught me to make his famous melted cheese sandwiches,厨师阿曼德教我做他拿手的融化奶酪三明治
+"Surely, old Magda cries in the tomb at what her kitchen has come to",老玛格达若是在天有灵，看到她的厨房变成这样，一定会哭的
+Chef Armand has offered to teach me how to make his famous cheese sandwich,厨师阿曼德主动提出要教我做他拿手的奶酪三明治
+For starters I have to fetch cheddar cheese and cured ham from the cellar under the kitchen,首先我得从厨房下面的地窖里拿切达干酪和熏火腿
+My suggestion is thusly,我的建议是这样的
+"Whilst I stoke the fire, you run down in the pantry and fetch some cured ham and cheddar cheese",我添柴生火，你跑去储藏室拿些熏火腿和切达干酪
+I will then teach you how to cook my renowned melted cheese sandwich and you shall never want for an evening meal for as long as you live!,然后我就教你做我那道远近闻名的融化奶酪三明治，你这辈子就再也不用为晚餐发愁了！
+The Hedge Maze,树篱迷宫
+Lyra suggests I should explore the hedge-maze in the villa grounds while I wait for master Cato to become ready,莱拉建议我在等卡托大人准备好之前，去庄园里的树篱迷宫探索一番
+"You managed to find ""Embla"" in the maze",你成功在迷宫中找到了“恩布拉”
+A Deeper Dark,更深层的黑暗
+One of the lighthouse keepers went mad and killed himself after dreaming of a strange blade buried deep within the caves below the lighthouse,一名灯塔看守人梦见灯塔下的洞穴深处埋着一把奇异的刀剑后，发了疯并自杀了
+Perhaps that artifact should be recovered for safe-keeping... or use,或许应该把那件器物找回来妥善保管……或者使用
+The entrance to the caves is under the broken bridge,洞穴的入口在断桥下面
+"I recovered a strange dagger from some sort of ancient, pre-Imperial, ritual chamber in the caves beneath the lighthouse",我从灯塔下洞穴里某个古老的、帝国之前的仪式室中，找到了一把奇特的匕首
+Find Froggert!,找到弗洛格特！
+"Marsa, a young girl in the Idran camp, has lost her stuffed animal 'Froggert'",玛尔莎，伊德拉营地的一个小女孩，弄丢了她的毛绒玩具“弗洛格特”
+Getting it back for her might be a small act of kindness in a sea of horrors,在这片恐怖之海中，帮她找回来或许是个小小的善举
+The wayward reptile has been recovered,那只走失的爬行生物找回来了
+Marsa was overjoyed,玛尔莎欣喜若狂
+It felt good to help,助人的感觉真好
+Lost Sailors,遇难水手
+I met a small group of surviving sailors from the Zephyr camped near the wreck,我遇到了一小群西风号的幸存水手，他们在残骸附近扎了营
+"Their de-facto leader, Snow, has asked that I send any survivors I find his way",他们的实际领头人，斯诺，请我把我找到的任何幸存者都送到他那里去
+There should be at least 3 out there,外面至少应该有3个
+Found so far,目前已找到
+I sent those I could find to Snow’s camp,我把我能找到的人都送到了斯诺的营地
+"Though the group is still small, they certainly stand a better chance together than alone",虽然队伍仍然很小，但他们聚在一起肯定比孤身一人更有机会
+Sealed Away,封存之物
+"Kat from the Zephyr, suggests we should look to see if the captain’s seal survived the sinking",西风号的卡蒂建议我们去找找看，船长的印章是否在沉船中幸存了下来
+"Though the captain died on the Zephyr, one of the other crew-members might have managed to bring it ashore",虽然船长死在了西风号上，但其他船员可能设法把它带上了岸
+Kat suggests we start by examining a cave to the west,卡蒂建议我们先去西边的一个洞穴看看
+The seal is apparently quite valuable and the Nautical Guild would pay well to have it returned,这枚印章显然相当值钱，航海行会会出高价把它赎回去
+We found the seal on one of the corpses in the cave,我们在洞穴的一具尸体上找到了印章
+I'll hold onto it and perhaps there is an opportunity to return it to the Nautical Guild if we ever make it back to the mainland,我会保管好它，如果我们能回到大陆，或许有机会把它还给航海行会
+Rescue Natia,营救娜蒂亚
+"Philip, a survivor from Horryn, has pleaded with me to try and rescue his wife Natia who is being dragged away the meet “The Father” inside the keep",菲利普，一名霍林的幸存者，恳求我设法营救他的妻子娜蒂亚，她正被拖去要塞里见“父亲”
+She has auburn hair,她有一头赤褐色的头发
+I managed to save Natia but not without her suffering a grievous wound,我设法救下了娜蒂亚，但她还是受了重伤
+Thankfully I feel certain she will recover,谢天谢地，我确信她会康复的
+Philip took her to their small home near the Fisherman’s Gate,菲利普把她带回了他们在渔夫之门附近的小家
+I failed to rescue Natia and she lost her life at the hands of a Reaver,我没能救出娜蒂亚，她死在了劫掠者的手中
+Philip offered me a gold ring as reward for the rescue of his wife,菲利普给了我一枚金戒指，作为我营救他妻子的酬谢
+Badge of Honor,荣誉徽章
+Encountered a ‘sewerjack’ under Horryn,在霍林地下遇到了一个“下水道工”
+He lost his badge in a scrap with some vermin in one of the side-tunnels east of where I met him,他在我遇到他的地方东边的一条支巷里，和一群虫群厮打时弄丢了徽章
+It seems he would be very happy if we recovered it for him,看来如果我们能帮他找回来，他会非常高兴
+I recovered the badge for the sewerjack,我为下水道工找回了徽章
+He couldn't offer much in the way of a reward but instead provided me with a hand drawn map of the sewers,他没能提供什么像样的报酬，而是给了我一张手绘的下水道地图
+Timber!,倒木！
+A lumberjack and his son were attacked by monsters in the woods,一个伐木工和他的儿子在树林里遭到了怪物的袭击
+The son got away but apparently his father didn’t,儿子逃了出来，但他父亲显然没有
+The kid asked me to look for his father,那孩子求我去找他父亲
+Apparently their camp can be found east of the big oak,显然他们的营地在大橡树东边
+"Against all odds, I found the lumberjack alive in a giant spider cocoon",出乎所有意料，我在一个巨蜘蛛的茧里找到了活着的伐木工
+He was grateful to be released and reunited with his son,他很感激被解救出来，并与儿子团聚
+The Stargazer,看星星的人
+"It seems Basilo, the wreck picker, has come across a chest of my belongings",看来巴西洛，那个捡残骸的，发现了一箱我的东西
+He’s agreed to turn it over if I help him,他同意如果我帮他，就把箱子还给我
+It would appear an astronomer has set up a camp in the cliffs west of Basilo’s house,似乎有个天文学家在巴西洛房子西边的悬崖上扎了营
+He’s asked me to bring him the telescope from the camp,他让我把营地里的望远镜带给他
+I brought Basilo the telescope and traded it for my belongings,我把望远镜带给了巴西洛，换回了我的东西
+Well of Tears,泪井
+"Marita, a mourning mother, is being haunted by the laughter of her dead children coming from a well on her farm",玛丽塔，一位哀悼的母亲，被她农场里一口井中传出的已故孩子的笑声所困扰
+"Sadly, it seems to have driven her mad with grief",可悲的是，这似乎已让她因悲痛而发疯
+Perhaps there is a way for me to help her?,或许我有办法帮帮她？
+I ventured into the well and recovered the bones of Marita’s two children,我冒险进入井中，找回了玛丽塔两个孩子的遗骨
+"In the darkness below, I encountered some kind of abominable mold creature that had the ability to mimic its victims",在下面的黑暗中，我遇到了一种可憎的霉菌生物，它能够模仿受害者的声音
+I pray this is the last time I encounter such a horror,我祈祷这是我最后一次遇到这种恐怖之物
+Zephyr's Wreck,西风号残骸
+A group of Snow’s sailors disappeared whilst exploring the wreckage of the Zephyr,斯诺的一群水手在探索西风号残骸时失踪了
+Snow asks that I investigate their fate,斯诺请我去调查他们的命运
+Examining the wreckage I came across a monstrously grown rat creature that spoke with the voice of a man,在检查残骸时，我遇到了一只长得异常巨大的鼠类生物，它竟能口吐人言
+I dispatched it though I came too late to save the lives of the lost sailors,我解决了它，但来得太晚，没能救下那些失踪水手的性命
+I best report back to Snow,我最好回去向斯诺报告
+Snow could not pay me for my work but assures me the Nautical Guild will not forget my service,斯诺无法为我的工作支付报酬，但他向我保证航海行会不会忘记我的贡献
+The Lost Captain,失踪的船长
+"Zhara, this first mate of a stranded smuggler’s crew, has asked me to learn the fate of their captain, Iago",扎拉，一队搁浅走私者的大副，请我去查明他们船长伊阿戈的下落
+He traveled to Horryn to visit the city’s black market right before it fell and that is where I should search for him,他在霍林沦陷前去了城里的黑市，我应该去那里找他
+The entrance to the black market can be found in the city’s sewers,黑市的入口在城里的下水道中
+We found Captain Iago in chains in the Rat Queen's dungeons,我们在鼠后的地牢里找到了戴着锁链的伊阿戈船长
+I should try to free him somehow as he has the potential to become a valuable ally,我应该设法解救他，因为他有可能成为宝贵的同伴
+Sisters,姐妹
+"A woman named Julia in Horryn, asked me to find her sister, Ylia, who lives in Firgol",霍林一个名叫茱莉亚的女人，请我去找她住在菲尔戈的妹妹，伊莉娅
+Julia is convinced her sister is worried about her safety considering last week’s events in Horryn,茱莉亚确信，考虑到上周霍林发生的事，她妹妹一定在担心她的安全
+She wants me to inform Ylia that she is safe given the circumstances,她想让我告诉伊莉娅，就目前情况而言，她是安全的
+I met Ylia and talked to her but the encounter left me none the wiser,我见到了伊莉娅并和她谈了谈，但这次会面让我更加困惑
+It seems Ylia is not only oblivious to the state of the Outer Isles,看来伊莉娅不仅对外岛群岛的现状一无所知
+She also insists that her sister was not late at all and was in fact due to arrive in a few days time,她还坚称她姐姐根本没有迟到，实际上应该几天后才到
+I’m not sure what to make of this,我不知道这是怎么回事
+Iago in Chains,身陷囹圄的伊阿戈
+"I found Iago zha Droma, captain of the Weathermaiden, in chains in the black market of the Rat Queen",我发现天候少女号的船长，伊阿戈·扎·德罗马，被锁在鼠后的黑市里
+He begged me to intercede to the queen on his behalf,他恳求我替他向女王求情
+"If I somehow manage to free him, he might make a valuable ally",如果我能设法救他出来，他或许能成为宝贵的同伴
+Iago has been freed from the dungeons of the Rat-Queen,伊阿戈已从鼠后的地牢中被解救出来
+The Queen's Request,女王之请
+The Rat Queen has asked me to recover the Harbormaster's Ledger for her,鼠后请我帮她找回港务长的账本
+She recommends searching the eastern sea-tower,她建议搜查东边的海塔
+We can find that by following the eastern jetty all the way around to the entrance of the harbor,我们可以沿着东防波堤一路绕到港口入口处找到它
+"I recovered the ledger and in return, the queen released Iago",我找回了账本，作为回报，女王释放了伊阿戈
+There is little love lost there,他们之间没什么情谊可言
+Dying Light,将熄之光
+Mathias needs oil for the lighthouse,马蒂亚斯需要灯塔用的油
+I should search for it in the warehouses along the harbor in Horryn once I make my way there,等我到了霍林，应该在港口沿线的仓库里找找
+I found the oil and brought it to Mathias,我找到了油并带给了马蒂亚斯
+The lighthouse should be well stocked for now,灯塔的储备暂时应该充足了
+"To show his gratitude, Mathias gave me his old broadsword",为了表示感谢，马蒂亚斯把他那把旧阔剑给了我
+Fate of the Santa Fury,圣怒号的命运
+"According to Carylla the mercenary captain, the wreck of the lost treasure-ship, the Santa Fury, is said to be located here on Idra",据雇佣兵队长卡莉拉说，失踪的宝船圣怒号的残骸，据说就在伊德拉这里
+Perhaps I could find it?,也许我能找到它？
+Hidden Clues,隐藏线索
+"Carylla the mercenary captain says the Santa Fury is supposed to be found ""on dry land and near the lighthouse"" according to the rumor",雇佣兵队长卡莉拉说，根据传闻，圣怒号应该能在“陆地上，靠近灯塔的地方”找到
+I should search for it,我应该去找找看
+Found the Santa Fury - in a sense,在某种意义上找到了圣怒号
+Turns out there is a painting of the ship hanging in the lighthouse,原来灯塔里挂着一幅这艘船的画
+On the back of the painting was a poem,画的背面有一首诗
+It seems like it might offer directions to something buried in the ground,它似乎可能指向埋在地下的什么东西
+Buried Secrets,埋藏的秘密
+"From the back of the ""Santa Fury""",来自“圣怒号”的背面
+"From the center of the three,",从三者之中心出发，
+The Santy Fury made her flight.,圣·狂怒号开始了她的航程。
+"Setting out to hide her booty,",出发去藏匿她的战利品，
+All within the lighthouse's sight.,一切尽在灯塔的视野之中。
+"2 leagues south began her trip,",向南两里格，她开始了旅程，
+"""5 east"" the Captain cried.",“向东五里格，”船长喊道。
+"4 more north, our valiant ship,",再向北四里格，我们英勇的船，
+Our plunder we shall hide!,我们的掠夺物我们将藏起！
+"""Land ahoy!"" went up the roar:",“看到陆地了！”吼声响起：
+We'll lay our treasure there!,我们将把宝藏放在那里！
+"Into the rising sun: 3 more,",朝着升起的太阳：再三里格，
+Then dig and have no fear!,然后挖掘，无所畏惧！
+Pilgrimage,朝圣之旅
+There are five pilgrim-shrines in the Outer Isles and I should attempt to visit all of them,外岛群岛有五座朝圣神龛，我应该设法全部拜访一遍
+I’ve learned the prayer to recite at each of them,我已经学会了在每座神龛前要念诵的祷文
+Shrine of Agility,敏捷神龛
+I should pray at the Shrine of Agility to receive its blessing,我应该在敏捷神龛前祈祷以获得其祝福
+The shrine can be found on one of the small islands in the archipelago of the Outer Isles,这座神龛位于外岛群岛中的一个小岛上
+Shrine of Fortitude,坚韧神龛
+I should pray at the Shrine of Fortitude to receive its blessing,我应该在坚韧神龛前祈祷以获得其祝福
+"The shrine is said to be located somewhere on the island of Eryll, north of Idra",据说这座神龛位于伊德拉北边的埃里尔岛上某处
+Shrine of Intellect,智力神龛
+I should pray at the Shrine of Intellect to receive its blessing,我应该在智力神龛前祈祷以获得其祝福
+The shrine can be found on an island directly east of Idra,这座神龛位于伊德拉正东边的一个岛上
+Shrine of Presence,魅力神龛
+I should pray at the Shrine of Presence to receive its blessing,我应该在魅力神龛前祈祷以获得其祝福
+The shrine can be found on Idra - at the island’s northernmost point,这座神龛位于伊德拉——岛的最北端
+Shrine of Strength,力量神龛
+I should pray at the Shrine of Strength to receive its blessing,我应该在力量神龛前祈祷以获得其祝福
+"The shrine is said to be located on Gradla's western coast, near the volcano Karaban",据说这座神龛位于格拉德拉的西海岸，靠近卡拉班火山
+Carnivale,狂欢节
+Preparations,准备工作
+The Baron and Baroness of Firgol are putting on a feast called the Carnivale for the commoners of the village of Firgol,菲尔戈的男爵和男爵夫人正在为菲尔戈村的平民举办一场名为狂欢节的盛宴
+"The preparations are taking a bit longer than expected however, and they’ve asked me to see if I can help out",然而，准备工作比预期要长一些，他们请我看看能否帮上忙
+"The Baroness asked me to talk to Ari the brewer, Camilla the weaver and Klara the cook to see if they need my help",男爵夫人让我去找酿酒师阿里、织布工卡米拉和厨师克拉拉谈谈，看看他们是否需要我帮忙
+All three can be found in the main village,这三个人都可以在主村里找到
+The Brewer,酿酒师
+The Baroness of Firgol has asked me to talk to Ari the brewer to see if they need my help in finishing preparations for the Canivale,菲尔戈男爵夫人让我去找酿酒师阿里谈谈，看看他们是否需要我帮忙完成狂欢节的准备工作
+Talk to Ari,与阿里交谈
+I need to seek out Ari the Brewer,我需要找到酿酒师阿里
+He lives somewhere in the village of Firgol,他住在菲尔戈村的某个地方
+Gnawing at the Roots,啃噬根源
+Ari the Brewer in Firgol has asked me to find and clear three mole-burrows in his orchards,菲尔戈的酿酒师阿里请我去他的果园里找到并清除三个鼹鼠洞
+They may be well hidden so I might need to search for them,它们可能藏得很好，所以我可能需要仔细搜寻
+"Once I find them, I should use a shovel to collapse them",一旦找到它们，我应该用铲子把它们捣毁
+Once I’m done I am to return to Ari,完成后我要回去找阿里
+The orchards are located north of Ari’s house in the village of Firgol,果园位于菲尔戈村阿里家的北边
+Burrows Found,已找到的洞穴
+The Cook,厨师
+The Baroness of Firgol has asked me to talk to Klara the cook to see if they need my help in finishing preparations for the Canivale,菲尔戈男爵夫人让我去找厨师克拉拉谈谈，看看他们是否需要我帮忙完成狂欢节的准备工作
+Talk to Klara,与克拉拉交谈
+I need to seek out Klara the cook,我需要找到厨师克拉拉
+She works at the inn in Firgol,她在菲尔戈的旅店工作
+Queen's Gambit,后翼弃兵
+Klara the cook at the inn is preparing honey cakes for the carnivale,旅店的厨师克拉拉正在为狂欢节准备蜂蜜蛋糕
+She’s asked that I go to the beehives west of the village and fetch her at least one honeycomb of the local 'Firgol honey',她让我去村子西边的蜂箱那里，至少给她取一块当地的“菲尔戈蜂蜜”蜂巢
+The Weaver,织布工
+The Baroness of Firgol has asked me to talk to Camilla the weaver to see if they need my help in finishing preparations for the Canivale,菲尔戈男爵夫人让我去找织布工卡米拉谈谈，看看他们是否需要我帮忙完成狂欢节的准备工作
+Talk to Camilla,与卡米拉交谈
+I need to seek out Camilla the weaver,我需要找到织布工卡米拉
+She lives somewhere in the village of Firgol,她住在菲尔戈村的某个地方
+A Song for Camilla,献给卡米拉的一首歌
+Camilla the weaver has a crush on a woman named Cass,织布工卡米拉迷恋一个名叫卡丝的女人
+Unfortunately she fears her love is unrequited and has asked me to talk to Cass on her behalf,不幸的是，她担心自己的爱得不到回应，于是请我替她去和卡丝谈谈
+She suggests I search for Cass along the bed of the lake or creek that runs past Firgol,她建议我沿着流经菲尔戈的湖床或溪床边寻找卡丝
+Such Wonders,如此奇观
+Carnivale is upon you!,狂欢节就在眼前！
+Eat!,吃！
+Drink!,喝！
+Revel!,狂欢！
+You must partake in all the wonders of the Carnivale!,你必须尽情享受狂欢节的所有奇妙之处！
+Try the drink at the Carnevale!,尝尝狂欢节的美酒！
+Sample the food at the Carnivale,品尝狂欢节的美食
+Give in to the music of the Carnivale,沉醉于狂欢节的音乐
+The Surprise,惊喜
+Enjoy the rest of the night,享受余下的夜晚
+The Finale,终章
+Storm the Firgol manor,突袭菲尔戈庄园
+The Baron's Play,男爵的表演
+The Baron's play is about to begin,男爵的表演即将开始
+Take your place in front of the stage,在舞台前就位
+The Tower of Ash,灰烬之塔
+We met a strange man on Idra who beseeched us to travel to an island just north of Idra called Eryll and seek out ‘The Tower of Ash’,我们在伊德拉遇到一个奇怪的人，他恳求我们前往伊德拉北边一个叫埃里尔的岛屿，寻找“灰烬之塔”
+Apparently his master is somehow in dire straits and in need of aid,显然他的主人正身处某种可怕的困境，急需援助
+"Though not much more could be learned from the man, I suspect his master may in fact be a Magos of quite some power",虽然从这人那里没能了解到更多，但我怀疑他的主人可能是一位法力相当强大的法师
+To the Tower,前往高塔
+I've been asked to travel to the island of Eryll,我被要求前往埃里尔岛
+It lies a short distance north of Idra but still south of Gradla,它位于伊德拉以北不远，但仍在格拉德拉以南
+There I must find ‘The Tower of Ash’ and venture to learn more of the plight of its ‘Master’,在那里我必须找到“灰烬之塔”，并冒险去了解其“主人”的困境
+Down Below,地下深处
+I met the strange apprentices of a Magos by the name of Calipero,我遇到了一位名叫卡利佩罗的法师的古怪学徒们
+He seems to be missing in the halls underneath the tower and the apprentices are desperate to see him returned,他似乎失踪在塔下的大厅里，学徒们迫切希望他能回来
+The entrance to the dungeons below can be found under the mercury pool on the ground floor of the tower,地下地牢的入口在塔楼底层的水银池下
+Apparently the entrance will somehow reveal itself if I blow the silver flute given to me by the apprentices,显然，如果我吹响学徒们给我的银笛，入口就会以某种方式显现出来
+Salts of Elthanyr,埃尔萨尼尔之盐
+"As I entered the dungeon, I was contacted through magical means by Calipero himself",我进入地牢时，卡利佩罗本人通过魔法联系了我
+It seems he is locked in an arcane stale-mate with some creature he tried to call forth from beyond,看来他正与他试图从异界召唤来的某种生物陷入了一场奥术僵局
+To free himself he has asked that we create something called the Salts of Elthanyr and bring it to his summoning chambers beneath the main dungeon,为了脱身，他要求我们制作一种叫埃尔萨尼尔之盐的东西，并把它带到主地牢下方的召唤室
+Ingredient Hunt,寻找材料
+To craft the Salts of Elthanyr I need to find the 'Protoplasmic Catalyzer' and add the following ingredients is this exact order,要制作埃尔萨尼尔之盐，我需要找到“原生质催化剂”，并严格按照以下顺序加入材料
+First add Sylversalt,首先加入银盐
+"Second, add Salamander’s Horn",其次，加入火蜥角
+"Finally, add Lotus Petals",最后，加入莲花花瓣
+I'm sure these ingredients as well as the 'Protoplasmic Catalyzer' can be found in this very dungeon,我相信这些材料以及“原生质催化剂”都能在这个地牢里找到
+The Recipe,配方
+For starters I need to find the recipe for Salts of Elthanyr,首先我需要找到埃尔萨尼尔之盐的配方
+Hopefully the recipe can be found somewhere in this dungeon,希望配方能在这个地牢的某处找到
+The Summoning Chamber,召唤室
+I've crafted the Salts of Elthanyr,我已经制作好了埃尔萨尼尔之盐
+Now I need to make my way down Calipero's Summoning Chambers and assist him as best I can,现在我需要前往卡利佩罗的召唤室，尽我所能帮助他
+Vomit Cups,呕吐杯
+"Esteban, the alchemist in the Underhalls under Horryn, has asked me to find some ‘vomit cup’ fungi for him",埃斯特班，霍林地下大厅里的炼金术师，请我帮他找一些“呕吐杯”菌
+They are large green fungi that smell horribly,它们是一种巨大的绿色菌类，气味极其难闻
+He explains that they grow in caves adjoining the Underhalls,他解释说它们生长在地下大厅旁的洞穴里
+These caves can be accessed through a barred gate west of the Rat-Queens court,这些洞穴可以通过鼠后宫廷西边的一道栅栏门进入
+The area is off-limits and a guard patrols it,该区域禁止入内，且有守卫巡逻
+"Once past the gate, I should make a left turn and find the chamber where the vomit cups grow",过了大门后，我应该左转，找到呕吐杯生长的房间
+"Afterwards, I’ll return to Esteban for my rewards as well as access to his alchemical supplies",之后，我会回到埃斯特班那里领取报酬，并获得使用他炼金物资的许可
+IAGO IN CHAINS,身陷囹圄的伊阿戈
+"From the back of the ""Santa Fury",来自“圣怒号”的背面
+"From the center of the three, The Santa Fury made her flight",从三者之中心出发，圣怒号开始了她的航程
+"Setting out to hide her booty, All within the lighthouse's sight",出发去藏匿她的战利品，一切尽在灯塔的视野之中
+"leagues south began her trip, ""5 east"" the Captain cried. 4 more north, our valiant ship, Our plunder we shall hide!",向南两里格，她开始了旅程，“向东五里格，”船长喊道。再向北四里格，我们英勇的船，我们的掠夺物我们将藏起！
+Land ahoy!,看到陆地了！
+went up the roar,吼声响起
+"Into the rising sun: 3 more, Then dig and have no fear!",朝着升起的太阳：再三里格，然后挖掘，无所畏惧！
+TALK TO ARI,与阿里交谈
+GNAWING AT THE ROOTS,啃噬根源
+TALK TO KLARA,与克拉拉交谈
+TALK TO CAMILLA,与卡米拉交谈
+TO THE TOWER,前往高塔
+# Tilde Sub Quests,# 波浪号子任务
+~ The Summoning Chamber,~ 召唤室
+~ Down Below,~ 下方
+~ Salts of Elthanyr,~ 埃尔萨尼尔之盐
+~ Eat!,~ 吃吧！
+~ The Surprise,~ 惊喜
+~ The Brewer,~ 酿酒师
+~ The Cook,~ 厨师
+~ The Weaver,~ 织布工
+~ To the Tower,~ 前往高塔
+~ Shrine of Agility,~ 敏捷神龛
+~ Shrine of Fortitude,~ 坚韧神龛
+~ Shrine of Intellect,~ 智力神龛
+~ Shrine of Presence,~ 魅力神龛
+~ Shrine of Strength,~ 力量神龛
+~ Talk to Markus,~ 与马库斯交谈
+~ Talk to Drahl,~ 与德拉尔交谈
+~ The Secret Tunnel,~ 秘道
+~ The Queen's Request,~ 女王之请
+~ Mouths to Feed,~ 待哺之口
+~ Outbreak,~ 爆发
+~ Hidden Clues,~ 隐藏线索
+~ Buried Secrets,~ 埋藏的秘密
+~ An Evening Meal,~ 晚餐
+~ The Hedge Maze,~ 树篱迷宫

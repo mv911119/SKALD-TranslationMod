@@ -1,4 +1,105 @@
 original,translate
+#Camping,#露营
+Begin Rest,开始休息
+Manage Party,管理队伍
+Main Party,主力队伍
+is now leading the party,现在领导队伍
+Tonight's Meal,今晚的餐食
+Party's Food,队伍的食物
+Camp Followers,营地追随者
+Click a party member to move them between your camp and your active party,点击队伍成员以在营地和活跃队伍之间移动他们
+ACTIVITY,活动
+Activities,活动
+Entertain,娱乐
+The character tries to lift their comrades' Spirits using their Diplomacy skill,角色尝试使用交涉技能提振同伴的士气
+Success adds the Motivated Condition to all party-members,成功则为所有队伍成员添加激励状态
+Forage,觅食
+The character has a chance to find some extra food depending on their Survival skill,角色根据生存技能有机会找到一些额外的食物
+The food found cannot be consumed until the next rest period,找到的食物要到下次休息时才能食用
+Train,训练
+The character attempts to instruct the party using their Lore skill,角色尝试使用学识技能指导队伍
+Success gives a small XP reward,成功则获得少量经验值奖励
+Fletch,制箭
+The character has a chance to create a small number of Hunting Arrows depending on their Crafting skill,角色根据制作技能有机会制造少量猎箭
+Camp activities begin,营地活动开始
+{PLAYER} is too heavily wounded to work,{PLAYER}伤势过重无法工作
+Kat is too heavily wounded to work,卡蒂伤势过重无法工作
+Roland is too heavily wounded to work,罗兰伤势过重无法工作
+Driina is too heavily wounded to work,德莉娜伤势过重无法工作
+Iben is too heavily wounded to work,伊本伤势过重无法工作
+Embla is too heavily wounded to work,恩布拉伤势过重无法工作
+{PLAYER} must roll,{PLAYER}必须掷骰
+Kat must roll,卡蒂必须掷骰
+Roland must roll,罗兰必须掷骰
+Driina must roll,德莉娜必须掷骰
+Iben must roll,伊本必须掷骰
+Iago must roll,伊阿戈必须掷骰
+Embla must roll,恩布拉必须掷骰
+Kat successfully entertained their companions!,卡蒂成功娱乐了同伴！
+Roland successfully entertained their companions!,罗兰成功娱乐了同伴！
+Driina successfully entertained their companions!,德莉娜成功娱乐了同伴！
+Iben successfully entertained their companions!,伊本成功娱乐了同伴！
+Embla successfully entertained their companions!,恩布拉成功娱乐了同伴！
+{PLAYER} found,{PLAYER}找到了
+Kat found,卡蒂找到了
+Roland found,罗兰找到了
+Driina found,德莉娜找到了
+Iben found,伊本找到了
+Embla found,恩布拉找到了
+ration!,口粮！
+Kat fletched,卡蒂制成了
+Roland fletched,罗兰制成了
+Driina fletched,德莉娜制成了
+Iben fletched,伊本制成了
+Embla fletched,恩布拉制成了
+arrow!,箭！
+arrows!,箭！
+Z,Z
+Z z,Z z
+Z z Z,Z z Z
+"The party was well-fed and rested 8 hours, recovering fully",队伍吃饱喝足并休息了8小时，完全恢复
+The party rested 8 hours and recovered partially,队伍休息了8小时，部分恢复
+You rest for 8 hours,你休息了8小时
+"Taking a running start, you leap",你助跑后一跃而起
+You make it and fall heavily into a roll as you land,你成功了，落地时重重地翻滚了一下
+Fix Rope,固定绳索
+You are swept off by the waterfall!,你被瀑布冲走了！
+You use the shovel to dig in the ground a bit but you don't find anything!,你用铲子在地上挖了挖，但什么也没找到！
+You use the shovel to dig in the ground a bit and you find somehing!,你用铲子在地上挖了挖，找到了一些东西！
+Hire,雇佣
+A mercenary is a blank character that you get to create from scratch and add to your party,雇佣兵是一个空白角色，你可以从头创建并加入队伍
+This portcullis is closed,这个落栅门是关闭的
+"Perhaps there is an opening mechanism nearby, inside the city",也许附近有开启机关，在城内
+This is one of the entrances to the inn,这是旅店的入口之一
+"The door, however, is barricaded from the inside and there is no way of opening it from where you’re currently standing",然而，门从里面堵住了，从你当前的位置无法打开
+Perhaps there is another way in,也许有其他入口
+Perhaps there is an opening mechanism nearby,也许附近有开启机关
+The main portcullis gate has been opened,主落栅门已打开
+Using the stack of boxes you can reach the rope and try to climb the wall,利用那堆箱子，你可以够到绳索并尝试爬墙
+You scale the wall,你爬上了墙
+"Using the rope, you can descend the wall",利用绳索，你可以从墙上下去
+You manage to descend the wall,你成功从墙上下来了
+The portcullis gate to the harbor has been opened,通往港口的落栅门已打开
+You're Encumbered and cannot move!,你负重过高，无法移动！
+A sudden draft catches your attention,一阵突如其来的气流引起了你的注意
+It cuts across your path in a way that seems unnatural considering the architecture of the area,它横穿你的道路，考虑到此地的建筑结构，这显得很不自然
+This gate must be the main exit from the keep,这扇门一定是城堡的主要出口
+It’s currently locked with a key nowhere in sight,它目前锁着，钥匙不见踪影
+This means you're carrying more weight than your current Strength score allows,这意味着你携带的重量超过了当前力量值允许的上限
+You need to drop some items or find a way to raise your Strength,你需要丢弃一些物品，或者想办法提升力量
+The party is encumbered and cannot move!,队伍负重过高，无法移动！
+Do you wish to hire this mercenary for 300 gold,你希望以300金币雇佣这名雇佣兵吗
+Do you wish to hire this mercenary for 400 gold,你希望以400金币雇佣这名雇佣兵吗
+Do you wish to hire this mercenary for 500 gold,你希望以500金币雇佣这名雇佣兵吗
+Do you wish to hire this mercenary for 1000 gold,你希望以1000金币雇佣这名雇佣兵吗
+Do you wish to hire this mercenary for 1500 gold,你希望以1500金币雇佣这名雇佣兵吗
+A mercenary is a blank character that you get to create from scratch and add to your party,雇佣兵是一个空白角色，你可以从头创建并加入队伍
+Items Worn,穿戴物品
+Party Inventory,队伍背包
+To Hit,命中
+Damage,伤害
+Encumb,负重
+Equip,装备
 #Colors,#颜色
 Black,黑色
 Blue,蓝色
@@ -16,157 +117,435 @@ Light Red,浅红色
 Violet,紫色
 White,白色
 Yellow,黄色
-"The major, defining attributes for the character",角色的主要、定义属性
-These influence most other attributes in the game,这些属性对游戏中大多数其他属性有很大影响
+"The major, defining attributes for the character",角色的主要定义属性
+These influence most other attributes in the game,这些会影响游戏中的大多数其他属性
 Cancel,取消
-All progress will be lost,所有进度将会丢失
+All progress will be lost,所有进度都将丢失
 Disable,禁用
-Loot,获得战利品
-Inv,装备
+Loot,战利品
+Inv,物品栏
 Container,容器
-Drop / Pick Up,丢弃 / 捡起
-Get All,全部获取
-Transfer Stack,转移堆叠
+Get All,全部拾取
+Transfer Stack,转移全部
 Transfer Item,转移物品
 Unequip,卸下
-Place development points in them (gained as you level up) to gain benefits and new Abilities,将成长点投入其中（随着等级提升获得），以获得益处和新能力
+Place development points in them (gained as you level up) to gain benefits and new Abilities,将发展点数（升级时获得）投入其中以获得增益和新能力
 Save and Exit,保存并退出
 Male Human,男性人类
-Woman Human,女性人类
-Xp To Go,待完成经验
-Active Conditions,活动状态
-Move Character,可以通过魔法移除
-Can be removed by magic,添加状态标记
-Adds Status Tag,仅显示非零值条目
-This list will only show entries with non-zero values,
-The amount of experience to go until the character levels up,到角色升级所需的经验值
-The current level of this character,该角色的当前等级
-Cast a spell,施放法术
-There are no weapons nearby to attack,周围没有可以攻击的武器
-You can't enter combat without enemies within combat range,没有敌人在战斗范围内，你无法进入战斗
-You wait a short while,等待片刻
-Pass a turn,轮到下一位玩家
-View Inventory,查看装备
-View the Journal,查看日志
-Time,时间
-X Pos,X 坐标
-Y Pos,Y 坐标
-Water blocks your path!,水阻挡了你的道路！
-A simple wooden door. (,一扇简单的木门。（
-A double wooden door. (,一扇双层木门。（
-It cannot be opened from this side. (,生命值
-"A massive, reinforced door. (",阴沉黎明
-HP,阴雨黎明
-Overcast Dawn,阴雨黎明
-Raining Dawn,阴雨黎明
-Foggy Dawn,雾蒙蒙的黎明
-Fog and Rain Dawn,雾雨蒙蒙的黎明
-Overcast Day,阴天
-Raining Day,雨天
-Foggy Day,雾蒙蒙的白天
-Fog and Rain Day,雾雨蒙蒙的白天
-Raining Day,Raining Day
-Overcast Dusk,阴沉的黄昏
-Raining Dusk,雨中的黄昏
-Fog and Rain Dusk,雾雨蒙蒙的黄昏
-Foggy Dusk,雾蒙蒙的黄昏
-Overcast Night,阴沉的夜晚
-Raining Night,雨夜
-Fog and Rain Night,雾雨蒙蒙的夜晚
-Foggy Night,雾蒙蒙的夜晚
-#Crafting,#制作
-{ITEM} ,__PLACEHOLDER_0__
-Recipes,食谱
+Woman Human,人类女性
+Xp To Go,还需经验
+Active Conditions,生效状态
+Move Character,移动角色
+Overcast Night,阴云密布的夜晚
+Can be removed by magic,可通过魔法移除
+Adds Status Tag,添加状态标签
+This list will only show entries with non-zero values,此列表仅显示非零值的条目
+The amount of experience to go until the character levels up,角色升级所需的经验值
+The current level of this character,此角色的当前等级
+Cast a spell,施放一个法术
+There are no weapons nearby to attack,附近没有可攻击的武器
+You can't enter combat without enemies within combat range,战斗范围内没有敌人，无法进入战斗
+You wait a short while,你稍等片刻
+Pass a turn,跳过一回合
+Recipes,配方
 Workstation,工作台
 Craft,制作
 Clear,清除
-You currently don't have any recepies to add to the crafting table,目前你没有任何食谱可以添加到制作台
-Try experimenting with ingredients or look for recipes in the world,尝试实验不同的材料或在世界中寻找食谱
-An unknown recipe,未知的食谱
-"To craft items, you must add ingredients to the crafting grid",要制作物品，必须将材料添加到制作网格
-Do this by double-clicking on ingredients from your inventory,从你的库存中双击材料来添加
-Clicking a recipe to view ingredients required,点击食谱查看所需材料
-Green recipes are available,绿色的食谱可以使用
-No crafting ingredients added!,没有添加制作材料！
-This is not a valid recipe!,这不是一个有效的食谱！
+You currently don't have any recepies to add to the crafting table,你目前没有任何配方可添加到制作台
+Try experimenting with ingredients or look for recipes in the world,尝试用材料进行实验，或在世界中寻找配方
+An unknown recipe,未知配方
+POTION OF STRENGTH RECIPE,力量药水配方
+"To craft items, you must add ingredients to the crafting grid",要制作物品，你必须将材料添加到制作网格中
+Do this by double-clicking on ingredients from your inventory,通过双击背包中的材料来完成
+Clicking a recipe to view ingredients required,点击配方查看所需材料
+Green recipes are available,绿色配方可用
+No crafting ingredients added!,未添加制作材料！
+This is not a valid recipe!,这不是有效的配方！
+DICE ROLL TEST,掷骰测试
+Roll Dice,掷骰子
++ 2d6,+ 2d6
+must roll,必须掷出
+or above on 2d6 to succeed on this,或以上（2d6）才能成功
+skill check!,技能检定！
+Pick,撬锁
+Force,强行打开
+Pick or force the lock until its HP reaches zero,撬锁或强行打开，直到锁的生命值归零
+Party has,队伍拥有
+You cannot rest anywhere in this area,你无法在此区域的任何地方休息
+You must look for a suitable camp-site elsewhere,你必须在别处寻找合适的营地
+Use,使用
+Adventuring,冒险
+SUCCESS,成功
+beats Difficulty,击败难度
+You bring glory upon thine Ancestors!,你为祖先带来了荣耀！
+{ITEM} Recipe,{ITEM}配方
+A recipe for crafting {ITEM},制作{ITEM}的配方
+Ingredients,材料
+{PLAYER} has a Crafting skill of,{PLAYER}的制作技能为
+versus Difficulty,对抗难度
+to produce a larger amount,以生产更多数量
+Journal,日志
+Consumed 1 {ITEM},消耗了1个{ITEM}
+You add {ITEM} to your party,你将{ITEM}添加到队伍中
+Removes Conditions with Tag: #{ITEM},移除带有标签#{ITEM}的状态
+Consumed,已消耗
+The party does not have a lightsource to equip,队伍没有可装备的光源
+Find a lantern!,找一个提灯！
+Restores {ITEM} (+{ITEM},恢复{ITEM} (+{ITEM})
+Heals {ITEM} (+{ITEM},治疗{ITEM} (+{ITEM})
+View Inventory,查看背包
+View the Journal,查看日志
+{ITEM} ended,{ITEM}已结束
+Added some items to inventory!,已向背包添加了一些物品！
+Updated Journal,更新日志
+Adds Conditions,添加状态
+Adds Condition,添加状态
+Faction is {ITEM},势力为{ITEM}
+NEUTERAL,中立
+You created,你创建了
+Main quests that have not yet been completed,尚未完成的主线任务
+FAILURE,失败
+You have been found wanting,你被发现有所欠缺
+does not beat Difficulty,未击败难度
+SNEAKING,潜行
+Status,状态
+Safe,安全
+Tile Mod,地格修正
+Unsafe,不安全
+Unlocked,已解锁
+Loot the corpses of your enemies!,搜刮敌人的尸体！
+Read,阅读
+Raining Night,雨夜
+You have died - The Dragon awakens,你已死亡 - 龙苏醒了
+Reload a previous save or restart the game!,重新加载之前的存档或重新开始游戏！
+Game too difficult?,游戏太难了？
+You can set the Difficulty in Settings -> Difficulty,你可以在设置 -> 难度中调整难度
+Load Last Save,加载最新存档
+Load Other Save,加载其他存档
+Restart Game,重新开始游戏
+Game Over!,游戏结束！
+{PLAYER} does not have Thieves Tools!,{PLAYER}没有盗贼工具！
+The adventure begins!,冒险开始了！
+You see,你看到
+You must destribute all your attribute points before you can proceed!,你必须分配完所有属性点才能继续！
+Can't be far now?,应该不远了吧？
+Name,名称
+New Recipe,新配方
+Drop / Pick Up,丢弃/拾取
+Time,时间
+X Pos,X坐标
+Y Pos,Y坐标
+Water blocks your path!,水挡住了你的去路！
+A simple wooden door. (,一扇简单的木门。（
+A double wooden door. (,一扇双开木门。（
+It cannot be opened from this side. (,无法从这一侧打开。（
+"A massive, reinforced door. (",一扇巨大而加固的门。（
+HP,生命值
+Overcast Dawn,阴云密布的黎明
+Raining Dawn,雨中的黎明
+Foggy Dawn,多雾的黎明
+Fog and Rain Dawn,雾雨黎明
+Overcast Day,阴云密布的白昼
+Raining Day,雨中的白昼
+Foggy Day,多雾的白昼
+Fog and Rain Day,雾雨白昼
+Overcast Dusk,阴云密布的黄昏
+Raining Dusk,雨中的黄昏
+Fog and Rain Dusk,雾雨黄昏
+Foggy Dusk,多雾的黄昏
+Fog and Rain Night,雾雨夜
+Foggy Night,多雾的夜晚
+#Combat stuff,"#战斗相关,"
+Select a Spell to cast,选择要施放的法术
+Select Ability!,选择能力！
+Targets all allies,以所有同伴为目标
+Click anywhere to use ability!,点击任意位置使用能力！
+Select a target for your Ability!,为你的能力选择目标！
+Select a target to use ability!,选择目标以使用能力！
+Select a target for your SPELL!,为你的法术选择目标！
+Backstab!,背刺！
+Critical Backstab!!!,暴击背刺！！！
+Targets all enemies,以所有敌人为目标
+Targets all allies,以所有同伴为目标
+Click anywhere to use ability!,点击任意位置使用能力！
+Select a target for your Maneuver!,为你的战技选择目标！
+Characters cannot hold actions once they have begun acting,角色一旦开始行动就无法保留动作
+#Console,"#控制台,"
+Press TAB to exit or ESC to clear console,按TAB退出或按ESC清除控制台
+Some helpful commands,一些有用的命令
+heals the party fully - adds 1000 gold. - Wins any combat,完全治疗队伍 - 增加1000金币。 - 赢得任何战斗
+#Crafting,#制作
+{ITEM},{ITEM}
+Recipes,配方
+Workstation,工作台
+Craft,制作
+Clear,清除
+You currently don't have any recepies to add to the crafting table,你目前没有任何配方可以添加到制作台
+Try experimenting with ingredients or look for recipes in the world,尝试用材料进行实验，或在世界中寻找配方
+An unknown recipe,一个未知配方
+"To craft items, you must add ingredients to the crafting grid",要制作物品，你必须将材料添加到制作网格中
+Do this by double-clicking on ingredients from your inventory,通过双击背包中的材料来完成此操作
+Clicking a recipe to view ingredients required,点击配方以查看所需材料
+Green recipes are available,绿色配方可用
+No crafting ingredients added!,未添加制作材料！
+This is not a valid recipe!,这不是一个有效的配方！
 2d6 +,2d6 +
 crafting,制作
-Crafted 1 {ITEM},制作了 1 个 __PLACEHOLDER_0__
-Crafted 2 {ITEM},制作了 2 个 __PLACEHOLDER_0__
+Crafted 1 {ITEM},制作了1个{ITEM}
+Crafted 2 {ITEM},制作了2个{ITEM}
+#Ending Cutscene,#结局动画
+was a year of little note for the Empire,对帝国而言，这是平淡无奇的一年
+Peace and stability reigned,和平与稳定笼罩大地
+With one exception,唯有一事例外
+The Outer Isles were lost,外岛沦陷了
+The event is extensively documented,此事被详尽记载
+The catastrophe was wholly natural albeit tragic,这场灾难虽属悲剧，却完全是自然现象
+The volcano Kataban awoke after millennia of dormancy,沉睡了数千年的卡拉班火山苏醒了
+It is written that the plume of smoke could be seen from the mainland,据记载，从大陆上就能望见那滚滚烟柱
+But there were other rumors as well,但也有其他流言蜚语
+Sailors claim they saw a new star in the sky the night of Karaban’s eruption,水手们声称，在卡拉班喷发之夜，天空中出现了新的星辰
+Such rumors are naught but lies,这些传言不过是谎言罢了
+#Ending Screen,"#结局画面,"
+"Let it be known that after much toil and hardship, {PLAYER} joins the illustrious ranks of the most holy order of the Persevering Blade",让世人知晓，历经艰辛磨难之后，{PLAYER}加入了至圣的坚韧之刃骑士团的光荣行列。
+To be one of us is to have spat in the face of Death and Despair,成为我们中的一员，便是向死亡与绝望的脸上啐了一口，
+It is to be one who forges ahead where lesser souls stand trembling,便是成为在怯懦灵魂颤抖不前之处奋勇前进之人，
+"Now, onward to glory!",现在，向着荣耀前进！
+You completed the game as a level {LEVEL?} {CLASS?} in {DAYS?} days,你以{LEVEL?}级{CLASS?}的身份在{DAYS?}天内完成了游戏。
+Report thine feat on Twitter to (a)SkaldRPG!,在Twitter上向(a)SkaldRPG!报告你的壮举，
+AL,"AL,"
+#Feat Learning,#专长学习
+{PLAYER} reaches Level,{PLAYER} 升级
+You cannot Exit this screen while you have unsaved Development Points placed in Feats,当你在专长中还有未保存的发展点数时，无法退出此界面。
+Click,点击
+SAVE AND EXIT,保存并退出
+or,或
+"To gain spellcasting abilities, you must purchase ranks in the relevant (violet",要获得施法能力，你必须在相关的（紫色
+Feat-tree,专长树
+More spells can be learned by studying spell-tomes that you acquire as you adventure,更多法术可以通过研读冒险中获得的法术书来学习。
+You must select 2 spells before proceeding!,你必须先选择2个法术才能继续！
+Learn 2 new spells from the Bardic Magic School,从吟游法术学派学习2个新法术
+Learn 2 new spells from the Body Magic School,从肢体法术学派学习2个新法术
+Learn 2 new spells from the Mind Magic School,从心智法术学派学习2个新法术
+Learn 2 new spells from the Nature Magic School,从自然法术学派学习2个新法术
+Learn 2 new spells from the Spirit Magic School,从灵魂法术学派学习2个新法术
+Learn 2 new spells from the Air Magic School,从大气法术学派学习2个新法术
+Learn 2 new spells from the Earth Magic School,从大地法术学派学习2个新法术
+Learn 2 new spells from the Fire Magic School,从火焰法术学派学习2个新法术
+Left-click to select spells Right-click to examine them,左键点击选择法术，右键点击查看详情
+You have selected the required spells and can proceed!,你已选择了所需的法术，可以继续了！
+Pick 1 new Bardic Magic School 1 spell to learn,选择1个新的吟游法术学派1法术学习
+Pick 2 new Bardic Magic School 1 spells to learn,选择2个新的吟游法术学派1法术学习
+Pick 1 new Bardic Magic School 2 spell to learn,选择1个新的吟游法术学派2法术学习
+Pick 2 new Bardic Magic School 2 spells to learn,选择2个新的吟游法术学派2法术学习
+Pick 1 new Bardic Magic School 3 spell to learn,选择1个新的吟游法术学派3法术学习
+Pick 2 new Bardic Magic School 3 spells to learn,选择2个新的吟游法术学派3法术学习
+Pick 1 new Body Magic School 1 spell to learn,选择1个新的肢体法术学派1法术学习
+Pick 2 new Body Magic School 1 spells to learn,选择2个新的肢体法术学派1法术学习
+Pick 1 new Body Magic School 2 spell to learn,选择1个新的肢体法术学派2法术学习
+Pick 2 new Body Magic School 2 spells to learn,选择2个新的肢体法术学派2法术学习
+Pick 1 new Body Magic School 3 spell to learn,选择1个新的肢体法术学派3法术学习
+Pick 2 new Body Magic School 3 spells to learn,选择2个新的肢体法术学派3法术学习
+Pick 1 new Body Magic School 4 spell to learn,选择1个新的肢体法术学派4法术学习
+Pick 2 new Body Magic School 4 spells to learn,选择2个新的肢体法术学派4法术学习
+Pick 1 new Mind Magic School 1 spell to learn,选择1个新的心智法术学派1法术学习
+Pick 2 new Mind Magic School 1 spells to learn,选择2个新的心智法术学派1法术学习
+Pick 1 new Mind Magic School 2 spell to learn,选择1个新的心智法术学派2法术学习
+Pick 2 new Mind Magic School 2 spells to learn,选择2个新的心智法术学派2法术学习
+Pick 1 new Mind Magic School 3 spell to learn,选择1个新的心智法术学派3法术学习
+Pick 2 new Mind Magic School 3 spells to learn,选择2个新的心智法术学派3法术学习
+Pick 1 new Mind Magic School 4 spell to learn,选择1个新的心智法术学派4法术学习
+Pick 2 new Mind Magic School 4 spells to learn,选择2个新的心智法术学派4法术学习
+Pick 1 new Nature Magic School 1 spell to learn,选择1个新的自然法术学派1法术学习
+Pick 2 new Nature Magic School 1 spells to learn,选择2个新的自然法术学派1法术学习
+Pick 1 new Nature Magic School 2 spell to learn,选择1个新的自然法术学派2法术学习
+Pick 2 new Nature Magic School 2 spells to learn,选择2个新的自然法术学派2法术学习
+Pick 1 new Nature Magic School 3 spell to learn,选择1个新的自然法术学派3法术学习
+Pick 2 new Nature Magic School 3 spells to learn,选择2个新的自然法术学派3法术学习
+Pick 1 new Nature Magic School 4 spell to learn,选择1个新的自然法术学派4法术学习
+Pick 2 new Nature Magic School 4 spells to learn,选择2个新的自然法术学派4法术学习
+Pick 1 new Spirit Magic School 1 spell to learn,选择1个新的灵魂法术学派1法术学习
+Pick 2 new Spirit Magic School 1 spells to learn,选择2个新的灵魂法术学派1法术学习
+Pick 1 new Spirit Magic School 2 spell to learn,选择1个新的灵魂法术学派2法术学习
+Pick 2 new Spirit Magic School 2 spells to learn,选择2个新的灵魂法术学派2法术学习
+Pick 1 new Spirit Magic School 3 spell to learn,选择1个新的灵魂法术学派3法术学习
+Pick 2 new Spirit Magic School 3 spells to learn,选择2个新的灵魂法术学派3法术学习
+Pick 1 new Spirit Magic School 4 spell to learn,选择1个新的灵魂法术学派4法术学习
+Pick 2 new Spirit Magic School 4 spells to learn,选择2个新的灵魂法术学派4法术学习
+Pick 1 new Air Magic School 1 spell to learn,选择1个新的大气法术学派1法术学习
+Pick 2 new Air Magic School 1 spells to learn,选择2个新的大气法术学派1法术学习
+Pick 1 new Air Magic School 2 spell to learn,选择1个新的大气法术学派2法术学习
+Pick 2 new Air Magic School 2 spells to learn,选择2个新的大气法术学派2法术学习
+Pick 1 new Air Magic School 3 spell to learn,选择1个新的大气法术学派3法术学习
+Pick 2 new Air Magic School 3 spells to learn,选择2个新的大气法术学派3法术学习
+Pick 1 new Air Magic School 4 spell to learn,选择1个新的大气法术学派4法术学习
+Pick 2 new Air Magic School 4 spells to learn,选择2个新的大气法术学派4法术学习
+Pick 1 new Earth Magic School 1 spell to learn,选择1个新的大地法术学派1法术学习
+Pick 2 new Earth Magic School 1 spells to learn,选择2个新的大地法术学派1法术学习
+Pick 1 new Earth Magic School 2 spell to learn,选择1个新的大地法术学派2法术学习
+Pick 2 new Earth Magic School 2 spells to learn,选择2个新的大地法术学派2法术学习
+Pick 1 new Earth Magic School 3 spell to learn,选择1个新的大地法术学派3法术学习
+Pick 2 new Earth Magic School 3 spells to learn,选择2个新的大地法术学派3法术学习
+Pick 1 new Earth Magic School 4 spell to learn,选择1个新的大地法术学派4法术学习
+Pick 2 new Earth Magic School 4 spells to learn,选择2个新的大地法术学派4法术学习
+Pick 1 new Fire Magic School 1 spell to learn,选择1个新的火焰法术学派1法术学习
+Pick 2 new Fire Magic School 1 spells to learn,选择2个新的火焰法术学派1法术学习
+Pick 1 new Fire Magic School 2 spell to learn,选择1个新的火焰法术学派2法术学习
+Pick 2 new Fire Magic School 2 spells to learn,选择2个新的火焰法术学派2法术学习
+Pick 1 new Fire Magic School 3 spell to learn,选择1个新的火焰法术学派3法术学习
+Pick 2 new Fire Magic School 3 spells to learn,选择2个新的火焰法术学派3法术学习
+Pick 1 new Fire Magic School 4 spell to learn,选择1个新的火焰法术学派4法术学习
+Pick 2 new Fire Magic School 4 spells to learn,选择2个新的火焰法术学派4法术学习
+#Misc,#Misc
+Pick,撬锁
+Force,强行打开
+Locked,已锁定
+A sturdy wooden chest. (,一个结实的木箱。（
+Pick or force the lock until its HP reaches zero,撬锁或强行开锁，直到其生命值归零
+Not Pickable,无法撬锁
+This lock cannot be picked!,此锁无法被撬开！
+is too hurt to force a lock,伤势过重，无法强行开锁
+The web of some giant arachnid. (,某种巨型蛛形纲动物的网。（
+Party has,队伍拥有
+You cannot rest anywhere in this area,你无法在此区域的任何地方休息
+You must look for a suitable camp-site elsewhere,你必须另寻合适的营地
+Use,使用
+Adventuring,冒险
+SUCCESS,成功
+beats Difficulty,超过难度
+You bring glory upon thine Ancestors!,你为祖先带来荣耀！
+{ITEM} Recipe,{ITEM}配方
+A recipe for crafting {ITEM},制作{ITEM}的配方
+Ingredients,材料
+{PLAYER} has a Crafting skill of,{PLAYER}的制作技能为
+versus Difficulty,对抗难度
+to produce a larger amount,以生产更多数量
+Journal,日志
+Consumed 1 {ITEM},消耗了1个{ITEM}
+You add {ITEM} to your party,你将{ITEM}添加到队伍中
+Removes Conditions with Tag: #{ITEM},移除带有标签：#{ITEM}的状态
+Consumed,已消耗
+The party does not have a lightsource to equip,队伍没有可装备的光源
+Find a lantern!,找个提灯！
+Restores {ITEM} (+{ITEM},恢复{ITEM} (+{ITEM}
+Heals {ITEM} (+{ITEM},治疗{ITEM} (+{ITEM}
+{ITEM} ended,{ITEM}结束
+Added some items to inventory!,向背包添加了一些物品！
+Updated Journal,更新日志
+Adds Conditions,添加状态
+Adds Condition,添加状态
+Faction is {ITEM},势力为{ITEM}
+NEUTERAL,中立
+You created,你创造了
+FAILURE,失败
+You have been found wanting,你被发现有所欠缺
+) + Static Bonus (,） + 静态加成（
+does not beat Difficulty (,未超过难度（
+does not beat Difficulty,未超过难度
+SNEAKING,潜行
+Status,状态
+Safe,安全
+Tile Mod,地格修正
+Unsafe,不安全
+Unlocked,已解锁
+Loot the corpses of your enemies!,搜刮敌人的尸体！
+Read,阅读
+You have died - The Dragon awakens,你已死亡 - 龙苏醒
+Reload a previous save or restart the game!,加载之前的存档或重新开始游戏！
+Game too difficult,游戏太难
+You can set the Difficulty in Settings -> Difficulty,你可以在设置 -> 难度中调整难度
+Load Last Save,加载最新存档
+Load Other Save,加载其他存档
+Restart Game,重新开始游戏
+Game Over!,游戏结束！
+You have died - The Dragon awakens,你已死亡 - 龙苏醒
+Reload a previous save or restart the game!,加载之前的存档或重新开始游戏！
+Game too difficult?,游戏太难？
+You can set the Difficulty in Settings -> Difficulty,你可以在设置 -> 难度中调整难度
+Load Last Save,加载最新存档
+Load Other Save,加载其他存档
+Restart Game,重新开始游戏
+Game Over!,游戏结束！
+{PLAYER} does not have Thieves Tools!,{PLAYER}没有盗贼工具！
+The adventure begins!,冒险开始！
+You see,你看到
+You must destribute all your attribute points before you can proceed!,你必须分配所有属性点才能继续！
+Can't be far now,应该不远了
+Name,名称
+New Recipe,新配方
 #Skill Checks,#技能检定
-STATIC TEST,固定测试
-DICE ROLL TEST,骰子检定测试
-Roll Dice,投掷骰子
+STATIC TEST,静态测试
+DICE ROLL TEST,掷骰测试
+Roll Dice,掷骰子
 + 2d6,+ 2d6
-must roll,必须投掷
-or above on 2d6 to succeed on this,投2d6达到或超过{VALUE}以成功
+must roll,必须掷出
+or above on 2d6 to succeed on this,或以上（2d6）才能成功
 AGILITY vs,敏捷 vs
-FORTITUDE vs,体魄 vs
+FORTITUDE vs,体质 vs
 INTELLECT vs,智力 vs
-PRESENCE vs,威严 vs
+PRESENCE vs,感知 vs
 STRENGTH vs,力量 vs
 ATHLETICS vs,运动 vs
-AWARENESS vs,觉醒 vs
+AWARENESS vs,察觉 vs
 CRAFTING vs,制作 vs
-DIPLOMACY vs,交际 vs
+DIPLOMACY vs,交涉 vs
 HEALING vs,医疗 vs
-LORE vs,知识 vs
-STEALTH vs,暗杀 vs
+LORE vs,学识 vs
+STEALTH vs,潜行 vs
 SURVIVAL vs,生存 vs
-THIEVERY vs,盗窃 vs
-{PLAYER} has a AGILITY score of,{PLAYER}的敏捷值为
-{PLAYER} only has a AGILITY score of,{PLAYER}只有敏捷值为
-{PLAYER} has a FORTITUDE score of,{PLAYER}的体魄值为
-{PLAYER} only has a FORTITUDE score of,{PLAYER}只有体魄值为
-{PLAYER} has a INTELLECT score of,{PLAYER}的智力值为
-{PLAYER} only has a INTELLECT score of,__PLACEHOLDER_0__ 只有智力值
-{PLAYER} has a PRESENCE score of,__PLACEHOLDER_0__ 的魅力值为
-{PLAYER} only has a PRESENCE score of,__PLACEHOLDER_0__ 只有魅力值
-{PLAYER} has a STRENGTH score of,__PLACEHOLDER_0__ 的力量值为
-{PLAYER} only has a STRENGTH score of,__PLACEHOLDER_0__ 只有力量值
-{PLAYER} has a ATHLETICS score of,__PLACEHOLDER_0__ 的体能值为
-{PLAYER} only has a ATHLETICS score of,__PLACEHOLDER_0__ 只有体能值
-{PLAYER} has a AWARENESS score of,__PLACEHOLDER_0__ 的感知值为
-{PLAYER} only has a AWARENESS score of,__PLACEHOLDER_0__ 只有感知值
-{PLAYER} has a CRAFTING score of,__PLACEHOLDER_0__ 的工艺值为
-{PLAYER} only has a CRAFTING score of,__PLACEHOLDER_0__ 只有工艺值
-{PLAYER} has a DIPLOMACY score of,__PLACEHOLDER_0__ 的外交值为
-{PLAYER} only has a DIPLOMACY score of,__PLACEHOLDER_0__ 只有外交值
-{PLAYER} has a HEALING score of,__PLACEHOLDER_0__ 的治疗值为
-{PLAYER} only has a HEALING score of,__PLACEHOLDER_0__ 只有治疗值
-{PLAYER} has a LORE score of,__PLACEHOLDER_0__ 的知识值为
-{PLAYER} only has a LORE score of,__PLACEHOLDER_0__ 只有知识值
-{PLAYER} has a STEALTH score of,__PLACEHOLDER_0__ 的潜行值为
-{PLAYER} only has a STEALTH score of,__PLACEHOLDER_0__ 只有潜行值
-{PLAYER} has a SURVIVAL score of,__PLACEHOLDER_0__ 的生存值为
-{PLAYER} only has a SURVIVAL score of,__PLACEHOLDER_0__ 只有生存技能 {SURVIVAL} 分数
-{PLAYER} has a THIEVERY score of,__PLACEHOLDER_0__ 有盗贼技能 {THIEVERY} 分数
-{PLAYER} only has a THIEVERY score of,__PLACEHOLDER_0__ 只有盗贼技能 {THIEVERY} 分数
-vs Difficulty,vs 困难度
-Athletics (,体能 (
-Awareness (,觉醒 (
+THIEVERY vs,偷窃 vs
+{PLAYER} has a AGILITY score of,{PLAYER} 的敏捷值为
+{PLAYER} only has a AGILITY score of,{PLAYER} 的敏捷值仅为
+{PLAYER} has a FORTITUDE score of,{PLAYER} 的体质值为
+{PLAYER} only has a FORTITUDE score of,{PLAYER} 的体质值仅为
+{PLAYER} has a INTELLECT score of,{PLAYER} 的智力值为
+{PLAYER} only has a INTELLECT score of,{PLAYER} 的智力值仅为
+{PLAYER} has a PRESENCE score of,{PLAYER} 的感知值为
+{PLAYER} only has a PRESENCE score of,{PLAYER} 的感知值仅为
+{PLAYER} has a STRENGTH score of,{PLAYER} 的力量值为
+{PLAYER} only has a STRENGTH score of,{PLAYER} 的力量值仅为
+{PLAYER} has a ATHLETICS score of,{PLAYER} 的运动值为
+{PLAYER} only has a ATHLETICS score of,{PLAYER} 的运动值仅为
+{PLAYER} has a AWARENESS score of,{PLAYER} 的察觉值为
+{PLAYER} only has a AWARENESS score of,{PLAYER} 的察觉值仅为
+{PLAYER} has a CRAFTING score of,{PLAYER} 的制作值为
+{PLAYER} only has a CRAFTING score of,{PLAYER} 的制作值仅为
+{PLAYER} has a DIPLOMACY score of,{PLAYER} 的交涉值为
+{PLAYER} only has a DIPLOMACY score of,{PLAYER} 的交涉值仅为
+{PLAYER} has a HEALING score of,{PLAYER} 的医疗值为
+{PLAYER} only has a HEALING score of,{PLAYER} 的医疗值仅为
+{PLAYER} has a LORE score of,{PLAYER} 的学识值为
+{PLAYER} only has a LORE score of,{PLAYER} 的学识值仅为
+{PLAYER} has a STEALTH score of,{PLAYER} 的潜行值为
+{PLAYER} only has a STEALTH score of,{PLAYER} 的潜行值仅为
+{PLAYER} has a SURVIVAL score of,{PLAYER} 的生存值为
+{PLAYER} only has a SURVIVAL score of,{PLAYER} 的生存值仅为
+{PLAYER} has a THIEVERY score of,{PLAYER} 的偷窃值为
+{PLAYER} only has a THIEVERY score of,{PLAYER} 的偷窃值仅为
+vs Difficulty,vs 难度
+Athletics (,运动 (
+Awareness (,察觉 (
 Crafting (,制作 (
-Diplomacy (,辩论 (
+Diplomacy (,交涉 (
 Healing (,医疗 (
-Lore (,知识 (
-Stealth (,隐形 (
+Lore (,学识 (
+Stealth (,潜行 (
 Survival (,生存 (
-Thievery (,盗贼技能 (
-beats Difficulty (,击败困难度 (
-ATHLETICS 4+,体能 4+
-ATHLETICS 5+,体能 5+
-ATHLETICS 6+,体能 6+
-ATHLETICS 7+,体能 7+
-ATHLETICS 8+,体能 8+
-ATHLETICS 9+,体能 9+
-ATHLETICS 10+,体能 10+
-AWARENESS 4+,觉醒 4+
-AWARENESS 5+,觉醒 5+
-AWARENESS 6+,觉醒 6+
-AWARENESS 7+,觉醒 7+
-AWARENESS 8+,觉醒 8+
-AWARENESS 9+,觉醒 9+
-AWARENESS 10+,觉醒 10+
+Thievery (,偷窃 (
+beats Difficulty (,胜过难度 (
+ATHLETICS 4+,运动 4+
+ATHLETICS 5+,运动 5+
+ATHLETICS 6+,运动 6+
+ATHLETICS 7+,运动 7+
+ATHLETICS 8+,运动 8+
+ATHLETICS 9+,运动 9+
+ATHLETICS 10+,运动 10+
+AWARENESS 4+,察觉 4+
+AWARENESS 5+,察觉 5+
+AWARENESS 6+,察觉 6+
+AWARENESS 7+,察觉 7+
+AWARENESS 8+,察觉 8+
+AWARENESS 9+,察觉 9+
+AWARENESS 10+,察觉 10+
 CRAFTING 4+,制作 4+
 CRAFTING 5+,制作 5+
 CRAFTING 6+,制作 6+
@@ -174,27 +553,27 @@ CRAFTING 7+,制作 7+
 CRAFTING 8+,制作 8+
 CRAFTING 9+,制作 9+
 CRAFTING 10+,制作 10+
-DIPLOMACY 4+,交际 4+
-DIPLOMACY 5+,交际 5+
-DIPLOMACY 6+,交际 6+
-DIPLOMACY 7+,交际 7+
-DIPLOMACY 8+,交际 8+
-DIPLOMACY 9+,外交 9+
-DIPLOMACY 10+,外交 10+
-HEALING 4+,治疗 4+
-HEALING 5+,治疗 5+
-HEALING 6+,治疗 6+
-HEALING 7+,治疗 7+
-HEALING 8+,治疗 8+
-HEALING 9+,治疗 9+
-HEALING 10+,治疗 10+
-LORE 4+,调查研究 4+
-LORE 5+,调查研究 5+
-LORE 6+,调查研究 6+
-LORE 7+,调查研究 7+
-LORE 8+,调查研究 8+
-LORE 9+,调查研究 9+
-LORE 10+,调查研究 10+
+DIPLOMACY 4+,交涉 4+
+DIPLOMACY 5+,交涉 5+
+DIPLOMACY 6+,交涉 6+
+DIPLOMACY 7+,交涉 7+
+DIPLOMACY 8+,交涉 8+
+DIPLOMACY 9+,交涉 9+
+DIPLOMACY 10+,交涉 10+
+HEALING 4+,医疗 4+
+HEALING 5+,医疗 5+
+HEALING 6+,医疗 6+
+HEALING 7+,医疗 7+
+HEALING 8+,医疗 8+
+HEALING 9+,医疗 9+
+HEALING 10+,医疗 10+
+LORE 4+,学识 4+
+LORE 5+,学识 5+
+LORE 6+,学识 6+
+LORE 7+,学识 7+
+LORE 8+,学识 8+
+LORE 9+,学识 9+
+LORE 10+,学识 10+
 STEALTH 4+,潜行 4+
 STEALTH 5+,潜行 5+
 STEALTH 6+,潜行 6+
@@ -209,412 +588,113 @@ SURVIVAL 7+,生存 7+
 SURVIVAL 8+,生存 8+
 SURVIVAL 9+,生存 9+
 SURVIVAL 10+,生存 10+
-THIEVERY 4+,盗贼技巧 4+
-THIEVERY 5+,盗贼技巧 5+
-THIEVERY 6+,盗贼技巧 6+
-THIEVERY 7+,盗贼技巧 7+
-THIEVERY 8+,盗贼技巧 8+
-THIEVERY 9+,盗贼技巧 9+
-THIEVERY 10+,盗贼技巧 10+
-A ATHLETICS score of 4 or higher is required to succeed,至少需要一个体能技巧（Athletics）检定得分为4或更高才能成功
-A ATHLETICS score of 5 or higher is required to succeed,至少需要一个体能技巧（Athletics）检定得分为5或更高才能成功
-A ATHLETICS score of 6 or higher is required to succeed,至少需要一个体能技巧（Athletics）检定得分为6或更高才能成功
-A ATHLETICS score of 7 or higher is required to succeed,体能检定 {ATHLETICS} 得到7或更高的结果才能成功
-A ATHLETICS score of 8 or higher is required to succeed,体能检定 {ATHLETICS} 得到8或更高的结果才能成功
-A ATHLETICS score of 9 or higher is required to succeed,体能检定 {ATHLETICS} 得到9或更高的结果才能成功
-A ATHLETICS score of 10 or higher is required to succeed,体能检定 {ATHLETICS} 得到10或更高的结果才能成功
-A AWARENESS score of 4 or higher is required to succeed,觉醒检定 {AWARENESS} 得到4或更高的结果才能成功
-A AWARENESS score of 5 or higher is required to succeed,觉醒检定 {AWARENESS} 得到5或更高的结果才能成功
-A AWARENESS score of 6 or higher is required to succeed,觉醒检定 {AWARENESS} 得到6或更高的结果才能成功
-A AWARENESS score of 7 or higher is required to succeed,觉醒检定 {AWARENESS} 得到7或更高的结果才能成功
-A AWARENESS score of 8 or higher is required to succeed,觉醒检定 {AWARENESS} 得到8或更高的结果才能成功
-A AWARENESS score of 9 or higher is required to succeed,觉醒检定 {AWARENESS} 得到9或更高的结果才能成功
-A AWARENESS score of 10 or higher is required to succeed,觉醒检定 {AWARENESS} 得到10或更高的结果才能成功
-A CRAFTING score of 4 or higher is required to succeed,制造检定 {CRAFTING} 得到4或更高的结果才能成功
-A CRAFTING score of 5 or higher is required to succeed,制造检定 {CRAFTING} 得到5或更高的结果才能成功
-A CRAFTING score of 6 or higher is required to succeed,制造检定 {CRAFTING} 得到6或更高的结果才能成功
-A CRAFTING score of 7 or higher is required to succeed,制造检定 {CRAFTING} 得到7或更高的结果才能成功
-A CRAFTING score of 8 or higher is required to succeed,制造检定 {CRAFTING} 得到8或更高的结果才能成功
-A CRAFTING score of 9 or higher is required to succeed,制造检定 {CRAFTING} 得到9或更高的结果才能成功
-A CRAFTING score of 10 or higher is required to succeed,制造检定 {CRAFTING} 得到10或更高的结果才能成功
-A DIPLOMACY score of 4 or higher is required to succeed,交际检定 {DIPLOMACY} 得到4或更高的结果才能成功
-A DIPLOMACY score of 5 or higher is required to succeed,交际检定 {DIPLOMACY} 得到5或更高的结果才能成功
-A DIPLOMACY score of 6 or higher is required to succeed,交际技能（DIPLOMACY）达到6或更高才能成功
-A DIPLOMACY score of 7 or higher is required to succeed,交际技能（DIPLOMACY）达到7或更高才能成功
-A DIPLOMACY score of 8 or higher is required to succeed,交际技能（DIPLOMACY）达到8或更高才能成功
-A DIPLOMACY score of 9 or higher is required to succeed,交际技能（DIPLOMACY）达到9或更高才能成功
-A DIPLOMACY score of 10 or higher is required to succeed,交际技能（DIPLOMACY）达到10或更高才能成功
-A HEALING score of 4 or higher is required to succeed,治疗技能（HEALING）达到4或更高才能成功
-A HEALING score of 5 or higher is required to succeed,治疗技能（HEALING）达到5或更高才能成功
-A HEALING score of 6 or higher is required to succeed,治疗技能（HEALING）达到6或更高才能成功
-A HEALING score of 7 or higher is required to succeed,治疗技能（HEALING）达到7或更高才能成功
-A HEALING score of 8 or higher is required to succeed,治疗技能（HEALING）达到8或更高才能成功
-A HEALING score of 9 or higher is required to succeed,治疗技能（HEALING）达到9或更高才能成功
-A HEALING score of 10 or higher is required to succeed,治疗技能（HEALING）达到10或更高才能成功
-A LORE score of 4 or higher is required to succeed,知识技能（LORE）达到4或更高才能成功
-A LORE score of 5 or higher is required to succeed,知识技能（LORE）达到5或更高才能成功
-A LORE score of 6 or higher is required to succeed,知识技能（LORE）达到6或更高才能成功
-A LORE score of 7 or higher is required to succeed,知识技能（LORE）达到7或更高才能成功
-A LORE score of 8 or higher is required to succeed,知识技能（LORE）达到8或更高才能成功
-A LORE score of 9 or higher is required to succeed,知识技能（LORE）达到9或更高才能成功
-A LORE score of 10 or higher is required to succeed,知识技能（LORE）达到10或更高才能成功
-A STEALTH score of 4 or higher is required to succeed,隐形技能（STEALTH）达到4或更高才能成功
-A STEALTH score of 5 or higher is required to succeed,机动力（STEALTH）检定10或更高才能成功
-A STEALTH score of 6 or higher is required to succeed,机动力（STEALTH）检定11或更高才能成功
-A STEALTH score of 7 or higher is required to succeed,机动力（STEALTH）检定12或更高才能成功
-A STEALTH score of 8 or higher is required to succeed,机动力（STEALTH）检定13或更高才能成功
-A STEALTH score of 9 or higher is required to succeed,机动力（STEALTH）检定14或更高才能成功
-A STEALTH score of 10 or higher is required to succeed,机动力（STEALTH）检定15或更高才能成功
-A SURVIVAL score of 4 or higher is required to succeed,生存（SURVIVAL）检定9或更高才能成功
-A SURVIVAL score of 5 or higher is required to succeed,生存（SURVIVAL）检定10或更高才能成功
-A SURVIVAL score of 6 or higher is required to succeed,生存（SURVIVAL）检定11或更高才能成功
-A SURVIVAL score of 7 or higher is required to succeed,生存（SURVIVAL）检定12或更高才能成功
-A SURVIVAL score of 8 or higher is required to succeed,生存（SURVIVAL）检定13或更高才能成功
-A SURVIVAL score of 9 or higher is required to succeed,生存（SURVIVAL）检定14或更高才能成功
-A SURVIVAL score of 10 or higher is required to succeed,盗窃（THIEVERY）检定9或更高才能成功
-A THIEVERY score of 4 or higher is required to succeed,盗窃（THIEVERY）检定10或更高才能成功
-A THIEVERY score of 5 or higher is required to succeed,盗窃（THIEVERY）检定11或更高才能成功
-A THIEVERY score of 6 or higher is required to succeed,盗窃（THIEVERY）检定12或更高才能成功
-A THIEVERY score of 7 or higher is required to succeed,盗窃（THIEVERY）检定13或更高才能成功
-A THIEVERY score of 8 or higher is required to succeed,盗窃（THIEVERY）检定14或更高才能成功
-A THIEVERY score of 9 or higher is required to succeed,盗窃（THIEVERY）检定15或更高才能成功
-A THIEVERY score of 10 or higher is required to succeed,盗窃（THIEVERY）检定15或更高才能成功
+THIEVERY 4+,偷窃 4+
+THIEVERY 5+,偷窃 5+
+THIEVERY 6+,偷窃 6+
+THIEVERY 7+,偷窃 7+
+THIEVERY 8+,偷窃 8+
+THIEVERY 9+,偷窃 9+
+THIEVERY 10+,偷窃 10+
+A ATHLETICS score of 4 or higher is required to succeed,需要运动值达到4或更高才能成功
+A ATHLETICS score of 5 or higher is required to succeed,需要运动值达到5或更高才能成功
+A ATHLETICS score of 6 or higher is required to succeed,需要运动值达到6或更高才能成功
+A ATHLETICS score of 7 or higher is required to succeed,需要运动值达到7或更高才能成功
+A ATHLETICS score of 8 or higher is required to succeed,需要运动值达到8或更高才能成功
+A ATHLETICS score of 9 or higher is required to succeed,需要运动值达到9或更高才能成功
+A ATHLETICS score of 10 or higher is required to succeed,需要运动值达到10或更高才能成功
+A AWARENESS score of 4 or higher is required to succeed,需要察觉值达到4或更高才能成功
+A AWARENESS score of 5 or higher is required to succeed,需要察觉值达到5或更高才能成功
+A AWARENESS score of 6 or higher is required to succeed,需要察觉值达到6或更高才能成功
+A AWARENESS score of 7 or higher is required to succeed,需要察觉值达到7或更高才能成功
+A AWARENESS score of 8 or higher is required to succeed,需要察觉值达到8或更高才能成功
+A AWARENESS score of 9 or higher is required to succeed,需要察觉值达到9或更高才能成功
+A AWARENESS score of 10 or higher is required to succeed,需要察觉值达到10或更高才能成功
+A CRAFTING score of 4 or higher is required to succeed,需要制作值达到4或更高才能成功
+A CRAFTING score of 5 or higher is required to succeed,需要制作值达到5或更高才能成功
+A CRAFTING score of 6 or higher is required to succeed,需要制作值达到6或更高才能成功
+A CRAFTING score of 7 or higher is required to succeed,需要制作值达到7或更高才能成功
+A CRAFTING score of 8 or higher is required to succeed,需要制作值达到8或更高才能成功
+A CRAFTING score of 9 or higher is required to succeed,需要制作值达到9或更高才能成功
+A CRAFTING score of 10 or higher is required to succeed,需要制作值达到10或更高才能成功
+A DIPLOMACY score of 4 or higher is required to succeed,需要交涉值达到4或更高才能成功
+A DIPLOMACY score of 5 or higher is required to succeed,需要交涉值达到5或更高才能成功
+A DIPLOMACY score of 6 or higher is required to succeed,需要交涉值达到6或更高才能成功
+A DIPLOMACY score of 7 or higher is required to succeed,需要交涉值达到7或更高才能成功
+A DIPLOMACY score of 8 or higher is required to succeed,需要交涉值达到8或更高才能成功
+A DIPLOMACY score of 9 or higher is required to succeed,需要交涉值达到9或更高才能成功
+A DIPLOMACY score of 10 or higher is required to succeed,需要交涉值达到10或更高才能成功
+A HEALING score of 4 or higher is required to succeed,需要医疗值达到4或更高才能成功
+A HEALING score of 5 or higher is required to succeed,需要医疗值达到5或更高才能成功
+A HEALING score of 6 or higher is required to succeed,需要医疗值达到6或更高才能成功
+A HEALING score of 7 or higher is required to succeed,需要医疗值达到7或更高才能成功
+A HEALING score of 8 or higher is required to succeed,需要医疗值达到8或更高才能成功
+A HEALING score of 9 or higher is required to succeed,需要医疗值达到9或更高才能成功
+A HEALING score of 10 or higher is required to succeed,需要医疗值达到10或更高才能成功
+A LORE score of 4 or higher is required to succeed,需要学识值达到4或更高才能成功
+A LORE score of 5 or higher is required to succeed,需要学识值达到5或更高才能成功
+A LORE score of 6 or higher is required to succeed,需要学识值达到6或更高才能成功
+A LORE score of 7 or higher is required to succeed,需要学识值达到7或更高才能成功
+A LORE score of 8 or higher is required to succeed,需要学识值达到8或更高才能成功
+A LORE score of 9 or higher is required to succeed,需要学识值达到9或更高才能成功
+A LORE score of 10 or higher is required to succeed,需要学识值达到10或更高才能成功
+A STEALTH score of 4 or higher is required to succeed,需要潜行值达到4或更高才能成功
+A STEALTH score of 5 or higher is required to succeed,需要潜行值达到5或更高才能成功
+A STEALTH score of 6 or higher is required to succeed,需要潜行值达到6或更高才能成功
+A STEALTH score of 7 or higher is required to succeed,需要潜行值达到7或更高才能成功
+A STEALTH score of 8 or higher is required to succeed,需要潜行值达到8或更高才能成功
+A STEALTH score of 9 or higher is required to succeed,需要潜行值达到9或更高才能成功
+A STEALTH score of 10 or higher is required to succeed,需要潜行值达到10或更高才能成功
+A SURVIVAL score of 4 or higher is required to succeed,需要生存值达到4或更高才能成功
+A SURVIVAL score of 5 or higher is required to succeed,需要生存值达到5或更高才能成功
+A SURVIVAL score of 6 or higher is required to succeed,需要生存值达到6或更高才能成功
+A SURVIVAL score of 7 or higher is required to succeed,需要生存值达到7或更高才能成功
+A SURVIVAL score of 8 or higher is required to succeed,需要生存值达到8或更高才能成功
+A SURVIVAL score of 9 or higher is required to succeed,需要生存值达到9或更高才能成功
+A SURVIVAL score of 10 or higher is required to succeed,需要生存值达到10或更高才能成功
+A THIEVERY score of 4 or higher is required to succeed,需要偷窃值达到4或更高才能成功
+A THIEVERY score of 5 or higher is required to succeed,需要偷窃值达到5或更高才能成功
+A THIEVERY score of 6 or higher is required to succeed,需要偷窃值达到6或更高才能成功
+A THIEVERY score of 7 or higher is required to succeed,需要偷窃值达到7或更高才能成功
+A THIEVERY score of 8 or higher is required to succeed,需要偷窃值达到8或更高才能成功
+A THIEVERY score of 9 or higher is required to succeed,需要偷窃值达到9或更高才能成功
+A THIEVERY score of 10 or higher is required to succeed,需要偷窃值达到10或更高才能成功
 FAIL,失败
-this skill check due to having low skill Score versus the Difficulty,由于技能值较低，这项技能检定失败，相对于难度而言
-will automatically,将会自动
+this skill check due to having low skill Score versus the Difficulty,由于技能值低于难度，此技能检定
+will automatically,将自动
 SUCCEED,成功
-this skill check due to having high Skill Score versus the Difficulty,由于技能值较高，这项技能检定成功，相对于难度而言
+this skill check due to having high Skill Score versus the Difficulty,由于技能值高于难度，此技能检定
 skill check!,技能检定！
-#Misc,#杂项
-Pick,选择
-Force,强制
-Locked,锁定
-A sturdy wooden chest. (,一个坚固的木制箱子。 (
-Pick or force the lock until its HP reaches zero,选择或强制打开锁，直到其HP归零
-Not Pickable,不可选择
-This lock cannot be picked!,这个锁无法被选择开！
-is too hurt to force a lock,受伤太重，无法强制打开锁
-The web of some giant arachnid. (,一些巨型蜘蛛的网。 (
-Party has,队伍有
-You cannot rest anywhere in this area,你们不能在此区域的任何地方休息
-You must look for a suitable camp-site elsewhere,必须寻找一个合适的营地
-Use,使用
-Adventuring,冒险
-SUCCESS,成功
-beats Difficulty,超过了难度
-You bring glory upon thine Ancestors!,你为你的祖先赢得了荣耀！
-{ITEM} Recipe,__PLACEHOLDER_0__ 食谱
-A recipe for crafting {ITEM},用于制作 __PLACEHOLDER_0__ 的配方
-Ingredients,材料
-{PLAYER} has a Crafting skill of,__PLACEHOLDER_0__ 的工艺技能为
-versus Difficulty,对比难度
-to produce a larger amount,以生产更大数量
-Journal,日记
-Consumed 1 {ITEM},消耗了 1 __PLACEHOLDER_0__
-You add {ITEM} to your party,你将 __PLACEHOLDER_0__ 加入了队伍
-Removes Conditions with Tag: #{ITEM},移除带有标签：#__PLACEHOLDER_0__ 的条件
-Consumed,消耗
-The party does not have a lightsource to equip,队伍没有可以装备的光源
-Find a lantern!,找个灯笼！
-Restores {ITEM} (+{ITEM},恢复了 __PLACEHOLDER_0__ (+__PLACEHOLDER_1__
-Heals {ITEM} (+{ITEM},治愈了 __PLACEHOLDER_0__ (+__PLACEHOLDER_1__
-{ITEM} ended,__PLACEHOLDER_0__ 结束
-Added some items to inventory!,已添加一些物品到装备栏中！
-Updated Journal,日记已更新
-Adds Conditions,添加状态效果
-Adds Condition,添加状态效果
-Faction is {ITEM},派系是 __PLACEHOLDER_0__
-NEUTERAL,中立
-You created,你创造了
-FAILURE,失败
-You have been found wanting,你未能达标
-) + Static Bonus (,) + 静态加值 (
-does not beat Difficulty (,未能击败难度 (
-does not beat Difficulty,未能击败难度
-SNEAKING,暗中行动
-Status,状态
-Safe,安全
-Tile Mod,地砖修改
-Unsafe,不安全
-Unlocked,解锁
-Loot the corpses of your enemies!,剽窃敌人的尸体中的战利品！
-Read,阅读
-You have died - The Dragon awakens,你已死亡 - 龙苏醒了
-Reload a previous save or restart the game!,重新加载之前的存档或重新开始游戏！
-Game too difficult,游戏难度过高
-You can set the Difficulty in Settings -> Difficulty,你可以在设置 -> 难度中调整难度
-Load Last Save,加载上次存档
-Load Other Save,加载其他存档
-Restart Game,重新开始游戏
-Game Over!,游戏结束！
-You have died - The Dragon awakens,You have died - The Dragon awakens
-Reload a previous save or restart the game!,Reload a previous save or restart the game!
-Game too difficult?,游戏难度过高吗？
-You can set the Difficulty in Settings -> Difficulty,You can set the Difficulty in Settings -> Difficulty
-Load Last Save,Load Last Save
-Load Other Save,Load Other Save
-Restart Game,Restart Game
-Game Over!,Game Over!
-{PLAYER} does not have Thieves Tools!,{PLAYER} 没有盗贼工具！
-The adventure begins!,冒险开始！
-You see,你看到
-You must destribute all your attribute points before you can proceed!,你必须在继续之前分配完所有属性点！
-Can't be far now,不远了
-Name,名字
-New Recipe,新配方
-#Camping,#露营
-Begin Rest,开始休息
-Manage Party,管理队伍
-Main Party,主队伍
-is now leading the party,现在带领队伍
-Tonight's Meal,今晚的餐食
-Party's Food,队伍的食物
-Camp Followers,队伍随从
-Click a party member to move them between your camp and your active party,点击队伍成员在营地和活跃队伍之间移动他们
-ACTIVITY,活动
-Activities,活动
-Entertain,娱乐
-The character tries to lift their comrades' Spirits using their Diplomacy skill,角色尝试使用外交技能提升同伴的精神状态
-Success adds the Motivated Condition to all party-members,成功会给所有队伍成员添加激励状态
-Forage,采集
-The character has a chance to find some extra food depending on their Survival skill,角色根据生存技能有一定几率找到额外的食物
-The food found cannot be consumed until the next rest period,找到的食物需要等到下一次休息期才能食用
-Train,训练
-The character attempts to instruct the party using their Lore skill,角色尝试使用知识技能指导队伍
-Success gives a small XP reward,成功给予少量经验奖励
-Fletch,制作
-The character has a chance to create a small number of Hunting Arrows depending on their Crafting skill,角色有一定几率根据其制作技能制作少量狩猎箭矢
-Camp activities begin,集营活动开始
-{PLAYER} is too heavily wounded to work,{PLACEHOLDER_0}伤势过重无法工作
-Kat is too heavily wounded to work,凯特伤势过重无法工作
-Roland is too heavily wounded to work,罗兰伤势过重无法工作
-Driina is too heavily wounded to work,德里娜伤势过重无法工作
-Iben is too heavily wounded to work,伊本伤势过重无法工作
-Embla is too heavily wounded to work,艾姆拉伤势过重无法工作
-{PLAYER} must roll,{PLACEHOLDER_0}必须掷骰
-Kat must roll,凯特必须掷骰
-Roland must roll,罗兰必须掷骰
-Driina must roll,德里娜必须掷骰
-Iben must roll,伊本必须掷骰
-Iago must roll,伊阿哥必须掷骰
-Embla must roll,艾姆拉必须掷骰
-Kat successfully entertained their companions!,凯特成功娱乐了同伴！
-Roland successfully entertained their companions!,罗兰成功地娱乐了同伴们！
-Driina successfully entertained their companions!,德里娜成功地娱乐了同伴们！
-Iben successfully entertained their companions!,伊本成功地娱乐了同伴们！
-Embla successfully entertained their companions!,伊姆拉成功地娱乐了同伴们！
-{PLAYER} found,__PLACEHOLDER_0__发现
-Kat found,卡特发现
-Roland found,罗兰发现
-Driina found,德里娜发现
-Iben found,伊本发现
-Embla found,伊姆拉发现
-ration!,食物！
-Kat fletched,卡特制作箭矢
-Roland fletched,罗兰制作箭矢
-Driina fletched,德里娜制作箭矢
-Iben fletched,伊本制作箭矢
-Embla fletched,伊姆拉制作箭矢
-arrow!,箭矢！
-arrows!,箭矢！
-Z,Z
-Z z,Z Z
-Z z Z,Z z Z
-"The party was well-fed and rested 8 hours, recovering fully",队伍充分休息了8小时，恢复了全部体力
-The party rested 8 hours and recovered partially,队伍休息了8小时，恢复了一部分体力
-You rest for 8 hours,你休息了8小时
-"Taking a running start, you leap",你助跑后纵身一跃
-You make it and fall heavily into a roll as you land,你成功了，落地时重重地翻滚了一番
-Fix Rope,固定绳索
-You are swept off by the waterfall!,你被瀑布卷走了！
-You use the shovel to dig in the ground a bit but you don't find anything!,你用铲子在地上挖了一小会儿，但什么也没发现！
-You use the shovel to dig in the ground a bit and you find somehing!,你用铲子在地上挖了一小会儿，发现了一些东西！
-Hire,雇佣
-A mercenary is a blank character that you get to create from scratch and add to your party,武士是一个你可以从零开始创建的角色，并加入到你的队伍中
-This portcullis is closed,这个吊桥是关闭的
-"Perhaps there is an opening mechanism nearby, inside the city",或许附近有开启机制，就在城市内部
-This is one of the entrances to the inn,这是酒馆的一个入口
-"The door, however, is barricaded from the inside and there is no way of opening it from where you’re currently standing",然而，门从里面被堵住了，你现在所在的位置无法打开
-Perhaps there is another way in,或许有其他进入方式
-Perhaps there is an opening mechanism nearby,或许附近有开启机制
-The main portcullis gate has been opened,主要吊桥已经被打开
-Using the stack of boxes you can reach the rope and try to climb the wall,利用那堆箱子，你可以够到绳索并尝试攀爬城墙
-You scale the wall,你攀爬墙面
-"Using the rope, you can descend the wall",使用绳索，你可以下降墙面
-You manage to descend the wall,你设法下降了墙面
-The portcullis gate to the harbor has been opened,港口的吊门已经被打开
-You're Encumbered and cannot move!,你负重过多，无法移动！
-A sudden draft catches your attention,突然的气流吸引了你的注意
-It cuts across your path in a way that seems unnatural considering the architecture of the area,它横跨你的路径，这种方式在该地区的建筑风格中显得不自然
-This gate must be the main exit from the keep,这扇门一定是堡垒的主要出口
-It’s currently locked with a key nowhere in sight,目前它被锁住了，周围也找不到钥匙
-This means you're carrying more weight than your current Strength score allows,这意味着你携带的重量超过了你当前力量属性允许的限度
-You need to drop some items or find a way to raise your Strength,你需要丢弃一些物品，或者找到提高力量的方法
-The party is encumbered and cannot move!,队伍负重过多，无法移动！
-Do you wish to hire this mercenary for 300 gold,你愿意用300金币雇佣这位佣兵吗
-Do you wish to hire this mercenary for 400 gold,你愿意用400金币雇佣这位佣兵吗
-Do you wish to hire this mercenary for 500 gold,你愿意用500金币雇佣这位佣兵吗
-Do you wish to hire this mercenary for 1000 gold,你愿意用1000金币雇佣这位佣兵吗
-Do you wish to hire this mercenary for 1500 gold,你愿意用1500金币雇佣这位佣兵吗
-A mercenary is a blank character that you get to create from scratch and add to your party,佣兵是一个空白角色，你可以从头开始创建并加入你的队伍
-Items Worn,身上装备的物品
-Party Inventory,队伍库存
-To Hit,命中
-Damage,伤害
-Encumb,负担
-Equip,装备
-#Feat Learning,#可学习专长数量
-{PLAYER} reaches Level,__PLACEHOLDER_0__ 达到等级
-You cannot Exit this screen while you have unsaved Development Points placed in Feats,在您有未保存的专长点数时，无法退出此界面
-Click,点击
-SAVE AND EXIT,保存并退出
-or,或
-"To gain spellcasting abilities, you must purchase ranks in the relevant (violet",要获得施法能力，您必须购买与相关（紫罗兰色
-Feat-tree,专长树
-More spells can be learned by studying spell-tomes that you acquire as you adventure,通过研究您在冒险中获得的法术卷轴，可以学习更多的法术
-You must select 2 spells before proceeding!,在继续之前，您必须选择2个法术！
-Learn 2 new spells from the Bardic Magic School,从吟游法术学派学习2个新法术
-Learn 2 new spells from the Body Magic School,从身体法术学派学习2个新法术
-Learn 2 new spells from the Mind Magic School,从心灵法术学派学习2个新法术
-Learn 2 new spells from the Nature Magic School,从自然法术学派学习2个新法术
-Learn 2 new spells from the Spirit Magic School,从灵性法术学派学习2个新法术
-Learn 2 new spells from the Air Magic School,从空气法术学派学习2个新法术
-Learn 2 new spells from the Earth Magic School,学习2个土系法术
-Learn 2 new spells from the Fire Magic School,学习2个火系法术
-Left-click to select spells Right-click to examine them,左键点击选择法术，右键点击查看
-You have selected the required spells and can proceed!,你已选择所需的法术，可以继续了！
-Pick 1 new Bardic Magic School 1 spell to learn,选择1个吟游诗人法术系1的新法术来学习
-Pick 2 new Bardic Magic School 1 spells to learn,选择2个吟游诗人法术系1的新法术来学习
-Pick 1 new Bardic Magic School 2 spell to learn,选择1个吟游诗人法术系2的新法术来学习
-Pick 2 new Bardic Magic School 2 spells to learn,选择2个吟游诗人法术系2的新法术来学习
-Pick 1 new Bardic Magic School 3 spell to learn,选择1个吟游诗人法术系3的新法术来学习
-Pick 2 new Bardic Magic School 3 spells to learn,选择2个吟游诗人法术系3的新法术来学习
-Pick 1 new Body Magic School 1 spell to learn,选择1个身法术系1的新法术来学习
-Pick 2 new Body Magic School 1 spells to learn,选择2个身法术系1的新法术来学习
-Pick 1 new Body Magic School 2 spell to learn,选择1个身法术系2的新法术来学习
-Pick 2 new Body Magic School 2 spells to learn,选择2个身法术系2的新法术来学习
-Pick 1 new Body Magic School 3 spell to learn,选择1个身法术系3的新法术来学习
-Pick 2 new Body Magic School 3 spells to learn,选择2个身法术系3的新法术来学习
-Pick 1 new Body Magic School 4 spell to learn,选择1个身法术系4的新法术来学习
-Pick 2 new Body Magic School 4 spells to learn,选择2个身法术系4的新法术来学习
-Pick 1 new Mind Magic School 1 spell to learn,选择1个心法术系1的新法术来学习
-Pick 2 new Mind Magic School 1 spells to learn,选择2个心法术系1的新法术来学习
-Pick 1 new Mind Magic School 2 spell to learn,选择1个新的心灵魔法学派2级法术学习
-Pick 2 new Mind Magic School 2 spells to learn,选择2个新的心灵魔法学派2级法术学习
-Pick 1 new Mind Magic School 3 spell to learn,选择1个新的心灵魔法学派3级法术学习
-Pick 2 new Mind Magic School 3 spells to learn,选择2个新的心灵魔法学派3级法术学习
-Pick 1 new Mind Magic School 4 spell to learn,选择1个新的心灵魔法学派4级法术学习
-Pick 2 new Mind Magic School 4 spells to learn,选择2个新的心灵魔法学派4级法术学习
-Pick 1 new Nature Magic School 1 spell to learn,选择1个新的自然魔法学派1级法术学习
-Pick 2 new Nature Magic School 1 spells to learn,选择2个新的自然魔法学派1级法术学习
-Pick 1 new Nature Magic School 2 spell to learn,选择1个新的自然魔法学派2级法术学习
-Pick 2 new Nature Magic School 2 spells to learn,选择2个新的自然魔法学派2级法术学习
-Pick 1 new Nature Magic School 3 spell to learn,选择1个新的自然魔法学派3级法术学习
-Pick 2 new Nature Magic School 3 spells to learn,选择2个新的自然魔法学派3级法术学习
-Pick 1 new Nature Magic School 4 spell to learn,选择1个新的自然魔法学派4级法术学习
-Pick 2 new Nature Magic School 4 spells to learn,选择2个新的自然魔法学派4级法术学习
-Pick 1 new Spirit Magic School 1 spell to learn,选择1个新的灵魂魔法学派1级法术学习
-Pick 2 new Spirit Magic School 1 spells to learn,选择2个新的灵魂魔法学派1级法术学习
-Pick 1 new Spirit Magic School 2 spell to learn,选择1个新的灵魂魔法学派2级法术学习
-Pick 2 new Spirit Magic School 2 spells to learn,选择2个新的灵魂魔法学派2级法术学习
-Pick 1 new Spirit Magic School 3 spell to learn,选择1个新的灵魂魔法学派3级法术学习
-Pick 2 new Spirit Magic School 3 spells to learn,选择2个新的灵魂魔法学派3级法术学习
-Pick 1 new Spirit Magic School 4 spell to learn,选择1个新的灵性魔法学派4级法术学习
-Pick 2 new Spirit Magic School 4 spells to learn,选择2个新的灵性魔法学派4级法术学习
-Pick 1 new Air Magic School 1 spell to learn,选择1个新的风元素魔法学派1级法术学习
-Pick 2 new Air Magic School 1 spells to learn,选择2个新的风元素魔法学派1级法术学习
-Pick 1 new Air Magic School 2 spell to learn,选择1个新的风元素魔法学派2级法术学习
-Pick 2 new Air Magic School 2 spells to learn,选择2个新的风元素魔法学派2级法术学习
-Pick 1 new Air Magic School 3 spell to learn,选择1个新的风元素魔法学派3级法术学习
-Pick 2 new Air Magic School 3 spells to learn,选择2个新的风元素魔法学派3级法术学习
-Pick 1 new Air Magic School 4 spell to learn,选择1个新的风元素魔法学派4级法术学习
-Pick 2 new Air Magic School 4 spells to learn,选择2个新的风元素魔法学派4级法术学习
-Pick 1 new Earth Magic School 1 spell to learn,选择1个新的土元素魔法学派1级法术学习
-Pick 2 new Earth Magic School 1 spells to learn,选择2个新的土元素魔法学派1级法术学习
-Pick 1 new Earth Magic School 2 spell to learn,选择1个新的土元素魔法学派2级法术学习
-Pick 2 new Earth Magic School 2 spells to learn,选择2个新的土元素魔法学派2级法术学习
-Pick 1 new Earth Magic School 3 spell to learn,选择1个新的土元素魔法学派3级法术学习
-Pick 2 new Earth Magic School 3 spells to learn,选择2个新的土元素魔法学派3级法术学习
-Pick 1 new Earth Magic School 4 spell to learn,选择1个新的土元素魔法学派4级法术学习
-Pick 2 new Earth Magic School 4 spells to learn,选择2个新的土元素魔法学派4级法术学习
-Pick 1 new Fire Magic School 1 spell to learn,选择1个新的火元素魔法学派1级法术学习
-Pick 2 new Fire Magic School 1 spells to learn,选择2个新的火元素魔法学派1级法术学习
-Pick 1 new Fire Magic School 2 spell to learn,选择1个新的火系法术2级来学习
-Pick 2 new Fire Magic School 2 spells to learn,选择2个新的火系法术2级来学习
-Pick 1 new Fire Magic School 3 spell to learn,选择1个新的火系法术3级来学习
-Pick 2 new Fire Magic School 3 spells to learn,选择2个新的火系法术3级来学习
-Pick 1 new Fire Magic School 4 spell to learn,选择1个新的火系法术4级来学习
-Pick 2 new Fire Magic School 4 spells to learn,选择2个新的火系法术4级来学习
-#Console,#控制台
-Press TAB to exit or ESC to clear console,按TAB键退出或按ESC键清除控制台
-Some helpful commands,一些有用的命令
-heals the party fully - adds 1000 gold. - Wins any combat,治愈整个队伍 - 增加1000金币 - 任何战斗胜利
-#Vendor UI,#商贩界面
+#Vendor UI,#商人界面
 Buy,购买
 Steal,偷窃
-Vendor wants,商贩想要
+Vendor wants,商人想要
 Sell mult,批量出售
 Buy mult,批量购买
-Suspicion,疑惑度
+Suspicion,怀疑度
 Restocks in 5 days,5天后补货
 Restocks in 4 days,4天后补货
 Restocks in 3 days,3天后补货
 Restocks in 2 days,2天后补货
 Restocks in 1 days,1天后补货
 Sell,出售
-Sell Stack,出售一组
-Vendor will pay you,商人将支付你
-for this,这些
-Sold for,出售获得
-Sold {ITEM},出售 {VALUE}
-This item cannot be used like this,不能这样使用此物品
-This item can't be traded,不能交易此物品
-This item cannot be sold,不能出售此物品
-This merchant will not buy stolen goods,该商人不收购赃物
-This item is not for sale,该物品不能出售
-"Gold, equipped items and quest items cannot be traded",金币、装备物品和任务物品不能交易
-Purchased {ITEM},购买 {VALUE}
-You cannot afford this item,你买不起这件物品
-Trying to steal {ITEM} from merchant,尝试从商人那里偷取 {ITEM}
-{PLAYER} stole {ITEM},{PLAYER} 偷取了 {PLAYER}
-Vendor's Suspicion increased by,商人的怀疑增加 {VALUE}
-Failed to steal item!,偷取物品失败！
-This merchant no longer trusts you and refuses to trade,这位商人不再信任你，拒绝交易
-Try again later,请稍后再试
-Vendor cannot afford this item,商人负担不起这件物品
+Sell Stack,出售整组
+Vendor will pay you,商人将支付给你
+for this,为此
+Sold for,售出价
+Sold {ITEM},售出 {ITEM}
+This item cannot be used like this,此物品无法这样使用
+This item can't be traded,此物品无法交易
+This item cannot be sold,此物品无法出售
+This merchant will not buy stolen goods,此商人不会购买赃物
+This item is not for sale,此物品不出售
+"Gold, equipped items and quest items cannot be traded",金币、已装备物品和任务物品无法交易
+Purchased {ITEM},购买了 {ITEM}
+You cannot afford this item,你买不起此物品
+Trying to steal {ITEM} from merchant,试图从商人处偷窃 {ITEM}
+{PLAYER} stole {ITEM},{PLAYER} 偷窃了 {ITEM}
+Vendor's Suspicion increased by,商人的怀疑度增加了
+Failed to steal item!,偷窃物品失败！
+This merchant no longer trusts you and refuses to trade,此商人不再信任你并拒绝交易
+Try again later,稍后再试
+Vendor cannot afford this item,商人买不起此物品
 Gold remaining - Item is worth,剩余金币 - 物品价值
-#Combat stuff,#战斗相关
-Select a Spell to cast,选择一个法术施放
-Select Ability!,选择能力！
-Targets all allies,针对所有盟友
-Click anywhere to use ability!,任意点击使用能力！
-Select a target for your Ability!,选择你的能力目标！
-Select a target to use ability!,选择使用能力的目标！
-Select a target for your SPELL!,选择你的法术的目标！
-Backstab!,背刺！
-Critical Backstab!!!,背刺暴击！！！
-Targets all enemies,针对所有敌人
-Targets all allies,Targets all allies
-Click anywhere to use ability!,Click anywhere to use ability!
-Select a target for your Maneuver!,选择你的动作目标！
-Characters cannot hold actions once they have begun acting,角色一旦开始行动便无法再持有动作
-#Ending Cutscene,#结尾场景
-was a year of little note for the Empire,对帝国来说，这一年没有什么值得一提的事情
-Peace and stability reigned,和平与稳定盛行
-With one exception,除了一个例外
-The Outer Isles were lost,外岛失陷了
-The event is extensively documented,该事件被广泛记录
-The catastrophe was wholly natural albeit tragic,这场灾难虽然悲惨，但完全是自然原因
-The volcano Kataban awoke after millennia of dormancy,千年沉睡的火山卡塔班苏醒了
-It is written that the plume of smoke could be seen from the mainland,据记载，烟柱从大陆上也能看到
-But there were other rumors as well,但也有一些其他的传言
-Sailors claim they saw a new star in the sky the night of Karaban’s eruption,水手们声称在卡拉班爆发的夜晚看到了一颗新星
-Such rumors are naught but lies,这些传言不过是谎言
-#Ending Screen,#结束画面
-"Let it be known that after much toil and hardship, {PLAYER} joins the illustrious ranks of the most holy order of the Persevering Blade",众所周知，在经历了无数辛劳和困苦后，{PLAYER}加入了坚忍之刃最神圣的行列
-To be one of us is to have spat in the face of Death and Despair,成为我们中的一员，就是向死亡和绝望的挑战
-It is to be one who forges ahead where lesser souls stand trembling,成为我们中的一员，就是向更弱小的灵魂所站立的颤抖之地迈进
-"Now, onward to glory!",现在，向着荣耀前进吧！
-You completed the game as a level {LEVEL?} {CLASS?} in {DAYS?} days,你以等级{VALUE}的{CLASS}完成了游戏，在{VALUE}天内
-Report thine feat on Twitter to (a)SkaldRPG!,在推特上报告你的成就，@SkaldRPG！
-AL,AL

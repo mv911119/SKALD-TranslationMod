@@ -13,7 +13,9 @@ namespace TranslationMod.Patches
         private static bool _processing = false;
 
         /// <summary>
-        /// Set target methods for patches
+        /// 搜索需要监听的语言设置相关方法。
+        /// 流程：通过反射定位 CarouselSetting 上可能改变语言状态的几个入口，
+        /// 收集成功匹配的方法供 Harmony 统一打补丁。
         /// </summary>
         [HarmonyTargetMethods]
         public static IEnumerable<MethodBase> TargetMethods()
@@ -29,7 +31,7 @@ namespace TranslationMod.Patches
                     return methods;
                 }
 
-                // Find setStateTo method with different signatures
+                // 查找设置状态的方法，兼容不同命名
                 var setStateToMethod = AccessTools.Method(carouselSettingType, GameConstants.SetStateToMethod, new[] { typeof(int) })
                                     ?? AccessTools.Method(carouselSettingType, "setState", new[] { typeof(int) })
                                     ?? AccessTools.Method(carouselSettingType, "SetState", new[] { typeof(int) });
@@ -41,7 +43,7 @@ namespace TranslationMod.Patches
 #endif
                 }
 
-                // Find incrementState method
+                // 查找切换到下一个状态的方法
                 var incrementStateMethod = AccessTools.Method(carouselSettingType, GameConstants.IncrementStateMethod, new[] { typeof(int) })
                                         ?? AccessTools.Method(carouselSettingType, "increment", new[] { typeof(int) })
                                         ?? AccessTools.Method(carouselSettingType, "Increment", new[] { typeof(int) });
@@ -53,7 +55,7 @@ namespace TranslationMod.Patches
 #endif
                 }
 
-                // Find applySettingSaveData method
+                // 查找应用存档设置的方法
                 var applySettingSaveDataMethod = AccessTools.Method(carouselSettingType, GameConstants.ApplySettingSaveDataMethod)
                                             ?? AccessTools.Method(carouselSettingType, "applySaveData")
                                             ?? AccessTools.Method(carouselSettingType, "ApplySaveData");
@@ -87,6 +89,11 @@ namespace TranslationMod.Patches
         }
 
         [HarmonyPostfix]
+        /// <summary>
+        /// 在语言设置相关方法执行后检查当前选择。
+        /// 流程：先确认当前对象确实是语言设置项，再读取选中语言，
+        /// 与上次不同则触发语言切换。
+        /// </summary>
         public static void AfterCarouselCall(object __instance)
         {
             if (_processing) return;
@@ -107,6 +114,10 @@ namespace TranslationMod.Patches
             finally { _processing = false; }
         }
 
+        /// <summary>
+        /// 判断给定设置对象是否为语言设置项。
+        /// 流程：校验类型名，并检查候选项里是否包含英文作为基准选项。
+        /// </summary>
         private static bool IsLanguageSetting(object inst)
         {
             var type = inst.GetType();
@@ -119,6 +130,10 @@ namespace TranslationMod.Patches
             return false;
         }
 
+        /// <summary>
+        /// 读取当前设置对象选中的语言名称。
+        /// 通过状态索引和候选项列表计算最终结果。
+        /// </summary>
         private static string GetSelectedLanguage(object inst)
         {
             var type = inst.GetType();

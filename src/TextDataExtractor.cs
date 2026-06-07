@@ -8,19 +8,21 @@ using UnityEngine;
 
 public static class TextDataExtractor
 {
-    // HashSet for tracking already processed strings (duplicate prevention)
+    // 记录已处理文本，避免重复写入 CSV
     private static readonly HashSet<string> _processedStrings = new HashSet<string>();
     
     /// <summary>
-    /// Extracts all text data to text folder in plugin directory in CSV format
+    /// 将游戏内可提取文本导出到插件目录下的 `text` 文件夹。
+    /// 流程：准备输出目录，清空去重集合，再分别导出场景、字符串表、物品、角色、
+    /// 任务、日志、书籍和技能法术等多类文本。
     /// </summary>
     public static void ExtractAllTextToPluginDirectory()
     {
-        // Get path to plugin directory
+        // 获取插件目录与文本导出目录
         string pluginDirectory = GetPluginDirectory();
         string textDirectory = Path.Combine(pluginDirectory, "text");
         
-        // Create text folder if it doesn't exist
+        // 若目录不存在则创建
         if (!Directory.Exists(textDirectory))
         {
             Directory.CreateDirectory(textDirectory);
@@ -31,10 +33,10 @@ public static class TextDataExtractor
 
         try
         {
-                    // Clear HashSet before starting extraction
+        // 导出前清空已处理文本集合
         _processedStrings.Clear();
         
-        // Extract different types of texts into separate CSV files
+        // 按类型分别导出到独立 CSV 文件
             ExtractSceneDataToFile(textDirectory);
             ExtractStringListsToFile(textDirectory);
             ExtractItemsToFile(textDirectory);
@@ -53,14 +55,19 @@ public static class TextDataExtractor
         }
     }
 
+    /// <summary>
+    /// 展开文本中的 `#IF/#THEN/#ELSE/#END` 条件分支。
+    /// 流程：先清理技术性尾注，再匹配最外层条件块，
+    /// 分别递归替换 then 与 else 分支，最终返回所有可见文本变体。
+    /// </summary>
     public static List<string> ExpandConditionals(string input)
     {
-        // Удаляем тех. примечания, например ;;Scene: ... и т.д.
+        // 先移除诸如 `;;Scene:` 之类的技术注记
         input = Regex.Replace(input, @";;.*?$", "", RegexOptions.Multiline).Trim();
 
         var outputs = new List<string>();
 
-        // Поиск #IF блоков с THEN и/или ELSE
+        // 查找包含 THEN / ELSE 的条件块
         var match = Regex.Match(input, @"#IF\s*\(([^)]*)\)\s*#THEN\((.*?)\)(?:#ELSE\((.*?)\))?#END", RegexOptions.IgnoreCase | RegexOptions.Singleline);
 
         if (!match.Success)
@@ -73,11 +80,11 @@ public static class TextDataExtractor
         string thenPart = match.Groups[2].Value.Trim();
         string elsePart = match.Groups[3].Success ? match.Groups[3].Value.Trim() : "";
 
-        // Удалить внешние кавычки только если вся ветвь в одних кавычках
+        // 仅在整段被一对外层引号包裹时去掉引号
         thenPart = StripQuotesIfWrapped(thenPart);
         elsePart = StripQuotesIfWrapped(elsePart);
 
-        // Подставляем варианты и продолжаем рекурсию
+        // 分别代入 then / else 分支，并继续递归展开剩余条件
         outputs.AddRange(ExpandConditionals(input.Replace(fullMatch, thenPart)));
         if (match.Groups[3].Success)
             outputs.AddRange(ExpandConditionals(input.Replace(fullMatch, elsePart)));
@@ -275,18 +282,22 @@ public static class TextDataExtractor
         return result;
     }
 
-    // Удаляет лишние символы по краям
+    /// <summary>
+    /// 清理文本首尾的空白、引号和星号等噪声字符。
+    /// 用于把提取出的短片段规整成可写入词条的形式。
+    /// </summary>
     private static string Clean(string line)
     {
         return Regex.Replace(line, @"^[\s""'\*]+|[\s""'\*]+$", "").Trim();
     }
 
     /// <summary>
-    /// Creates CSV string in Original,Translate,Comment format
+    /// 组装一行导出 CSV。
+    /// 流程：分别转义原文和备注，再按 `Original;Translate;Comment` 结构输出。
     /// </summary>
     private static string CreateCSVLine(string original, string comment)
     {
-        // Экранируем кавычки и точки с запятой
+        // 先转义 CSV 中可能冲突的字符
         original = EscapeCSV(original);
         comment = EscapeCSV(comment);
         
@@ -294,20 +305,21 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Escapes special characters for CSV
+    /// 对文本执行 CSV 转义。
+    /// 流程：先把换行拍平成空格，再在必要时用双引号包裹并转义内部引号。
     /// </summary>
     private static string EscapeCSV(string text)
     {
         if (string.IsNullOrEmpty(text))
             return "";
 
-        // Заменяем переносы строк на пробелы
+        // 将换行替换为空格，避免打断 CSV 结构
         text = text.Replace("\n", " ").Replace("\r", " ");
         
-        // Если содержит кавычки, точки с запятой или переносы - заключаем в кавычки
+        // 存在特殊字符时按 CSV 规范加引号
         if (text.Contains("\"") || text.Contains(";") || text.Contains("\n"))
         {
-            text = text.Replace("\"", "\"\""); // Удваиваем кавычки
+            text = text.Replace("\"", "\"\""); // 内部双引号需要转义成两个双引号
             text = $"\"{text}\"";
         }
 
@@ -315,7 +327,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Adds text to CSV, breaking into sentences and preventing duplicates
+    /// 将文本拆句后写入 CSV，并做全局去重。
+    /// 流程：调用文本解析器拆分句子，过滤已写入内容，再逐条附带备注写入。
     /// </summary>
     private static void AddTextToCSV(StringBuilder csv, string text, string comment)
     {
@@ -324,7 +337,7 @@ public static class TextDataExtractor
         var sentences = GameTextParser.Parse(text);
         foreach (var sentence in sentences)
         {
-            // Проверяем, не была ли эта строка уже обработана
+            // 同一条文本仅写入一次
             if (!_processedStrings.Contains(sentence))
             {
                 _processedStrings.Add(sentence);
@@ -334,7 +347,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts scenes and dialogues
+    /// 导出场景标题、描述和选项文本。
+    /// 流程：遍历项目栈中的场景容器和节点，把标题、描述与所有选项逐条写入 CSV。
     /// </summary>
     private static void ExtractSceneDataToFile(string directory)
     {
@@ -362,13 +376,13 @@ public static class TextDataExtractor
                                     {
                                         string nodeId = sceneNode.id;
                                         
-                                        // Заголовок сцены
+                                        // 场景标题
                                         AddTextToCSV(csv, sceneNode.title, $"Scene: {sceneSource}, Node: {nodeId}, Type: Title");
                                         
-                                        // Описание сцены
+                                        // 场景描述
                                         AddTextToCSV(csv, sceneNode.description, $"Scene: {sceneSource}, Node: {nodeId}, Type: Description");
                                         
-                                        // Варианты ответов
+                                        // 场景选项
                                         if (sceneNode?.list != null)
                                         {
                                             for (int i = 0; i < sceneNode.list.Count; i++)

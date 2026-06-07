@@ -21,6 +21,11 @@ namespace TranslationMod
 	{
 		internal static new ManualLogSource Logger;
 
+		/// <summary>
+		/// 插件入口。
+		/// 流程：初始化配置系统，初始化语言管理器，应用 Harmony 补丁，
+		/// 再同步一次当前游戏语言，确保后续翻译与字体替换按当前设置生效。
+		/// </summary>
 		private void Awake()
 		{
 			Logger = base.Logger;
@@ -36,7 +41,7 @@ namespace TranslationMod
 				HarmonyManager.ApplyPatches(new Harmony(MyPluginInfo.PLUGIN_GUID));
 				Logger.LogInfo("Harmony patches applied successfully.");
 
-				// Synchronize LanguageManager with current game settings
+				// 将语言管理器与当前游戏设置同步，避免启动后语言状态不一致
 				LanguageManager.SynchronizeWithGame();
 				Logger.LogInfo("Language manager synchronized with game settings.");
 

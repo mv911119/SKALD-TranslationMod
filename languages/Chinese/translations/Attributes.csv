@@ -1,238 +1,238 @@
 original,translate
-#Armor,#盔甲
-Heavy Armor Use,重型盔甲使用
-Reduced the encumberance of the armor when using this type of armor,使用这种类型的盔甲时，减少了负重
-Light Armor Use,轻型盔甲使用
-Mage Armor Use,魔法盔甲使用
-Medium Armor Use,中型盔甲使用
-Shield Use,屏风使用
-Added to Dodge when using a shield,使用屏风时，增加闪避值
+#Armor,#护甲
+Heavy Armor Use,重型护甲专精
+Reduced the encumberance of the armor when using this type of armor,使用此类护甲时降低护甲的负重惩罚
+Light Armor Use,轻型护甲专精
+Mage Armor Use,法师护甲专精
+Medium Armor Use,中型护甲专精
+Shield Use,盾牌专精
+Added to Dodge when using a shield,使用盾牌时增加闪避
 Unarmored Mastery,无甲精通
-Added to Dodge when unarmored,无甲时，增加闪避值
+Added to Dodge when unarmored,无甲时增加闪避
 #Combat Attributes,#战斗属性
-Crit Chance,临战几率
-Describes the percentage of Hits that are upgraded to Critical Hits,描述击中转化为致命一击的百分比几率
+Crit Chance,暴击几率
+Describes the percentage of Hits that are upgraded to Critical Hits,描述命中升级为暴击的百分比
 Melee Dmg,近战伤害
-A bonus that is added to the melee damage range based on the characters strength,根据角色的力量值，添加到近战伤害范围的额外增益
-This is added to the current weapon's damage range for a total damage range,这个数值与当前武器的伤害范围相加，形成总伤害范围
+A bonus that is added to the melee damage range based on the characters strength,基于角色力量增加到近战伤害范围的加成
+This is added to the current weapon's damage range for a total damage range,此加成会加到当前武器的伤害范围上以形成总伤害范围
 Initiative,先攻
-Initiative determines who goes first in combat,先攻决定了战斗中谁先行动
+Initiative determines who goes first in combat,先攻决定战斗中谁先行动
 Melee To Hit,近战命中
-The character's skill at attacking with melee weapons,角色使用近战武器的攻击技巧
-Determines hit chance,确定命中几率
+The character's skill at attacking with melee weapons,角色使用近战武器攻击的技能
+Determines hit chance,决定命中几率
 Ranged To Hit,远程命中
-The characters skill at attacking with ranged weapons,角色使用远程武器攻击的技巧
-#ConditionResistances,#条件抗性
-Blindness Resistance,盲目抗性
-Resistance to a condition represents the percentage chance to avoid contracting the condition,条件抗性代表避免受到该条件影响的百分比几率
-An attribute value of 100% or above means immunity to the condition in question,条件值为100%或以上表示对该条件具有免疫
-Charm Resistance,迷惑抗性
-Confusion Resistance,混乱抗性
-Crit,临杀
-Hits Resistance,击中抗性
+The characters skill at attacking with ranged weapons,角色使用远程武器攻击的技能
+#ConditionResistances,#状态抗性
+Blindness Resistance,目盲抗性
+Resistance to a condition represents the percentage chance to avoid contracting the condition,状态抗性代表避免陷入该状态的百分比几率
+An attribute value of 100% or above means immunity to the condition in question,属性值达到100%或以上意味着对该状态免疫
+Charm Resistance,魅惑抗性
+Confusion Resistance,困惑抗性
+Crit,暴击
+Hits Resistance,命中抗性
 Deafness Resistance,耳聋抗性
 Disease Resistance,疾病抗性
-Immobilization Resistance,固定抗性
-Insanity Resistance,疯狂抗性
-Panic Resistance,惊慌抗性
+Immobilization Resistance,定身抗性
+Insanity Resistance,错乱抗性
+Panic Resistance,恐慌抗性
 Paralysis Resistance,麻痹抗性
 Poison Resistance,毒素抗性
-Silence Resistance,静默抗性
+Silence Resistance,沉默抗性
 Sleep Resistance,睡眠抗性
 #DamageBonuses,#伤害加成
 Damage Bonus vs,伤害加成 vs
-Abominations,恶魔生物
-Creature Damage bonuses increase the Damage dealt against certain types of creatures,生物的伤害加成会增加对特定类型生物造成的伤害
+Abominations,畸形生物
+Creature Damage bonuses increase the Damage dealt against certain types of creatures,生物伤害加成增加对特定类型生物造成的伤害
 Animals,动物
-Undead,亡灵
-Vermin,虫族
-Magic Damage Bonus,魔法伤害加成
-Damage bonuses increase the Damage dealt when using the indicated attack type,伤害加成会在使用指定攻击类型时增加造成的伤害
+Undead,不死生物
+Vermin,虫群
+Magic Damage Bonus,法术伤害加成
+Damage bonuses increase the Damage dealt when using the indicated attack type,伤害加成增加使用指定攻击类型时造成的伤害
 Melee Damage Bonus,近战伤害加成
 Ranged Damage Bonus,远程伤害加成
-Unarmed Damage Bonus,无武器伤害加成
-Acid Damage Bonus,酸性伤害加成
-Damage Type bonuses increase the Damage dealt when the Damage is of the indicated type,伤害类型加成会在伤害为指定类型时增加造成的伤害
-Blunt Damage Bonus,冲击伤害加成
-Cold Damage Bonus,冰霜伤害加成
-Corruption Damage Bonus,腐蚀伤害加成
+Unarmed Damage Bonus,徒手伤害加成
+Acid Damage Bonus,酸蚀伤害加成
+Damage Type bonuses increase the Damage dealt when the Damage is of the indicated type,伤害类型加成增加当伤害为指定类型时造成的伤害
+Blunt Damage Bonus,钝击伤害加成
+Cold Damage Bonus,寒冷伤害加成
+Corruption Damage Bonus,腐化伤害加成
 Fire Damage Bonus,火焰伤害加成
 Kinetic Damage Bonus,动能伤害加成
 Piercing Damage Bonus,穿刺伤害加成
-Slashing Damage Bonus,刺击伤害加值
-Sublime Damage Bonus,绝美伤害加值
-Axe Damage Bonus,斧头伤害加值
-Weapon Damage bonuses increase the Damage dealt when using the indicated Weapon type,武器伤害加值会在使用指定类型的武器时增加造成的伤害
-Bow Damage Bonus,弓箭伤害加值
-Club Damage Bonus,棍棒伤害加值
-Heavy Weapon Damage Bonus,重型武器伤害加值
-Light Weapon Damage Bonus,轻型武器伤害加值
-Medium Weapon Damage Bonus,中型武器伤害加值
-Polearm Damage Bonus,长柄武器伤害加值
-Sword Damage Bonus,剑伤害加值
-#DamageResistances,#抗伤害
-Energy Damage Resistance,能量抗伤害
-Damage Resistance reduces incoming Damage of the indicated type by a percentage amount equal to the attribute value,抗伤害会减少特定类型伤害的入伤，减少的百分比等于属性值
-A value of 100% or higher means immunity to this damage type,抗伤害值为100%或更高表示对该伤害类型的免疫
-A negative value means a vulnerability to the damage type,抗伤害值为负数表示对这种伤害类型的脆弱性
-"If this is the case, incoming Damage will be increased",如果是这种情况，入伤将会增加
-Magical Damage Resistance,魔法抗伤害
-Non-Magical Damage Resistance,非魔法抗伤害
-Physical Damage Resistance,物理抗伤害
-Acid Damage Resistance,酸性伤害抗性
-Cold Damage Resistance,冰霜伤害抗性
-Corruption Damage Resistance,腐蚀伤害抗性
-Electric Damage Resistance,电击伤害抗性
+Slashing Damage Bonus,挥砍伤害加成
+Sublime Damage Bonus,超然伤害加成
+Axe Damage Bonus,斧类伤害加成
+Weapon Damage bonuses increase the Damage dealt when using the indicated Weapon type,武器伤害加成增加使用指定武器类型时造成的伤害
+Bow Damage Bonus,弓类伤害加成
+Club Damage Bonus,棍棒伤害加成
+Heavy Weapon Damage Bonus,重型武器伤害加成
+Light Weapon Damage Bonus,轻型武器伤害加成
+Medium Weapon Damage Bonus,中型武器伤害加成
+Polearm Damage Bonus,长柄武器伤害加成
+Sword Damage Bonus,剑伤害加成
+#DamageResistances,#伤害抗性
+Energy Damage Resistance,能量伤害抗性
+Damage Resistance reduces incoming Damage of the indicated type by a percentage amount equal to the attribute value,伤害抗性会按照等同于属性值的百分比，减少所对应类型的伤害。
+A value of 100% or higher means immunity to this damage type,数值达到或超过100%意味着对该伤害类型免疫。
+A negative value means a vulnerability to the damage type,负值意味着对该伤害类型易伤。
+"If this is the case, incoming Damage will be increased",在这种情况下，受到的伤害将会增加。
+Magical Damage Resistance,法术伤害抗性
+Non-Magical Damage Resistance,非法术伤害抗性
+Physical Damage Resistance,物理伤害抗性
+Acid Damage Resistance,酸蚀伤害抗性
+Cold Damage Resistance,寒冷伤害抗性
+Corruption Damage Resistance,腐化伤害抗性
+Electric Damage Resistance,闪电伤害抗性
 Fire Damage Resistance,火焰伤害抗性
 Kinetic Damage Resistance,动能伤害抗性
-Sublime Damage Resistance,卓越伤害抗性
-Blunt Damage Resistance,击打伤害抗性
+Sublime Damage Resistance,超然伤害抗性
+Blunt Damage Resistance,钝击伤害抗性
 Piercing Damage Resistance,穿刺伤害抗性
-Slashing Damage Resistance,切割伤害抗性
-Psychic Damage Resistance,心理伤害抗性
+Slashing Damage Resistance,挥砍伤害抗性
+Psychic Damage Resistance,心灵伤害抗性
 #Defences,#防御
-Dodge,角力
-DODGE,DODGE
-The ability to avoid incoming attacks and other reflex-based dangers,逃避即将来临的攻击和其他反应性危险的能力
-"In other words, this determines how hard a character is to hit",换句话说，这决定了角色有多难被击中
+Dodge,闪避
+DODGE,闪避
+The ability to avoid incoming attacks and other reflex-based dangers,避免即将到来的攻击和其他依赖反应的危险的能力
+"In other words, this determines how hard a character is to hit",换句话说，这决定了角色被击中的难度
 Toughness,坚韧
-The character’s ability to withstand adverse physical effects such as disease and poison,角色抵御不利物理效果（如疾病和毒药）的能力
-Willpower,忍力
-Willpower describes a character’s ability to withstand mind-affecting conditions such as those caused by spells,忍力描述了角色抵御心灵影响条件（如法术引起的效果）的能力
-#HitBonuses,#命中加值
-Bonus - Axes,命中加值 - 斧头
-Critical bonuses increase your critical chance for the indicated weapon type,临战加值会增加你使用指定武器类型时的临战几率
-Bonus - Bows,命中加值 - 弓
-Bonus - Clubs,命中加值 - 棍棒
-Bonus Light,命中加值 - 易燃
-This bonus applies to Light Weapons,此加值适用于易燃武器
-Bonus - Blades,命中加值 - 刀剑
-Bonus - Unarmed,命中加值 - 无武器
-Hit Bonus - Maneuvers,命中加值 - 技能
-Maneuver Hit Bonuses are added to the To Hit roll when performing Combat Maneuvers,技能命中加值会在执行战斗技能时加入命中骰
-Hit Bonus - Abominations,命中加值 - 恶魔生物
-Creature Hit Bonuses are added to the To Hit roll when attacking the indicated creature type,对象命中加值会在攻击指定生物类型时加入命中骰
-Hit Bonus - Animals,命中加值 - 动物
-Hit Bonus - Undead,命中加值 - 亡灵
-Hit Bonus - Vermin,命中加值 - 虫族
-Hit Bonus - Axes,命中加值 - 斧头
-Weapon Hit Bonuses are added to the To Hit roll when using weapons of the indicated type,武器命中加值会在使用指定类型的武器时加入命中骰
-Hit Bonus - Bows,命中加值 - 弓
-Hit Bonus - Clubs,命中加值 - 棍棒
-Hit Bonus - Heavy Weap,近战攻击加值 - 重型武器
-Hit Bonus - Light Weap,近战攻击加值 - 轻型武器
-Hit Bonus - Medium Weap,近战攻击加值 - 中型武器
-Hit Bonus - Polearms,近战攻击加值 - 长柄武器
-Hit Bonus - Blades,近战攻击加值 - 刀剑
-Hit Bonus - Unarmed,近战攻击加值 - 无武器
-#MagicAttributes,#魔法属性
-Magical Attributes,魔法属性
-MAGICAL ATTRIBUTES,魔法属性
+The character’s ability to withstand adverse physical effects such as disease and poison,角色承受疾病和毒素等不良物理效果的能力
+Willpower,意志
+Willpower describes a character’s ability to withstand mind-affecting conditions such as those caused by spells,意志描述了角色抵抗影响心智的状态（如法术效果）的能力
+#HitBonuses,#命中加成
+Bonus - Axes,加成 - 斧类武器
+Critical bonuses increase your critical chance for the indicated weapon type,暴击加成提高指定武器类型的暴击几率
+Bonus - Bows,加成 - 弓类武器
+Bonus - Clubs,加成 - 棍棒类武器
+Bonus Light,加成-轻型武器
+This bonus applies to Light Weapons,此加成适用于轻型武器
+Bonus - Blades,加成 - 刃类武器
+Bonus - Unarmed,加成 - 徒手
+Hit Bonus - Maneuvers,命中加成 - 战技
+Maneuver Hit Bonuses are added to the To Hit roll when performing Combat Maneuvers,战技命中加成在执行战技时加入命中检定
+Hit Bonus - Abominations,命中加成 - 畸形生物
+Creature Hit Bonuses are added to the To Hit roll when attacking the indicated creature type,生物命中加成在攻击指定生物类型时加入命中检定
+Hit Bonus - Animals,命中加成 - 动物
+Hit Bonus - Undead,命中加成 - 不死生物
+Hit Bonus - Vermin,命中加成 - 虫群
+Hit Bonus - Axes,命中加成 - 斧类武器
+Weapon Hit Bonuses are added to the To Hit roll when using weapons of the indicated type,武器命中加成在使用指定类型武器时加入命中检定
+Hit Bonus - Bows,命中加成 - 弓类武器
+Hit Bonus - Clubs,命中加成 - 棍棒类武器
+Hit Bonus - Heavy Weap,命中加成 - 重型武器
+Hit Bonus - Light Weap,命中加成 - 轻型武器
+Hit Bonus - Medium Weap,命中加成 - 中型武器
+Hit Bonus - Polearms,命中加成 - 长柄武器
+Hit Bonus - Blades,命中加成 - 刃类武器
+Hit Bonus - Unarmed,命中加成 - 徒手
+#MagicAttributes,#法术属性
+Magical Attributes,法术属性
+MAGICAL ATTRIBUTES,法术属性
 Attributes involved in spell-casting,与施法相关的属性
-Attunement,调和
-Describes a character's magical energy and determines how many spells can be cast,描述角色的魔法能量，并决定可以施放多少法术
-Attunement refills fully when the character rests in a camp,调和在角色在营地休息时会完全恢复
-Note that different classes use different root abilities for Attunement,请注意，不同的职业使用不同的基础能力来进行调和
-Magical Aptitude,魔法天赋
-MAGICAL APTITUDE,魔法天赋
-The Magical Aptitude score is added to the numerical value of spells such as the amount of damage dealt or vitality healed,魔法天赋分数会加到诸如法术造成的伤害量或恢复的生命值等数值上
-Max Cascade,最大连锁反应
-MAX CASCADE,最大连锁反应
-The maximum numbers of spells a spellcaster can cast in a single turn due to Cascade effects,施法者因连锁反应效果在一回合内可以施放的最大法术数量
-Magic Schools,魔法学派
-The Schools of Magic,魔法学派
-The value of this attribute indicates the maximum tier of spell from that school the character may cast,该属性值表示角色可以施放的来自该学派的最大法术等级
-Aura Radius,法术光环半径
-"If non-zero, this number is added to the radius of your spells with Aura-shaped area of effects",如果非零，此数值将加到你具有光环形区域效果的法术的半径上
-Line Range,线形范围
-"If non-zero, this number is added to the width and length of your spells with Line- and Cone-shaped areas of effects",如果非零，此数值将加到你具有线形和锥形区域效果的法术的宽度和长度上
-Sphere Radius,球形范围
-"If non-zero, this number is added to the radius of your spells with Sphere-shaped area of effects",如果非零，此数值将加到你具有球形区域效果的法术的半径上
+Attunement,魔谐力
+Describes a character's magical energy and determines how many spells can be cast,描述角色的魔法能量并决定可施放的法术数量
+Attunement refills fully when the character rests in a camp,角色在营地休息时魔谐力会完全恢复
+Note that different classes use different root abilities for Attunement,注意不同职业使用不同的基础能力来计算魔谐力
+Magical Aptitude,法术天赋
+MAGICAL APTITUDE,法术天赋
+The Magical Aptitude score is added to the numerical value of spells such as the amount of damage dealt or vitality healed,法术天赋值会加到法术的数值上，例如造成的伤害量或恢复的体力值
+Max Cascade,最大连携施法数
+MAX CASCADE,最大连携施法数
+The maximum numbers of spells a spellcaster can cast in a single turn due to Cascade effects,施法者因连携效果在单个回合内最多可施放的法术数量
+Magic Schools,法术学派
+The Schools of Magic,法术学派
+The value of this attribute indicates the maximum tier of spell from that school the character may cast,此属性值表示角色可从该学派施放的法术的最高等级
+Aura Radius,光环半径
+"If non-zero, this number is added to the radius of your spells with Aura-shaped area of effects",“若非零，此数值会加到具有光环形状效果范围的法术半径上”
+Line Range,直线范围
+"If non-zero, this number is added to the width and length of your spells with Line- and Cone-shaped areas of effects",“若非零，此数值会加到具有直线和锥形效果范围的法术的宽度和长度上”
+Sphere Radius,球状半径
+"If non-zero, this number is added to the radius of your spells with Sphere-shaped area of effects",“若非零，此数值会加到具有球状效果范围的法术半径上”
 #MagicSchools,#魔法学派
-Air Magic School,空气魔法学派
-The value of this attribute indicates the highest Spell Tier of Air magic spells you may cast,该属性值表示你可以施放的最高空气魔法法术等级
-Bardic Magic School,吟游诗人魔法学派
-The value of this attribute indicates the highest Spell Tier of Bardic magic spells you may cast,该属性值表示你可以施放的最高吟游诗人魔法法术等级
-Body Magic School,身体魔法学派
-The value of this attribute indicates the highest Spell Tier of Body magic spells you may cast,该属性值表示你可以施放的最高身体魔法法术等级
-Earth Magic School,地面魔法学派
-The value of this attribute indicates the highest Spell Tier of Earth magic spells you may cast,该属性值表示你可以施放的最高地面魔法法术等级
-Fire Magic School,火焰魔法学派
-The value of this attribute indicates the highest Spell Tier of Fire magic spells you may cast,该属性值表示你可以施放的最高火焰魔法法术等级
-Mind Magic School,心灵魔法学派
-The value of this attribute indicates the highest Spell Tier of Mind magic spells you may cast,该属性值表示你可以施放的最高心灵魔法法术等级
-Nature Magic School,自然魔法学派
-The value of this attribute indicates the highest Spell Tier of Nature magic spells you may cast,该属性值表示你可以施放的最高自然魔法法术等级
-Spirit Magic School,灵魂魔法学派
-The value of this attribute indicates the highest Spell Tier of Spirit magic spells you may cast,该属性值表示你可以施放的最高灵魂魔法法术等级
-#PrimaryAttributes,#主要属性
+Air Magic School,大气法术学派
+The value of this attribute indicates the highest Spell Tier of Air magic spells you may cast,此属性值表示你可以施展的最高空气法术阶位的大气法术
+Bardic Magic School,吟游法术学派
+The value of this attribute indicates the highest Spell Tier of Bardic magic spells you may cast,此属性值表示你可以施展的最高吟游法术阶位的吟游法术
+Body Magic School,肢体法术学派
+The value of this attribute indicates the highest Spell Tier of Body magic spells you may cast,此属性值表示你可以施展的最高肢体法术阶级的肢体法术
+Earth Magic School,大地法术学派
+The value of this attribute indicates the highest Spell Tier of Earth magic spells you may cast,此属性值表示你可以施展的最高大地法术阶位的大地法术
+Fire Magic School,火焰法术学派
+The value of this attribute indicates the highest Spell Tier of Fire magic spells you may cast,此属性值表示你可以施展的最高火焰法术阶位的火焰法术
+Mind Magic School,心智法术学派
+The value of this attribute indicates the highest Spell Tier of Mind magic spells you may cast,此属性值表示你可以施展的最高心智法术阶位的心智法术
+Nature Magic School,自然法术学派
+The value of this attribute indicates the highest Spell Tier of Nature magic spells you may cast,此属性值表示你可以施展的最高自然法术阶位的自然法术
+Spirit Magic School,灵魂法术学派
+The value of this attribute indicates the highest Spell Tier of Spirit magic spells you may cast,此属性值表示你可以施展的最高灵魂法术阶位的灵魂法术
+#PrimaryAttributes,#主属性
 Agility,敏捷
-"A measure of hand-eye coordination, nimbleness and dexterity",手眼协调、灵巧和灵巧度的衡量标准
-Describes how tough and resilient a character is,描述角色的坚韧和适应能力
+"A measure of hand-eye coordination, nimbleness and dexterity",衡量手眼协调能力、灵活性与灵巧度
+Describes how tough and resilient a character is,描述角色的坚韧与恢复能力
 Intellect,智力
-"Mental acuity, recall and analytical skill",心智敏锐度、记忆和分析能力
-Presence,气场
-A character's ability to read and react to the surrounding environment and people,角色读取和应对周围环境及人物的能力
+"Mental acuity, recall and analytical skill",思维敏锐度、记忆力与分析能力
+Presence,感知
+A character's ability to read and react to the surrounding environment and people,角色观察周围环境与人物并作出反应的能力
 Strength,力量
-A measure of a character's brawn and physical power,角色体魄和物理力量的衡量标准
+A measure of a character's brawn and physical power,衡量角色的肌肉力量与体能
 #SecCombatAttributes,#次要战斗属性
-Arrow Recovery,箭矢回收率
-The percentage chance that an arrow fired by the character in combat can be recovered and reused,角色在战斗中射出的箭矢有百分之多少有机会被回收再使用
+Arrow Recovery,箭矢回收
+The percentage chance that an arrow fired by the character in combat can be recovered and reused,角色在战斗中发射的箭矢可回收并再次使用的概率
 Attack Count,攻击次数
-The number of Attacks the character can potentially perform in a full round of combat,该角色在一整个战斗回合中可能进行的攻击次数
-"Typically a character cannot perform multiple Attacks if they also move, or perform move-equivalent actions the same turn",通常情况下，如果角色在同一回合中移动或执行等同于移动的动作，他们无法进行多次攻击
+The number of Attacks the character can potentially perform in a full round of combat,角色在完整回合中可进行的潜在攻击次数
+"Typically a character cannot perform multiple Attacks if they also move, or perform move-equivalent actions the same turn",通常如果角色在同一回合移动或进行等同移动的动作，则不能进行多次攻击
 Backstab Bonus,背刺加成
-"If a successful Backstab Attack is performed, this Attribute is multiplied by the Weapon’s Crit multiplier and added to the total Damage",如果成功进行背刺攻击，此属性将乘以武器的暴击倍数并加入总伤害
-Carrying Bonus,背负加成
-A bonus in pounds added to the character’s Carrying Capacity,一个以磅为单位的加成，增加角色的负重能力
-Charge Bonus,冲刺加成
-"If a character is charging, this bonus is added on top of the base charge bonus",如果角色正在冲刺，此加成将基于基础冲刺加成之上
-The charge bonus is added to the following attack’s To Hit and Damage roll,冲刺加成会加入随后攻击的命中和伤害骰子
-Defend Bonus,防御加成
-The bonus that is added to a character’s Dodge value when performing the Defend action,当执行防御动作时，此加成会增加角色的闪避值
-Flanking Bonus,侧翼攻击加成
-The bonus that is added to a character’s To Hit roll when attacking a Flanked opponent,当攻击侧翼的敌人时，此加成会增加角色的命中骰子
-Loot Bonus,战利品加成
-This attribute provides a percentage bonus increase of the amount of gold you find by looting corpses after combat,该属性提供一个百分比加成，增加你在战斗后掠夺尸体时找到的金币数量
+"If a successful Backstab Attack is performed, this Attribute is multiplied by the Weapon’s Crit multiplier and added to the total Damage",如果成功执行背刺攻击，此属性将乘以武器的暴击倍率并加到总伤害上
+Carrying Bonus,负重加值
+A bonus in pounds added to the character’s Carrying Capacity,增加角色负重上限的磅数加值
+Charge Bonus,冲锋加值
+"If a character is charging, this bonus is added on top of the base charge bonus",如果角色正在冲锋，此加值将叠加在基础冲锋加值之上
+The charge bonus is added to the following attack’s To Hit and Damage roll,冲锋加值会加到下一次攻击的命中和伤害掷骰上
+Defend Bonus,防御加值
+The bonus that is added to a character’s Dodge value when performing the Defend action,执行防御动作时加到角色闪避值上的加值
+Flanking Bonus,包抄加值
+The bonus that is added to a character’s To Hit roll when attacking a Flanked opponent,攻击被包抄的敌人时加到角色命中掷骰上的加值
+Loot Bonus,战利品加值
+This attribute provides a percentage bonus increase of the amount of gold you find by looting corpses after combat,此属性提供战斗后掠夺尸体获得金币数量的百分比加成
 Movement,移动
-The number of tiles a character can move during a single combat turn and still attack,一个角色在一整个战斗回合中可以移动的格数，同时还能进行攻击
-Phalanx Bonus,方阵加成
-"If wielding a shield, you get a bonus to Dodge for each adjacent ally up to your Phalanx value",如果持有盾牌，你将获得一个基于方阵值的闪避加成，每个相邻的盟友都会增加此加成
-This means that you do not get any such bonus if your bonus is,这意味着如果你的加成值为零时，你将不会获得任何此类加成
-Regeneration,重生
-"If above 0, you regain a number of Vitality points at the beginning of each combat turn equal to your Regeneration score",如果重生值大于0，你在每次战斗回合开始时恢复等同于你的重生值的生命值
-Retribution,报复
-"If above 0, you deal damage equal to your retribution score to any opponents that score a melee attack hit against you",如果报复值大于0，你对任何对你造成近战攻击命中的对手造成等同于你的报复值的伤害
-Natural Soak,天生抗性
-Natural soak represents soak derived from a thick skin or unnaturally high resistance to physical damage,天生抗性代表由厚皮肤或异常高的物理伤害抵抗力所获得的抗性
+The number of tiles a character can move during a single combat turn and still attack,角色在单次战斗回合中仍可攻击的移动格数
+Phalanx Bonus,协防值
+"If wielding a shield, you get a bonus to Dodge for each adjacent ally up to your Phalanx value",持盾时，每有一名相邻盟友，可获得闪避加值，最高不超过你的协防值
+This means that you do not get any such bonus if your bonus is,这意味着如果你的协防值为零，则无法获得此加成
+Regeneration,再生
+"If above 0, you regain a number of Vitality points at the beginning of each combat turn equal to your Regeneration score",若大于0，每个战斗回合开始时回复等同于再生值的体力点数
+Retribution,反击
+"If above 0, you deal damage equal to your retribution score to any opponents that score a melee attack hit against you",若大于0，对任何命中你的近战攻击的敌人造成等同于反击值的伤害
+Natural Soak,天生减伤
+Natural soak represents soak derived from a thick skin or unnaturally high resistance to physical damage,天生减伤表示源自厚皮或异常高的物理伤害抗性
 XP Percentage Bonus,经验值百分比加成
-"If above 0, this attribute provides a percentage bonus to all XP gained for this character",如果经验值百分比加成值大于0，此属性为该角色获得的所有经验值提供百分比加成
-#Secondary Attributes,次级属性
-Vitality,生命值
-Vitality describes the amount of damage a character can take before becoming seriously wounded,生命值描述角色在受重伤前能承受的伤害量
-Vitality is fairly easily regained through the use of consumable items and spells,生命值通过使用消耗品和法术很容易恢复
-Wounds,伤痕
-Wounds represent serious injury to the character,伤痕代表角色的严重伤势
-"Wounds are much harder to recover for characters, typically requiring bed rest",伤痕通常需要长时间卧床休息才能恢复，对角色来说非常难以恢复
-#Skills,技能
-Athletics,力量
-"Athletics are used to jump, climb, swim or sprint",力量用于跳跃、攀爬、游泳或冲刺
-Awareness,觉醒
-The ability to notice small details and hidden things,发现微小细节和隐藏事物的能力
+"If above 0, this attribute provides a percentage bonus to all XP gained for this character",若大于0，此属性为该角色获得的所有经验值提供百分比加成
+#Secondary Attributes,#次级属性
+Vitality,体力
+Vitality describes the amount of damage a character can take before becoming seriously wounded,体力描述了角色在受到严重创伤前能够承受的伤害量
+Vitality is fairly easily regained through the use of consumable items and spells,体力可以通过使用消耗品和法术较容易地恢复
+Wounds,创伤
+Wounds represent serious injury to the character,创伤代表角色受到的严重伤害
+"Wounds are much harder to recover for characters, typically requiring bed rest",创伤对角色来说更难恢复，通常需要卧床休养
+#Skills,#技能
+Athletics,运动
+"Athletics are used to jump, climb, swim or sprint",运动用于跳跃、攀爬、游泳或冲刺
+Awareness,察觉
+The ability to notice small details and hidden things,能够注意到细微细节和隐藏事物的能力
 Crafting,制作
-Crafting is used when creating items at crafting stations,制作是在制作站创建物品时使用的能力
-Diplomacy,交际
-"Diplomacy is used to lie, bargain or sway others in negotiations",交际用于撒谎、讨价还价或在谈判中说服他人
-It influences prices at merchants,它影响商人的价格
-Healing,治疗
-Healing is used in camp to increase the rate of wound recovery for wounded characters,治疗用于在营地加速受伤角色的伤口恢复速度
-It also influences the amount of vitality regained from healing potions and is used in dialogue tests when dealing with medical issues and such,它还影响治疗药水恢复的生命值量，并在处理医疗问题等对话测试中使用
-Lore,背景知识
-A general knowledge skill,一种通用知识技能
+Crafting is used when creating items at crafting stations,制作用于在制作工作台上创建物品
+Diplomacy,交涉
+"Diplomacy is used to lie, bargain or sway others in negotiations",交涉用于撒谎、讨价还价或在谈判中影响他人
+It influences prices at merchants,它会影响商人的价格
+Healing,医疗
+Healing is used in camp to increase the rate of wound recovery for wounded characters,医疗在营地中用于加快受伤角色的创伤恢复速度
+It also influences the amount of vitality regained from healing potions and is used in dialogue tests when dealing with medical issues and such,它还会影响治疗药水恢复的体力值，并在处理医疗问题等对话检定中使用
+Lore,学识
+A general knowledge skill,通用知识技能
 Stealth,潜行
-Stealth is used during adventuring,潜行用于冒险时
-In particular it determines if NPCs notice the party as it moves around,特别是在角色移动时，它决定NPC是否注意到队伍
+Stealth is used during adventuring,潜行在冒险过程中使用
+In particular it determines if NPCs notice the party as it moves around,具体来说，它决定他人是否会注意到队伍的移动
 Survival,生存
-"Survival is used to forage for food, navigate difficult overland terrain and also determines a character's general knowledge of nature",生存用于采集食物、穿越艰难的陆地地形，以及决定角色对自然的总体了解
-Thievery,盗窃
-Used to pick locks and pockets as well as to steal from shops,用于开锁、偷窃以及从商店偷窃
+"Survival is used to forage for food, navigate difficult overland terrain and also determines a character's general knowledge of nature",生存用于觅食、穿越艰难地形，同时决定角色的自然知识掌握程度
+Thievery,偷窃
+Used to pick locks and pockets as well as to steal from shops,用于开锁、扒窃及从商店偷窃

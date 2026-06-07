@@ -1,97 +1,97 @@
 original,translate
-#Blessing Effects,#祝福效果
-Greater Restore Attunement,更高阶恢复灵性
-Minor Restore Attunement,较低阶恢复灵性
-Moderate Restore Attunement,中阶恢复灵性
-Sublime Restore Attunement,极致恢复灵性
-Barkskin,树肤术
+#Blessing Effects,#Blessing Effects
+Greater Restore Attunement,高级魔力恢复
+Minor Restore Attunement,次级魔力恢复
+Moderate Restore Attunement,中级魔力恢复
+Sublime Restore Attunement,超然魔力恢复
+Barkskin,树皮术
 Bear's Strength,熊之力量
-Bless,祈福
-Blur,模糊视觉
+Bless,祝福
+Blur,朦胧术
 Clarity of Mind,心智清明
-Cure Blindness,治盲
-Cure Charm,治疗魅惑
-Cure Deafness,治聋
-Cure Moderate Disease,治疗中等疾病
-Cure Severe Disease,治疗严重疾病
-Cure Weak Disease,治疗轻微疾病
-Removes the Diseased Condition from the target,从目标身上移除患病状态
-Cure Insanity,治疗疯狂
-Cure Paralysis,治疗瘫痪
-Cure Moderate Poison,治疗中等毒素
-Cure Strong Poison,治疗强毒
-Cure Weak Poison,治疗弱毒
-Cure Silenced,解除沉默
+Cure Blindness,治愈目盲
+Cure Charm,治愈魅惑
+Cure Deafness,治愈耳聋
+Cure Moderate Disease,治愈中级疾病
+Cure Severe Disease,治愈重度疾病
+Cure Weak Disease,治愈轻度疾病
+Removes the Diseased Condition from the target,移除目标的染病状态
+Cure Insanity,治愈错乱
+Cure Paralysis,治愈麻痹
+Cure Moderate Poison,治愈中级毒素
+Cure Strong Poison,治愈高级毒素
+Cure Weak Poison,治愈中级毒素
+Cure Silenced,治愈沉默
 Defend,防御
-Diamond Form,玻璃形态
-Fortify Awareness,增强感知
-Fortify Initiative,增强先攻
-Fortify Will,增强意志
-Frenzy,狂暴
-Greater Haste,大幅提速
-Lesser Haste,小幅提速
-Greater Healing,大幅治疗
-Minor Healing,小幅治疗
-Minute Healing,微小治疗
-Moderate Healing,中等治疗
-Sublime Healing,神圣治疗
-Heroism,英勇之药
-Hide,隐形
-Illuminate,照明术
-Acid Immunity,腐蚀免疫
-Electric Immunity,电系免疫
-Fire Immunity,火系免疫
+Diamond Form,钻石形态
+Fortify Awareness,强化感知
+Fortify Initiative,强化先攻
+Fortify Will,强化意志
+Frenzy,狂乱
+Greater Haste,高级加速
+Lesser Haste,次级加速
+Greater Healing,高级治疗
+Minor Healing,次级治疗
+Minute Healing,微效治疗
+Moderate Healing,中级治疗
+Sublime Healing,超然治疗
+Heroism,英勇
+Hide,潜行
+Illuminate,照明
+Acid Immunity,强酸免疫
+Electric Immunity,闪电免疫
+Fire Immunity,火焰免疫
 Panic Immunity,恐慌免疫
 Inspire,激励
-Invisibility Lesser,隐形
+Invisibility Lesser,次级隐形
 Recover,恢复
-Greater Regeneration,超级再生
-Lesser Regeneration,再生
-Remove Fear,消除恐惧
-Acid Resistance,酸液抗性
-Electric Resistance,电击抗性
+Greater Regeneration,高级再生
+Lesser Regeneration,次级再生
+Remove Fear,移除恐惧
+Acid Resistance,强酸抗性
+Electric Resistance,闪电抗性
 Fire Resistance,火焰抗性
 Serpent's Grace,蛇之优雅
-Stoneskin,岩石之肤
-Thornclad,刺肤
+Stoneskin,石肤术
+Thornclad,荆棘护甲
 #Curse Effects,#诅咒效果
-Cause Confusion,造成混乱
+Cause Confusion,造成困惑
 Deafness,耳聋
 Cause Fear,造成恐惧
 Condemn,定罪
-Disrupt,打乱
-Immobilize,使动弹不得
+Disrupt,干扰
+Immobilize,定身
 Infect,感染
-Greater Infect,强烈感染
-Lesser Infect,轻微感染
+Greater Infect,重度感染
+Lesser Infect,轻度感染
 Infects the target with a disease,使目标感染疾病
 Mark Target,标记目标
-Paralyze,使麻痹
+Paralyze,麻痹
 Moderate Poisoning,中度中毒
 Strong Poisoning,重度中毒
 Weak Poisoning,轻度中毒
-Purge Invisibility,消除隐形
-Silence,使失声
-Slow,使迟缓
-Stun,使昏迷
-Weaken,使虚弱
+Purge Invisibility,驱散隐形
+Silence,沉默
+Slow,减速
+Stun,击晕
+Weaken,虚弱
 #Damage Effects,#伤害效果
 Cause Bleeding,造成流血
 Cause Injury,造成伤害
-Kneecap,折断膝盖
-Minor Acid Splash,轻量酸液喷溅
-Massive Kinetic Damage,强烈动能伤害
-Medium Kinetic Damage,中量动能伤害
-Minor Magical Damage,轻量魔法伤害
-Minor Sublime Damage,轻量神圣伤害
+Kneecap,断膝
+Minor Acid Splash,次级酸液飞溅
+Massive Kinetic Damage,高级动能伤害
+Medium Kinetic Damage,中级动能伤害
+Minor Magical Damage,次级法术伤害
+Minor Sublime Damage,次级超然伤害
 Fire Flash,火焰闪光
-Hamstring,折断腿筋
-Minor Psychic Blast,轻量心灵爆击
-Minor Slam,轻量挥击
-Medium Slash,中量 slash
-Minor Slash,轻量 slash
+Hamstring,断筋
+Minor Psychic Blast,次级心灵冲击
+Minor Slam,次级猛击
+Medium Slash,中型挥砍
+Minor Slash,次级挥砍
 #General Effects,#通用效果
-Clear Magical Conditions,解除魔法状态
-Dispel Magic,驱散魔法
-Get Drunk,变得醉醺醺
-Push Target,推动目标
+Clear Magical Conditions,清除法术状态
+Dispel Magic,解除魔法
+Get Drunk,喝醉
+Push Target,击退目标

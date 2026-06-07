@@ -1,334 +1,333 @@
 original,translate
-#Combat Manuevers,#战斗 maneuvers
+#Abilities Tab,#能力标签
+Maneuver Abilities,战技能力
+Triggered Abilities,触发能力
+Passive Bonus Abilities,被动加成能力
+#Combat Manuevers,战斗招式
 Wild Swing,狂野挥击
-Executes an Attack with +4 bonus to Damage,造成+4伤害加值的攻击
-Critical Strike,重击
-Executes an Attack that automatically scores a Critical Hit if successful,如果成功攻击，自动造成重击
-Defend Ally,保护盟友
+Critical Strike,致命一击
+Defend Ally,掩护同伴
 Mark Target,标记目标
-The Target gets the Marked Condition which confers a -2 penalty to Dodge for the rest of the encounter,目标获得标记状态，持续整个遭遇战，受到-2闪避惩罚
-Radiate Fear,恐惧之辐射
-Blizzard Aura,冰霜光环
+The Target gets the Marked Condition which confers a -2 penalty to Dodge for the rest of the encounter,目标获得标记状态，使其在本次遭遇的剩余时间内闪避受到-2惩罚
+Radiate Fear,恐惧辐射
+Blizzard Aura,暴雪光环
 Aura of Fire,火焰光环
-Fire Lance,火焰长矛
-Howl of Terror,恐怖嚎叫
-Lightning Lash,闪电鞭击
+Fire Lance,火枪
+Howl of Terror,恐惧嚎叫
+Lightning Lash,闪电鞭笞
 Spit Acid,喷吐酸液
-Spit Poison,喷吐毒素
-Spray Acid,喷吐酸雾
+Spit Poison,喷吐毒液
+Spray Acid,喷洒酸液
 Attack!,攻击！
 Forwards!,前进！
-Regroup!,重组！
-Stand Your Ground!,站稳脚跟！
-Precise Strike,精确一击
-Rapid Shot,连射
-The character makes a ranged attack,角色进行远程攻击
-"If that attack is successful, they may make another, free attack",如果该攻击成功，他们可以再进行一次免费攻击
-Pierce Armor,穿甲
-Vein Strike,血脉一击
-Savage Strike,残暴一击
-Shake the Earth,地动山摇
-Shield Rush,屏风冲锋
-Perform an attack that pushes your opponent back one square if successfull,如果成功，进行一次攻击将对手后退一格
-Deals normal damage,造成正常伤害
+Regroup!,重整！
+Stand Your Ground!,坚守阵地！
+Precise Strike,精准打击
+Rapid Shot,快速射击
+The character makes a ranged attack,角色进行一次远程攻击
+"If that attack is successful, they may make another, free attack",“如果该攻击成功，他们可以再进行一次免费攻击”
+Pierce Armor,破甲
+Vein Strike,血脉割裂
+Savage Strike,凶蛮打击
+Shake the Earth,撼地
+Shield Rush,持盾冲锋
+Perform an attack that pushes your opponent back one square if successfull,进行一次攻击，如果成功则将对手击退一格
+Deals normal damage,造成普通伤害
 Spellburn,法术灼烧
 Storm of Steel,钢铁风暴
-Stunning Blow,令人眩晕的打击
-Thrust And Parry,穿刺与格挡
-Dash,疾跑
+Stunning Blow,震慑打击
+Thrust And Parry,刺击与格挡
+Dash,猛冲
 Hide in Combat,战斗中潜行
-You gain the ability to hide whilst in Combat,你在战斗中获得潜行的能力
-Attacking whilst hidden triggers the Backstab attack,隐藏时攻击会触发背刺攻击
+You gain the ability to hide whilst in Combat,你获得在战斗中潜行的能力
+Attacking whilst hidden triggers the Backstab attack,在潜行状态下攻击会触发背刺攻击
 Infect,感染
-Ice Breath,冰霜吐息
-Imperial Litany,帝国圣咏
-Hamstring,折断腿筋
-Second Wind,第二口气
+Ice Breath,寒冰吐息
+Imperial Litany,帝国连祷
+Hamstring,断筋
+Second Wind,二次呼吸
+Executes an Attack with +4 bonus to Damage,执行一次攻击，伤害获得+4加成
+Executes an Attack that automatically scores a Critical Hit if successful,执行一次攻击，如果成功则自动造成暴击
 #Passive Abilitiy,#被动能力
 Backstabber,背刺者
-Allows the character to perform Backstab Attacks against voulnerable targets,允许角色对易伤目标进行背刺攻击
-Evasive,机敏
-Disengaging from Melee does not cause your turn to end,从近战中脱离不会导致你的回合结束
-Fancy Footwork,精妙步法
-Swapping Places with allies not longer causes your Turn to end,与盟友互换位置不再导致你的回合结束
+Allows the character to perform Backstab Attacks against voulnerable targets,允许角色对脆弱目标进行背刺攻击
+Evasive,灵巧
+Disengaging from Melee does not cause your turn to end,脱离近战不会导致你的回合结束
+Fancy Footwork,华丽步法
+Swapping Places with allies not longer causes your Turn to end,与同伴交换位置不再导致你的回合结束
 Activate Spellcasting,激活施法
-Allows the character to begin studying schools of spellcasting,允许角色开始研究施法流派
-"To learn spells, pick and invest in one or more such schools",要学习法术，选择并投资一个或多个此类流派
-Increased Agiliy,增强敏捷
-Increased Heavy Armor Use,增强重型盔甲使用
-Increased Light Armor Use,增强轻型盔甲使用
-Increased Medium Armor Use,增强中型盔甲使用
-Increased Athletics,增强体能
-Increased Attunement,增强共鸣
-Spell Aura Radius Increase,法术光环范围扩大
-Increased Awareness,增强感知
-Increased Backstab Damage,增强背刺伤害
+Allows the character to begin studying schools of spellcasting,允许角色开始学习施法学派
+"To learn spells, pick and invest in one or more such schools",要学习法术，请选择并投入一个或多个此类学派
+Increased Agiliy,提升敏捷
+Increased Heavy Armor Use,提升重型护甲专精
+Increased Light Armor Use,提升轻型护甲专精
+Increased Medium Armor Use,提升中型护甲专精
+Increased Athletics,提升运动
+Increased Attunement,提升魔谐力
+Spell Aura Radius Increase,法术光环半径提升
+Increased Awareness,提升感知
+Increased Backstab Damage,提升背刺伤害
 Pack Mule,骡马
-Increased Crafting,增强制作
-Critical Resistance,临战抵抗
-Increased Diplomacy,增强外交
-Increased Dodge,增强闪避
-Fletching,弓工
-Doubles the chance of recovering a spent arrow after combat,战斗后有双倍几率回收耗尽的箭矢
-Increased Fortitude,增强坚韧
-Increased Gold Drops,增加黄金掉落
-Increased Healing,增强治疗
-Increased Initiative,增强先攻
-Increased Intellect,增强智力
-Increased Lore,增强知识
-Increased Max Cascade,增强最大连锁反应
-Increased Movement,增强移动速度
-Increased Presence,增强威压
-Increased Spell Aptitude,增强法术天赋
-Increased Stealth,增强潜行
-Increased Strength,增强力量
+Increased Crafting,提升制造
+Critical Resistance,暴击抗性
+Increased Diplomacy,提升交涉
+Increased Dodge,提升闪避
+Fletching,制箭
+Doubles the chance of recovering a spent arrow after combat,战斗后回收已用箭矢的几率翻倍
+Increased Fortitude,提升体质
+Increased Gold Drops,提升金币掉落
+Increased Healing,提升治疗
+Increased Initiative,提升先攻
+Increased Intellect,提升智力
+Increased Lore,提升学识
+Increased Max Cascade,提升最大连携施法数
+Increased Movement,提升移动
+Increased Presence,提升魅力
+Increased Spell Aptitude,提升法术资质
+Increased Stealth,提升潜行
+Increased Strength,提升力量
 You are powerfully built,你体格强壮
-to Strength Primary Attribute,主属性为力量
-Survival Increase,生存能力提升
-Increased Thievery,增强盗贼技能
-Increased Toughness,增强坚韧
-Increased Vitality,增强生命力
-Increased Will,增强意志力
+to Strength Primary Attribute,对力量主要属性
+Survival Increase,生存提升
+Increased Thievery,提升盗窃
+Increased Toughness,提升坚韧
+Increased Vitality,提升体力
+Increased Will,提升意志
 Charger,冲锋者
-Axe Finesse,斧头灵巧
+Axe Finesse,斧类灵巧
 Blade Finesse,刀剑灵巧
-Bow Finesse,弓箭灵巧
+Bow Finesse,弓类灵巧
 Club Finesse,棍棒灵巧
-Light Weapon Finesse,轻武器灵巧
-Vicious,凶猛
-Axe Damage,斧头伤害
+Light Weapon Finesse,轻型武器灵巧
+Vicious,凶残
+Axe Damage,斧类伤害
 Blade Damage,刀剑伤害
-Bow Damage,弓箭伤害
-Club Damage,球棒伤害
-Brutal,威猛
+Bow Damage,弓类伤害
+Club Damage,棍棒伤害
+Brutal,残暴
 Heavy Weapon Damage,重型武器伤害
 Light Weapon Damage,轻型武器伤害
 Piercing Damage,穿刺伤害
 Phalanx,方阵
-"While wielding a shield, get a dodge bonus for adjacent allies",使用盾牌时，为相邻盟友获得闪避加成
-Bonus is +1 per ally up to a maximum of the Phalanx Bonus attribute value (typically,加成值为每名盟友+1，上限为方阵加成属性值（通常）
+"While wielding a shield, get a dodge bonus for adjacent allies",持盾时，每有一名相邻同伴，获得闪避加值
 Shield Training,盾牌训练
-Acid Immunity,酸液免疫
-Blindness Immunity,盲目免疫
+Acid Immunity,强酸免疫
+Blindness Immunity,目盲免疫
 Cold Immunity,寒冷免疫
-Critical Immunity,重击免疫
+Critical Immunity,暴击免疫
 Deafness Immunity,耳聋免疫
 Disease Immunity,疾病免疫
-Lightning Immunity,雷电免疫
+Lightning Immunity,闪电免疫
 Fire Immunity,火焰免疫
-Non Magical Damage Immunity,非魔法伤害免疫
+Non Magical Damage Immunity,非法术伤害免疫
 Panic Immunity,恐慌免疫
 Paralysis Immunity,麻痹免疫
-Poison Immunity,毒免疫
+Poison Immunity,毒素免疫
 Sleep Immunity,睡眠免疫
-Fell Illumination,强化照明
-Multi Attack,连续攻击
-Gain 1 extra Attack per Turn,每回合多一次攻击
-Greater Increased Attunement,更强的附魔增强
-Major Natural Armor,重大自然护甲
-Medium Natural Armor,中等自然护甲
-Minor Natural Armor,轻微自然护甲
-Greater Natural Weapons,更强的自然武器
-Natural Weapons,自然武器
-Point Blank Shot,近战射击
-You can use Ranged Weapons even when in Melee,你可以在近战时使用远程武器
+Fell Illumination,凶煞照明
+Multi Attack,多重攻击
+Gain 1 extra Attack per Turn,每回合获得1次额外攻击
+Greater Increased Attunement,高级魔力提升
+Major Natural Armor,高级天生护甲
+Medium Natural Armor,中级天生护甲
+Minor Natural Armor,次级天生护甲
+Greater Natural Weapons,高级天生武器
+Natural Weapons,天生武器
+Point Blank Shot,抵近射击
+You can use Ranged Weapons even when in Melee,即使在近战中也可以使用远程武器
 Resistance,抗性
-Slashing,斧劈伤害
-Blunt,撞击伤害
-Piercing,穿刺伤害
-Magical,魔法伤害
-Cold,冰冷伤害
-Acid,酸性伤害
+Slashing,挥砍
+Blunt,钝击
+Piercing,穿刺
+Magical,魔法
+Cold,寒冷
+Acid,强酸
 Kinetic,动能
-Sublime,绝妙
-Electric,静电
+Sublime,崇高
+Electric,闪电
 Fire,火焰
 Psychic,心灵
-Minor Resistance,轻微抗性
-Lightning,雷电
+Minor Resistance,次级抗性
+Lightning,闪电
 Physical,物理
-Increased Aura Radius,增强光环范围
-Increased Line Effects,增强直线效果
-Increased Sphere Effects,增强球形效果
+Increased Aura Radius,提升光环半径
+Increased Line Effects,提升线状效果
+Increased Sphere Effects,提升球状效果
 Air Magic Focus,空气法术专注
-Bardic Magic Focus,吟游诗人法术专注
-Body Magic Focus,身体法术专注
-Earth Magic Focus,地土法术专注
+Bardic Magic Focus,吟游法术专精
+Body Magic Focus,肢体法术专精
+Earth Magic Focus,大地法术专精
 Fire Magic Focus,火焰法术专注
-Mind Magic Focus,心灵法术专注
+Mind Magic Focus,心智法术专注
 Nature Magic Focus,自然法术专注
-Spirit Magic Focus,灵魂法术专注
-Axe Accuracy,斧头精准度
-Blade Accuracy,刀剑准确性
-Bow Accuracy,弓箭准确性
-Club Accuracy,棍棒准确性
-General Accuracy,一般准确性
-Heavy Weapon Accuracy,重型武器准确性
-Light Weapon Accuracy,轻型武器准确性
-Melee Accuracy,近战准确性
-Ranged Accuracy,远程准确性
+Spirit Magic Focus,灵魂法术专精
+Axe Accuracy,斧类命中
+Blade Accuracy,刀剑命中
+Bow Accuracy,弓类命中
+Club Accuracy,棍棒命中
+General Accuracy,总体命中
+Heavy Weapon Accuracy,重型武器命中
+Light Weapon Accuracy,轻型武器命中
+Melee Accuracy,近战命中
+Ranged Accuracy,远程命中
 Vulnerability,易伤
-Cold,寒冷易伤
-Sublime,神圣易伤
-Bonus XP Percentage,敏捷加成百分比
+Cold,寒冷
+Sublime,崇高
+Bonus XP Percentage,加成经验值百分比
 Blessing of Agility,敏捷祝福
 Blessing of Fortitude,坚韧祝福
 Blessing of Intellect,智力祝福
-Blessing of Presence,威严祝福
+Blessing of Presence,魅力祝福
 Blessing of Strength,力量祝福
-#Spells,可施展法术数量
+#Spells,#法术
 Spells,法术
-Armor of Thorns,刺棘护甲
-Heroic Aura,英雄光环
-Aura of Condemnation,审判光环
+Armor of Thorns,荆棘护甲
+Heroic Aura,英勇光环
+Aura of Condemnation,定罪光环
 Aura of Fear,恐惧光环
-Miasma,污气
+Miasma,瘴气
 Aura of Silence,沉默光环
-Searing Light,燃烧之光
-Smothering Blanket,窒息毯
-Sight to Behold,视界之光
-EYE-SHINE,EYE-SHINE
-Eye-Shine,眼光
-Fire Sprite,火精灵
-Fireworks,烟花
-Heroic Tune,英雄之歌
-Now you See Me,现在你看见我
-Lambent Dance,闪耀之舞
-Lifting Tune,提升之歌
-Light Please,请亮灯
-RAISE THE CURTAIN,拉开帷幕
-Raise the Curtain,拉开帷幕
-Shadow Step,影步
+Searing Light,灼耀之光
+Smothering Blanket,窒息帷幕
+Sight to Behold,注目奇观
+Eye-Shine,目耀术
+Fire Sprite,火灵
+Fireworks,烟火术
+Heroic Tune,英勇曲调
+Now you See Me,现形术
+Lambent Dance,微光之舞
+Lifting Tune,振奋曲调
+Light Please,照明术
+Raise the Curtain,揭幕术
+Shadow Step,暗影步
 Song of Soothing,安抚之歌
-Sparkledust,闪烁尘
-Whisper of Confusion,令人困惑的低语
-Barkskin,树肤术
+Sparkledust,闪光尘
+Whisper of Confusion,困惑低语
+Barkskin,树皮术
 Bear's Strength,熊之力量
-Blessing Aura,光辉祝福
-Blessing Touch,触摸祝福
-Blink,瞬移
-Mark of Blurring,模糊标记
-Breath Glass,玻璃之息
-Blinding Bolt,盲目之击
-Circle of Corporeal Restoration,肉身恢复圈
-Circle of Healing,治疗恢复圈
-Circle of Mental Restoration,心智恢复圈
-Clear Senses,清晰感官
-Command of Paralyzation,僵直命令
-Cure Moderate Disease,治疗中度疾病
-Heal Mind,治疗心灵
-Fleet of Foot,轻盈脚步
-Cure Moderate Poison,治疗中度毒素
-Diamond Form,玻璃形态
-Dispel Magic,驱散魔法
-Distort Mass,质量扭曲
-Divine Intervention,神恩赐
-Aura of Flame,火焰光环
+Blessing Aura,祝福光环
+Blessing Touch,祝福之触
+Blink,闪烁
+Mark of Blurring,朦胧印记
+Breath Glass,朦镜之息
+Blinding Bolt,致盲闪电
+Circle of Corporeal Restoration,肉体复原法阵
+Circle of Healing,治疗法阵
+Circle of Mental Restoration,精神复原法阵
+Clear Senses,感官清明
+Command of Paralyzation,麻痹指令
+Cure Moderate Disease,治愈中级疾病
+Heal Mind,心灵治愈
+Fleet of Foot,轻捷步伐
+Cure Moderate Poison,治愈中级毒素
+Diamond Form,钻石形态
+Dispel Magic,解除魔法
+Distort Mass,扭曲物质
+Divine Intervention,神圣干预
+Aura of Flame,烈焰光环
 Fireball,火球术
-Breath of the Ancients,古老之息
-Flaming Fists,火焰之拳
-Fire Frenzy,火焰狂热
+Breath of the Ancients,远古之息
+Flaming Fists,烈焰拳
+Fire Frenzy,火焰狂暴
 Inferno,炎狱
-Searing Lash,燃烧鞭笞
-Aura of Fire Resistance,抗火光环
+Searing Lash,灼热鞭笞
+Aura of Fire Resistance,火焰抗性光环
 Fire Warrior,火焰战士
 Force of Nature,自然之力
-Fortify Awareness,提高感知
-Fortify Will,提高意志
-Mark of Haste,速战标记
-Mark of Heroism,英勇标记
+Fortify Awareness,强化感知
+Fortify Will,意志强化
+Mark of Haste,加速印记
+Mark of Heroism,英勇印记
 Hammer of Light,光明之锤
-Holy Judgement,圣裁之决
+Holy Judgement,神圣审判
 Holy Lance,圣枪
-Hysterical Blindness,疯狂失明
-Curse of Ensnarement,束缚之诅咒
-Instil Courage,勇气灌注
-Mark of Invisibility,隐形标记
-Greater Lay on Hands,超级治疗术
-Minor Lay on Hands,小型治疗术
-Moderate Lay on Hands,中级治疗术
+Hysterical Blindness,恐慌致盲
+Curse of Ensnarement,缠缚诅咒
+Instil Courage,灌注勇气
+Mark of Invisibility,隐形印记
+Greater Lay on Hands,高级圣疗
+Minor Lay on Hands,次级圣疗
+Moderate Lay on Hands,中级圣疗
 Lesser Regeneration,次级再生
-Mark of Illumination,照明标记
+Mark of Illumination,照明印记
 Holy Light,圣光
-Lightning Strike,雷击
+Lightning Strike,闪电打击
 Magic Missile,魔法飞弹
-Web of Roots,根之网
-Sublime Projection,神秘投影
+Web of Roots,根须之网
+Sublime Projection,超然投射
 Pestilence,瘟疫
-Poisoned Globe,魔法毒气球
-Purge Invisibility,清除隐形
-Purge Magic,清除魔法
-Greater Regeneration,超级再生
-Corporeal Restoration,肉身复原
-Mental Restoration,心神复原
+Poisoned Globe,毒液球
+Purge Invisibility,驱散隐形
+Purge Magic,净化魔法
+Greater Regeneration,高级再生
+Corporeal Restoration,肉体复原
+Mental Restoration,精神复原
 Serpent's Grace,蛇之优雅
-Arcane Shockwave,法术震波
-Steal Breath,嗜息
-Mark of Lethargy,疲惫标记
-Mass Lethargy,大范围疲惫
-Stoneskin,岩石之肤
-Stunning Aura,震惊光环
-Stunning Touch,震惊触碰
-Summon Giant Insect,召唤巨虫
-Summon Magmite,召唤熔铁
-Summon Ooze,召唤黏液
+Arcane Shockwave,奥术冲击波
+Steal Breath,窃息术
+Mark of Lethargy,迟缓印记
+Mass Lethargy,群体迟缓
+Stoneskin,石肤术
+Stunning Aura,震慑光环
+Stunning Touch,震慑之触
+Summon Giant Insect,召唤巨型昆虫
+Summon Magmite,召唤熔岩虫
+Summon Ooze,召唤软泥怪
 Summon Vermin,召唤害虫
-Swarm of Gnats,蚊群群集
-Thunderclap,雷鸣一击
-Touch of Condemnation,定罪触碰
-Touch of Confusion,混乱触碰
-Touch of Weakness,虚弱触碰
+Swarm of Gnats,蚊群
+Thunderclap,雷霆震击
+Touch of Condemnation,定罪之触
+Touch of Confusion,困惑之触
+Touch of Weakness,虚弱之触
+EYE-SHINE,目耀术
+RAISE THE CURTAIN,揭幕术
 #Triggered Abilities,#触发能力
-Arcane Rush,神秘突袭
-"The first time you take Wound Hit point Damage each combat, you automatically regain 30-40 Attunement Points",每次战斗中首次受到创伤伤害时，你自动恢复 30-40 精通点数
-Crippling Finesse,致命巧劲
-"When scoring a Backstab hit using a Light Weapon, the targets gets a random injury Condition",使用轻武器进行背刺命中时，目标会受到一种随机的创伤状态
-Rending Blow,剥皮一击
-Critical Hits with an Axe causes Injury Conditions,使用战锤造成致命一击时，目标会受到创伤状态
-Deep Cut,深割
-Your Critical Hits using Blades cause Bleeding on your target,使用刀剑造成致命一击时，会使目标流血
-Red Arcs,红色弧线
-Scoring a Critical Hit with a Light Blade causes you to restore 1 Attack,使用轻剑造成致命一击时，你会恢复一次攻击
+Arcane Rush,奥术激涌
+"The first time you take Wound Hit point Damage each combat, you automatically regain 30-40 Attunement Points",每场战斗中你首次受到创伤命中伤害时，自动恢复30-40点魔谐力点数
+Crippling Finesse,致残巧技
+"When scoring a Backstab hit using a Light Weapon, the targets gets a random injury Condition",使用轻型武器造成背刺命中时，目标获得随机受伤状态
+Rending Blow,撕裂重击
+Critical Hits with an Axe causes Injury Conditions,使用斧类武器造成暴击时引发受伤状态
+Deep Cut,深创
+Your Critical Hits using Blades cause Bleeding on your target,你使用刃类武器造成暴击时使目标流血
+Red Arcs,红色弧光
+Scoring a Critical Hit with a Light Blade causes you to restore 1 Attack,使用轻型刀剑造成暴击时，你恢复1次攻击
 Rapid Reload,快速装填
-"If you score a Critical Hit with a Bow, you immediately regain 1 attack",使用弓造成致命一击时，你会立即恢复一次攻击
-Kneecap,膝击
-Critical Hits with a Club causes The Injured Leg condition,使用战锤造成致命一击时，会使目标的腿部受伤
+"If you score a Critical Hit with a Bow, you immediately regain 1 attack",使用弓造成暴击时，你立即恢复1次攻击
+Kneecap,断膝
+Critical Hits with a Club causes The Injured Leg condition,使用棍棒造成暴击时引发腿部受伤状态
 Weaving Blade,缠绕刀锋
-Dodging a Melee Attack whilst armed causes you to deal a small amont of Slashing Damage to your attacker,避开近战攻击时，你会对攻击者造成少量割伤伤害
-Felling Strike,摧毁一击
-Weakly Infections,弱感染
-Your unarmed attack may cause disease in the target,你的徒手攻击可能会使目标感染疾病
-Decapitation,断头一击
-The gruesomeness of your Axe-Kill causes the Fear condition in all opponents who can see it,你的屠斧造成的恐怖使所有能看到它的对手陷入恐惧状态
-Cleave,断头斩
-Killing an opponent using a Heavy Melee Weapon restores 1 Attack,使用重型近战武器击杀对手可恢复1次攻击
+Dodging a Melee Attack whilst armed causes you to deal a small amont of Slashing Damage to your attacker,持械时闪避近战攻击，会对攻击者造成少量挥砍伤害
+Felling Strike,倒伏打击
+Weakly Infections,弱效感染
+Your unarmed attack may cause disease in the target,你的徒手攻击可能导致目标染病
+Decapitation,斩首
+The gruesomeness of your Axe-Kill causes the Fear condition in all opponents who can see it,你斧杀的恐怖景象使所有能看见的对手陷入恐惧状态
+Cleave,顺势斩
+Killing an opponent using a Heavy Melee Weapon restores 1 Attack,使用重型近战武器击杀对手恢复1次攻击
 Inspiring Kill,激励击杀
-"When killing an Opponent in Armed or Unarmed Melee combat, all Allies who witness the kill get the Inspired Condition for 1 Turn",在近战武器或徒手格斗中击杀对手时，所有目睹击杀的盟友将获得激励状态1回合
-Replenishing Takedown,补给性撂倒
-"Killing a Marked Target, heals the party a small amount",杀死标记的目标可为队伍恢复少量生命值
-Magnificent Takedown,雄伟撂倒
-"When killing a Marked target, all Allies who witness the kill get the Inspired Condition for 1 Turn",在近战武器或徒手格斗中击杀标记的目标时，所有目睹击杀的盟友将获得激励状态1回合
-Bleeding Strike,出血打击
-Greater Bleeding Strike,强化出血打击
-Lesser Bleeding Strike,轻型出血打击
-Acid Burst,酸性爆炸
+"When killing an Opponent in Armed or Unarmed Melee combat, all Allies who witness the kill get the Inspired Condition for 1 Turn",在持械或徒手近战战斗中击杀对手时，所有目睹此击杀的同伴获得1回合激励状态
+Replenishing Takedown,补给击杀
+"Killing a Marked Target, heals the party a small amount",击杀标记目标，为队伍恢复少量生命
+Magnificent Takedown,华丽击杀
+"When killing a Marked target, all Allies who witness the kill get the Inspired Condition for 1 Turn",击杀标记目标时，所有目睹此击杀的同伴获得1回合激励状态
+Bleeding Strike,流血打击
+Greater Bleeding Strike,强效流血打击
+Lesser Bleeding Strike,次级流血打击
+Acid Burst,酸液爆发
 Sommon Abomination,召唤异物
-Lesser Poison Attack,轻型毒攻击
-Moderate Poison Attack,中型毒攻击
-Strong Poison Attack,强烈毒攻击
-Stunning Strike,令人眩晕的打击
-Steal Life,吸取生命
-Shield Slam,屏障重击
-"Whilst wielding a shield, dodging a melee attack causes you to deal 1-4 Blunt damage to your attacker",持盾时，闪避近战攻击会使你对攻击者造成1-4点钝击伤害
-Smashing Charge,破甲冲锋
-Your Charges cause 1-3 additional Blunt Damage,你的冲锋造成1-3点额外钝击伤害
-Hidden Deployment,隐形布阵
-You start combat Hidden,你开始战斗时处于隐形状态
+Lesser Poison Attack,次级毒素攻击
+Moderate Poison Attack,中级毒素攻击
+Strong Poison Attack,高级毒素攻击
+Stunning Strike,眩晕打击
+Steal Life,窃命术
+Shield Slam,持盾猛击
+"Whilst wielding a shield, dodging a melee attack causes you to deal 1-4 Blunt damage to your attacker",持盾时，闪避近战攻击会对攻击者造成1-4点钝击伤害
+Smashing Charge,粉碎冲锋
+Your Charges cause 1-3 additional Blunt Damage,你的冲锋造成额外1-3点钝击伤害
+Hidden Deployment,隐匿部署
+You start combat Hidden,你以潜行状态开始战斗
 Smoke Bomb,烟雾弹
-"The first time you're Wounded each combat, you automatically hide",每场战斗中你首次受伤时，你将自动隐形
-Not Today!,今天不！
-"The first time you take Wound Hit point Damage each combat, you automatically regain 12-18 Vitality Hit Points",每场战斗中你首次受到伤痕点数伤害时，你将自动恢复12-18点活力点数
-#Abilities Tab,#能力标签
-Maneuver Abilities,战术能力
-Triggered Abilities,触发能力
-Passive Bonus Abilities,被动增益能力
+"The first time you're Wounded each combat, you automatically hide",每场战斗中你首次受到创伤时，自动进入潜行
+Not Today!,休想！
+"The first time you take Wound Hit point Damage each combat, you automatically regain 12-18 Vitality Hit Points",每场战斗中你首次受到创伤命中伤害时，自动恢复12-18点体力值

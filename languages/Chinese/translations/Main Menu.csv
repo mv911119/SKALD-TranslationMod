@@ -1,35 +1,85 @@
 original,translate
-Pre-Launch 1.0.3d,1.0.3d版预发行
-Pre-Launch 1.0.3d - DELUXE EDITION,1.0.3d豪华版预发行
-Launch 1.0.5,1.0.5版发行
-Launch 1.0.5 - DELUXE EDITION,1.0.5豪华版发行
-Core 1.0.6c,核心版1.0.6c
-Core 1.0.6c - DELUXE EDITION,核心版1.0.6c豪华版
-Core 1.0.7e - DELUXE EDITION,核心版1.0.7e豪华版
-SKALD Core 1.0.7e - DELUXE EDITION,斯卡德核心版1.0.7e豪华版
-Press 1.0.9d - DELUXE EDITION,媒体版1.0.9d豪华版
+#Credits,制作人员
+"For Sofie, Amalie and Kathrine",献给 Sofie、Amalie 和 Kathrine
+WRITTEN AND DEVELOPED BY,编剧与开发
+PUBLISHED BY,发行
+Raw Fury,Raw Fury
+WITH FINANCIAL SUPPORT FROM,资金支持
+Innovation Norway,挪威创新署
+Norwegian Film Institute,挪威电影协会
+PRODUCED BY,制作
+ART,美术
+KEY ART,主视觉设计
+MUSIC,音乐
+SOUND FX,音效
+ADDITIONAL WRITING,额外编剧
+ADDITIONAL CODIING,额外编程
+A special thanks to NAIVE,特别感谢 NAIVE
+for their work on,感谢他们为
+the Skald Trailer,Skald 预告片所做的工作
+A special thanks to ARTISTRY,特别感谢 ARTISTRY
+the Launch Trailer,发布预告片
+CROWDFUNDERS,众筹支持者
+DARK LORD TIER,黑暗领主等级
+DEITY TIER,神祇等级
+IMPERATOR TIER,皇帝等级
+HIGH WIZARD TIER,大巫师等级
+LORD OF THE REALM TIER,领域领主等级
+KNIGHT TIER,骑士等级
+FREEMAN TIER,自由民等级
+RAW FURY,RAW FURY
+Special Thanks,特别感谢
+Daniel Jonsson,Daniel Jonsson
+Alexandre Billaud,Alexandre Billaud
+KM Troedsson,KM Troedsson
+Special Mention,特别提及
+QLOC S.A,QLOC S.A.
+General Manager,总经理
+Head of Business Development,业务发展主管
+Senior Business Development Manager,高级业务发展经理
+Director of Quality Assurance,质量保证总监
+QA Operations Manager,QA 运营经理
+Lead QA Project Manager,首席 QA 项目经理
+QA Lab Managers,QA 实验室经理
+Piotr Badurek,Piotr Badurek
+Emil Lubowicki,Emil Lubowicki
+Gabriela Malinowska,Gabriela Malinowska
+Tomasz Prusicki,Tomasz Prusicki
+Learning & Development Manager,学习与发展经理
+Learning & Development Coordinator,学习与发展协调员
+Learning & Development Specialists,学习与发展专员
+QA Team Leader,QA 团队负责人
+Marcin Oprzadek,Marcin Oprzadek
+QA Testers,QA 测试员
+Patryk Osowiecki,Patryk Osowiecki
+Dawid Salamadry,Dawid Salamadry
+Bosong Zhou,Bosong Zhou
+IT Director,IT 总监
+Artur Szczurzynski,Artur Szczurzynski
+#Unknown,#Unknown
+Core 1.0.7e,核心 1.0.7e
 Continue Game,继续游戏
-New Game,新建游戏
-Load,载入
+New Game,新游戏
+Load,加载
 Save,保存
-Start Module,开始模块
+Start Module,启动模块
 Settings,设置
-Credits,致谢
-Quit,退出游戏
+Credits,制作人员
+Quit,退出
 Exit,退出
 Reset,重置
-Gameplay,游戏玩法
-Difficulty,困难度
+Gameplay,玩法
+Difficulty,难度
 Display,显示
-Audio,音效
+Audio,音频
 Controls,控制
 Fonts,字体
 Enter Map Auto Save,进入地图自动保存
 Rest Auto Save,休息时自动保存
-Tactical Icons Always On,战术图标始终显示
+Tactical Icons Always On,战术图标常显
 Tactical Grid,战术网格
 Show Stealth Info,显示潜行信息
-Combat Pop-Up Length,战斗弹出窗口长度
+Combat Pop-Up Length,战斗提示时长
 Tutorials,教程
 Controller Sensitivity,控制器灵敏度
 Language,语言
@@ -37,245 +87,223 @@ Enabled,启用
 Disabled,禁用
 DISABLED,禁用
 ENABLED,启用
-Normal,正常
-Extensive,详细
-DELUXE,高级版
+Normal,普通
+Extensive,广泛
+DELUXE,豪华版
 Nostalgia Mode,怀旧模式
 Dice Animation,骰子动画
-White - Pips,白色 - 点数
-White - Roman,白色 - 罗马数字
-Blue - Pips,蓝色 - 点数
-Blue - Roman,蓝色 - 罗马数字
-Red - Pips,红色 - 点数
-Red - Roman,红色 - 罗马数字
-Russian,俄罗斯式
-Gameplay Settings,游戏设置
+White - Pips,白色 - 小标
+Russian,俄语
+Gameplay Settings,玩法设置
 ENTER MAP AUTO SAVE,进入地图自动保存
-The game will auto save whenever you enter a new map,每次进入新地图时游戏将自动保存
-REST AUTO SAVE,休憩自动保存
-The game will auto save whenever you make camp,每次扎营时游戏将自动保存
-TACTICAL ICONS ALWAYS ON,战术图标始终显示
-The degree to which the game shows tactical symbols and a grid during combat,游戏在战斗中显示战术符号和格网的程度
-"If set to true, the game will automatically show tactical icons during the planning state",如果设置为真，游戏在规划状态下将自动显示战术图标
-"If set to false, the tactical icons will only show when holding down SHIFT",如果设置为假，战术图标只有在按住SHIFT键时才会显示
-TACTICAL GRID,战术格网
-Whether or not the game shows a grid along with the tactical icons when activated during combat,激活战斗时，游戏是否显示网格和战术图标
+The game will auto save whenever you enter a new map,游戏将在你进入新地图时自动保存
+REST AUTO SAVE,休息时自动保存
+The game will auto save whenever you make camp,游戏将在你扎营时自动保存
+TACTICAL ICONS ALWAYS ON,战术图标常显
+The degree to which the game shows tactical symbols and a grid during combat,游戏在战斗中显示战术符号和网格的程度
+"If set to true, the game will automatically show tactical icons during the planning state",如果设为真，游戏将在计划阶段自动显示战术图标
+"If set to false, the tactical icons will only show when holding down SHIFT",如果设为假，战术图标只会在按住SHIFT键时显示
+TACTICAL GRID,战术网格
+Whether or not the game shows a grid along with the tactical icons when activated during combat,游戏在战斗中激活战术图标时是否同时显示网格
 SHOW STEALTH INFO,显示潜行信息
-Setting this to Enabled will show a tooltip box containing info on light levels and stealth modifiers for tiles when you right click them,将此设置为启用后，右键点击地砖时会显示一个提示框，包含光照等级和潜行修正信息
-COMBAT POP-UP LENGTH,战斗弹出信息持续时间
-This adjusts how long the on-screen combat pop-up text lingers,调整屏幕上的战斗弹出信息停留时间
-"Note that a turn does not progress until all the character’s pop-up text is gone, so adjusting this number will also adjust how quickly combat turns pass",注意，直到所有角色的弹出信息消失，回合才不会推进，因此调整这个数值也会改变战斗回合的传递速度
+Setting this to Enabled will show a tooltip box containing info on light levels and stealth modifiers for tiles when you right click them,设为启用后右键点击地块时会显示包含光照等级和潜行修正信息的提示框
+COMBAT POP-UP LENGTH,战斗提示时长
+This adjusts how long the on-screen combat pop-up text lingers,此选项调整屏幕上的战斗弹出文本停留多久
+"Note that a turn does not progress until all the character�s pop-up text is gone, so adjusting this number will also adjust how quickly combat turns pass",注意，直到所有角色的弹出文本消失后回合才会推进，因此调整此数值也会调整战斗回合的推进速度
 TUTORIALS,教程
-The degree to which you want the game to offer gameplay tutorials during play,游戏在游玩过程中提供操作教程的程度
+The degree to which you want the game to offer gameplay tutorials during play,你希望游戏在游玩过程中提供玩法教程的程度
 CONTROLLER SENSITIVITY,控制器灵敏度
-The sensitivity of the joystick used for moving the cursor when using a controller,使用控制器移动光标时摇杆的灵敏度
+The sensitivity of the joystick used for moving the cursor when using a controller,使用控制器时用于移动光标的摇杆灵敏度
 LANGUAGE,语言
-Select the display language for the game,选择游戏显示语言
+Select the display language for the game,选择游戏的显示语言
 English,英语
 None,无
-Some,部分
-Slow,缓慢
-Very Slow,非常缓慢
-Fast,快速
+Some,一些
+Slow,慢
+Very Slow,非常慢
+Fast,快
 Attribute Rerolls,属性重掷
 Player Rerolls,玩家重掷
-P. Dmg. Rerolls,物理伤害重骰
-Enemy Rerolls,敌人重骰
-E. Dmg. Rerolls,敌方伤害重骰
-Miss Smoothening,错误平滑
+P. Dmg. Rerolls,玩家伤害重掷
+Enemy Rerolls,敌人重掷
+E. Dmg. Rerolls,敌人伤害重掷
+Miss Smoothening,失手平滑
 Combat Heal,战斗治疗
 No Encumb,无负重
-Cannot Die,无法死亡
-XP For KO Char,晕倒角色的经验值
-No Trash Mobs,无垃圾小怪
+Cannot Die,不会死亡
+XP For KO Char,击倒角色经验值
 Easy,简单
-Difficulty Settings,困难设置
-DIFFICULTY,困难
-The current difficulty of the game,游戏当前的困难程度
-Easy mode is a great way for players who are new to this style of roleplaying game to experience Skald,简单模式是新手玩家体验斯卡尔德风格角色扮演游戏的好方法
-Combat is forgiving and there should be little need to optimize character builds,战斗较为宽容，角色构建优化的需求不大
-Dice rolls are weighted in the player’s favor,骰子投掷偏向玩家
-Normal mode is the game’s intended difficulty setting,正常模式是游戏预期的困难程度
-There is only very limited artificial smoothing of certain dice rolls,只有非常有限的某些骰子投掷的人工平滑
-Dice rolls are slightly weighted in the opponent's favor making them more deadly,骰子投掷略微偏向对手，使其更具威胁性
-CUSTOM,定制
+Difficulty Settings,难度设置
+DIFFICULTY,难度
+The current difficulty of the game,游戏的当前难度
+Easy mode is a great way for players who are new to this style of roleplaying game to experience Skald,简单模式是让不熟悉此类角色扮演游戏的玩家体验Skald的绝佳方式
+Combat is forgiving and there should be little need to optimize character builds,战斗较为宽容，几乎不需要优化角色构建
+Dice rolls are weighted in the player’s favor,骰子掷骰结果偏向玩家
+Normal mode is the game’s intended difficulty setting,普通模式是游戏预期的难度设置
+There is only very limited artificial smoothing of certain dice rolls,仅对某些骰子掷骰进行非常有限的人工平滑
+Dice rolls are slightly weighted in the opponent's favor making them more deadly,骰子掷骰结果略微偏向对手，使其更加致命
+CUSTOM,自定义
 Custom difficulty,自定义难度
-You're trying to edit the difficulty so the difficulty options are now being set to the ‘CUSTOM’ values,你正在编辑难度，现在难度选项将设置为“自定义”值
-The custom difficulty will be saved and you can toggle back and forth between ‘CUSTOM’ difficulty and the pre-set difficulties any time,自定义难度将被保存，你可以随时在“自定义”难度和其他预设难度之间切换
-Narrative,叙述模式
-Narrative mode is the difficulty for players who would like to experience the game’s story and setting with a minimum of focus on combat and grinding,叙述模式是专为希望以最少的战斗和磨练关注点来体验游戏故事和背景的玩家设计的难度
+Narrative,叙事
+Narrative mode is the difficulty for players who would like to experience the game’s story and setting with a minimum of focus on combat and grinding,叙事模式是为希望以最少战斗和刷怪体验游戏故事与设定的玩家准备的难度
 ATTRIBUTE REROLLS,属性重掷
-"If this number is greater than zero, the system will reroll any of the player's Attribute Check (Skill Checks for instance) dice rolls that many times and pick the most favorable one to the player",如果这个数值大于零，系统将重掷玩家的属性检定（例如技能检定）的骰子，并选择对玩家最有利的结果
+"If this number is greater than zero, the system will reroll any of the player's Attribute Check (Skill Checks for instance) dice rolls that many times and pick the most favorable one to the player",如果此数值大于零，系统将对玩家的任何属性检定（例如技能检定）骰子掷骰重掷该次数，并选取对玩家最有利的结果
 PLAYER REROLLS,玩家重掷
-"If this number is greater than zero, the system will reroll any of the player's Combat dice rolls (such as Attack Rolls or Defence Rolls) that many times and pick the most favorable one to the player",如果这个数值大于零，系统将重掷玩家的战斗骰子（例如攻击检定或防御检定），并选择对玩家最有利的结果
-P. DMG. REROLLS,P. DMG. 重掷
-"If this number is greater than zero, the system will reroll any of the player's damage dice rolls that many times and pick the most favorable one to the player",如果这个数值大于零，系统将重掷玩家的伤害骰子，并选择对玩家最有利的结果
+"If this number is greater than zero, the system will reroll any of the player's Combat dice rolls (such as Attack Rolls or Defence Rolls) that many times and pick the most favorable one to the player",如果此数值大于零，系统将对玩家的任何战斗骰子掷骰（如攻击检定或防御检定）重掷该次数，并选取对玩家最有利的结果
+P. DMG. REROLLS,玩家伤害重掷
+"If this number is greater than zero, the system will reroll any of the player's damage dice rolls that many times and pick the most favorable one to the player",如果此数值大于零，系统将对玩家的任何伤害骰子掷骰重掷该次数，并选取对玩家最有利的结果
 ENEMY REROLLS,敌人重掷
-"If this number is greater than zero, the system will reroll any of the enemy's Combat dice rolls (such as Attack Rolls or Defence Rolls) that many times and pick the most favorable one to the enemy",如果这个数值大于零，系统将重掷敌人的战斗骰子（例如攻击检定或防御检定），并选择对敌人最有利的结果
-E. DMG. REROLLS,E. DMG. 重掷
-"If this number is greater than zero, the system will reroll any of the enemy's damage dice rolls that many times and pick the most favorable one to the enemy",如果这个数值大于零，系统将重掷敌人的伤害骰子，并选择对敌人最有利的结果
-MISS SMOOTHENING,错误平滑
-The degree to which the engine compensates player miss streaks by increasing To-Hit chances,引擎补偿玩家连续失手几率增加的程度
+"If this number is greater than zero, the system will reroll any of the enemy's Combat dice rolls (such as Attack Rolls or Defence Rolls) that many times and pick the most favorable one to the enemy",如果此数值大于零，系统将对敌人的任何战斗骰子掷骰（如攻击检定或防御检定）重掷该次数，并选取对敌人最有利的结果
+E. DMG. REROLLS,敌人伤害重掷
+"If this number is greater than zero, the system will reroll any of the enemy's damage dice rolls that many times and pick the most favorable one to the enemy",如果此数值大于零，系统将对敌人的任何伤害骰子掷骰重掷该次数，并选取对敌人最有利的结果
+MISS SMOOTHENING,失手平滑
+The degree to which the engine compensates player miss streaks by increasing To-Hit chances,引擎通过增加命中掷骰几率来补偿玩家连续失手的程度
 Ignore Food,忽略食物
 COMBAT HEAL,战斗治疗
-"If Enabled, the party will heal fully after each combat",如果启用，队伍在每次战斗后将完全恢复生命值
-NO ENCUMB,无负重限制
-"If Enabled, the party has no limit to carrying capacity",如果启用，队伍将没有携带能力的上限
-CANNOT DIE,不能死亡
-"If Enabled, the main PC can never die in combat",如果启用，主要角色在战斗中永远不会死亡
-XP FOR KO CHAR,KO 角色的经验值
-"If Enabled, XP will also be given to downed characters after combat",如果启用，战斗结束后也会给予倒下的角色经验值
+"If Enabled, the party will heal fully after each combat",如果启用，队伍将在每次战斗后完全恢复
+No Trash Mobs,无杂兵
+NO ENCUMB,无负重
+"If Enabled, the party has no limit to carrying capacity",如果启用，队伍没有负重上限
+CANNOT DIE,不会死亡
+"If Enabled, the main PC can never die in combat",如果启用，主角在战斗中永远不会死亡
+XP FOR KO CHAR,击倒角色经验值
+"If Enabled, XP will also be given to downed characters after combat",如果启用，战斗后经验值也会给予被击倒的角色
 IGNORE FOOD,忽略食物
 "If Enabled, the party does not need to consume food",如果启用，队伍不需要消耗食物
-NO TRASH MOBS,不生成垃圾小怪
-"If Enabled, the party will not encounter 'trash mob' encounters on the overland map",如果启用，队伍在野外地图上不会遇到“垃圾小怪”遭遇战
-TO-HIT ROLL,击中骰子
+NO TRASH MOBS,无杂兵
+"If Enabled, the party will not encounter 'trash mob' encounters on the overland map",如果启用，队伍在大地图上不会遭遇“杂兵”遭遇战
+TO-HIT ROLL,命中掷骰
 Concept,概念
-The To-Hit roll is made by comparing the Attacker's Attack Roll to the Defender's Defence Roll,击中骰子是通过比较攻击者的攻击骰子和防御者的防御骰子来完成的
-If the Attacker rolls equal to or higher than the Defence Roll the attack is a hit,如果攻击者的骰子等于或高于防御骰子，攻击就是命中
-ATTACK ROLL,攻击骰子
-The Attack Roll is calulated in the following way,攻击骰子按照以下方式计算
-2d6 + Melee To Hit / Ranged To Hit + Misc,2d6 + 近战/远程击中命中 + 其他
-Bonuses + Accuracy Bonuses,加值 + 准确度加值
+The To-Hit roll is made by comparing the Attacker's Attack Roll to the Defender's Defence Roll,命中掷骰是通过比较攻击者的攻击检定与防御者的防御检定来进行的
+If the Attacker rolls equal to or higher than the Defence Roll the attack is a hit,如果攻击者掷骰结果等于或高于防御检定，则攻击命中
+ATTACK ROLL,攻击检定
+The Attack Roll is calulated in the following way,攻击检定按以下方式计算
+2d6 + Melee To Hit / Ranged To Hit + Misc,2d6 + 近战命中 / 远程命中 + 杂项
+Bonuses + Accuracy Bonuses,加成 + 命中加成
 2D6,2D6
 Simulates rolling and adding up two six-sided dice,模拟掷两个六面骰并相加
-In other words a 2d6 roll generates a number between 2 and,换句话说，2d6掷骰生成一个2到12之间的数字
-DEFENCE ROLL,防御掷骰
-The Defence Roll is,防御掷骰是
-2d6 + Misc Bonuses + Dodge,2d6 + 其他加值 + 闪避
-Attribute - Defence,物理防御
-The ability to avoid incoming attacks and other reflex-based dangers,避免 incoming 攻击和其他反应性危险的能力
+In other words a 2d6 roll generates a number between 2 and,换句话说，2d6掷骰生成一个介于2和12之间的数字
+DEFENCE ROLL,防御检定
+The Defence Roll is,防御检定是
+2d6 + Misc Bonuses + Dodge,2d6 + 其他加成 + 闪避
+Attribute - Defence,属性 - 防御
+The ability to avoid incoming attacks and other reflex-based dangers,避免即将到来的攻击和其他基于反应的危险的能力
 "In other words, this determines how hard a character is to hit",换句话说，这决定了角色被击中的难度
 MELEE TO HIT,近战命中
-Attribute - Combat,物理战斗
-The character's skill at attacking with melee weapons,角色使用近战武器的技巧
-Determines hit chance,确定命中几率
+Attribute - Combat,属性 - 战斗
+The character's skill at attacking with melee weapons,角色使用近战武器攻击的技能
+Determines hit chance,决定命中几率
 RANGED TO HIT,远程命中
-The characters skill at attacking with ranged weapons,角色使用远程武器的技巧
-ACCURACY,精确度
-Accuracy is added to an attacker's Attack Roll when trying to hit an opponent,精确度在尝试击中对手时会增加攻击掷骰
-Accuracy is typically derived from a weapon's quality,精确度通常来源于武器的质量
-CRT Filter,CRT 过滤器
+The characters skill at attacking with ranged weapons,角色使用远程武器攻击的技能
+ACCURACY,命中
+Accuracy is added to an attacker's Attack Roll when trying to hit an opponent,命中在攻击者试图击中对手时加到攻击者的攻击检定上
+Accuracy is typically derived from a weapon's quality,命中通常来源于武器的品质
+CRT Filter,CRT滤镜
 Screen Mode,屏幕模式
 Windowed Mode Scale,窗口模式缩放
-VSync,同步垂直刷新
-Classic Console,标准控制台
-Fancy Lighting,精美照明
+VSync,垂直同步
+Classic Console,经典控制台
+Fancy Lighting,高级光照
 Weather Effects,天气效果
 Screen Shaking,屏幕震动
 Full,全屏
 Off,关闭
 Display Settings,显示设置
-CRT FILTER,CRT 过滤器
-"This feature should only be disabled if you experience performance issues. Editors note: As of patch 1.0.7, hovering over this option results in a temporary slow-down that may persist until you exist this options window. Try pressing the 1 or Esc key to quit quickly! ",除非遇到性能问题，否则请勿禁用此功能。编辑者注：自补丁1.0.7起，悬停在该选项上会导致暂时的运行缓慢，直到您退出该选项窗口前可能持续存在。尝试快速按下1或Esc键退出！
-Soft,软件
-Classic,标准
+CRT FILTER,CRT滤镜
+Activating this filter gives the game a fuzzy retro look,激活此滤镜会给游戏带来模糊的复古外观
+Soft,柔和
+Classic,经典
 High-End,高端
 Arcade,游戏厅
-Kitchen TV,家用电视
-Mini CRT,小 CRT
-Old TV,旧电视
-Broken B/W,黑白电视（损坏）
+Kitchen TV,厨房电视
+Mini CRT,迷你CRT
+Old TV,老电视
+Broken B/W,破损黑白
 SCREEN MODE,屏幕模式
 Allows the game to be played in full screen or windowed mode,允许游戏以全屏或窗口模式运行
 WINDOWED MODE SCALE,窗口模式缩放
-The scale of the window when run in Window mode,窗口模式下的窗口缩放比例
-VSYNC,VSYNC
-VSync prevents artifacts such as screen tearing,VSync可以防止屏幕撕裂等伪影
+The scale of the window when run in Window mode,窗口模式下运行时的窗口缩放比例
+VSYNC,垂直同步
+VSync prevents artifacts such as screen tearing,垂直同步可防止屏幕撕裂等伪影
 CLASSIC CONSOLE,经典控制台
 The console uses the classic C64 color theme,控制台使用经典的C64颜色主题
-FANCY LIGHTING,精致照明
-If enabled it will use the game’s blended lighting system,如果启用，将使用游戏的混合照明系统
-This is the intended experience,这是预期的游戏体验
-This feature should only be disabled if you experience performance issues,如果遇到性能问题，才应禁用此功能
+FANCY LIGHTING,高级光照
+If enabled it will use the game�s blended lighting system,如果启用，将使用游戏的混合光照系统
+This is the intended experience,这是预期的体验
+This feature should only be disabled if you experience performance issues,仅当遇到性能问题时才应禁用此功能
 WEATHER EFFECTS,天气效果
-If enabled the game will render weather effects like fog and rain,如果启用，游戏将渲染如雾和雨等天气效果
+If enabled the game will render weather effects like fog and rain,如果启用，游戏将渲染雾和雨等天气效果
 Disabling this option may increase performance,禁用此选项可能会提高性能
 SCREEN SHAKING,屏幕震动
 Whether or not to allow the screen-shake visual effect,是否允许屏幕震动视觉效果
-Windowed,窗口模式
+Windowed,窗口化
 Music Volume,音乐音量
 Sound FX Volume,音效音量
 Audio Settings,音频设置
 MUSIC VOLUME,音乐音量
-The volume of the soundtrack,音轨的音量
+The volume of the soundtrack,原声音乐的音量
 SOUND FX VOLUME,音效音量
 The volume of the sound effects,音效的音量
 Re-Assign,重新分配
-Key Bindings,键位绑定
-Spellbook,魔法书
-SPELLBOOK,魔法书
-G,G
+Key Bindings,按键绑定
+Spellbook,法术书
+SPELLBOOK,法术书
 This binding can be changed,此绑定可以更改
-Character Sheet,角色表
-C,C
+Character Sheet,角色栏
 Console,控制台
-Tab,标签页
-Feats,成就
-F,F
+Tab,标签
+Feats,专长
 Feedback,反馈
-F2,F2
-Hide,隐藏
-LeftCont,左控制
+Hide,潜行
+LeftCont,左Ctrl键
 Highlight,高亮
-LeftShif,左Shift
+LeftShif,左Shift键
 Inventory,背包
-E,E
 Level Up,升级
-L,L
-Light Torch,点燃火炬
-T,T
+Light Torch,点亮提灯
 Move E,向东移动
-D,D
-RightArr,向右箭头
+RightArr,右方向键
 Move N,向北移动
-W,W
-UpArrow,向上箭头
+UpArrow,上箭头
 Move S,向南移动
-S,S
-DownArro,向下箭头
+DownArro,下箭头
 Move W,向西移动
-A,向左箭头
-LeftArro,下一个角色
-Next Character,Q
-Q,Q
+LeftArro,左方向键
+Next Character,下一个角色
 Quests,任务
-J,J
-Quick Load,快速加载
-F9,F9
+Quick Load,快速读取
 Quick Save,快速保存
-F5,F5
 QUICK SAVE,快速保存
-QUICK LOAD,快速加载
+QUICK LOAD,快速读取
 QUESTS,任务
 MOVE W,向西移动
-LEFTARRO,左箭头
+LEFTARRO,左方向键
 NEXT CHARACTER,下一个角色
 MOVE S,向南移动
 DOWNARRO,下箭头
 MOVE N,向北移动
 UPARROW,上箭头
 MOVE E,向东移动
-RIGHTARR,右箭头
-LIGHT TORCH,点燃火炬
+RIGHTARR,右方向键
+LIGHT TORCH,点亮提灯
 LEVEL UP,升级
 INVENTORY,背包
 HIGHLIGHT,高亮
-LEFTSHIF,左键
-HIDE,隐藏
-LEFTCONT,左侧内容
+LEFTSHIF,左Shift键
+HIDE,潜行
+LEFTCONT,左Ctrl键
 FEEDBACK,反馈
-FEATS,特技
+FEATS,专长
 CONSOLE,控制台
-TAB,选项卡
-CHARACTER SHEET,角色表
-Assigning key,指定快捷键
-"Press ENTER or ""Re-Assign"" when done!",完成时按回车或“重新指定”！
-Enter new key,输入新快捷键
-Components,成分
+TAB,标签
+CHARACTER SHEET,角色栏
+Assigning key,分配按键
+"Press ENTER or ""Re-Assign"" when done!",完成后按回车键或“重新分配”！
+Enter new key,输入新按键
+Components,组件
 Description Font,描述字体
 Description Color,描述颜色
-Quote Color,引用颜色
+Quote Color,引文颜色
 Description Shadow,描述阴影
 Draw Outline,绘制轮廓
 Text Background Color,文本背景色
@@ -284,116 +312,93 @@ Color,颜色
 Font Settings,字体设置
 DESCRIPTION FONT,描述字体
 The font used for most descriptions,大多数描述使用的字体
-This is what a quote looks like,这是一个引用的样子
+�This is what a quote looks like.�,“这就是引文的样子。”
 DESCRIPTION COLOR,描述颜色
 The color of the main descriptive text,主要描述文本的颜色
-QUOTE COLOR,引用颜色
-The color of the main descriptive text that is displayed in quotation marks,在引号中显示的主要描述文本的颜色
+QUOTE COLOR,引文颜色
+The color of the main descriptive text that is displayed in quotation marks,以引号显示的主要描述文本的颜色
 DESCRIPTION SHADOW,描述阴影
-The color of the main descriptive text's drop-down shadow,主要描述文本的下拉阴影颜色
+The color of the main descriptive text's drop-down shadow,主要描述文本下拉阴影的颜色
 DRAW OUTLINE,绘制轮廓
-Draws an outline around the letters instead of a drop-down shadow,用轮廓包围字母而不是下拉阴影
-TEXT BACKGROUND COLOR,文本背景颜色
-The color of certain UI-elements behind text,文本背后某些UI元素的颜色
-Adjust this to increase the contrast between text and background,调整此设置以增加文本与背景之间的对比度
-Dark,深色
+Draws an outline around the letters instead of a drop-down shadow,在字母周围绘制轮廓而非下拉阴影
+TEXT BACKGROUND COLOR,文本背景色
+The color of certain UI-elements behind text,文本后方某些UI元素的颜色
+Adjust this to increase the contrast between text and background,调整此项以增加文本与背景之间的对比度
+Dark,暗色
 Black,黑色
 Launch,启动
 Get More Content,获取更多内容
 Back,返回
-empty,空白
-Load Module,载入模块
-LOAD,载入
+empty,空
+Load Module,载入模组
+LOAD,加载
 Copy,复制
 Rename,重命名
 Delete,删除
 Load Game,载入游戏
-Game Loaded!,游戏已载入！
 AUTO_SAVE,自动保存
 Save Date,保存日期
 Save Time,保存时间
 Main Char,主角
-Save Game,保存游戏
-OK,确定
-Type a name and press 'OK'!,输入名称并点击“确定”！
-OVERWRITE,覆盖
-Type a name and press 'Save'!,输入名称并点击“保存”！
-Name must be between 3 and 60 characters long and must be a valid file-name,名称必须在3到60个字符之间，并且必须是有效的文件名
-Are you sure you want to delete the following save,你确定要删除以下存档吗？
-Rigurt,瑞吉特
-Level,级别
+Rigurt,Rigurt
+Level,等级
 Map,地图
 Game Date,游戏日期
-Day,天数
+Day,日
 Version,版本
-Module,模组
-Against the Black Priory,对抗黑修道院
+Module,模块
+Against the Black Priory,攻打黑修院
 Do you really want to quit the game?,你真的要退出游戏吗？
 Unsaved progress will be lost,未保存的进度将会丢失
 Choose a visual style,选择视觉风格
-DEFAULT is recommended,默认推荐
-This can also be customized in the SETTINGS menu,你也可以在设置菜单中进行自定义
+DEFAULT is recommended,推荐默认
+This can also be customized in the SETTINGS menu,也可以在设置菜单中进行自定义
 Default,默认
-To-Hit,命中
-The skin of the dice being rolled during skill-tests,技能检定时所用骰子的外观
-Toggles the special ‘nostalgic UI’ that may remind you of classic RPG series we all know and love,开启特殊的“怀旧UI”，可能会让你想起我们所熟知和喜爱的经典RPG系列
-Activating this filter gives the game a fuzzy retro look,启用此滤镜会使游戏呈现模糊复古的外观
-An empty save-slot,空存档槽
-Are you sure you want to overwrite the following save,你确定要覆盖以下存档吗？
-#Credits,# credits
-"For Sofie, Amalie and Kathrine",为了索菲、阿马莉和凯瑟琳
-WRITTEN AND DEVELOPED BY,由...编写和开发
-PUBLISHED BY,由...发行
-Raw Fury,Raw Fury
-WITH FINANCIAL SUPPORT FROM,由...提供资金支持
-Innovation Norway,创新挪威
-Norwegian Film Institute,挪威电影学院
-PRODUCED BY,由...制作
-ART,视觉艺术
-KEY ART,关键艺术
-MUSIC,音乐
-SOUND FX,音效
-ADDITIONAL WRITING,额外编写
-ADDITIONAL CODIING,额外编码
-A special thanks to NAIVE,特别感谢NAIVE
-for their work on,他们对
-the Skald Trailer,酋长预告片
-A special thanks to ARTISTRY,特别感谢ARTISTRY
-the Launch Trailer,发布预告片
-CROWDFUNDERS,拥挤者
-DARK LORD TIER,暗主层级
-DEITY TIER,神明层级
-IMPERATOR TIER,统治者层级
-HIGH WIZARD TIER,高阶法师层级
-LORD OF THE REALM TIER,王域之主层级
-KNIGHT TIER,骑士层级
-FREEMAN TIER,自由民层级
-RAW FURY,原始怒焰
-Special Thanks,特别感谢
-Daniel Jonsson,丹尼尔·约恩松
-Alexandre Billaud,艾力克斯·比拉杜
-KM Troedsson,KM 特罗德松
-Special Mention,特别鸣谢
-QLOC S.A,QLOC S.A
-General Manager,总经理
-Head of Business Development,商业发展总监
-Senior Business Development Manager,高级商业发展经理
-Director of Quality Assurance,质量保证总监
-QA Operations Manager,质量保证运营经理
-Lead QA Project Manager,质量保证项目经理主管
-QA Lab Managers,质量保证实验室经理
-Piotr Badurek,皮otr·巴杜雷克
-Emil Lubowicki,埃米尔·卢布维茨基
-Gabriela Malinowska,加布里埃拉·马利诺夫斯卡
-Tomasz Prusicki,托马斯·普鲁希基
-Learning & Development Manager,学习与发展经理
-Learning & Development Coordinator,学习与发展协调员
-Learning & Development Specialists,学习与发展专家
-QA Team Leader,质量保证团队负责人
-Marcin Oprzadek,马辛·奥普扎德克
-QA Testers,质量保证测试员
-Patryk Osowiecki,帕特里克·奥索维茨基
-Dawid Salamadry,大卫·萨拉马德里
-Bosong Zhou,博松·周
-IT Director,IT总监
-Artur Szczurzynski,阿图尔·什切鲁津斯基
+To-Hit,命中掷骰
+Pre-Launch 1.0.3d,预发布 1.0.3d
+Pre-Launch 1.0.3d - DELUXE EDITION,预发布 1.0.3d - 豪华版
+Launch 1.0.5,发布 1.0.5
+Launch 1.0.5 - DELUXE EDITION,发布 1.0.5 - 豪华版
+Core 1.0.6c,核心 1.0.6c
+Core 1.0.6c - DELUXE EDITION,核心 1.0.6c - 豪华版
+Core 1.0.7e - DELUXE EDITION,核心 1.0.7e - 豪华版
+SKALD Core 1.0.7e - DELUXE EDITION,SKALD 核心 1.0.7e - 豪华版
+Press 1.0.9d - DELUXE EDITION,Press 1.0.9d - 豪华版
+White - Roman,白色 - 罗马数字
+Blue - Pips,蓝色 - 小标
+Blue - Roman,蓝色 - 罗马数字
+Red - Pips,红色 - 小标
+Red - Roman,红色 - 罗马数字
+"Note that a turn does not progress until all the character’s pop-up text is gone, so adjusting this number will also adjust how quickly combat turns pass",注意，直到所有角色的弹出文本消失后回合才会推进，因此调整此数值也会调整战斗回合的推进速度
+You're trying to edit the difficulty so the difficulty options are now being set to the ‘CUSTOM’ values,你正在尝试编辑难度，因此难度选项现在被设置为“自定义”值
+The custom difficulty will be saved and you can toggle back and forth between ‘CUSTOM’ difficulty and the pre-set difficulties any time,自定义难度将被保存，你可以随时在“自定义”难度和预设难度之间来回切换
+"This feature should only be disabled if you experience performance issues. Editors note: As of patch 1.0.7, hovering over this option results in a temporary slow-down that may persist until you exist this options window. Try pressing the 1 or Esc key to quit quickly!",此功能仅应在遇到性能问题时禁用。编者注：自1.0.7补丁起，将鼠标悬停在此选项上会导致暂时性减速，可能持续到你退出此选项窗口。尝试按1键或Esc键快速退出！
+If enabled it will use the game’s blended lighting system,如果启用，将使用游戏的混合光照系统
+G,G
+C,C
+F,F
+F2,F2
+E,E
+L,L
+T,T
+D,D
+W,W
+S,S
+A,A
+Q,Q
+J,J
+F9,F9
+F5,F5
+This is what a quote looks like,这就是引文的样子。
+Game Loaded!,游戏已加载！
+Save Game,保存游戏
+OK,确定
+Type a name and press 'OK'!,输入名称并按“确定”！
+OVERWRITE,覆盖
+Type a name and press 'Save'!,输入名称并按“保存”！
+Name must be between 3 and 60 characters long and must be a valid file-name,名称长度必须在3到60个字符之间，且必须是有效的文件名
+Are you sure you want to delete the following save,你确定要删除以下存档吗
+The skin of the dice being rolled during skill-tests,技能检定中掷骰的骰子皮肤
+Toggles the special ‘nostalgic UI’ that may remind you of classic RPG series we all know and love,切换特殊的“怀旧用户界面”，可能会让你想起我们都熟悉和喜爱的经典RPG系列
+An empty save-slot,一个空的存档位
+Are you sure you want to overwrite the following save,你确定要覆盖以下存档吗

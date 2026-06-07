@@ -6,7 +6,8 @@ using Newtonsoft.Json;
 namespace TranslationMod.Configuration
 {
     /// <summary>
-    /// Language pack using JSON configuration
+    /// 语言包对象。
+    /// 负责读取 JSON 配置，暴露字体与翻译目录，并提供字符映射等资源访问能力。
     /// </summary>
     public class LanguagePack
     {
@@ -14,19 +15,23 @@ namespace TranslationMod.Configuration
         private readonly string _packPath;
         private LanguagePackData _data;
 
-        // Основная информация о языке
+        // 语言基础信息
         public string LanguageCode => _data?.LanguageCode ?? "";
         public string Name => _data?.Name ?? "";
         public string Description => _data?.Description ?? "";
         public string Version => _data?.Version ?? "1.0.0";
 
-        // Пути к файлам
+        // 资源路径配置
         public string FontFilesPath => _data?.FontFilesPath ?? ConfigKeys.DefaultFontsDir;
         public string TranslationFilesPath => _data?.TranslationFilesPath ?? ConfigKeys.DefaultTranslationsDir;
         
-        // Путь к папке языкового пакета
+        // 语言包目录路径
         public string DirectoryPath => _packPath;
 
+        /// <summary>
+        /// 构造语言包实例。
+        /// 流程：记录配置路径与语言包根目录，并立即读取 JSON 配置内容。
+        /// </summary>
         public LanguagePack(string configFilePath, string packPath)
         {
             _configFilePath = configFilePath;
@@ -35,7 +40,8 @@ namespace TranslationMod.Configuration
         }
 
         /// <summary>
-        /// Loads data from JSON file
+        /// 从 JSON 文件加载语言包配置。
+        /// 流程：若文件存在则反序列化，否则创建默认配置并记录警告。
         /// </summary>
         private void LoadFromFile()
         {
@@ -91,7 +97,8 @@ namespace TranslationMod.Configuration
         }
 
         /// <summary>
-        /// Get character map as Dictionary from JSON data
+        /// 读取字符映射表。
+        /// 流程：将 JSON 中的字符串键转换为单字符键值对，过滤非法项后返回结果。
         /// </summary>
         public Dictionary<char, int> GetCharacterChart()
         {
@@ -103,7 +110,7 @@ namespace TranslationMod.Configuration
                 {
                     foreach (var kvp in _data.CharacterChart)
                     {
-                        // Ключи должны быть символами длиной 1
+                        // 键必须是单个字符
                         if (kvp.Key.Length == 1)
                         {
                             result[kvp.Key[0]] = kvp.Value;
@@ -135,7 +142,7 @@ namespace TranslationMod.Configuration
         }
 
         /// <summary>
-        /// Get full path to fonts folder
+        /// 获取字体目录绝对路径。
         /// </summary>
         public string GetFontsPath()
         {
@@ -143,7 +150,7 @@ namespace TranslationMod.Configuration
         }
 
         /// <summary>
-        /// Get full path to translations folder
+        /// 获取翻译文件目录绝对路径。
         /// </summary>
         public string GetTranslationsPath()
         {
@@ -151,30 +158,32 @@ namespace TranslationMod.Configuration
         }
 
         /// <summary>
-        /// Validate language pack correctness
+        /// 校验语言包是否有效。
+        /// 流程：检查必要字段、语言代码格式，以及字体和翻译目录是否可用；
+        /// 缺失目录时会自动补建。
         /// </summary>
         public bool IsValid()
         {
             try
             {
-                // Проверяем обязательные поля
+                // 检查必要字段
                 if (string.IsNullOrEmpty(LanguageCode) || 
                     string.IsNullOrEmpty(Name))
                 {
                     return false;
                 }
 
-                // Проверяем, что код языка в правильном формате (2-3 символа)
+                // 检查语言代码格式是否为 2 到 3 个字符
                 if (LanguageCode.Length < 2 || LanguageCode.Length > 3)
                 {
                     return false;
                 }
 
-                // Проверяем существование папок
+                // 检查资源目录是否存在
                 if (!Directory.Exists(GetFontsPath()) || !Directory.Exists(GetTranslationsPath()))
                 {
                     TranslationMod.Logger?.LogWarning($"[LanguagePack] Missing directories for language pack: {Name}");
-                    // Создаем отсутствующие папки
+                    // 自动创建缺失目录
                     Directory.CreateDirectory(GetFontsPath());
                     Directory.CreateDirectory(GetTranslationsPath());
                 }
@@ -189,7 +198,8 @@ namespace TranslationMod.Configuration
         }
 
         /// <summary>
-        /// Save language pack configuration to JSON file
+        /// 保存语言包配置到 JSON 文件。
+        /// 流程：将当前数据序列化后写回原配置路径。
         /// </summary>
         public void Save()
         {

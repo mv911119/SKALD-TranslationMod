@@ -8,6 +8,10 @@ namespace TranslationMod.Patches
     public static class UIBaseCharacterSheetEntryPatch
     {
         [HarmonyTargetMethod]
+        /// <summary>
+        /// 定位角色面板条目内部类的构造函数。
+        /// 用于在条目创建后调整文本和按钮布局。
+        /// </summary>
         private static MethodBase TargetMethod()
         {
             var editorSheetEntryType = AccessTools.Inner(typeof(UIBaseCharacterSheet), "EditorSheetEntry");
@@ -28,6 +32,10 @@ namespace TranslationMod.Patches
         }
 
         [HarmonyPostfix]
+        /// <summary>
+        /// 在条目创建后修正点数文本块高度和加号列内边距。
+        /// 流程：读取内部字段，结合当前小字体高度重新布局关键子控件。
+        /// </summary>
         private static void Postfix(object __instance)
         {
             try

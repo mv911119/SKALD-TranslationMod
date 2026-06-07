@@ -1,61 +1,61 @@
 original,translate
-#Archetype Classes,#职业类型
+#Archetype Classes,#原型职业
 Cleric,牧师
-The Cleric offers close-range support to their party through close ranged buffs and restorative spells,牧师通过近距离增益法术和恢复法术为队伍提供近距离支持
-Magos,魔导士
-"The Magos is a ranged strikers that can cast powerful, and often destructive, spells",魔导士是一名远程攻击者，能够施放强大且往往具有破坏性的法术
-Rogue,盗贼
-The Rogue combines important non-combat skills with a large damage output against single targets,盗贼结合了重要的非战斗技能和对单一目标的大范围伤害输出
-Wanderer,游侠
+The Cleric offers close-range support to their party through close ranged buffs and restorative spells,牧师通过近距离增益和恢复法术为队伍提供近距离支援
+Magos,法师
+"The Magos is a ranged strikers that can cast powerful, and often destructive, spells","""法师是远程打击者，能够施放强大且通常具有破坏性的法术"""
+Rogue,游荡者
+The Rogue combines important non-combat skills with a large damage output against single targets,游荡者将重要的非战斗技能与对单个目标的高伤害输出相结合
+Wanderer,漂泊者
 Warrior,战士
-A Warrior is a front-line fighter who can take and deal large amounts of damage,战士是一名前线战斗者，能够承受和造成大量伤害
+A Warrior is a front-line fighter who can take and deal large amounts of damage,战士是前线斗士，能够承受并造成大量伤害
 #Classes,#职业
 Armsmaster,武器大师
-The Armsmaster is a Warrior that does not have a specialized Feat Tree,武器大师是一名战士，没有专门的专长树
-Instead the Armsmaster has access to all the combat-centered Feat Trees and they start with extra Development Points to represent their martial expertise,相反，武器大师可以使用所有以战斗为中心的专长树，并且起始时拥有额外的开发点，以代表他们的武艺专长
+The Armsmaster is a Warrior that does not have a specialized Feat Tree,武器大师是一名没有专精专长树的战士
+Instead the Armsmaster has access to all the combat-centered Feat Trees and they start with extra Development Points to represent their martial expertise,相反，武器大师可以使用所有以战斗为中心的专长树，并且他们起始拥有额外的发展点数，以体现其武艺专精
 Bard,吟游诗人
-The Bard mixes the Rogue’s decent combat skills and high maneuverability with the use of arcane magic,吟游诗人将盗贼不错的战斗技能和高机动性与法术魔法的使用相结合
-Battlemagos,战斗魔导士
-The Battlemagos is a Magos specializing in the destructive spells of the Fire Magic School,战斗魔导士是专注于火系法术的破坏性法术的魔导士
-"Unlike other Magi, they also get access to a few basic combat-related Feats and may wear light armor",与其他魔导士不同，他们还可以获得一些基本的战斗相关专长，并且可以穿戴轻甲
-Berserker,战狂
-Champion,战士
-The Champion is a Cleric who excels in the use of blades and armor whilst still having limited divine spell-casting abilities,战士是一位牧师，擅长使用刀剑和盔甲，同时仍保留有限的神术施法能力
-Duelist,斗士
-Guild-Magos,行会魔导士
-A Guild-Magos is a spellcaster who can develop all the different Arcane Spell Schools fully,行会魔导士是一位能够全面开发所有不同奥术法术学派的施法者
-This comes at the cost of having absolutely no combat related Feats,这种能力是以完全没有战斗相关的专长为代价的
-Hierophant,神官
-A Hierophant is a Cleric who can develop all the different Divine Spell Schools fully,神官是一位能够全面开发所有不同神术法术学派的牧师
-Hospitaller,医疗者
-The Hospitaller is a Cleric who serves as a front line healer,医疗者是一位牧师，担任前线治疗者
-"Well armed and armored, they can stand their ground against overwhelming foes whilst also getting access to the highest tiers of the Body Magic School",武艺高强且装备精良，他们能够抵挡住强大的敌人，同时还能接触到体术魔法学派的最高境界
-Inquisitor,问询者
-Officer,长官
-The Officer is a skilled warrior who serves as a force multiplier through their tactical skills,长官是一位擅长战斗的战士，通过战术技巧成为战斗力的倍增器
-"Issuing orders across the battlefield, they vastly improve the performance of their fellow party-members",长官通过在战场上发布命令，极大地提高了队友的表现
+The Bard mixes the Rogue’s decent combat skills and high maneuverability with the use of arcane magic,吟游诗人将游荡者不俗的战斗技能和高机动性与奥术魔法的使用相结合
+Battlemagos,战斗法师
+The Battlemagos is a Magos specializing in the destructive spells of the Fire Magic School,战斗法师是专精于火焰法术学派毁灭性法术的法师
+"Unlike other Magi, they also get access to a few basic combat-related Feats and may wear light armor",“与其他法师不同，他们还能获得一些基础战斗相关专长，并且可以穿戴轻甲。”
+Berserker,狂战士
+Champion,斗士
+The Champion is a Cleric who excels in the use of blades and armor whilst still having limited divine spell-casting abilities,斗士是一名擅长使用刃类武器和护甲，同时仍拥有有限神圣法术施放能力的牧师
+Duelist,决斗者
+Guild-Magos,公会法师
+A Guild-Magos is a spellcaster who can develop all the different Arcane Spell Schools fully,公会法师是一名能够完全发展所有不同奥术法术学派的施法者
+This comes at the cost of having absolutely no combat related Feats,代价是完全没有战斗相关专长
+Hierophant,大祭司
+A Hierophant is a Cleric who can develop all the different Divine Spell Schools fully,大祭司是一名能够完全发展所有不同神圣法术学派的牧师
+Hospitaller,医护骑士
+The Hospitaller is a Cleric who serves as a front line healer,医护骑士是一名在前线担任治疗者的牧师
+"Well armed and armored, they can stand their ground against overwhelming foes whilst also getting access to the highest tiers of the Body Magic School",“他们武装精良，护甲坚固，能够在面对压倒性敌人时坚守阵地，同时还能掌握肢体法术学派的最高等级法术。”
+Inquisitor,审判官
+Officer,船员
+The Officer is a skilled warrior who serves as a force multiplier through their tactical skills,船员是一名通过战术技能发挥力量倍增器作用的熟练战士
+"Issuing orders across the battlefield, they vastly improve the performance of their fellow party-members",“在战场上发号施令，他们能极大提升队友的表现。”
 Ranger,游侠
-The Ranger is a Warrior specializing in ranged combat and with access to limited nature magic,游侠是一位专精远程战斗的战士，并且拥有有限的自然魔法
-Skald,诗人歌手
+The Ranger is a Warrior specializing in ranged combat and with access to limited nature magic,游侠是专精于远程战斗并能够使用有限自然魔法的战士
+Skald,Skald
 Sorcerer,术士
 Thief,盗贼
-The Thief is a Rogue who uses Stealth to set up devestating Backstab attacks,盗贼是一个使用潜行来布置致命背刺攻击的盗贼
-#NPC Classes,#NPC职业
-Archer,射手
-Beast,兽类
-Agile Beast,敏捷兽类
-Savage Beast,残暴兽类
-Common Beast,普通兽类
-Lesser Vermin,较小的寄生虫
-Tough Beast,坚韧兽类
-Vermin,寄生虫
-Resolute Beast,坚毅兽类
-Bravo,英雄
-Brute,粗暴者
-"Magi are ranged strikers that can cast powerful, destructive ranged spells",术士是远程打击者，能够施放强大的破坏性远程法术
+The Thief is a Rogue who uses Stealth to set up devestating Backstab attacks,盗贼是一名利用潜行来发动毁灭性背刺攻击的游荡者
+#NPC Classes,#NPC 职业
+Archer,弓箭手
+Beast,野兽
+Agile Beast,敏捷野兽
+Savage Beast,凶暴野兽
+Common Beast,普通野兽
+Lesser Vermin,次级害虫
+Tough Beast,坚韧野兽
+Vermin,虫群
+Resolute Beast,坚毅野兽
+Bravo,暴徒
+Brute,粗人
+"Magi are ranged strikers that can cast powerful, destructive ranged spells",法师是远程打击者，能够施放强大的、破坏性的远程法术
 Commoner,平民
 Laborer,劳工
 Noble,贵族
 Tough Warrior,坚韧战士
 Fighter,战士
-Wretch,糟糕的人
+Wretch,可怜虫

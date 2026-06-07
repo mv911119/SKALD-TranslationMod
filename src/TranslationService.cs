@@ -9,7 +9,9 @@ using TranslationMod.Configuration;
 namespace TranslationMod
 {
     /// <summary>
-    /// Сервис для перевода текста с использованием CSV-файлов переводов
+    /// 翻译服务。
+    /// 负责加载 CSV 翻译表，按句切分输入文本，并结合缓存、占位符、物品模式、
+    /// 玩家名称和性别占位符等规则生成最终译文。
     /// </summary>
     public sealed class TranslationService
     {
@@ -26,24 +28,28 @@ namespace TranslationMod
         private readonly string _missingKeysFilePath;
         
         /// <summary>
-        /// Список regex паттернов для обработки {ITEM} плейсхолдеров
+        /// 用于匹配 `{ITEM}` 占位符模板的正则规则集合。
         /// </summary>
         private readonly List<(Regex regex, string template)> _itemPatterns;
 
         /// <summary>
-        /// Регулярное выражение для проверки, что строка состоит только из заглавных букв, цифр, пробелов и знаков препинания
-        /// и содержит хотя бы одну заглавную букву
+        /// 判断字符串是否为“全大写风格”文本。
+        /// 要求字符串只由大写字母、数字、空白和标点构成，且至少包含一个大写字母。
         /// </summary>
         //private static readonly Regex AllUpperCaseRegex = new Regex(@"^(?=.*[A-Z])[A-Z0-9 \p{P}]+$", RegexOptions.Compiled);
         private static readonly Regex AllUpperCaseRegex =
             new(@"^(?=.*\p{Lu})[0-9\p{P}\p{Lu}\s]+$", RegexOptions.CultureInvariant);
+        /// <summary>
+        /// 构造翻译服务。
+        /// 流程：加载全部翻译 CSV，准备缺失键输出路径，再预编译物品模板匹配规则。
+        /// </summary>
         public TranslationService() 
         {
             _dict = LoadCsv(GetCsvFiles());
             
             _missingKeysFilePath = GetMissingKeysFilePath();
             
-            // Создаем паттерны для {ITEM} плейсхолдеров
+            // 预构建 `{ITEM}` 模式，避免翻译时重复生成正则
             _itemPatterns = CreateItemPatterns(_dict);
             
             // Initialize translation buffer dictionary
@@ -55,10 +61,12 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Основной метод для перевода текста
+        /// 翻译任意输入文本。
+        /// 流程：先查缓存，再尝试诗句模式；若不是诗句，则交给文本解析器拆句，
+        /// 分句翻译后再按原模板拼回，失败时回退原文。
         /// </summary>
-        /// <param name="input">Исходный текст</param>
-        /// <returns>Переведенный текст</returns>
+        /// <param name="input">原始文本</param>
+        /// <returns>翻译后的文本</returns>
         public string Process(string input)
         {
             if (string.IsNullOrEmpty(input)) return input;
@@ -82,10 +90,7 @@ namespace TranslationMod
             
             try
             {
-                // Обработка стихотворного текста: если input содержит переносы строк
-                // и при разбивке получается ровно 4 непустые строки — считаем это стихом.
-                // Переводим каждую строку отдельно, не пропуская через GameTextParser,
-                // который склеивает \n в пробелы и ломает структуру стиха.
+                // 先尝试按“四行诗句”处理，避免解析器破坏原有换行结构
                 var verseResult = TryTranslateAsVerse(input);
                 if (verseResult != null)
                 {
@@ -123,10 +128,7 @@ namespace TranslationMod
                 // Apply translated sentences to template
                 var result = ApplyTemplate(template, translatedSentences);
                 
-                // Если шаблон не изменился (предложения не были найдены в оригинальном тексте),
-                // но предложения были переведены — значит GameTextParser сильно изменил текст
-                // (убрал \n, числа и т.д.), и шаблонный подход не сработал.
-                // В этом случае возвращаем перевод напрямую.
+                // 如果模板回填失败但分句本身已有翻译，则直接拼接分句结果作为回退
                 if (string.Equals(result, input, StringComparison.Ordinal))
                 {
                     bool anyTranslated = false;
@@ -141,16 +143,14 @@ namespace TranslationMod
                     
                     if (anyTranslated)
                     {
-                        // Если парсер выдал одно предложение — перевод уже содержит
-                        // всю нужную структуру (включая \n), возвращаем его как есть
+                        // 单句时直接采用译文
                         if (translatedSentences.Count == 1)
                         {
                             result = translatedSentences[0];
                         }
                         else
                         {
-                            // Несколько предложений — соединяем через перенос строки,
-                            // чтобы сохранить многострочное форматирование
+                            // 多句时用换行拼接，尽量保留多行结构
                             result = string.Join("\n", translatedSentences);
                         }
 #if DEBUG
@@ -159,7 +159,7 @@ namespace TranslationMod
                     }
                 }
 
-                // Сохраняем результат в буферный словарь
+                // 写回缓存，避免重复翻译
                 lock (_lockObject)
                 {
                     if (!_translationCache.ContainsKey(input))
@@ -172,10 +172,10 @@ namespace TranslationMod
             }
             catch (Exception ex)
             {
-                // В случае ошибки GameTextParser возвращаем оригинальный текст
+                // 解析器失败时直接回退原文
                 TranslationMod.Logger?.LogWarning($"GameTextParser failed for input '{input}': {ex.Message}, returning original text");
                 
-                // Сохраняем оригинальный текст в кеш, чтобы не пытаться обработать его снова
+                // 同时缓存原文，避免后续反复抛错
                 lock (_lockObject)
                 {
                     if (!_translationCache.ContainsKey(input))
@@ -189,10 +189,9 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Пытается перевести текст как стихотворение (4 строки, разделённые \n).
-        /// Если input содержит \n и при разбивке получается ровно 4 непустые строки,
-        /// каждая строка переводится отдельно через словарь.
-        /// Возвращает переведённый текст с \n или null, если это не стих или перевод не найден.
+        /// 按四行诗句模式尝试翻译文本。
+        /// 只有输入包含换行且恰好能提取出 4 个有效文本行时才生效，
+        /// 每行独立翻译，至少命中一行才返回结果。
         /// </summary>
         private string TryTranslateAsVerse(string input)
         {
@@ -205,7 +204,7 @@ namespace TranslationMod
             foreach (var line in lines)
             {
                 string trimmed = line.Trim();
-                // Пропускаем пустые строки и строки без букв (одиночные кавычки, скобки и т.д.)
+                // 跳过空行和不含文字的装饰行
                 if (trimmed.Length > 0 && Regex.IsMatch(trimmed, @"\p{L}"))
                     nonEmptyLines.Add(trimmed);
             }
@@ -240,15 +239,17 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Перевод предложения (с использованием GameTextParser)
+        /// 翻译单句文本。
+        /// 流程：优先查字典直译，再依次尝试引号变体、全大写回退、玩家名替换、
+        /// `{ITEM}` 模板和物品列表翻译，最后处理性别占位符。
         /// </summary>
-        /// <param name="sentence">Предложение для перевода</param>
-        /// <returns>Переведенное предложение</returns>
+        /// <param name="sentence">待翻译句子</param>
+        /// <returns>翻译结果</returns>
         private string TranslateSentence(string sentence)
         {
             if (string.IsNullOrEmpty(sentence)) return sentence;
 
-            // Ищем перевод для предложения
+            // 先尝试精确匹配整句翻译
             string translated;
             bool foundDirectTranslation = _dict.TryGetValue(sentence, out translated);
             
@@ -266,20 +267,19 @@ namespace TranslationMod
 #endif
                     if (_dict.TryGetValue(sentenceWithCurlyApostrophe, out string apostropheTranslated))
                     {
-                        // Найден перевод с заменённой кавычкой
+                        // 使用替换后的撇号版本命中翻译
                         translated = apostropheTranslated;
                         
-                        // Логируем успешное нахождение через замену кавычки
+                        // 记录这种命中路径，便于后续补词条
                         LogApostropheHit(sentence, sentenceWithCurlyApostrophe, translated);
                         
-                        // Обрабатываем плейсхолдер {IFHE} в итоговом переводе
+                        // 返回前处理性别占位符
                         translated = ProcessGenderPlaceholder(translated);
                         return translated;
                     }
                 }
                 
-                // Дополнительный поиск: если input состоит только из заглавных букв,
-                // преобразуем в Title Case и ищем снова
+                // 全大写文本再尝试一次 Title Case 回退查找
                 if (IsAllUpperCase(sentence))
                 {
                     string titleCaseVersion = ConvertToTitleCase(sentence);
@@ -289,36 +289,36 @@ namespace TranslationMod
 #endif
                     if (_dict.TryGetValue(titleCaseVersion, out string titleCaseTranslated))
                     {
-                        // Найден перевод для Title Case версии - преобразуем его в ЗАГЛАВНЫЕ БУКВЫ
+                        // 命中后再转回全大写风格
                         translated = titleCaseTranslated.ToUpper();
                         
-                        // Логируем успешное нахождение через Title Case (дедупликация)
+                        // 记录 Title Case 命中
                         LogTitleCaseHit(sentence, titleCaseVersion, translated);
                         return translated;
                     }
                 }
                 
-                // Дополнительная обработка: проверяем, содержит ли строка имя игрока
+                // 尝试玩家名占位符替换
                 string playerNameReplacement = TryReplacePlayerName(sentence);
                 if (playerNameReplacement != null)
                 {
-                    // Найден перевод с заменой имени игрока
+                    // 玩家名替换方案命中
                     return playerNameReplacement;
                 }
-                // Дополнительная обработка: проверяем паттерны {ITEM}
+                // 尝试 `{ITEM}` 模板匹配
                 string itemPatternReplacement = TryMatchItemPattern(sentence);
                 if (itemPatternReplacement != null)
                 {
-                    // Найден перевод через {ITEM} паттерн
+                    // 物品模板命中
                     translated = itemPatternReplacement;
                 }
                 else
                 {
-                    // Дополнительная обработка: проверяем список предметов через запятую
+                    // 尝试把句子识别为逗号分隔的物品列表
                     string itemListReplacement = TryTranslateItemList(sentence);
                     if (itemListReplacement != null)
                     {
-                        // Найден перевод списка предметов
+                        // 物品列表翻译命中
                         translated = itemListReplacement;
                     }
                     else
@@ -329,13 +329,16 @@ namespace TranslationMod
                 }
             }
 
-            // Обрабатываем плейсхолдер {IFHE} в итоговом переводе
+            // 统一处理译文中的性别占位符
             translated = ProcessGenderPlaceholder(translated);
 
             return translated;
         }
 
-        /// <summary>Сохраняет отсутствующий ключ в файл need_translate.csv</summary>
+        /// <summary>
+        /// 记录缺失翻译键到 `need_translate.csv`。
+        /// 流程：先做去重，再确保目录存在，最后以追加方式写入文件。
+        /// </summary>
         private void SaveMissingKey(string key)
         {
             if (string.IsNullOrEmpty(key) || string.IsNullOrEmpty(_missingKeysFilePath)) 
@@ -343,7 +346,7 @@ namespace TranslationMod
 
             lock (_lockObject)
             {
-                // Проверяем, не добавляли ли мы уже этот ключ
+                // 同一个缺失键只记录一次
                 if (_missingKeys.Contains(key)) 
                     return;
 
@@ -351,7 +354,7 @@ namespace TranslationMod
 
                 try
                 {
-                    // Создаем директорию если не существует
+                    // 输出目录不存在时自动创建
                     string directory = Path.GetDirectoryName(_missingKeysFilePath);
                     if (!Directory.Exists(directory))
                     {
@@ -361,20 +364,20 @@ namespace TranslationMod
 #endif
                     }
 
-                    // Добавляем ключ в файл (append mode)
+                    // 以追加模式写入缺失键
                     using (var writer = new StreamWriter(_missingKeysFilePath, true, System.Text.Encoding.UTF8))
                     {
-                        // Экранируем ключ для CSV формата
+                        // 先做 CSV 转义
                         string escapedKey = EscapeCsvValue(key);
                         writer.WriteLine($"{escapedKey},");
                     }
                     
-                    // Логируем добавление нового отсутствующего ключа
+                    // 记录新增缺失项
                     TranslationMod.Logger?.LogWarning($"[TranslationService] Missing translation key added to need_translate.csv: '{key}'");
                 }
                 catch (Exception ex)
                 {
-                    // Логируем ошибку, но не прерываем выполнение
+                    // 写盘失败只记日志，不阻断翻译流程
                     TranslationMod.Logger?.LogError($"[TranslationService] Failed to save missing translation key '{key}': {ex.Message}");
                 }
             }

@@ -1,6 +1,7 @@
 original,translate
+#Unknown,#未知
 Select,选择
-Abort,中断
+Abort,中止
 Pick a Difficulty,选择难度
 Character Creation,角色创建
 Class,职业
@@ -8,363 +9,363 @@ Background,背景
 Attributes,属性
 Appearance,外观
 Welcome to character creation!,欢迎来到角色创建！
-Start by picking a DIFFICULTY for your playthrough,首先选择你的游玩难度
-Are you sure you want to abort?,你确定要中断吗？
-Difficulty can be changed during play,难度可以在游玩过程中更改
+Start by picking a DIFFICULTY for your playthrough,首先为你的游戏流程选择一个难度
+Are you sure you want to abort?,你确定要中止吗？
+Difficulty can be changed during play,难度可在游戏过程中更改
 Bard,吟游诗人
-Battlemagos,战术师
-Champion,战士
-Hierophant,神官
-Hospitaller,医疗者
-Officer,军官
+Battlemagos,战斗法师
+Champion,斗士
+Hierophant,大祭司
+Hospitaller,医护骑士
+Officer,船员
 Ranger,游侠
 Thief,盗贼
 Select a Class,选择职业
 ARMSMASTER,武器大师
-Archetype,元职
+Archetype,原型
 Warrior,战士
-The Main Attribute for this Class is Strength,本职业的主要属性是力量
+The Main Attribute for this Class is Strength,此职业的主要属性是力量
 Start,开始
-DP,DP
-HP/Lvl,HP/级
-Magic/Lvl,魔法/级
-May use any armor,可以使用任何护甲
-"May use all weapons of type Blade, Axe, Club and Bow",可以使用所有类型为刀、斧、棒和弓的武器
-"Next, select a CLASS for your character!",接下来，请为你的角色选择一个职业！
-Classes define a character's role in the party by adding certain exclusive abilities,职业定义了角色在队伍中的角色，通过添加某些独有能力
-DEVELOPMENT POINTS,发展点
-Development Points are gained when leveling up and used to buy ranks in Feats,发展点在升级时获得，用于购买专长等级
-This unlocks new Abilities for the Character making them more powerful,这将为角色解锁新的能力，使其更加强大
-MAIN ATTRIBUTE,主要属性
-The Main Attribute is the Attribute that is the most important for this Class,主要属性是对于这个职业来说最重要的属性
+DP,发展点数
+HP/Lvl,生命值/等级
+Magic/Lvl,魔法/等级
+May use any armor,可使用任意护甲
+"May use all weapons of type Blade, Axe, Club and Bow",可使用所有刀剑、斧、棍棒和弓类武器
+"Next, select a CLASS for your character!",接下来，为你的角色选择一个职业！
+Classes define a character's role in the party by adding certain exclusive abilities,职业通过添加特定的专属能力来定义角色在队伍中的角色
+DEVELOPMENT POINTS,发展点数
+Development Points are gained when leveling up and used to buy ranks in Feats,发展点数在升级时获得，用于购买专长等级
+This unlocks new Abilities for the Character making them more powerful,这会为角色解锁新能力，使其更加强大
+MAIN ATTRIBUTE,主属性
+The Main Attribute is the Attribute that is the most important for this Class,主属性是对该职业最重要的属性
 STRENGTH,力量
 Attribute - Primary,属性 - 主要
-A measure of a character's brawn and physical power,人物力量和体能的衡量标准
-ATTUNEMENT PER LEVEL,每级适应度
-"Indicates how much of the game’s Magic resource, Attunement, is gained every time the character levels up",指示角色每次升级时获得的游戏魔法资源适应度的量
+A measure of a character's brawn and physical power,衡量角色的肌肉力量与体能
+ATTUNEMENT PER LEVEL,每级魔谐力
+"Indicates how much of the game’s Magic resource, Attunement, is gained every time the character levels up",表示角色每次升级时获得多少游戏魔法资源——魔谐力
 VITALITY PER LEVEL,每级生命值
-"Indicates how much of the game’s Hitpoint resource, Vitality, is gained every time the character levels up",指示角色每次升级时获得的游戏生命值资源生命值的量
+"Indicates how much of the game’s Hitpoint resource, Vitality, is gained every time the character levels up",表示角色每次升级时获得多少游戏生命值资源——体力
 BARD,吟游诗人
-Rogue,盗贼
-The Bard mixes the Rogue’s decent combat skills and high maneuverability with the use of arcane magic,吟游诗人将盗贼不错的战斗技能和高机动性与神秘魔法的使用相结合
-The Main Attribute for this Class is Presence,这个职业的主要属性是魅力
-May wear Light armor,可以穿戴轻甲
-"May use Light and Medium weapons of type Blade, Axe, Club and Bow",可以使用刀、斧、棒和弓这几种类型的轻武器和中型武器
-ROGUE,盗贼
-The Rogue combines important non-combat skills with a large damage output against single targets,盗贼结合了重要的非战斗技能和对单一目标的巨大伤害输出
-BATTLEMAGOS,斗士法师
-"Unlike other Magi, they also get access to a few basic combat-related Feats and may wear light armor",与其他法师不同，他们还可以使用一些基本的战斗相关特技，并且可以穿戴轻甲
-The Main Attribute for this Class is Intellect,这个职业的主要属性是智力
-"May use Light weapons of type Blade, Club and Bow",可以使用刀、棒和弓这几种类型的轻武器
-CHAMPION,圣武士
+Rogue,游荡者
+The Bard mixes the Rogue’s decent combat skills and high maneuverability with the use of arcane magic,吟游诗人将游荡者不俗的战斗技巧和高机动性与奥术魔法的使用相结合
+The Main Attribute for this Class is Presence,此职业的主要属性是感知
+May wear Light armor,可穿戴轻甲
+"May use Light and Medium weapons of type Blade, Axe, Club and Bow",可使用轻型和中型的刀剑、斧、棍棒和弓类武器
+ROGUE,游荡者
+The Rogue combines important non-combat skills with a large damage output against single targets,游荡者结合了重要的非战斗技能与对单个目标的高额伤害输出
+BATTLEMAGOS,战斗法师
+"Unlike other Magi, they also get access to a few basic combat-related Feats and may wear light armor",与其他法师不同，他们还能获得一些基本的战斗相关专长，并可穿戴轻甲
+The Main Attribute for this Class is Intellect,此职业的主要属性是智力
+"May use Light weapons of type Blade, Club and Bow",可使用轻型的刀剑、棍棒和弓类武器
+CHAMPION,斗士
 Cleric,牧师
-The Champion is a Cleric who excels in the use of blades and armor whilst still having limited divine spell-casting abilities,圣武士是一名擅长使用刀剑和盔甲的牧师，同时仍然具备有限的神圣法术施法能力
-May use all weapons of type Blade and Club,可以使用所有类型为刀剑和棍棒的武器
-GUILD-MAGOS,市集法师
-This comes at the cost of having absolutely no combat related Feats,这意味着完全没有与战斗相关的专长
-May not wear armor,不能穿戴盔甲
-HIEROPHANT,神职人员
-A Hierophant is a Cleric who can develop all the different Divine Spell Schools fully,神职人员是一种牧师，可以全面掌握所有不同的神圣法术学派
-May use Light and Medium weapons of type Club,可以使用棍棒类型的轻型和中型武器
-HOSPITALLER,救护者
-The Hospitaller is a Cleric who serves as a front line healer,救护者是一种牧师，担任前线治疗师的角色
-"Well armed and armored, they can stand their ground against overwhelming foes whilst also getting access to the highest tiers of the Body Magic School",武艺高强且装备精良，他们能够抵挡强大的敌人，同时还能接触到体术魔法学派的最高境界
-OFFICER,领袖
-The Officer is a skilled warrior who serves as a force multiplier through their tactical skills,领袖是一名善于战斗的战士，通过战术技巧成为战斗力的倍增器
-"Issuing orders across the battlefield, they vastly improve the performance of their fellow party-members",在战场上发布命令，极大地提高了队友的表现
+The Champion is a Cleric who excels in the use of blades and armor whilst still having limited divine spell-casting abilities,斗士是擅长使用刀剑和护甲，同时仍拥有有限神圣施法能力的牧师
+May use all weapons of type Blade and Club,可使用所有刀剑和棍棒类武器
+GUILD-MAGOS,公会法师
+This comes at the cost of having absolutely no combat related Feats,代价是完全没有战斗相关的专长
+May not wear armor,不可穿戴护甲
+HIEROPHANT,大祭司
+A Hierophant is a Cleric who can develop all the different Divine Spell Schools fully,大祭司是能够完全发展所有不同神圣法术学派的牧师
+May use Light and Medium weapons of type Club,可使用轻型和中型的棍棒类武器
+HOSPITALLER,医护骑士
+The Hospitaller is a Cleric who serves as a front line healer,医护骑士是担任前线治疗者的牧师
+"Well armed and armored, they can stand their ground against overwhelming foes whilst also getting access to the highest tiers of the Body Magic School",武装精良、护甲坚固，他们能在强敌面前坚守阵地，同时还能掌握最高阶的肢体法术学派
+OFFICER,船员
+The Officer is a skilled warrior who serves as a force multiplier through their tactical skills,船员是技艺精湛的战士，通过其战术技能成为战力倍增器
+"Issuing orders across the battlefield, they vastly improve the performance of their fellow party-members",在战场上发号施令，他们能极大提升队伍同伴的表现
 RANGER,游侠
-The Ranger is a Warrior specializing in ranged combat and with access to limited nature magic,游侠是一种擅长远程战斗的战士，并且可以接触有限的自然魔法
+The Ranger is a Warrior specializing in ranged combat and with access to limited nature magic,游侠是专精于远程战斗并能使用有限自然魔法的战士
 THIEF,盗贼
-The Thief is a Rogue who uses Stealth to set up devestating Backstab attacks,盗贼是一种使用潜行进行伏击，发动致命背刺攻击的盗贼
-The Main Attribute for this Class is Agility,这个职业的主要属性是敏捷
+The Thief is a Rogue who uses Stealth to set up devestating Backstab attacks,盗贼是利用潜行来发动毁灭性背刺攻击的游荡者
+The Main Attribute for this Class is Agility,此职业的主要属性是敏捷
 STEALTH,潜行
 Attribute - Skill,属性 - 技能
-Stealth is used during adventuring,暗袭在冒险中使用
-In particular it determines if NPCs notice the party as it moves around,特别是用来判断NPC是否注意到队伍的移动
+Stealth is used during adventuring,潜行在冒险过程中使用
+In particular it determines if NPCs notice the party as it moves around,特别是它决定了他人是否会注意到移动中的队伍
 AGILITY,敏捷
-"A measure of hand-eye coordination, nimbleness and dexterity",手眼协调能力、灵巧度和灵巧度的衡量标准
-BACKSTAB,暗袭
-A character that has activated the Ability to Backstab will automatically perform Backstabbing Attacks against opponents that are either Flanked or Vulnerable,如果角色激活了暗袭能力，将自动对被夹击或易受攻击的目标进行暗袭攻击
-A successful Backstab Attack adds the character’s Backstab Bonus Multiplied by the Weapon’s Crit Modifier to the damage roll,成功的暗袭攻击将使角色的暗袭加成乘以武器的暴击修正值，然后加到伤害骰中
-FLANKING,夹击
-A character can be Flanked if opponents occupy the tile above and below it or to the left and right of it,如果敌人占据了角色上方和下方或左侧和右侧的格子，角色就可以被夹击
-Attacking a Flanked target allows the Attacker to add their Flanking Bonus to the Attack Roll,攻击夹击目标的攻击者可以在攻击骰中添加夹击加成
-Rogues may Backstab Flanked Characters,盗贼可以对夹击的敌人进行暗袭
-BACKSTAB BONUS,暗袭加成
-"If a successful Backstab Attack is performed, this Attribute is multiplied by the Weapon’s Crit multiplier and added to the total Damage",如果成功进行了暗袭攻击，此属性将乘以武器的暴击修正值，然后加到总伤害中
-VULNERABLE,易受攻击
-A Vulnerable character cannot defend themselves,易受攻击的角色无法进行防御
-This makes them much easier to hit and it also means they can be Backstabbed,这使得他们更容易被击中，也意味着他们可以被暗袭
+"A measure of hand-eye coordination, nimbleness and dexterity",手眼协调能力、灵活性与灵巧度的衡量
+BACKSTAB,背刺
+A character that has activated the Ability to Backstab will automatically perform Backstabbing Attacks against opponents that are either Flanked or Vulnerable,激活了背刺能力的角色会自动对被夹击或处于易伤状态的对手发动背刺攻击
+A successful Backstab Attack adds the character’s Backstab Bonus Multiplied by the Weapon’s Crit Modifier to the damage roll,成功的背刺攻击会将角色的背刺加成乘以武器的暴击修正值加到伤害掷骰上
+FLANKING,侧袭
+A character can be Flanked if opponents occupy the tile above and below it or to the left and right of it,如果对手占据了角色上方和下方或左侧和右侧的格子，该角色即被夹击
+Attacking a Flanked target allows the Attacker to add their Flanking Bonus to the Attack Roll,攻击被夹击的目标时，攻击者可将包抄加值加到攻击检定上
+Rogues may Backstab Flanked Characters,游荡者可以背刺被夹击的角色
+BACKSTAB BONUS,背刺加成
+"If a successful Backstab Attack is performed, this Attribute is multiplied by the Weapon’s Crit multiplier and added to the total Damage",如果成功发动背刺攻击，此属性将乘以武器的暴击倍率，并加到总伤害上
+VULNERABLE,易伤
+A Vulnerable character cannot defend themselves,易伤的角色无法自卫
+This makes them much easier to hit and it also means they can be Backstabbed,这使得他们更容易被击中，也意味着他们可以被背刺
 WARRIOR,战士
-A Warrior is a front-line fighter who can take and deal large amounts of damage,战士是前线战士，能够承受和造成大量伤害
-PRESENCE,气场
-A character's ability to read and react to the surrounding environment and people,角色读取和应对周围环境及人物的能力
-ATTUNEMENT,调和
+A Warrior is a front-line fighter who can take and deal large amounts of damage,战士是能够承受并造成大量伤害的前线战斗者
+PRESENCE,感知
+A character's ability to read and react to the surrounding environment and people,角色观察周围环境与人物并作出反应的能力
+ATTUNEMENT,魔谐力
 Attribute - Magic,属性 - 魔法
 CLERIC,牧师
-The Cleric offers close-range support to their party through close ranged buffs and restorative spells,牧师通过近距离增益和恢复法术为队伍提供近距离支援
-BODY MAGIC SCHOOL,身体魔法学派
-The value of this attribute indicates the highest Spell Tier of Body magic spells you may cast,该属性值表示您可施放的最高身体魔法法术等级
-SPELL TIER,法术等级
-"By studying different Schools of Spellcasting, a character gains Spell Tiers in that School",通过研究不同的法术施法学派，角色在该学派中获得法术等级
-Spell Tiers qualify a character to learn spells and different spells have different Tier requirements,法术等级使角色能够学习法术，不同的法术有不同的等级要求
-MAGOS,魔导士
-"The Magos is a ranged strikers that can cast powerful, and often destructive, spells",魔导士是远程打击者，能够施放强大且往往具有破坏性的法术
-INTELLECT,心智
-"Mental acuity, recall and analytical skill",心智敏捷、回忆和分析能力
-FIRE MAGIC SCHOOL,火焰魔法学派
-The value of this attribute indicates the highest Spell Tier of Fire magic spells you may cast,该属性值表示您可施放的最高火焰魔法法术等级
-Acolyte,侍从
+The Cleric offers close-range support to their party through close ranged buffs and restorative spells,牧师通过近距离的增益和恢复法术为队伍提供近程支援
+BODY MAGIC SCHOOL,肢体法术学派
+The value of this attribute indicates the highest Spell Tier of Body magic spells you may cast,此属性的值表示你可以施展的肢体法术的最高法术阶位
+SPELL TIER,法术阶位
+"By studying different Schools of Spellcasting, a character gains Spell Tiers in that School",通过学习不同的施法学派，角色获得该学派的法术阶位
+Spell Tiers qualify a character to learn spells and different spells have different Tier requirements,法术阶位使角色有资格学习法术，不同的法术有不同的阶位要求
+MAGOS,法师
+"The Magos is a ranged strikers that can cast powerful, and often destructive, spells",法师是能够施展强大且常具毁灭性法术的远程打击者
+INTELLECT,智力
+"Mental acuity, recall and analytical skill",思维敏锐度、记忆力与分析能力
+FIRE MAGIC SCHOOL,火焰法术学派
+The value of this attribute indicates the highest Spell Tier of Fire magic spells you may cast,此属性的值表示你可以施展的火焰法术的最高法术阶位
+Acolyte,侍僧
 Courtier,朝臣
-Entertainer,娱乐师
-Ex-Legionary,前军团战士
-Guilder,铜币商人
-Laborer,力士
-Monastic,武僧
+Entertainer,艺人
+Ex-Legionary,前军团兵
+Guilder,公会
+Laborer,劳工
+Monastic,修道院风格
 Noble,贵族
-Nomad,�游牧民
+Nomad,游牧民
 Snake-Cultist,蛇教徒
 Street Rat,街头混混
 Thug,暴徒
 Vagabond,流浪者
-Wildling,野蛮人
+Wildling,野人
 Select a Background,选择背景
-ACOLYTE,牺牲者
-You claim a connection with the divine that goes far deeper than most,你与神灵的联系比大多数人要深得多
-"Whether legitimate of not, you’re always ready to dispense holy wisdom; Be it Imperial gospel or the profane ramblings of the heretic",无论是否合法，你总是准备好传播神圣的智慧；无论是帝国的教义还是异端的胡言乱语
-+5 Attunement,+5 调和
+ACOLYTE,侍僧
+You claim a connection with the divine that goes far deeper than most,你声称与神祇的联系远比大多数人深厚
+"Whether legitimate of not, you’re always ready to dispense holy wisdom; Be it Imperial gospel or the profane ramblings of the heretic",无论真假，你总是准备好传授神圣智慧；无论是帝国福音还是异端的亵渎妄语
++5 Attunement,+5 魔谐力
 Select a BACKGROUND for your character,为你的角色选择一个背景
-"BACKGROUNDS add points in skills, influence starting conditions and narrative content",背景增加技能点数，影响初始条件和叙述内容
+"BACKGROUNDS add points in skills, influence starting conditions and narrative content",背景会为技能增加点数，影响起始条件和叙事内容
 COURTIER,朝臣
-Your time spent kissing noble arses has made you a master of navigating the cut-throat politics of the Imperial lay-courts,你花在奉承贵族身上的时间使你成为穿梭于帝国世俗宫廷险恶政治的高手
-+1 Awareness,+1 觉知
-+1 Diplomacy,+1 交际术
+Your time spent kissing noble arses has made you a master of navigating the cut-throat politics of the Imperial lay-courts,你花在拍贵族马屁上的时间，使你成为驾驭帝国世俗法庭残酷政治的大师
++1 Awareness,+1 察觉
++1 Diplomacy,+1 交涉
 NOBLE,贵族
-"An individual of old blood, you learned long ago that wealth and connections tend to open doors that are otherwise closed to the filthy masses",你是一位古老血脉的个体，很久以前你就了解到财富和人脉往往能为你打开那些普通民众无法触及的大门
-+1 Lore,+1 调查知识
-DIPLOMACY,交际术
-"Diplomacy is used to lie, bargain or sway others in negotiations",交际术用于撒谎、谈判或在谈判中说服他人
-It influences prices at merchants,它影响商人的价格
-LORE,调查知识
-A general knowledge skill,一种通用知识技能
-AWARENESS,觉察力
-The ability to notice small details and hidden things,觉察细微之处和隐藏事物的能力
-You are an esteemed member of the Empire’s teeming underworld with a special knack for getting in and out of places you shouldn’t be,你是帝国拥挤地下世界中备受尊敬的成员，特别擅长出入不该去的地方
-+1 Stealth,+1 暗行
-+1 Thievery,+1 盗窃
-THIEVERY,盗窃
-Used to pick locks and pockets as well as to steal from shops,用于开锁、偷窃以及从商店偷窃
-ENTERTAINER,表演者
-"In equal parts despised and adored by the wealthy of the Empire, the traveling entertainer can make a pretty penny off their blinding charisma and nimble fingers",在帝国的富人中既被憎恨也被崇拜，巡回表演者凭借耀眼的魅力和灵活的手指可以赚取不少钱财
-EX-LEGIONARY,前军团士兵
-A member of the ‘old breed’; forged and tempered by the hardships of soldiering,‘老兵’之一员；在士兵生涯的艰辛中锻造和磨练
-You now belong to the ever-growing fraternity of fellow men and women with scarred bodies and broken minds who roam the Empire in search for a quiet piece of land to call home,现在你属于那些拥有伤痕累累的身体和破碎心灵的同僚行列，他们在帝国中游荡，寻找一片安宁的土地作为家园
-+30lbs Carrying Bonus,+30磅负重加成
-CARRYING BONUS,负重加成
-Attribute - Misc,身体属性 - 其他
-A bonus in pounds added to the character’s Carrying Capacity,在角色的负重能力上增加的磅数 bonus
-GUILDER,行会成员
-"Like so many of the Empires young and promising, you were recruited into guild service at a fairly early age",就像许多帝国中年轻有为的人一样，你很早就被征召加入了行会服务
-"As the saying goes, work for the illustrious guilds tends to leave you with 'gold in your purse and blood on your hands'",如谚语所说，为显赫的行会工作往往会让你“腰缠万贯，满手血腥”
-+1 Crafting,+1 制作技艺
+"An individual of old blood, you learned long ago that wealth and connections tend to open doors that are otherwise closed to the filthy masses",作为古老血统的一员，你很久以前就明白，财富和人脉往往能打开那些对肮脏大众关闭的大门
++1 Lore,+1 学识
+DIPLOMACY,交涉
+"Diplomacy is used to lie, bargain or sway others in negotiations",交涉用于撒谎、讨价还价或在谈判中影响他人
+It influences prices at merchants,它会影响商人的价格
+LORE,学识
+A general knowledge skill,通用知识技能
+AWARENESS,察觉
+The ability to notice small details and hidden things,能够注意到细微细节和隐藏事物的能力
+You are an esteemed member of the Empire’s teeming underworld with a special knack for getting in and out of places you shouldn’t be,你是帝国熙攘的地下世界中备受尊敬的成员，对于进出你不该去的地方有着特殊的诀窍
++1 Stealth,+1 潜行
++1 Thievery,+1 偷窃
+THIEVERY,偷窃
+Used to pick locks and pockets as well as to steal from shops,用于开锁、扒窃及从商店偷窃
+ENTERTAINER,艺人
+"In equal parts despised and adored by the wealthy of the Empire, the traveling entertainer can make a pretty penny off their blinding charisma and nimble fingers",既被帝国的富人鄙视又被他们崇拜，流浪艺人能凭借其耀眼的魅力和灵巧的手指赚取可观的收入
+EX-LEGIONARY,前军团兵
+A member of the ‘old breed’; forged and tempered by the hardships of soldiering,‘老家伙’中的一员；经受过军旅生涯的千锤百炼
+You now belong to the ever-growing fraternity of fellow men and women with scarred bodies and broken minds who roam the Empire in search for a quiet piece of land to call home,你现在属于日益壮大的兄弟姐妹团体，他们身心俱创，在帝国游荡，寻找一片安静的土地作为家园
++30lbs Carrying Bonus,+30磅 负重加值
+CARRYING BONUS,负重加值
+Attribute - Misc,属性 - 杂项
+A bonus in pounds added to the character’s Carrying Capacity,以磅为单位增加到角色负重上限的加值
+GUILDER,公会
+"Like so many of the Empires young and promising, you were recruited into guild service at a fairly early age",像帝国许多年轻有为的人一样，你在相当年轻的时候就被招募进公会服务
+"As the saying goes, work for the illustrious guilds tends to leave you with 'gold in your purse and blood on your hands'",俗话说，为显赫的公会工作，往往会让你‘钱袋有金，手染鲜血’
++1 Crafting,+1 制作
 CRAFTING,制作
-Crafting is used when creating items at crafting stations,当在制作站制作物品时使用
-LABORER,力士
-You’ve spent years toiling under the oppressive yoke of hard labor,你花费了多年时间在沉重的劳役下辛苦劳作
-"Though it may not have left you with much coin in your pocket, it has given you an unnatural resistance to hardship",虽然这可能没有给你留下多少口袋里的硬币，但它赋予了你对苦难的不自然抵抗力
+Crafting is used when creating items at crafting stations,制作用于在制作工作台上创建物品
+LABORER,劳工
+You’ve spent years toiling under the oppressive yoke of hard labor,你年复一年地在艰苦劳作的沉重枷锁下辛勤工作
+"Though it may not have left you with much coin in your pocket, it has given you an unnatural resistance to hardship",虽然这可能没让你口袋里有多少钱，却给了你超乎常人的抗压能力
 +1 Toughness,+1 坚韧
 TOUGHNESS,坚韧
-The character’s ability to withstand adverse physical effects such as disease and poison,角色抵御不利物理影响（如疾病和毒药）的能力
-MONASTIC,武僧
-You have served one of the holy orders of the Empire from the safety of one of its walled monastic communities,你曾服务于帝国中某个安全的修道院中的神圣组织
-Pray the world has not grown too cruel in your absence,希望在你的缺席期间，世界并没有变得太残忍
-+1 Healing,+1 治疗能力
-HEALING,治疗
-Healing is used in camp to increase the rate of wound recovery for wounded characters,治疗在营地使用时可以加快受伤角色的恢复速度
-It also influences the amount of vitality regained from healing potions and is used in dialogue tests when dealing with medical issues and such,它还影响从治疗药水恢复的生命值量，并在处理医疗问题等对话测试中使用
-VITALITY,生命值
-Attribute - Secondary,属性 - 次要属性
-Vitality describes the amount of damage a character can take before becoming seriously wounded,生命值描述角色在严重受伤前能承受的伤害量
-Vitality is fairly easily regained through the use of consumable items and spells,生命值可以通过消耗物品和法术很容易地恢复
+The character’s ability to withstand adverse physical effects such as disease and poison,角色承受疾病和毒素等不良物理效果的能力
+MONASTIC,修道院风格
+You have served one of the holy orders of the Empire from the safety of one of its walled monastic communities,你曾在帝国某个高墙环绕的修道院社区的安全环境中侍奉某个神圣教团
+Pray the world has not grown too cruel in your absence,祈祷这世界在你离开期间没有变得过于残酷
++1 Healing,+1 医疗
+HEALING,医疗
+Healing is used in camp to increase the rate of wound recovery for wounded characters,医疗在营地中用于加快受伤角色的创伤恢复速度
+It also influences the amount of vitality regained from healing potions and is used in dialogue tests when dealing with medical issues and such,它也会影响治疗药水恢复的体力值，并在处理医疗问题等对话检定中使用
+VITALITY,体力
+Attribute - Secondary,属性 - 次要
+Vitality describes the amount of damage a character can take before becoming seriously wounded,体力表示角色在受重伤前能够承受的伤害量
+Vitality is fairly easily regained through the use of consumable items and spells,体力可以通过消耗品和法术较容易恢复
 NOMAD,游牧民
-"You’ve spent years across the seas, living with the desert nomads",你曾在海上度过了多年时光，与沙漠游牧民生活在一起
-"Though ever the outsider, the nomads deemed you trust-worthy enough to become an initiate in the mysteries of their pagan fire-worship",尽管你总是局外人，但游牧民认为你值得信赖，足以成为他们异教火崇拜秘密的入会者
-+25% Fire Damage Resistance,+25% 火焰抗性
-FIRE DAMAGE RESISTANCE,火焰抗性
+"You’ve spent years across the seas, living with the desert nomads",你在海外度过了多年，与沙漠游牧民一起生活
+"Though ever the outsider, the nomads deemed you trust-worthy enough to become an initiate in the mysteries of their pagan fire-worship",尽管始终是外人，游牧民认为你足够可信，让你成为他们异教火崇拜奥秘的入门者
++25% Fire Damage Resistance,+25% 火焰伤害抗性
+FIRE DAMAGE RESISTANCE,火焰伤害抗性
 Attribute - Resistance,属性 - 抗性
-Damage Resistance reduces incoming Damage of the indicated type by a percentage amount equal to the attribute value,抗性减少特定类型伤害的百分比，该百分比等于属性值
-A value of 100% or higher means immunity to this damage type,抗性值达到100%或更高意味着对该类型伤害免疫
-A negative value means a vulnerability to the damage type,负值表示对这种伤害类型的脆弱性
-"If this is the case, incoming Damage will be increased",在这种情况下，受到的伤害将增加
+Damage Resistance reduces incoming Damage of the indicated type by a percentage amount equal to the attribute value,伤害抗性将受到的指定类型伤害减少相当于属性值的百分比
+A value of 100% or higher means immunity to this damage type,数值达到100%或更高意味着对该伤害类型免疫
+A negative value means a vulnerability to the damage type,负值意味着对该伤害类型易伤
+"If this is the case, incoming Damage will be increased",如果是这种情况，受到的伤害将会增加
 SAILOR,水手
-You’ve heard the call of the Mother of Maelstroms and salt water now runs in your veins,你听到了风暴之母的呼唤，海水现在流淌在你的血管中
-"Whether on the deck of a Guilder caravel or manning the sails of a meager fishing sloop, you feel most at home when you’re at sea",无论是在行会成员商船的甲板上，还是在简陋的捕鱼帆船上操控风帆，你最感到自在的时刻就是在海上
-+1 Athletics,+1 力量
-ATHLETICS,力量
-SALT,咸味
+You’ve heard the call of the Mother of Maelstroms and salt water now runs in your veins,你听到了风暴之母的召唤，咸水如今在你的血管中流淌
+"Whether on the deck of a Guilder caravel or manning the sails of a meager fishing sloop, you feel most at home when you’re at sea",无论是在公会轻快帆船的甲板上，还是在简陋渔船的船帆旁，你在海上时感觉最自在
++1 Athletics,+1 运动
+ATHLETICS,运动
+SALT,盐
 Food,食物
 Food Val,食物价值
-Value,价值
+Value,值
 Weight,重量
 Used in,用于
-"With the once-mighty legions of the Empire in decline, this is an age of sellswords and mercenaries",随着帝国昔日强大的军团衰落，这是一个雇佣兵和雇佣兵的时代
-There is no shortage of those willing to pay professionals to wreak violence on others and you are very good at your job,没有人愿意支付专业人士去对他人的暴力行为，而你在这方面非常出色
-+3 Vitality,+3 生命值
+"With the once-mighty legions of the Empire in decline, this is an age of sellswords and mercenaries",随着曾经强大的帝国军团日渐衰落，这是一个佣兵和雇佣兵的时代
+There is no shortage of those willing to pay professionals to wreak violence on others and you are very good at your job,不乏有人愿意付钱给专业人士对他人施暴，而你非常擅长你的工作
++3 Vitality,+3 体力
 SNAKE-CULTIST,蛇教徒
-Writhing with serpents in darkened cellars and hidden temples has left you immune to the snake’s kiss,在黑暗的地窖和隐秘的神殿中蠕动着蛇，使你对蛇吻免疫
-+100% Poison Resistance,+100% 毒液抗性
-POISON RESISTANCE,毒液抗性
-Resistance to a condition represents the percentage chance to avoid contracting the condition,抗性表示避免感染该状况的百分比几率
-An attribute value of 100% or above means immunity to the condition in question,属性值达到100%或以上意味着对所提到的状况具有免疫
+Writhing with serpents in darkened cellars and hidden temples has left you immune to the snake’s kiss,在黑暗地窖和隐秘神庙中与蛇共舞，使你免疫蛇吻之毒
++100% Poison Resistance,+100% 毒素抗性
+POISON RESISTANCE,毒素抗性
+Resistance to a condition represents the percentage chance to avoid contracting the condition,对状态的抗性表示避免感染该状态的百分比几率
+An attribute value of 100% or above means immunity to the condition in question,属性值达到100%或以上意味着对相关状态免疫
 STREET RAT,街头混混
-Spending your formative years fending for yourself on the hard streets of the Empire’s sprawling cities has left you with a preternatural instinct for surviving,在帝国广阔城市的严酷街头度过了你的童年，使你具有超自然的生存直觉
-No crime is too petty - no meat too mysterious,没有小偷小摸的罪行，也没有肉食是太神秘的
-+2 Initiative,+2 敏捷
-INITIATIVE,敏捷
-Initiative determines who goes first in combat,敏捷决定了战斗中谁先行动
-THUG,狡徒
-"Punch first, ask questions later",先打，后问
-You have perfected the noble art of solving problems with brute force,你已经精通了用蛮力解决问题的高贵艺术
+Spending your formative years fending for yourself on the hard streets of the Empire’s sprawling cities has left you with a preternatural instinct for surviving,在帝国不断扩张的城市中艰苦的街头自谋生路的成长岁月，赋予了你超乎常人的生存本能
+No crime is too petty - no meat too mysterious,没有罪行是微不足道的——没有肉食是来历不明的
++2 Initiative,+2 先攻
+INITIATIVE,先攻
+Initiative determines who goes first in combat,先攻决定战斗中谁先行动
+THUG,暴徒
+"Punch first, ask questions later",先动手，再问话
+You have perfected the noble art of solving problems with brute force,你精通用蛮力解决问题的崇高艺术
 +1 Club Damage Bonus,+1 棍棒伤害加成
 CLUB DAMAGE BONUS,棍棒伤害加成
-Weapon Damage bonuses increase the Damage dealt when using the indicated Weapon type,武器伤害加成会在使用指定武器类型时增加造成的伤害
-VAGABOND,游民
-"Having spent most of your teenage years’ on the road, you are a free spirit with no allegiance to any one person or place",你在青少年时期大部分时间都在路上度过，是一个自由的灵魂，没有对任何特定的人或地方效忠
-"Drifting from place to place, you go where there is work, food and a warm bed to be had",你四处漂泊，到哪里都有工作、食物和温暖的床铺
+Weapon Damage bonuses increase the Damage dealt when using the indicated Weapon type,武器伤害加成在使用指定武器类型时增加造成的伤害
+VAGABOND,流浪者
+"Having spent most of your teenage years’ on the road, you are a free spirit with no allegiance to any one person or place",你十几岁的大部分时间都在路上度过，是一个自由自在的人，不效忠于任何人或地方
+"Drifting from place to place, you go where there is work, food and a warm bed to be had",四处漂泊，你去往有工作、食物和温暖床铺的地方
 +1 Survival,+1 生存
 SURVIVAL,生存
-"Survival is used to forage for food, navigate difficult overland terrain and also determines a character's general knowledge of nature",生存用于搜寻食物、穿越艰难的陆地地形，同时也决定了角色对自然的普遍知识
-WILDLING,野童
-"As the light of civilization fades, the vast wildernesses of the Empire encroach on the civilized folk",当文明的光芒渐渐消逝，帝国的广袤 wilderness 吞噬着文明的人们
-Thankfully you don’t count yourself among those,幸运的是，你并不属于他们之中
-The sky is your temple and the howling of wolves your litany,天空是你的神殿，狼嚎是你诵读的祷文
-Primary Stats,主属性
+"Survival is used to forage for food, navigate difficult overland terrain and also determines a character's general knowledge of nature",生存用于觅食、穿越艰难地形，同时决定角色的自然知识掌握程度
+WILDLING,野人
+"As the light of civilization fades, the vast wildernesses of the Empire encroach on the civilized folk",随着文明之光黯淡，帝国广袤的荒野正在侵蚀文明人
+Thankfully you don’t count yourself among those,幸好你不把自己算作其中一员
+The sky is your temple and the howling of wolves your litany,天空是你的庙宇，狼嚎是你的祷文
+Primary Stats,主要属性
 Agility,敏捷
 Intellect,智力
-Presence,威严
+Presence,感知
 Strength,力量
 Skills,技能
-Athletics,力量训练
-Awareness,觉醒
+Athletics,运动
+Awareness,察觉
 Crafting,制作
-Diplomacy,交际
-Healing,治疗
-Lore,知识
+Diplomacy,交涉
+Healing,医疗
+Lore,学识
 Stealth,潜行
 Survival,生存
-Thievery,盗窃
-Secondary Stats,次级属性
+Thievery,偷窃
+Secondary Stats,次要属性
 Combat Stats,战斗属性
-Crit Chance,临战几率
-Initiative,先行权
+Crit Chance,暴击几率
+Initiative,先攻
 Melee To Hit,近战命中
 Ranged To Hit,远程命中
 Defences,防御
 Dodge,闪避
 Toughness,坚韧
-Willpower,意志力
-Select an entry!,请选择一项内容！
-Primary Attributes and Skills,主属性和技能
-Distribute points to your PRIMARY ATTRIBUTES and SKILLS,分配点数到你的主属性和技能
-These go a long way towards defining your character mechanically,这些对于机械地定义你的角色至关重要
-SECONDARY STATS,次要属性
-Secondary attributes that tend to vary during play,在游戏中容易变化的次要属性
+Willpower,意志
+Select an entry!,选择一个条目！
+Primary Attributes and Skills,主属性与技能
+Distribute points to your PRIMARY ATTRIBUTES and SKILLS,将点数分配到你的主属性和技能上
+These go a long way towards defining your character mechanically,这些在很大程度上从机制上定义了你的角色
+SECONDARY STATS,次级属性
+Secondary attributes that tend to vary during play,在游戏过程中会变化的次要属性
 SKILLS,技能
-Skills are derived from primary attributes and are used to perform most non-combat tasks in the game,技能来源于主属性，用于执行游戏中的大多数非战斗任务
-TOTAL,总值
+Skills are derived from primary attributes and are used to perform most non-combat tasks in the game,技能源自主属性，用于执行游戏中的大多数非战斗任务
+TOTAL,总
 FORTITUDE,体质
-Describes how tough and resilient a character is,描述一个角色的坚韧和抗打击能力
-WOUNDS,伤痕
+Describes how tough and resilient a character is,描述角色的韧性与耐久度
+WOUNDS,创伤
 Ranks,等级
 RANKS,等级
 COMBAT STATS,战斗属性
 Derived attributes that are used during combat,在战斗中使用的衍生属性
-CRIT CHANCE,临战几率
-Describes the percentage of Hits that are upgraded to Critical Hits,描述了击中转化为致命一击的概率百分比
-CRITICAL HIT,致命一击
-"For each successful Attack, there is a chance the Hit is upgraded to a Critical Hit",每次成功攻击都有几率将击中转化为致命一击
-This is a percentage chance equal to the attacker’s Crit Chance Attribute,这是一个百分比几率，等于攻击者的临战几率属性
-"If a Critical Hit is confirmed, the Damage dealt is multiplied by the Weapon’s Crit. value",如果确认为致命一击，造成的伤害会乘以武器的致命一击值
-"For instance a Weapon with a Crit. value of, multiplies the Damage dealt in a Critical Hit by",例如，一把致命一击值为的武器，会在致命一击中将造成的伤害乘以
+CRIT CHANCE,暴击几率
+Describes the percentage of Hits that are upgraded to Critical Hits,描述命中升级为暴击的百分比
+CRITICAL HIT,暴击
+"For each successful Attack, there is a chance the Hit is upgraded to a Critical Hit",每次成功的攻击，都有几率将命中升级为暴击
+This is a percentage chance equal to the attacker’s Crit Chance Attribute,这个百分比几率等于攻击者的暴击几率属性
+"If a Critical Hit is confirmed, the Damage dealt is multiplied by the Weapon’s Crit. value",如果暴击确认，造成的伤害将乘以武器的暴击值
+"For instance a Weapon with a Crit. value of, multiplies the Damage dealt in a Critical Hit by",例如，一把暴击值为的武器，会将暴击造成的伤害乘以
 MELEE DMG,近战伤害
-This is added to the current weapon's damage range for a total damage range,这会添加到当前武器的伤害范围，形成总伤害范围
-Counts encumberance from Armor,计入护甲的负重
+This is added to the current weapon's damage range for a total damage range,这将加到当前武器的伤害范围上，得出总伤害范围
+Counts encumberance from Armor,计入护甲带来的负重
 Defences are used to defend against attacks and negative effects,防御用于抵御攻击和负面效果
-WILLPOWER,忍力
-Willpower describes a character’s ability to withstand mind-affecting conditions such as those caused by spells,忍力描述了角色抵御影响心智的条件的能力，例如由法术引起的条件
-This attribute influences,该属性影响
+WILLPOWER,意志
+Willpower describes a character’s ability to withstand mind-affecting conditions such as those caused by spells,意志描述了角色抵抗影响心智的状态（如法术效果）的能力
+This attribute influences,此属性影响
 Main Attribute,主属性
-Counts encumberance from Headwear,计入头盔的负重
-Counts encumberance from Gloves,计入手套的负重
-Counts encumberance from Armor and Footwear,计入护甲和靴子的负重
+Counts encumberance from Headwear,计入帽子带来的负重
+Counts encumberance from Gloves,计入手套带来的负重
+Counts encumberance from Armor and Footwear,计入护甲和鞋靴带来的负重
 Abilities,能力
 ABILITIES,能力
 These are the Feats derived from your class,这些是源自你职业的专长
-Distribute your Development Points in them to gain benefits and new Abilities,将你的专长点分配到它们中以获得益处和新能力
-Ranks to Distribute,可分配的专长点数
+Distribute your Development Points in them to gain benefits and new Abilities,将你的发展点数分配其中以获得增益和新能力
+Ranks to Distribute,待分配等级
 Armsmaster Feats,武器大师专长
-Not Today!,今天不行！
-NOT TODAY!,今天不行！
-Triggered Ability,触发能力
+Not Today!,休想！
+NOT TODAY!,休想！
+Triggered Ability,触发式能力
 Targets,目标
 Self,自身
-Smashing Charge,破坏性冲锋
+Smashing Charge,粉碎冲锋
 Enemies,敌人
 Allies,同伴
 Anyone,任何人
-AoE,半径
+AoE,范围效果
 Melee,近战
-Your Charges cause 1-3 additional Blunt Damage,你的冲锋造成1-3点额外钝击伤害
-Killing an opponent using a Heavy Melee Weapon restores 1 Attack,使用重型近战武器击杀对手恢复1次攻击
-SWORD EXPERT,刀剑精通
+Your Charges cause 1-3 additional Blunt Damage,你的冲锋造成额外1-3点钝击伤害
+Killing an opponent using a Heavy Melee Weapon restores 1 Attack,使用重型近战武器杀死一个对手会恢复1次攻击
+SWORD EXPERT,剑术专家
 Deep Cut,深创
-Your Critical Hits using Blades cause Bleeding on your target,你的刀剑暴击会给目标造成流血效果
-Critical Hits with a Club causes The Injured Leg condition,使用战锤造成致命一击会使目标陷入伤腿状态
-AXE EXPERT,斧头专精
-Rending Blow,剥裂攻击
-RENDING BLOW,剥裂攻击
-Critical Hits with an Axe causes Injury Conditions,使用斧头造成致命一击会使目标陷入受伤状态
-ARCHERY EXPERT,射箭专精
-ARCHERY MASTER,射箭大师
-Rapid Reload,迅捷装填
-RAPID RELOAD,迅捷装填
-"If you score a Critical Hit with a Bow, you immediately regain 1 attack",如果你用弓造成致命一击，你立即恢复一次攻击
-AXE MASTER,斧头大师
-Decapitation,断头
-DECAPITATION,断头
+Your Critical Hits using Blades cause Bleeding on your target,你使用刀剑造成的暴击会使目标流血
+Critical Hits with a Club causes The Injured Leg condition,使用棍棒造成的暴击会导致腿部受伤状态
+AXE EXPERT,斧术专家
+Rending Blow,撕裂重击
+RENDING BLOW,撕裂重击
+Critical Hits with an Axe causes Injury Conditions,使用斧造成的暴击会导致受伤状态
+ARCHERY EXPERT,箭术专家
+ARCHERY MASTER,箭术大师
+Rapid Reload,快速装填
+RAPID RELOAD,快速装填
+"If you score a Critical Hit with a Bow, you immediately regain 1 attack",如果你用弓造成暴击，你立即恢复1次攻击
+AXE MASTER,斧术大师
+Decapitation,斩首
+DECAPITATION,斩首
 AllEnemies,所有敌人
-The gruesomeness of your Axe-Kill causes the Fear condition in all opponents who can see it,你的斧头击杀的恐怖使所有能看到它的敌人陷入恐惧状态
-CLUB MASTER,棍棒大师
-SHIELD MASTER,屏障专精
-Shield Slam,屏障撞击
-SHIELD SLAM,屏障撞击
-"Whilst wielding a shield, dodging a melee attack causes you to deal 1-4 Blunt damage to your attacker",持有盾牌时，闪避近战攻击会使你对攻击者造成1-4点钝击伤害
-SWORD MASTER,刀剑大师
-MEDIUM ARMOR MASTERY,中型盔甲精通
-BLOODTHIRSTY,极度嗜血
-HEAVY ARMOR MASTERY,重型盔甲精通
+The gruesomeness of your Axe-Kill causes the Fear condition in all opponents who can see it,你斧杀的恐怖景象会使所有目睹它的对手陷入恐惧状态
+CLUB MASTER,棍术大师
+SHIELD MASTER,盾术大师
+Shield Slam,持盾猛击
+SHIELD SLAM,持盾猛击
+"Whilst wielding a shield, dodging a melee attack causes you to deal 1-4 Blunt damage to your attacker",持盾时，闪避一次近战攻击会对你的攻击者造成1-4点钝击伤害
+SWORD MASTER,剑术大师
+MEDIUM ARMOR MASTERY,中型护甲精通
+BLOODTHIRSTY,嗜血
+HEAVY ARMOR MASTERY,重型护甲精通
 Cannot place Rank,无法放置等级
-The maximum number of ranks have been placed for this Feat!,本特性已放置最大等级！
-You don't have any ranks to distribute,没有等级可以分配
+The maximum number of ranks have been placed for this Feat!,此专长已达到最大等级数！
+You don't have any ranks to distribute,你没有任何可分配的等级
 Level up to gain ranks!,升级以获得等级！
 Gender,性别
-Empty,空白
+Empty,空
 Male,男性
-Portrait,头像
+Portrait,肖像
 Hair Style,发型
 Style,风格
-Facial Hair,胡须
+Facial Hair,面部毛发
 Hair Color,发色
-Skin Tone,皮肤色调
+Skin Tone,肤色
 Main Color,主色
-Secondary Color,次色
-Tertiary Color,三色
-Randomize,随机生成
+Secondary Color,辅助色
+Tertiary Color,点缀色
+Randomize,随机
 Customize Appearance,自定义外观
 You can use this screen to customize your characters physical appearance,你可以使用此界面自定义角色的外貌
-Note that changes made here are purely cosmetic,请注意，此处所做的更改仅是外观上的
-Finalize your character by editing their appearance,通过编辑角色外观来最终确定你的角色
+Note that changes made here are purely cosmetic,请注意，此处所做的更改纯粹是外观上的
+Finalize your character by editing their appearance,通过编辑外观来最终确定你的角色
 Female,女性
-Type a name and press 'Continue'!,输入名字并按下“继续”！
-Name must be between 3 and 10 characters long and may only contain standard English letters (A-Z,名字长度必须在3到10个字符之间，只能包含标准英文字母（A-Z）
+Type a name and press 'Continue'!,输入名字并按下‘继续’！
+Name must be between 3 and 10 characters long and may only contain standard English letters (A-Z,名字长度必须在3到10个字符之间，且只能包含标准英文字母（A-Z
 You must destribute all your attribute points before you can proceed!,你必须分配完所有属性点才能继续！

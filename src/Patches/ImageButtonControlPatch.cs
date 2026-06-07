@@ -18,6 +18,11 @@ namespace TranslationMod.Patches
         private static readonly FieldInfo PressedImagePathField = AccessTools.Field(typeof(ImageButtonControl), "pressedImagePath");
 
         [HarmonyPrefix]
+        /// <summary>
+        /// 重写图片按钮创建流程。
+        /// 流程：读取按钮贴图路径，按当前语言决定按钮高度，
+        /// 构造自定义按钮对象并设置三态贴图后直接返回。
+        /// </summary>
         private static bool Prefix(object __instance, ref object __result)
         {
             if (UITextButtonCtor == null || __instance == null)
