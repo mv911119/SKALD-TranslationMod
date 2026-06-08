@@ -52,7 +52,7 @@ namespace TranslationMod
             // 预构建 `{ITEM}` 模式，避免翻译时重复生成正则
             _itemPatterns = CreateItemPatterns(_dict);
             
-            // Initialize translation buffer dictionary
+            // 初始化翻译缓存相关数据
 #if DEBUG
         TranslationMod.Logger?.LogInfo($"[TranslationService] Initialized with {_dict.Count} translations loaded from CSV files");
         TranslationMod.Logger?.LogInfo($"[TranslationService] Created {_itemPatterns.Count} item patterns for {{ITEM}} placeholders");
@@ -71,7 +71,7 @@ namespace TranslationMod
         {
             if (string.IsNullOrEmpty(input)) return input;
             
-            // Check translation buffer dictionary
+            // 先检查翻译缓存
             lock (_lockObject)
             {
                 if (_translationCache.TryGetValue(input, out string cachedResult))
@@ -101,21 +101,22 @@ namespace TranslationMod
                             _translationCache[input] = verseResult;
                         }
                     }
+                    LogProcessTrace(input, verseResult);
                     return verseResult;
                 }
 
-                // Use GameTextParser to split text into parts
+                // 使用 GameTextParser 将文本拆分为多个片段
                 var sentences = GameTextParser.Parse(input);
                 
-#if DEBUG
-                TranslationMod.Logger?.LogInfo($"[TranslationService] INPUT: '{input}'");
+//#if DEBUG
+                TranslationMod.Logger?.LogInfo($"[TranslationService] PARSER INPUT: '{input}'");
                 for (int i = 0; i < sentences.Count; i++)
                 {
-                    TranslationMod.Logger?.LogInfo($"[TranslationService] SENTENCE[{i}]: '{sentences[i]}'");
+                    TranslationMod.Logger?.LogInfo($"[TranslationService] PARSER SENTENCE[{i}]: '{sentences[i]}'");
                 }
-#endif
+//#endif
                 
-                // Create template from original input
+                // 根据原始输入生成模板
                 var template = CreateTemplate(input, sentences);
                 
                 var translatedSentences = new List<string>();
@@ -125,7 +126,7 @@ namespace TranslationMod
                     translatedSentences.Add(translatedSentence);
                 }
 
-                // Apply translated sentences to template
+                // 将翻译后的句子回填到模板中
                 var result = ApplyTemplate(template, translatedSentences);
                 
                 // 如果模板回填失败但分句本身已有翻译，则直接拼接分句结果作为回退
@@ -168,6 +169,7 @@ namespace TranslationMod
                     }
                 }
 
+                LogProcessTrace(input, result);
                 return result;
             }
             catch (Exception ex)
@@ -184,7 +186,20 @@ namespace TranslationMod
                     }
                 }
                 
+                LogProcessTrace(input, input);
                 return input;
+            }
+        }
+
+        private static void LogProcessTrace(string input, string result)
+        {
+            try
+            {
+                TranslationMod.Logger?.LogInfo(
+                    $"[exec_chain]: {Environment.StackTrace}\n[input]: {input}\n[translated]: {result}\n");
+            }
+            catch
+            {
             }
         }
 
@@ -224,14 +239,17 @@ namespace TranslationMod
                     translatedCount++;
 
                 translatedLines.Add(translated);
-
+#if DEBUG
                 TranslationMod.Logger?.LogInfo($"[Verse] '{line}' -> '{translated}' [found={wasTranslated}]");
+#endif
             }
 
             if (translatedCount > 0)
             {
                 string result = string.Join("\n", translatedLines);
+#if DEBUG
                 TranslationMod.Logger?.LogInfo($"[Verse] Result ({translatedCount}/4): '{result}'");
+#endif
                 return result;
             }
 
@@ -383,7 +401,7 @@ namespace TranslationMod
             }
         }
 
-        /// <summary>Логирует успешное нахождение перевода через Title Case (с дедупликацией)</summary>
+        /// <summary>记录通过 Title Case 命中的翻译日志（带去重）。</summary>
         private void LogTitleCaseHit(string original, string titleCaseVersion, string finalTranslation)
         {
 #if DEBUG
@@ -399,7 +417,7 @@ namespace TranslationMod
 #endif
         }
 
-        /// <summary>Логирует успешное нахождение перевода через {ITEM} паттерн (с дедупликацией)</summary>
+        /// <summary>记录通过 `{ITEM}` 模式命中的翻译日志（带去重）。</summary>
         private void LogItemPatternHit(string original, string pattern, string item, string finalTranslation)
         {
 #if DEBUG
@@ -414,7 +432,7 @@ namespace TranslationMod
 #endif
         }
 
-        /// <summary>Логирует успешное нахождение перевода списка предметов (с дедупликацией)</summary>
+        /// <summary>记录物品列表翻译命中的日志（带去重）。</summary>
         private void LogItemListHit(string original, int itemCount, int translatedCount, string finalTranslation)
         {
 #if DEBUG
@@ -429,7 +447,7 @@ namespace TranslationMod
 #endif
         }
 
-        /// <summary>Логирует успешное нахождение перевода через замену апострофа (с дедупликацией)</summary>
+        /// <summary>记录通过撇号替换命中的翻译日志（带去重）。</summary>
         private void LogApostropheHit(string original, string apostropheVersion, string finalTranslation)
         {
 #if DEBUG
@@ -445,10 +463,10 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Пытается заменить имя игрока на плейсхолдер {PLAYER} и найти перевод
+        /// 尝试将玩家名替换为 `{PLAYER}` 占位符后查找翻译。
         /// </summary>
-        /// <param name="sentence">Исходное предложение</param>
-        /// <returns>Переведенное предложение с восстановленным именем игрока или null если не найдено</returns>
+        /// <param name="sentence">原始句子</param>
+        /// <returns>恢复玩家名后的译文；若未命中则返回 null</returns>
         private string TryReplacePlayerName(string sentence)
         {
             try
@@ -462,7 +480,7 @@ namespace TranslationMod
                     return null;
                 }
 
-                // Проверяем, содержит ли строка имя игрока
+                // 检查句子中是否包含玩家名
                 if (!sentence.Contains(playerName))
                 {
 #if DEBUG
@@ -471,19 +489,19 @@ namespace TranslationMod
                     return null;
                 }
 
-                // Заменяем имя игрока на плейсхолдер
+                // 将玩家名替换为占位符
                 string sentenceWithPlaceholder = sentence.Replace(playerName, "{PLAYER}");
 #if DEBUG
             TranslationMod.Logger?.LogInfo($"[TranslationService] Checking player name replacement: '{sentence}' -> '{sentenceWithPlaceholder}'");
 #endif
 
-                // Ищем перевод для строки с плейсхолдером
+                // 查找带占位符版本的翻译
                 if (_dict.TryGetValue(sentenceWithPlaceholder, out string translatedWithPlaceholder))
                 {
-                    // Заменяем плейсхолдер обратно на имя игрока в переводе
+                    // 将译文中的占位符还原成玩家名
                     string finalTranslation = translatedWithPlaceholder.Replace("{PLAYER}", playerName);
                     
-                    // Обрабатываем плейсхолдер {IFHE} в итоговом переводе
+                    // 处理最终译文中的 {IFHE} 占位符
                     finalTranslation = ProcessGenderPlaceholder(finalTranslation);
                                         
                     return finalTranslation;
@@ -502,9 +520,9 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Получает имя текущего игрока из игры
+        /// 获取当前玩家名称
         /// </summary>
-        /// <returns>Имя игрока или null в случае ошибки</returns>
+        /// <returns>玩家名；出错时返回 null</returns>
         private static string GetCurrentPlayerName()
         {
             try
@@ -541,9 +559,9 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Получает пол текущего игрока из игры
+        /// 获取当前玩家性别
         /// </summary>
-        /// <returns>true если игрок мужчина, false если женщина, null в случае ошибки</returns>
+        /// <returns>男性返回 true，女性返回 false，出错时返回 null</returns>
         private static bool? GetCurrentPlayerGender()
         {
             try
@@ -580,10 +598,10 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Обрабатывает плейсхолдер {IFHE string_if_player_man | string_if_player_woman} в переводе
+        /// 处理译文中的 `{IFHE 男性文本 | 女性文本}` 占位符。
         /// </summary>
-        /// <param name="translation">Строка перевода с возможными плейсхолдерами {IFHE}</param>
-        /// <returns>Обработанная строка с заменёнными плейсхолдерами</returns>
+        /// <param name="translation">可能包含 `{IFHE}` 占位符的译文</param>
+        /// <returns>替换完成后的结果字符串</returns>
         private static string ProcessGenderPlaceholder(string translation)
         {
             if (string.IsNullOrEmpty(translation) || !translation.Contains("{IFHE"))
@@ -593,7 +611,7 @@ namespace TranslationMod
 
             try
             {
-                // Регулярное выражение для поиска плейсхолдера {IFHE text1 | text2}
+                // 用于匹配 {IFHE text1 | text2} 占位符的正则
                 var genderRegex = new Regex(@"\{IFHE\s+([^|]+?)\s*\|\s*([^}]+?)\s*\}", RegexOptions.CultureInvariant);
                 
                 string result = translation;
@@ -610,10 +628,10 @@ namespace TranslationMod
                             string maleText = match.Groups[1].Value.Trim();
                             string femaleText = match.Groups[2].Value.Trim();
                             
-                            // Выбираем текст в зависимости от пола игрока
+                            // 根据玩家性别选择对应文本
                             string selectedText = playerGender.Value ? maleText : femaleText;
                             
-                            // Заменяем плейсхолдер на выбранный текст
+                            // 将占位符替换为选中的文本
                             result = result.Replace(match.Value, selectedText);
                             
 #if DEBUG
@@ -623,7 +641,7 @@ namespace TranslationMod
                     }
                     else
                     {
-                        // Если не удалось определить пол игрока, используем мужской вариант по умолчанию
+                        // 如果无法确定玩家性别，则默认使用男性文本
                         foreach (Match match in matches)
                         {
                             string maleText = match.Groups[1].Value.Trim();
@@ -646,10 +664,10 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Создает список regex паттернов для обработки {ITEM} плейсхолдеров
+        /// 创建用于处理 `{ITEM}` 占位符的正则模式列表。
         /// </summary>
-        /// <param name="dict">Словарь переводов</param>
-        /// <returns>Список паттернов и соответствующих шаблонов</returns>
+        /// <param name="dict">翻译字典</param>
+        /// <returns>模式及对应模板的列表</returns>
         private static List<(Regex regex, string template)> CreateItemPatterns(Dictionary<string, string> dict)
         {
             var patterns = new List<(Regex regex, string template)>();
@@ -660,14 +678,14 @@ namespace TranslationMod
                 {
                     try
                     {
-                        // Подсчитываем количество {ITEM} в ключе
+                        // 统计键中 `{ITEM}` 的出现次数
                         int itemCount = 0;
                         string tempKey = kvp.Key;
                         
-                        // Заменяем каждый {ITEM} на уникальный временный маркер
+                        // 将每个 `{ITEM}` 替换成唯一的临时标记
                         while (tempKey.Contains("{ITEM}"))
                         {
-                            // Заменяем только первое вхождение {ITEM}
+                            // 每次只替换第一个 `{ITEM}`
                             int index = tempKey.IndexOf("{ITEM}");
                             if (index >= 0)
                             {
@@ -678,10 +696,10 @@ namespace TranslationMod
                             itemCount++;
                         }
                         
-                        // Применяем Regex.Escape для безопасности
+                        // 使用 Regex.Escape 进行安全转义
                         string escapedKey = Regex.Escape(tempKey);
                         
-                        // Заменяем каждый временный маркер на отдельную regex группу
+                        // 将每个临时标记替换为独立的正则捕获组
                         for (int i = 0; i < itemCount; i++)
                         {
                             escapedKey = escapedKey.Replace($"___ITEM_PLACEHOLDER_{i}___", "(.+?)");
@@ -707,10 +725,10 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Пытается найти совпадение по {ITEM} паттернам и выполнить перевод
+        /// 尝试匹配 `{ITEM}` 模式并生成译文。
         /// </summary>
-        /// <param name="sentence">Исходное предложение</param>
-        /// <returns>Переведенное предложение или null если не найдено</returns>
+        /// <param name="sentence">原始句子</param>
+        /// <returns>命中时返回译文，否则返回 null</returns>
         private string TryMatchItemPattern(string sentence)
         {
             try
@@ -719,14 +737,14 @@ namespace TranslationMod
             TranslationMod.Logger?.LogInfo($"[TranslationService] Checking {_itemPatterns.Count} item patterns for: '{sentence}'");
 #endif
                 
-                // Сначала пробуем прямое совпадение
+                // 先尝试直接匹配
                 string directMatch = TryMatchItemPatternDirect(sentence, sentence, false);
                 if (directMatch != null)
                 {
                     return directMatch;
                 }
                 
-                // Если не найдено и строка в CAPS - пробуем Title Case версию
+                // 若未命中且原文是全大写，再尝试 Title Case 版本
                 if (IsAllUpperCase(sentence))
                 {
                     string titleCaseVersion = ConvertToTitleCase(sentence);
@@ -754,12 +772,12 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Выполняет прямое сопоставление с {ITEM} паттернами
+        /// 执行一次基于 `{ITEM}` 模式的直接匹配。
         /// </summary>
-        /// <param name="testSentence">Предложение для тестирования против паттернов</param>
-        /// <param name="originalSentence">Оригинальное предложение для логирования</param>
-        /// <param name="convertToUpper">Нужно ли конвертировать результат в CAPS</param>
-        /// <returns>Переведенное предложение или null если не найдено</returns>
+        /// <param name="testSentence">用于匹配模式的测试句子</param>
+        /// <param name="originalSentence">用于日志记录的原始句子</param>
+        /// <param name="convertToUpper">是否需要把结果转换为全大写</param>
+        /// <returns>命中时返回译文，否则返回 null</returns>
         private string TryMatchItemPatternDirect(string testSentence, string originalSentence, bool convertToUpper)
         {
             try
@@ -771,7 +789,7 @@ namespace TranslationMod
                     var match = regex.Match(testSentence);
                     if (match.Success && match.Groups.Count > 1)
                     {
-                        // Получаем все найденные предметы (кроме группы 0, которая содержит полное совпадение)
+                        // 提取所有匹配到的物品（不包含第 0 组的完整匹配）
                         var items = new List<string>();
                         for (int i = 1; i < match.Groups.Count; i++)
                         {
@@ -782,7 +800,7 @@ namespace TranslationMod
                 TranslationMod.Logger?.LogInfo($"[TranslationService] Item pattern matched: '{testSentence}' -> items: [{string.Join(", ", items)}] using template: '{template}'");
 #endif
                         
-                        // Переводим каждый найденный предмет отдельно
+                        // 分别翻译每个匹配到的物品
                         var translatedItems = new List<string>();
                         foreach (string item in items)
                         {
@@ -790,11 +808,11 @@ namespace TranslationMod
                             translatedItems.Add(translatedItem);
                         }
                         
-                        // Заменяем каждый {ITEM} в шаблоне на соответствующий переведенный предмет
+                        // 用对应的译名替换模板中的每个 `{ITEM}`
                         string finalTranslation = template;
                         for (int i = 0; i < translatedItems.Count; i++)
                         {
-                            // Находим первое вхождение {ITEM} и заменяем его
+                            // 找到第一个 `{ITEM}` 并将其替换
                             int index = finalTranslation.IndexOf("{ITEM}");
                             if (index >= 0)
                             {
@@ -804,10 +822,10 @@ namespace TranslationMod
                             }
                         }
                         
-                        // Обрабатываем плейсхолдер {IFHE} в итоговом переводе
+                        // 处理最终译文中的 `{IFHE}` 占位符
                         finalTranslation = ProcessGenderPlaceholder(finalTranslation);
                         
-                        // Если нужно конвертировать в CAPS
+                        // 如有需要，再将结果转为全大写
                         if (convertToUpper)
                         {
                             finalTranslation = finalTranslation.ToUpper();
@@ -816,7 +834,7 @@ namespace TranslationMod
 #endif
                         }
                         
-                        // Логируем успешное совпадение
+                        // 记录这次成功命中
                         string logInfo = convertToUpper ? $" (CAPS: {testSentence})" : "";
                         LogItemPatternHit(originalSentence, regex.ToString(), string.Join(", ", items) + logInfo, finalTranslation);
                         
@@ -834,19 +852,19 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Переводит предмет напрямую из словаря без дополнительных проверок
-        /// (избегает рекурсии при переводе {ITEM} паттернов)
+        /// 直接从字典中翻译物品名，不再执行额外检查，
+        /// 以避免在 `{ITEM}` 模式翻译时发生递归。
         /// </summary>
-        /// <param name="item">Название предмета</param>
-        /// <returns>Переведенное название предмета</returns>
+        /// <param name="item">物品名称</param>
+        /// <returns>物品译名</returns>
         private string TranslateItemDirectly(string item)
         {
             try
             {
-                // Прямой поиск в словаре
+                // 先直接查字典
                 if (_dict.TryGetValue(item, out string directTranslation))
                 {
-                    // Обрабатываем плейсхолдер {IFHE} в итоговом переводе
+                    // 处理结果中的 `{IFHE}` 占位符
                     directTranslation = ProcessGenderPlaceholder(directTranslation);
                     
 #if DEBUG
@@ -855,13 +873,13 @@ namespace TranslationMod
                     return directTranslation;
                 }
                 
-                // Если не найден - проверяем Title Case (для ЗАГЛАВНЫХ БУКВ)
+                // 若未命中，则对全大写文本再尝试 Title Case 查找
                 if (IsAllUpperCase(item))
                 {
                     string titleCaseVersion = ConvertToTitleCase(item);
                     if (_dict.TryGetValue(titleCaseVersion, out string titleCaseTranslated))
                     {
-                        // Обрабатываем плейсхолдер {IFHE} перед конвертацией в CAPS
+                        // 在转换为全大写前先处理 `{IFHE}` 占位符
                         titleCaseTranslated = ProcessGenderPlaceholder(titleCaseTranslated);
                         string upperTranslation = titleCaseTranslated.ToUpper();
 #if DEBUG
@@ -871,7 +889,7 @@ namespace TranslationMod
                     }
                 }
                 
-                // Если перевод не найден - возвращаем оригинал
+                // 如果仍未找到翻译，则返回原文
 #if DEBUG
                 TranslationMod.Logger?.LogDebug($"[TranslationService] No translation found for item: '{item}', using original");
 #endif
@@ -885,18 +903,18 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Пытается перевести строку как список предметов, разделенных запятыми
+        /// 尝试将整句识别为逗号分隔的物品列表并翻译。
         /// </summary>
-        /// <param name="sentence">Исходное предложение</param>
-        /// <returns>Переведенный список предметов или null если не является списком</returns>
+        /// <param name="sentence">原始句子</param>
+        /// <returns>若识别成功则返回翻译后的物品列表，否则返回 null</returns>
         private string TryTranslateItemList(string sentence)
         {
             try
             {
-                // Разбиваем строку по запятым, сохраняя разделители
+                // 按逗号拆分，并保留分隔符
                 string[] parts = Regex.Split(sentence, @"(\s*,\s*)");
                 
-                // Если меньше 3 частей (минимум: предмет1, запятая, предмет2), то это не список
+                // 少于 3 段时（最少需为：物品1、逗号、物品2），可判定其不是列表
                 if (parts.Length < 3)
                 {
 #if DEBUG
@@ -905,9 +923,9 @@ namespace TranslationMod
                     return null;
                 }
                 
-                // Проверяем, что у нас есть хотя бы 2 предмета (нечетные индексы - это предметы)
+                // 检查是否至少有 2 个物品项
                 var itemParts = new List<string>();
-                for (int i = 0; i < parts.Length; i += 2) // берем только нечетные индексы (предметы)
+                for (int i = 0; i < parts.Length; i += 2) // 只取物品位置的片段
                 {
                     if (!string.IsNullOrWhiteSpace(parts[i]))
                     {
@@ -915,7 +933,7 @@ namespace TranslationMod
                     }
                 }
                 
-                // Минимум 2 предмета для списка
+                // 物品列表至少要包含 2 个物品
                 if (itemParts.Count < 2)
                 {
 #if DEBUG
@@ -928,13 +946,13 @@ namespace TranslationMod
         TranslationMod.Logger?.LogInfo($"[TranslationService] Detected potential item list with {itemParts.Count} items: [{string.Join(", ", itemParts)}]");
 #endif
                 
-                // Пытаемся перевести каждый предмет
+                // 逐个尝试翻译每个物品
                 var translatedParts = new List<string>();
                 int translatedCount = 0;
                 
                 for (int i = 0; i < parts.Length; i++)
                 {
-                    if (i % 2 == 0) // Это предмет (нечетный индекс в оригинальном массиве)
+                    if (i % 2 == 0) // 当前位置是物品内容
                     {
                         string item = parts[i].Trim();
                         if (!string.IsNullOrWhiteSpace(item))
@@ -952,18 +970,18 @@ namespace TranslationMod
                             translatedParts.Add(parts[i]);
                         }
                     }
-                    else // Это разделитель (запятая с пробелами)
+                    else // 当前位置是分隔符（逗号及其周围空白）
                     {
                         translatedParts.Add(parts[i]);
                     }
                 }
                 
-                // Если хотя бы один предмет был переведен, считаем это успехом
+                // 只要有至少一个物品翻译成功，就视为整体成功
                 if (translatedCount > 0)
                 {
                     string finalTranslation = string.Join("", translatedParts);
                     
-                    // Обрабатываем плейсхолдер {IFHE} в итоговом переводе
+                    // 处理最终结果中的 `{IFHE}` 占位符
                     finalTranslation = ProcessGenderPlaceholder(finalTranslation);
                     
                     LogItemListHit(sentence, itemParts.Count, translatedCount, finalTranslation);
@@ -982,7 +1000,7 @@ namespace TranslationMod
             }
         }
 
-        /// <summary>Получает путь к файлу need_translate.csv</summary>
+        /// <summary>获取 `need_translate.csv` 的文件路径。</summary>
         private static string GetMissingKeysFilePath()
         {
             var currentLanguagePack = LanguageManager.GetCurrentLanguagePack();
@@ -995,15 +1013,15 @@ namespace TranslationMod
             return Path.Combine(languagePackDirectory, "need_translate.csv");
         }
 
-        /// <summary>Экранирует значение для CSV формата</summary>
+        /// <summary>对值进行 CSV 转义。</summary>
         private static string EscapeCsvValue(string value)
         {
             if (string.IsNullOrEmpty(value)) return value;
             
-            // Если содержит кавычки, запятые или переносы строк - оборачиваем в кавычки
+            // 如果包含引号、逗号或换行，则需要整体包裹在引号中
             if (value.Contains("\"") || value.Contains(",") || value.Contains("\n") || value.Contains("\r"))
             {
-                // Удваиваем кавычки и оборачиваем в кавычки
+                // 将内部引号转义成双引号，并整体包裹引号
                 return "\"" + value.Replace("\"", "\"\"") + "\"";
             }
             
@@ -1011,11 +1029,11 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Проверяет, состоит ли строка только из заглавных букв, цифр, пробелов и знаков препинания
-        /// и содержит хотя бы одну заглавную букву
+        /// 检查字符串是否只由大写字母、数字、空白和标点组成，
+        /// 且至少包含一个大写字母。
         /// </summary>
-        /// <param name="input">Строка для проверки</param>
-        /// <returns>true если соответствует паттерну заглавных букв</returns>
+        /// <param name="input">待检查的字符串</param>
+        /// <returns>若符合全大写风格模式则返回 true</returns>
         private static bool IsAllUpperCase(string input)
         {
             if (string.IsNullOrEmpty(input)) return false;
@@ -1024,28 +1042,28 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Преобразует строку в Title Case (первая буква каждого слова заглавная, остальные маленькие)
-        /// Оптимизировано для английского языка
+        /// 将字符串转换为 Title Case（每个单词首字母大写，其余字母小写）。
+        /// 该逻辑主要面向英文文本。
         /// </summary>
-        /// <param name="input">Исходная строка</param>
-        /// <returns>Строка в Title Case</returns>
+        /// <param name="input">原始字符串</param>
+        /// <returns>转换后的 Title Case 字符串</returns>
         private static string ConvertToTitleCase(string input)
         {
             if (string.IsNullOrWhiteSpace(input))
                 return input;
 
-            // приводим к lower-case один раз
-            var parts = Regex.Split(input.ToLowerInvariant(), @"(\s+)"); // сохраняем пробелы
+            // 先统一转成小写
+            var parts = Regex.Split(input.ToLowerInvariant(), @"(\s+)"); // 保留空白分隔符
 
             for (int i = 0; i < parts.Length; i++)
             {
-                // если это разделитель (пробелы / табы) — пропускаем
+                // 如果当前片段只是分隔符（空格 / 制表符），则跳过
                 if (Regex.IsMatch(parts[i], @"^\s+$")) continue;
 
-                // слово «of» — оставляем строчным, кроме первого слова всей фразы
+                // `of` / `as` / `for` 这类词，除首词外保持小写
                 if (i != 0 && (parts[i] == "of" || parts[i] == "as" || parts[i] == "for")) continue;
 
-                // капитализируем первую буквенную позицию слова
+                // 将单词中的首个字母位置转为大写
                 parts[i] = Regex.Replace(parts[i], @"^\p{L}",
                             m => m.Value.ToUpperInvariant());
             }
@@ -1054,11 +1072,11 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Создает шаблон из исходного текста, заменяя найденные предложения на плейсхолдеры {0}, {1}, {2}, etc.
+        /// 根据原始文本构造模板，将识别出的句子替换为 `{0}`、`{1}`、`{2}` 等占位符。
         /// </summary>
-        /// <param name="input">Исходная строка</param>
-        /// <param name="sentences">Список предложений найденных в строке</param>
-        /// <returns>Шаблон с плейсхолдерами</returns>
+        /// <param name="input">原始字符串</param>
+        /// <param name="sentences">从字符串中解析出的句子列表</param>
+        /// <returns>带占位符的模板字符串</returns>
         private static string CreateTemplate(string input, List<string> sentences)
         {
             if (string.IsNullOrEmpty(input) || sentences == null || sentences.Count == 0)
@@ -1066,8 +1084,8 @@ namespace TranslationMod
 
             string template = input;
             
-            // Сортируем предложения по убыванию длины, чтобы сначала заменить более длинные
-            // Это предотвращает случайную замену коротких предложений внутри длинных
+            // 按句子长度从长到短排序，优先替换更长的句子
+            // 这样可以避免较短句子误替换较长句子中的子串
             var sortedSentences = sentences
                 .Select((sentence, index) => new { Sentence = sentence, Index = index })
                 .Where(x => !string.IsNullOrEmpty(x.Sentence))
@@ -1079,12 +1097,12 @@ namespace TranslationMod
                 string sentence = item.Sentence;
                 int originalIndex = item.Index;
                 
-                // Ищем первое вхождение предложения в шаблоне
+                // 在模板中查找该句子的第一次出现位置
                 int position = template.IndexOf(sentence, StringComparison.Ordinal);
                 
                 if (position >= 0)
                 {
-                    // Заменяем найденное предложение на плейсхолдер
+                    // 将命中的句子替换成占位符
                     string placeholder = "{" + originalIndex + "}";
                     template = template.Substring(0, position) + 
                               placeholder + 
@@ -1096,11 +1114,11 @@ namespace TranslationMod
         }
 
         /// <summary>
-        /// Применяет переведенные предложения к шаблону
+        /// 将翻译后的句子回填到模板中。
         /// </summary>
-        /// <param name="template">Шаблон с плейсхолдерами</param>
-        /// <param name="translatedSentences">Список переведенных предложений</param>
-        /// <returns>Итоговая строка с переводом</returns>
+        /// <param name="template">带占位符的模板</param>
+        /// <param name="translatedSentences">翻译后的句子列表</param>
+        /// <returns>回填后的最终译文</returns>
         private static string ApplyTemplate(string template, List<string> translatedSentences)
         {
             if (string.IsNullOrEmpty(template) || translatedSentences == null)
@@ -1118,7 +1136,7 @@ namespace TranslationMod
             return result;
         }
 
-        /// <summary>Получаем список CSV-файлов из language-пакета.</summary>
+        /// <summary>获取语言包中的 CSV 文件列表。</summary>
         private static IEnumerable<string> GetCsvFiles()
         {
             var currentLanguagePack = LanguageManager.GetCurrentLanguagePack();
@@ -1138,27 +1156,27 @@ namespace TranslationMod
         {
             var dict = new Dictionary<string, string>(StringComparer.Ordinal);
 
-            foreach (var path in csvPaths.OrderBy(p => p)) // детерминированный порядок
+            foreach (var path in csvPaths.OrderBy(p => p)) // 保持确定性的处理顺序
             {
                 foreach (var line in File.ReadLines(path))
                 {
                     if (string.IsNullOrWhiteSpace(line) || line[0] == '#') continue;
 
                     var columns = ParseCsvLine(line);
-                    if (columns.Length < 2) continue;   // нужна хотя бы Original;Translate
+                    if (columns.Length < 2) continue;   // 至少需要 Original 和 Translate 两列
 
                     string original = columns[0];
                     string translation = columns[1];
 
-                    // Поддержка маркера \n в переводах — заменяем на реальный перенос строки.
-                    // Это позволяет задавать многострочные переводы (напр. стихи) в однострочном CSV.
-                    // В CSV пишем: "оригинал","строка1\nстрока2\nстрока3"
+                    // 支持在译文中使用 \n 标记，并将其还原为真实换行。
+                    // 这样就能在单行 CSV 中表达多行译文，例如诗句。
+                    // CSV 中可以写成："原文","第1行\n第2行\n第3行"
                     if (translation.Contains("\\n"))
                     {
                         translation = translation.Replace("\\n", "\n");
                     }
 
-                    // Первый встретившийся перевод выигрывает
+                    // 同一原文以首个出现的译文为准
                     if (!dict.ContainsKey(original))
                         dict[original] = translation;
                 }
@@ -1181,13 +1199,13 @@ namespace TranslationMod
                 {
                     if (inQuotes && i + 1 < line.Length && line[i + 1] == '"')
                     {
-                        // Двойная кавычка внутри кавычек - это экранированная кавычка
+                    // 引号中的双引号表示转义后的引号
                         current.Append('"');
-                        i++; // Пропускаем следующую кавычку
+                        i++; // 跳过下一枚引号
                     }
                     else
                     {
-                        // Переключаем состояние "внутри кавычек"
+                        // 切换“当前是否处于引号内部”的状态
                         inQuotes = !inQuotes;
                     }
                     continue;

@@ -1,4 +1,4 @@
-// Patches/UITextBlockSetContentPatch.cs
+// UITextBlock.setContent 补丁
 using HarmonyLib;
 using System;
 using System.Collections.Generic;
@@ -13,8 +13,8 @@ using TranslationMod.Configuration;
 namespace TranslationMod.Patches
 {
     /// <summary>
-    /// Harmony patch intercepting UITextBlock.setContent(string)
-    /// and inserting translated text.
+    /// Harmony 补丁：拦截 `UITextBlock.setContent(string)`，
+    /// 并注入翻译后的文本。
     /// </summary>
     [HarmonyPatch(typeof(UITextBlock), nameof(UITextBlock.setContent), new[] { typeof(string) })]
     public static class UITextBlockSetContentPatch
@@ -266,7 +266,7 @@ namespace TranslationMod.Patches
                     // 获取首字符在字图集里的子图编号
                     int subimageForChar = StringPrinter.getSubimageForChar(translated[0]);
                     
-                    // Расширенная проверка для кириллицы (ваш комментарий: переделать на проверку взятых кодов из кодировки)
+                    // 针对西里尔字符的扩展检查（后续可改为基于实际编码表编号判断）
                     // 0-25、 90-122 字符需要进行装饰
                     if (subimageForChar <= 25 || (subimageForChar >= 90 && subimageForChar <= 122))
                     {                        
@@ -302,11 +302,11 @@ namespace TranslationMod.Patches
                     TranslationMod.Logger?.LogInfo($"Tagged input: {taggedInput}");
 #endif
                     
-                    // Извлекаем tooltip ключи и добавляем их в буфер
+                    // 提取 tooltip 键并加入缓冲区
                     //提取 tooltip 的key，并将它们添加到缓冲区
                     var keys = ExtractAndBufferTooltipKeys(taggedInput);
                     
-                    // Оборачиваем переведенные ключи в теги <tag></tag>
+                    // 将翻译后的键包裹进 <tag></tag> 标签
                     //将已翻译的key用 <tag></tag> 标签包裹起来
                     translated = TagKeys(translated, keys);
                     
@@ -344,14 +344,14 @@ namespace TranslationMod.Patches
             {
                 TranslationMod.Logger?.LogError($"Exception in SetContentComplete: {ex.Message}");
                 TranslationMod.Logger?.LogError($"Stack trace: {ex.StackTrace}");
-                throw; // Перебрасываем исключение для обработки в Prefix
+                throw; // 继续向上抛出异常，由 Prefix 统一处理
             }
         }
 
         /// <summary>
-        /// Извлекает tooltip ключи из тегов <tag>tooltipKey</tag>, переводит их и добавляет в буфер
+        /// 从 `<tag>tooltipKey</tag>` 标签中提取 tooltip 键，翻译后写入缓冲区。
         /// </summary>
-        /// <param name="input">Исходный текст с тегами</param>
+        /// <param name="input">带标签的原始文本</param>
         private static Dictionary<string, string> ExtractAndBufferTooltipKeys(string input)
         {
             Dictionary<string, string> keys = new Dictionary<string, string>();
@@ -381,7 +381,7 @@ namespace TranslationMod.Patches
                             if (string.IsNullOrWhiteSpace(originalKey))
                                 continue;
 
-                            // Переводим ключ
+                            // 翻译该键
                             string translatedKey;
                             if(originalKey.Contains("#"))
                             {
@@ -426,7 +426,7 @@ namespace TranslationMod.Patches
 
             var found = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
-            // MatchEvaluator сразу и собирает тег, и отдаёт замену без #
+            // MatchEvaluator 同时负责收集标签，并返回去掉 # 后的替换结果
             string result = regex.Replace(input, m =>
             {
                 string tag = m.Groups[1].Value;   // уже без «#»
@@ -441,7 +441,7 @@ namespace TranslationMod.Patches
             if (string.IsNullOrWhiteSpace(input) || keys == null || keys.Count == 0)
                 return input;
 
-            // Сортируем ключи по убыванию длины для приоритета длинных совпадений
+            // 按键长度从长到短排序，优先匹配更长的键
             var orderedKeys = keys
                 .Where(k => !string.IsNullOrWhiteSpace(k))
                 .OrderByDescending(k => k.Length)
@@ -449,10 +449,10 @@ namespace TranslationMod.Patches
 
             foreach (var key in orderedKeys)
             {
-                // Удаляем лишние пробелы и приводим к нижнему регистру для сопоставления
+                // 清理多余空白，便于后续匹配
                 string normalizedKey = key.Trim();
 
-                // Пытаемся найти слова, начинающиеся на ключ и допускающие падежные окончания
+                // 尝试匹配以该键开头、允许词形变化后缀的单词
                 string pattern = $@"\b({Regex.Escape(normalizedKey)}\p{{L}}*)\b";
 
                 input = Regex.Replace(
@@ -460,11 +460,11 @@ namespace TranslationMod.Patches
                     pattern,
                     match =>
                     {
-                        // Уже содержит тег — пропускаем
+                        // 已经带标签则跳过
                         if (match.Value.Contains("<tag>") || match.Value.Contains("</tag>"))
                             return match.Value;
 
-                        // Заворачиваем найденное совпадение
+                        // 给命中的内容包裹标签
                         return $"<tag>{match.Value}</tag>";
                     },
                     RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
@@ -480,7 +480,7 @@ namespace TranslationMod.Patches
             public Regex Rx { get; set; }
         }
         /// <summary>
-        /// Оборачивает найденные ключи в <tag></tag> с предотвращением дублирования.
+        /// 将命中的键包裹进 `<tag></tag>`，并防止重复包裹。
         /// </summary>
         public static string TagKeys(string text, Dictionary<string, string> dict)
         {
@@ -489,10 +489,10 @@ namespace TranslationMod.Patches
 
             try
             {
-                // Набор для отслеживания уже обработанных позиций
+                // 用于跟踪已处理区间的集合
                 var processedRanges = new List<(int start, int end)>();
                 
-                // 1) строим Regex-паттерны для всех ключей (длинные → первыми)
+                // 1) 为所有键构建 Regex 模式（长键优先）
                 var patternInfos = dict
                     .Where(kvp => !string.IsNullOrWhiteSpace(kvp.Key))
                     .OrderByDescending(kvp => kvp.Key.Length)
@@ -527,7 +527,7 @@ namespace TranslationMod.Patches
                     .Select(rx => rx.Value)
                     .ToArray();
 
-                // 2) Собираем все совпадения с их позициями
+                // 2) 收集所有命中及其位置
                 var allMatches = new List<(Match match, PatternInfo pattern, int priority)>();
                 
                 for (int i = 0; i < patternInfos.Length; i++)
@@ -538,10 +538,10 @@ namespace TranslationMod.Patches
                         var matches = p.Rx.Matches(text);
                         foreach (Match match in matches)
                         {
-                            // Проверяем, что совпадение не содержит уже тег
+                            // 确认当前命中尚未包含标签
                             if (!match.Value.Contains("<tag>") && !match.Value.Contains("</tag>"))
                             {
-                                allMatches.Add((match, p, i)); // i как приоритет (меньше = выше приоритет)
+                                allMatches.Add((match, p, i)); // i 作为优先级（越小优先级越高）
                             }
                         }
                     }
@@ -551,13 +551,13 @@ namespace TranslationMod.Patches
                     }
                 }
 
-                // 3) Сортируем по приоритету (длина ключа) и позиции
+                // 3) 按优先级（键长度）和位置排序
                 allMatches = allMatches
-                    .OrderBy(x => x.priority) // Сначала по приоритету (длинные ключи первыми)
-                    .ThenBy(x => x.match.Index) // Затем по позиции в тексте
+                    .OrderBy(x => x.priority) // 先按优先级（长键优先）
+                    .ThenBy(x => x.match.Index) // 再按文本中的位置
                     .ToList();
 
-                // 4) Отфильтровываем пересекающиеся совпадения
+                // 4) 过滤相互重叠的命中
                 var finalMatches = new List<(Match match, PatternInfo pattern)>();
                 
                 foreach (var (match, pattern, _) in allMatches)
@@ -565,7 +565,7 @@ namespace TranslationMod.Patches
                     int start = match.Index;
                     int end = match.Index + match.Length - 1;
                     
-                    // Проверяем, не пересекается ли с уже выбранными совпадениями
+                    // 检查是否与已选命中发生重叠
                     bool overlaps = processedRanges.Any(range => 
                         !(end < range.start || start > range.end));
                     
@@ -585,7 +585,7 @@ namespace TranslationMod.Patches
                     }
                 }
 
-                // 5) Применяем замены в обратном порядке (от конца к началу), чтобы не сбить позиции
+                // 5) 按从后往前的顺序执行替换，避免位置偏移
                 finalMatches = finalMatches.OrderByDescending(x => x.match.Index).ToList();
                 
                 foreach (var (match, pattern) in finalMatches)
@@ -595,13 +595,13 @@ namespace TranslationMod.Patches
                         string matchValue = match.Value;
                         string replacement = $"<tag>{matchValue}</tag>";
                         
-                        // Добавляем в буфер tooltip ключей
+                        // 将 tooltip 键映射加入缓冲区
                         if (!TooltipKeyBuffer.ContainsKey(matchValue) && matchValue != pattern.OriginalKey)
                         {
                             TooltipKeyBuffer.Add(matchValue, pattern.OriginalKey);
                         }
                         
-                        // Заменяем в тексте
+                        // 在文本中执行替换
                         text = text.Substring(0, match.Index) + replacement + text.Substring(match.Index + match.Length);
                         
 #if DEBUG
@@ -619,7 +619,7 @@ namespace TranslationMod.Patches
             catch (Exception ex)
             {
                 TranslationMod.Logger?.LogError($"[TagKeys] General error in TagKeys: {ex.Message}");
-                return text; // Возвращаем исходный текст в случае ошибки
+                return text; // 出错时返回原始文本
             }
         }
 
@@ -956,13 +956,13 @@ namespace TranslationMod.Patches
             return !char.IsLetterOrDigit(c);
         }
 
-        /// строит приближённый паттерн по ключу
+        /// 根据关键词构造近似匹配模式
         private static string BuildPattern(string key)
         {
             if (string.IsNullOrWhiteSpace(key))
                 return string.Empty;
 
-            // «Очки развития» → «Очк\w* \s+ разви\w*»
+            // 例如：“Очки развития” -> “Очк\w* \s+ разви\w*”
             var tokens = key.Split(new[] { ' ', '\t' },
                                 StringSplitOptions.RemoveEmptyEntries);
 
@@ -971,12 +971,12 @@ namespace TranslationMod.Patches
                 if (string.IsNullOrEmpty(t))
                     return string.Empty;
 
-                // берём 85 % слова (но ≥ 3 символов), остальное – любое окончание
+                // 保留单词约 85% 的前缀（至少 3 个字符），剩余部分允许任意词尾
                 int keep = Math.Max(3, (int)Math.Ceiling(t.Length * 0.65));
-                // Убеждаемся, что keep не превышает длину строки
+                // 确保 keep 不会超过原字符串长度
                 keep = Math.Min(keep, t.Length);
                 
-                // Для очень коротких слов (1-2 символа) используем полное слово
+                // 对非常短的词（1-2 个字符）直接使用完整单词
                 if (t.Length <= 2)
                     keep = t.Length;
                 

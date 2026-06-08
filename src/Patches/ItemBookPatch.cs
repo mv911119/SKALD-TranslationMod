@@ -33,6 +33,12 @@ namespace TranslationMod.Patches
         {
             try
             {
+                var currentLanguagePack = LanguageManager.GetCurrentLanguagePack();
+                if (currentLanguagePack == null || currentLanguagePack.Name.Equals("English", StringComparison.OrdinalIgnoreCase))
+                {
+                    return;
+                }
+
                 // 读取当前书籍对象的原始内容
                 var rawData = __instance.getRawData();
                 

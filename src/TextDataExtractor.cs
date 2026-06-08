@@ -92,7 +92,7 @@ public static class TextDataExtractor
         return outputs;
     }
 
-    // Removes outer quotes if they are paired and do not contain nested ones
+    // 如果首尾引号成对且内部没有嵌套引号，则去掉最外层引号
     private static string StripQuotesIfWrapped(string s)
     {
         if (s.StartsWith("\"") && s.EndsWith("\"") && s.Count(c => c == '"') == 2)
@@ -101,27 +101,28 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts text variants from IF-THEN-ELSE constructs
+    /// 从 IF-THEN-ELSE 结构中提取所有文本分支。
+    /// 通过手动定位 THEN 和 ELSE 片段，生成可供后续提取的文本候选项。
     /// </summary>
     private static List<string> ExtractIfThenElseVariants(string input)
     {
         var result = new List<string>();
         
-        // Find IF-THEN-ELSE constructs manually to handle nested braces and parentheses properly
+        // 手动查找 IF-THEN-ELSE 结构，避免嵌套括号或花括号导致正则误判
         int ifIndex = input.IndexOf("#IF(");
         while (ifIndex != -1)
         {
-            // Find the matching #END
+            // 查找与当前 IF 对应的 #END
             int endIndex = input.IndexOf("#END", ifIndex);
             if (endIndex == -1) break;
             
             string construct = input.Substring(ifIndex, endIndex - ifIndex + 4);
             
-            // Extract THEN part
+            // 提取 THEN 分支内容
             int thenIndex = construct.IndexOf("#THEN(");
             if (thenIndex != -1)
             {
-                int thenStart = thenIndex + 6; // Skip "#THEN("
+                int thenStart = thenIndex + 6; // 跳过 "#THEN("
                 int thenEnd = FindMatchingParenthesis(construct, thenStart - 1);
                 if (thenEnd != -1)
                 {
@@ -133,11 +134,11 @@ public static class TextDataExtractor
                 }
             }
             
-            // Extract ELSE part if present
+            // 如果存在 ELSE，则提取 ELSE 分支内容
             int elseIndex = construct.IndexOf("#ELSE(");
             if (elseIndex != -1)
             {
-                int elseStart = elseIndex + 6; // Skip "#ELSE("
+                int elseStart = elseIndex + 6; // 跳过 "#ELSE("
                 int elseEnd = FindMatchingParenthesis(construct, elseStart - 1);
                 if (elseEnd != -1)
                 {
@@ -149,7 +150,7 @@ public static class TextDataExtractor
                 }
             }
             
-            // Look for next IF construct
+            // 继续查找下一个 IF 结构
             ifIndex = input.IndexOf("#IF(", endIndex);
         }
         
@@ -157,7 +158,8 @@ public static class TextDataExtractor
     }
     
     /// <summary>
-    /// Finds the matching closing parenthesis for an opening parenthesis at the given position
+    /// 查找指定左括号对应的右括号位置。
+    /// 通过计数方式处理嵌套括号，返回匹配右括号的索引。
     /// </summary>
     private static int FindMatchingParenthesis(string text, int openIndex)
     {
@@ -180,19 +182,20 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts quoted text and bracketed actions as separate elements
+    /// 提取引号文本和方括号动作文本，并拆分为独立片段。
+    /// 用于把对白、动作描述和剩余文本分别整理出来。
     /// </summary>
     private static List<string> ExtractQuotesAndActions(string input)
     {
         var result = new List<string>();
         
-        // Check if input contains quotes or brackets that need special handling
+        // 仅当文本包含引号或方括号时，才进入特殊拆分流程
         if (!input.Contains("\"") && !input.Contains("["))
             return result;
         
         string remaining = input;
         
-        // Extract bracketed actions first [Action text]
+        // 先提取方括号动作文本，如 [Action text]
         var bracketMatches = Regex.Matches(remaining, @"\[([^\]]+)\]");
         foreach (Match match in bracketMatches)
         {
@@ -201,23 +204,23 @@ public static class TextDataExtractor
             {
                 result.Add(Clean(actionText));
             }
-            // Remove the bracketed action from remaining text
+            // 从剩余文本中移除已提取的方括号片段
             remaining = remaining.Replace(match.Value, " ");
         }
         
-        // Extract quoted text - separate outer text from inner quoted names/phrases
-        // Handle patterns like: "Call out to ""Joran the Usurper""
+        // 提取带嵌套引号的文本，并区分外层文本和内层被引用内容
+        // 处理类似："Call out to ""Joran the Usurper""" 这种结构
         var complexQuotePattern = @"""([^""]*?)""""([^""]+)""""([^""]*?)""";
         var complexMatches = Regex.Matches(remaining, complexQuotePattern);
         
         foreach (Match match in complexMatches)
         {
-            // Extract the three parts: before inner quote, inner quote, after inner quote
+            // 分离为三段：内层引号前、内层引号内容、内层引号后
             string beforeQuote = match.Groups[1].Value.Trim();
             string innerQuote = match.Groups[2].Value.Trim();
             string afterQuote = match.Groups[3].Value.Trim();
             
-            // Add outer text (before + after, combined if both exist)
+            // 合并并加入外层文本（前半段 + 后半段）
             var outerParts = new List<string>();
             if (!string.IsNullOrEmpty(beforeQuote))
                 outerParts.Add(beforeQuote);
@@ -231,17 +234,17 @@ public static class TextDataExtractor
                     result.Add(Clean(outerText));
             }
             
-            // Add inner quoted text as separate string
+            // 将内层被引用文本作为独立片段加入结果
             if (!string.IsNullOrEmpty(innerQuote))
             {
                 result.Add(Clean(innerQuote));
             }
             
-            // Remove the processed quote from remaining text
+            // 从剩余文本中移除已处理的引号片段
             remaining = remaining.Replace(match.Value, " ");
         }
         
-        // Handle simple quotes without inner quotes
+        // 处理不含内层引号的普通引用文本
         var simpleQuotePattern = @"""([^""]+)""";
         var simpleMatches = Regex.Matches(remaining, simpleQuotePattern);
         
@@ -252,15 +255,15 @@ public static class TextDataExtractor
             {
                 result.Add(Clean(quotedText));
             }
-            // Remove the quoted text from remaining
+            // 从剩余文本中移除已提取的普通引用文本
             remaining = remaining.Replace(match.Value, " ");
         }
         
-        // Process any remaining text that's not quoted or bracketed
+        // 继续处理剩余未被引号或方括号覆盖的文本
         remaining = Regex.Replace(remaining, @"\s+", " ").Trim();
         if (!string.IsNullOrEmpty(remaining))
         {
-            // Split remaining text by sentences if it contains sentence endings
+            // 如果含有句末标点，则继续按句子拆分
             if (Regex.IsMatch(remaining, @"[\.!?]"))
             {
                 string[] sentences = Regex.Split(remaining, @"(?<=[\.!?]['""]?)\s*(?=[""']?[A-ZА-Я])");
@@ -409,7 +412,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts string lists
+    /// 导出字符串列表中的文本内容。
+    /// 遍历项目中的 `stringListData`，将每个条目的描述写入 CSV。
     /// </summary>
     private static void ExtractStringListsToFile(string directory)
     {
@@ -447,7 +451,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts all items
+    /// 导出所有物品相关文本。
+    /// 会按不同物品分类分别提取名称、描述等可翻译内容。
     /// </summary>
     private static void ExtractItemsToFile(string directory)
     {
@@ -461,7 +466,7 @@ public static class TextDataExtractor
             {
                 var itemContainer = project.itemContainer;
                 
-                // Все категории предметов
+                // 依次处理所有物品分类
                 ExtractItemCategory(csv, "MELEE WEAPONS", itemContainer?.meleeWeapons?.list);
                 ExtractItemCategory(csv, "RANGED WEAPONS", itemContainer?.rangedWeapons?.list);
                 ExtractItemCategory(csv, "ARMOR", itemContainer?.armor?.list);
@@ -489,7 +494,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts item category
+    /// 导出指定物品分类中的文本。
+    /// 对泛型列表中的每个物品读取常见文本字段并写入 CSV。
     /// </summary>
     private static void ExtractItemCategory<T>(StringBuilder csv, string categoryName, List<T> items) 
         where T : SKALDProjectData.ItemDataContainers.ItemData
@@ -511,7 +517,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts books separately (with full content)
+    /// 单独导出书籍内容。
+    /// 除了基础信息外，还会保留书籍正文并按需要拆分长文本。
     /// </summary>
     private static void ExtractBooksToFile(string directory)
     {
@@ -530,7 +537,7 @@ public static class TextDataExtractor
                         AddTextToCSV(csv, book.title, $"Book: {book.id}, Field: Title");
                         AddTextToCSV(csv, book.description, $"Book: {book.id}, Field: Description");
                         
-                        // Содержимое книги разбиваем на части
+                        // 将书籍正文按规则拆分成多个片段
                         if (!string.IsNullOrEmpty(book.content))
                         {
                             var sentences = GameTextParser.Parse(book.content);
@@ -553,7 +560,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts characters
+    /// 导出角色相关文本。
+    /// 会遍历多个角色容器，提取角色名、描述等可翻译字段。
     /// </summary>
     private static void ExtractCharactersToFile(string directory)
     {
@@ -567,7 +575,7 @@ public static class TextDataExtractor
             {
                 var characterContainer = project.characterContainer;
                 
-                // Извлекаем всех персонажей из всех контейнеров
+                // 从所有角色容器中提取角色数据
                 ExtractCharacterContainer(csv, "UNIQUE HUMANOIDS", characterContainer?.uniqueHumanoids?.list);
                 ExtractCharacterContainer(csv, "COMMON HUMANOIDS", characterContainer?.commonHumanoids?.list);
                 ExtractCharacterContainer(csv, "ANIMALS", characterContainer?.animals?.list);
@@ -603,7 +611,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts quests
+    /// 导出任务相关文本。
+    /// 包括不同任务容器中的标题、说明和其它描述内容。
     /// </summary>
     private static void ExtractQuestsToFile(string directory)
     {
@@ -644,7 +653,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts a single quest
+    /// 导出单个任务的文本内容。
+    /// 根据任务对象中的字段写入对应的任务类型与说明信息。
     /// </summary>
     private static void ExtractQuest(StringBuilder csv, SKALDProjectData.QuestContainers.QuestData quest, string questType)
     {
@@ -657,7 +667,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts journal
+    /// 导出日志文本。
+    /// 遍历日志章节与条目，把可见文本写入 CSV。
     /// </summary>
     private static void ExtractJournalToFile(string directory)
     {
@@ -706,7 +717,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Extracts abilities and spells
+    /// 导出技能与法术文本。
+    /// 会遍历多个能力与法术容器，提取名称和描述等字段。
     /// </summary>
     private static void ExtractAbilitiesAndSpellsToFile(string directory)
     {
@@ -758,7 +770,8 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Gets the path to the plugin directory
+    /// 获取插件目录路径。
+    /// 用于确定文本导出文件和其它资源的目标位置。
     /// </summary>
     private static string GetPluginDirectory()
     {
@@ -774,13 +787,14 @@ public static class TextDataExtractor
     }
 
     /// <summary>
-    /// Gets the project stack from GameData
+    /// 从 `GameData` 中获取项目栈。
+    /// 通过反射读取私有字段，拿到当前已加载的项目数据列表。
     /// </summary>
     private static List<SKALDProjectData> GetProjectStack()
     {
         try
         {
-            // Используем рефлексию для доступа к приватному полю projectStack
+            // 使用反射访问私有字段 projectStack
             var gameDataType = typeof(GameData);
             var projectStackField = gameDataType.GetField("projectStack", 
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);
@@ -796,11 +810,11 @@ public static class TextDataExtractor
 
     private static readonly char[] TrimChars = { ' ', '\t', '\r', '\n' };
     /// <summary>
-    /// Splits text into parts of ≤ maxLen characters without breaking words.
+    /// 在尽量不拆单词的前提下，将长文本拆分为长度不超过 `maxLen` 的多个片段。
     /// </summary>
-    /// <param name="text">Original text.</param>
-    /// <param name="maxLen">Maximum fragment length (default 295).</param>
-    /// <returns>List of fragment strings.</returns>
+    /// <param name="text">原始文本。</param>
+    /// <param name="maxLen">每个片段允许的最大长度，默认 295。</param>
+    /// <returns>拆分后的文本片段列表。</returns>
     public static List<string> SplitText(string text, int maxLen = 295)
     {
         if (maxLen < 1)
@@ -816,7 +830,7 @@ public static class TextDataExtractor
         {
             if (token.Length == 0) continue;
 
-            // Если слово длиннее лимита — режем его жёстко
+            // 如果单个词本身就超过上限，则只能强制截断
             if (token.Length > maxLen)
             {
                 if (current.Length > 0)
@@ -831,7 +845,7 @@ public static class TextDataExtractor
                 continue;
             }
 
-            // Влезает ли токен в буфер?
+            // 判断当前 token 是否还能放进缓冲区
             if (current.Length + token.Length > maxLen)
             {
                 parts.Add(current.ToString().TrimEnd(TrimChars));
@@ -850,20 +864,20 @@ public static class TextDataExtractor
 
 public static class GameTextParser
 {
-    /* ─────────────────── ПУБЛИЧНЫЙ API ─────────────────── */
+    /* ─────────────────── 公共解析接口 ─────────────────── */
 
     public static List<string> Parse(string raw)
     {
         if (raw == null) throw new ArgumentNullException(nameof(raw));
 
-        // 0) убрать тех-хвосты ";;Scene …"
+        // 0) 去掉诸如 ";;Scene …" 的技术性尾注
         raw = PreNormalize(raw);
         raw = Regex.Replace(raw, @";;.*?$", "", RegexOptions.Multiline);
 
-        // 1) раскрыть #IF/#THEN/#ELSE/#END
+        // 1) 展开 #IF/#THEN/#ELSE/#END 条件结构
         var variants = ExpandFirstIf(raw);
 
-        // 2) каждую ветвь → предложения
+        // 2) 将每个分支继续拆成可提取的句子
         var outList = new List<string>();
         foreach (var v in variants)
             outList.AddRange(SplitIntoSentences(v));
@@ -871,14 +885,14 @@ public static class GameTextParser
         return outList;
     }
 
-    /* ──────────────── #IF / #THEN / #ELSE ──────────────── */
+    /* ──────────────── #IF / #THEN / #ELSE 处理 ──────────────── */
 
     private static List<string> ExpandFirstIf(string src)
     {
-        // скобочная форма
+        // 带括号的标准形式
         const string PAT_PAREN =
             @"#IF\s*\([^\)]*\)\s*#THEN\s*\((.*?)\)(?:\s*#ELSE\s*\((.*?)\))?\s*#END";
-        // «сырая» форма
+        // 不带完整括号包裹的原始形式
         const string PAT_RAW =
             @"#IF\s*\([^\)]*\)\s*#THEN\s*(.+?)(?:#ELSE\s*(.+?))?\s*#END";
 
@@ -909,7 +923,7 @@ public static class GameTextParser
         return list;
     }
 
-    /* ─────────────── СЕГМЕНТАЦИЯ ПРЕДЛОЖЕНИЙ ───────────── */
+    /* ─────────────── 句子切分 ───────────── */
 
     private static IEnumerable<string> SplitIntoSentences(string text)
     {
@@ -920,14 +934,14 @@ public static class GameTextParser
 
         string[] parts = Regex.Split(
             flat,
-            @"(?<=[\.!?…]['""”)]?)\s+(?=[“""']?[A-Z])" + // 1. обычный финал
-            @"|(?<=[\.!?…]['""”])\s+(?=[a-z])" +                // 2. кавычка + маленькая
-            @"|(?<=[""”])\s+(?=[A-Z])" +                     // 3. кавычка + Заглавная
-            @"|(?<=:)\s+(?=[“""']?[A-Z])" +                  // 4. заголовок:
-            @"|(?<=,\s*[""“])\s*(?=[A-Z])" +                 // 5. ЗАПЯТАЯ + кавычка
-            @"|(?<=[\.!?…]['""”]),\s+(?=[A-Z])" +            // 6.  !" ,  после закрыв. кавычки
-            @"|(?<=,['""“”])\s+(?=[A-Za-z])" +                  // 7.  ,"  — запятая внутри цитаты
-            @"|(?<=[\.!?…]['""”)]?)\s+[“""']?\.\.\.\s*(?=[A-Z])" +  // 8bis ← НОВОЕ
+            @"(?<=[\.!?…]['""”)]?)\s+(?=[“""']?[A-Z])" + // 1. 常规句末
+            @"|(?<=[\.!?…]['""”])\s+(?=[a-z])" +                // 2. 引号后接小写
+            @"|(?<=[""”])\s+(?=[A-Z])" +                     // 3. 引号后接大写
+            @"|(?<=:)\s+(?=[“""']?[A-Z])" +                  // 4. 冒号后的标题式文本
+            @"|(?<=,\s*[""“])\s*(?=[A-Z])" +                 // 5. 逗号后接引号
+            @"|(?<=[\.!?…]['""”]),\s+(?=[A-Z])" +            // 6. 结束引号后的逗号
+            @"|(?<=,['""“”])\s+(?=[A-Za-z])" +                  // 7. 引号内部逗号后的文本
+            @"|(?<=[\.!?…]['""”)]?)\s+[“""']?\.\.\.\s*(?=[A-Z])" +  // 8. 省略号后的新句
             @"|(?<=[\.!?…])\s+[""“”]\s*-\s+(?=[A-Z])" +
             @"|(?<=\|PAR\|)" + 
             @"|(?<=:)\s*(?=\|PAR\|)" +
@@ -969,7 +983,7 @@ public static class GameTextParser
         }
     }
 
-    /* ─────────────── ВСПОМОГАТЕЛЬНЫЕ ─────────────── */
+    /* ─────────────── 辅助函数 ─────────────── */
 
     private static readonly char[] QuoteChars = { '"', '“', '”', '«', '»' };
     private static bool IsQuote(char c) => Array.IndexOf(QuoteChars, c) >= 0;
@@ -994,7 +1008,7 @@ public static class GameTextParser
     {
         if (string.IsNullOrEmpty(s)) return s;
 
-        // ---- удалить лидирующие маркёры и символы ----
+        // ---- 删除开头多余的标记和符号 ----
         while (true)
         {
             if (s.StartsWith("|PAR|", StringComparison.Ordinal))
@@ -1008,7 +1022,7 @@ public static class GameTextParser
             else break;
         }
 
-        // ---- удалить замыкающие маркёры и символы ----
+        // ---- 删除结尾多余的标记和符号 ----
         while (true)
         {
             if (s.EndsWith("|PAR|", StringComparison.Ordinal))
@@ -1025,12 +1039,12 @@ public static class GameTextParser
         return s.Trim();
     }
 
-    /// <summary>Убирает все подряд кавычки по краям.</summary>
+    /// <summary>移除文本两端连续出现的引号。</summary>
     private static string StripOuterSentenceQuotes(string s)
     {
         if (string.IsNullOrEmpty(s)) return s;
 
-        /* удалить лидирующие кавычки */
+        /* 删除开头连续引号 */
         int start = 0;
         while (start < s.Length && IsQuote(s[start]))
             start++;
@@ -1038,7 +1052,7 @@ public static class GameTextParser
 
         if (s.Length == 0) return s;
 
-        /* удалить замыкающие кавычки (учитываем вариант ".) */
+        /* 删除结尾连续引号，并兼容 ". 这类结尾 */
         int end = s.Length - 1;
         while (end >= 0 &&
             (IsQuote(s[end]) ||
@@ -1050,9 +1064,10 @@ public static class GameTextParser
     }
 
     /// <summary>
-    /// Извлекает действия вида [Something] и одновременно удаляет их из строки.
-    /// Возвращает список: [0] – строка без скобок (может быть пустой),
-    /// далее – каждое действие без скобок.
+    /// 提取形如 `[Something]` 的动作文本，并同时从原字符串中移除。
+    /// 返回列表中：
+    /// 第 0 项为去掉方括号后的剩余文本（可能为空），
+    /// 后续各项为去掉方括号后的动作文本。
     /// </summary>
     private static List<string> SplitSquareBracketParts(string src)
     {
@@ -1070,13 +1085,14 @@ public static class GameTextParser
     }
 
     /// <summary>
-    /// Извлекает содержимое HTML-тегов <tag>…</tag>, возвращая:
-    /// [0] – строка без тегов (может быть пустой),
-    /// далее – каждый внутренний текст тега (уже без тегов).
+    /// 提取 HTML 标签 `<tag>…</tag>` 中的文本内容。
+    /// 返回列表中：
+    /// 第 0 项为去掉标签后的剩余文本（可能为空），
+    /// 后续各项为每个标签内部的纯文本内容。
     /// </summary>
     private static List<string> SplitHtmlParts(string src)
     {
-        // 1) разбить по любому тегу  < ... >
+        // 1) 按任意 HTML 标签 <...> 进行切分
         var tokens = Regex.Split(src, @"<[^>]+>");
         var list = new List<string>();
 
@@ -1084,49 +1100,49 @@ public static class GameTextParser
         {
             string txt = t.Trim();
             if (txt.Length > 0)
-                list.Add(txt);       // добавляем только непустые фрагменты
+                list.Add(txt);       // 仅保留非空文本片段
         }
         return list;
     }
 
     /// <summary>
-    /// Обрабатывает конструкции {...}.
-    /// • {getName}     → подставляем {PLAYER}
-    /// • {getMoney}    → подставляем {MONEY}
-    /// • {addXp|300}   → подставляем 300
-    /// • {lordLady}    → создаём две строки: lord / lady
-    /// Остальные {fooBar} удаляются.
+    /// 处理 `{...}` 形式的占位符结构。
+    /// • `{getName}` 会替换为 `{PLAYER}`
+    /// • `{getMoney}` 会替换为 `{MONEY}`
+    /// • `{addXp|300}` 会替换为 `300`
+    /// • `{lordLady}` 会生成两条分支：`lord` / `lady`
+    /// 其它 `{fooBar}` 形式的指令会被删除。
     /// </summary>
     private static List<string> SplitCurlyParts(string src)
     {
-        // начнём с одной версии – исходная строка
+        // 初始只保留一个版本，即原始字符串
         var results = new List<string> { src };
 
-        // 1. сначала обрабатываем ветвление lordLady
+        // 1. 先处理 lordLady 这种会产生分支的占位符
         for (int idx = 0; idx < results.Count; idx++)
         {
             string cur = results[idx];
             var m = Regex.Match(cur, @"\{lordLady\}", RegexOptions.IgnoreCase);
             if (!m.Success) continue;
 
-            // создаём две версии строки
+            // 生成两个版本的字符串
             string lord = cur.Replace(m.Value, "lord");
             string lady = cur.Replace(m.Value, "lady");
 
-            // заменяем текущий, добавляем второй
+            // 用第一个版本覆盖当前项，并插入第二个版本
             results[idx] = lord;
             results.Insert(idx + 1, lady);
         }
 
-        // 2. для каждой строки делаем точечные подстановки / удаления
+        // 2. 对每个版本继续做定向替换或删除
         for (int i = 0; i < results.Count; i++)
         {
             string line = results[i];
 
-            // единый проход: подменяем или убираем каждую {…}-команду
+            // 一次遍历处理每个 {…} 指令：替换或删除
             line = Regex.Replace(
                 line,
-                @"\{([^{}]+)\}",                       // захватываем внутренний токен
+                @"\{([^{}]+)\}",                       // 捕获花括号内部的 token
                 match =>
                 {
                     string token = match.Groups[1].Value;
@@ -1149,64 +1165,64 @@ public static class GameTextParser
                         token.StartsWith("getGold",  StringComparison.OrdinalIgnoreCase))
                         return "{MONEY}";
 
-                    // ---- 4. остальные {fooBar} → удалить
+                    // ---- 4. 其它 {fooBar} 指令统一删除
                     return string.Empty;
                 },
                 RegexOptions.IgnoreCase);
 
-            // финальная очистка
+            // 最后再做一次收尾清理
             line = line.Trim();
             results[i] = line;
         }
 
-        // удалить пустые после очистки
+        // 删除清理后变成空串的结果
         results.RemoveAll(string.IsNullOrEmpty);
         return results;
     }
 
-    /// <summary>Подготавливает текст:
-    ///  – вырезает строки, содержащие только *;
-    ///  – заменяет двойные \n\n на метку |PAR|, чтобы сохранить пустые абзацы.</summary>
+    /// <summary>预处理文本：
+    ///  – 删除只包含 * 的整行；
+    ///  – 将连续两个换行替换为 |PAR| 标记，以保留空段落。</summary>
     private static string PreNormalize(string src)
     {
-        // 0-a) "# -IF"  →  "#IF"
+        // 0-a) 将 "# -IF" 规范化为 "#IF"
         src = Regex.Replace(src, @"#\s*-\s*IF", "#IF",
                             RegexOptions.IgnoreCase);
 
-        // 0-b) "-)#ELSE" или "-)#END"  →  "#ELSE/#END"
+        // 0-b) 将 "-)#ELSE" 或 "-)#END" 规范化
         src = Regex.Replace(src, @"-\s*\)\s*#(ELSE|END)", ")#$1", RegexOptions.IgnoreCase);
 
-        // 0-c) ")#ELSE" или ")#END"  →  "#ELSE/#END"
+        // 0-c) 将 ")#ELSE" 或 ")#END" 规范化
         src = Regex.Replace(src, @"\)\s*#(ELSE|END)", ")#$1", RegexOptions.IgnoreCase);
 
-        // 1) удалить строки, содержащие только "*"
+        // 1) 删除只包含 "*" 的整行
         src = Regex.Replace(src, @"^\s*\*\s*$", "", RegexOptions.Multiline);
 
-        // 2) если строка начинается с ENTRY N —-→ вставить |PAR| после неё
+        // 2) 如果某行以 ENTRY N 开头，则在其后插入 |PAR|
         src = Regex.Replace(src,
             @"^(ENTRY\s+\d+.*)$",
             "$1|PAR|",
             RegexOptions.Multiline | RegexOptions.IgnoreCase);
 
-        // 3) двойной перевод строки → |PAR|
+        // 3) 将双换行转换为 |PAR|
         src = Regex.Replace(src, @"\r?\n\s*\r?\n", "|PAR|");
 
         return src;
     }
 
-    private const char Mask = '\uE000';   // маркёр-обёртка
+    private const char Mask = '\uE000';   // 用于包裹缩写的掩码字符
 
-    // A-Z или a-z (1–4 символа) + точка, после которой пробел / конец / знаки ,;:!? – маскируем
+    // 对 1 到 4 个字母加句点的缩写做掩码，避免在句子切分时被误判
     private static string PreMaskAbbr(string s)
     {
         foreach (var abbr in KnownAbbr)
         {
-            // \b — граница слова, чтобы не ловить 'NPD.MG.' и т.п.
+            // \b 表示单词边界，避免误匹配 'NPD.MG.' 这类文本
             string pattern = $@"\b{Regex.Escape(abbr)}";
-            // U+E000 оборачивает ВЕСЬ аббр-токен
+            // 用 U+E000 将整个缩写 token 包起来
             s = Regex.Replace(
                     s, pattern,
-                    m => $"{Mask}{m.Value}{Mask}",          // сохраняем оригинальный регистр
+                    m => $"{Mask}{m.Value}{Mask}",          // 保留原始大小写
                     RegexOptions.IgnoreCase);
         }
         return s;
@@ -1219,8 +1235,8 @@ public static class GameTextParser
 
     private static IEnumerable<string> PostSplitCommaCaps(string line)
     {
-        // проверяем: все «словные» токены начинаются с заглавной
-        // (разрешаем дефис - для "Light Club")
+        // 检查所有词语 token 是否都以大写字母开头
+        // 这里允许连字符形式，例如 "Light Club"
         var words = Regex.Matches(line, @"\b[^\W\d_]+\b");
         if (words.Count == 0) { yield return line; yield break; }
 
@@ -1228,7 +1244,7 @@ public static class GameTextParser
                                 .All(m => char.IsUpper(m.Value[0]));
         if (!allCapsStart) { yield return line; yield break; }
 
-        // делим по запятой, числу или двойном пробеле
+        // 按逗号、数字分隔段或双空格继续切分
         foreach (var part in Regex.Split(line, @"\s*,\s*|\s+\d+\s+"))
         {
             string p = part.Trim();
@@ -1236,45 +1252,45 @@ public static class GameTextParser
         }
     }
 
-    /// Полная финальная очистка одного текстового фрагмента.
+    /// 对单个文本片段执行完整的最终清理。
     private static string CleanPart(string txt)
     {
         txt = StripOuterSentenceQuotes(txt);
 
-        /* лидирующий +1 / 1) / 1. */
+        /* 去掉开头的 +1 / 1) / 1. 这类编号前缀 */
         txt = Regex.Replace(txt,
                     @"^[\+\-]?\d+(?:\.\d+)?%?\s*(?:[)\.]\s*|\s+)",
                     "");
 
-        txt = PostUnmaskAbbr(txt);                  // вернуть точки аббревиатур
+        txt = PostUnmaskAbbr(txt);                  // 恢复缩写中的句点
         
         if (Regex.IsMatch(txt.Trim(), @"^\{(PLAYER|MONEY)\}$", RegexOptions.IgnoreCase))
             return "";
 
-        /* множитель  x1  x1.5  :x2 */
+        /* 去掉倍率标记，如 x1、x1.5、:x2 */
         txt = Regex.Replace(txt, @"\s*[:]?x\d+(\.\d+)?\b",
                             "", RegexOptions.IgnoreCase);
 
-        /*  скобки без букв:  (10)  (02:00)  (5  */
+        /* 去掉不含字母的括号尾部内容，如 (10)、(02:00)、(5 */
         txt = Regex.Replace(txt,
                 @"\s*\([^A-Za-z)]*\)\s*$", "");
         
         if (Regex.IsMatch(txt, @"^\s*\([^A-Za-z]*$"))
             return "";
 
-        /*  конечный числовой диапазон / дробь:  1-3  3/4  15 */
+        /* 去掉结尾的数字范围或分数，如 1-3、3/4、15 */
         txt = Regex.Replace(txt,
                 @"\s+\d+(?:[-/]\d+)*\s*$", "");
 
-        /* если остался «голый» числовой токен — не выводим строку */
+        /* 如果最后只剩下纯数字 token，则直接丢弃 */
         if (Regex.IsMatch(txt, @"^\d+([./]\d+)*(\s*[A-Za-z]+)?$",
                         RegexOptions.IgnoreCase))
             return "";
 
-        /* схлопнуть повторные пробелы */
+        /* 合并重复空格 */
         txt = Regex.Replace(txt, @"\s{2,}", " ").Trim();
 
-        /* если в строке нет букв — пропустим её */
+        /* 如果整行已经没有字母，则跳过 */
         if (!Regex.IsMatch(txt, @"[A-Za-z]"))
             return "";
 

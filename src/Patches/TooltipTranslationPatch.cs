@@ -71,6 +71,12 @@ namespace TranslationMod.Patches
         {
             try
             {
+                var currentLanguagePack = LanguageManager.GetCurrentLanguagePack();
+                if (currentLanguagePack == null || currentLanguagePack.Name.Equals("English", StringComparison.OrdinalIgnoreCase))
+                {
+                    return true;
+                }
+
                 // 使用 `UITextBlockSetContentPatch` 维护的 tooltip key 映射
                 string originalKeyword = null;
                 bool hasMapping = false;
