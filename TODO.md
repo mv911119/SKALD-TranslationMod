@@ -1,0 +1,6 @@
+- [ ] 为 `src/Patches/ItemBookPatch.cs` 添加类似 `src/Patches/TranslationPatch.cs` 的翻译开关判断：在英文环境或当前语言包不可用时直接跳过翻译逻辑，避免无意义调用 `TranslationService.Process(...)`。
+- [ ] 为 `src/Patches/TooltipTranslationPatch.cs` 添加类似 `src/Patches/TranslationPatch.cs` 的翻译开关判断：在英文环境或当前语言包不可用时直接回退原 tooltip 查询流程，不再依赖隐式的 `TooltipKeyBuffer` 行为。
+- [ ] 在 `src/TranslationService.cs` 中 `SaveMissingKey(...)` 调用前补充未翻译内容的 `LogWarning`：输出未命中的原文，并尽可能附带当前 `TranslationService.Process(...)` 的调用链，方便定位漏翻来源。
+- [ ] 处理 `src/Patches/TranslationPatch.cs` 中首字母装饰（illuminated letter）与第二个字符显示重合的问题，检查首字装饰插入后的文本起始偏移、行内 padding 和后续段落解析布局是否正确。
+- [ ] 调整 `src/Patches/TooltipTranslationPatch.cs` 中未命中 tooltip 映射时的日志级别：将当前 `LogDebug` 提升为 `LogWarning`，方便更早发现 tooltip 关键词映射缺失问题。
+- [ ] 分析部分 tooltip 翻译失效的问题：排查 `identifyTooltipKeywords`、`TooltipKeyBuffer` 建立、翻译后关键词匹配以及 `ToolTipCategory.getToolTip(string)` 回查链路中是否存在漏标记、漏映射或关键词变形导致的失配。
