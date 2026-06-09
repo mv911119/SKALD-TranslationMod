@@ -1,4 +1,5 @@
 using System.Text;
+using TranslationMod;
 
 internal static class Program
 {
@@ -7,15 +8,11 @@ internal static class Program
         try
         {
             string input = ReadInput(args);
-            List<string> results = GameTextParser.Parse(input);
+            var service = new TranslationService();
+            string result = service.Process(input);
 
             Console.OutputEncoding = Encoding.UTF8;
-            Console.WriteLine($"Count: {results.Count}");
-
-            for (int i = 0; i < results.Count; i++)
-            {
-                Console.WriteLine($"[{i + 1}] {results[i]}");
-            }
+            Console.WriteLine(result);
 
             return 0;
         }
@@ -59,3 +56,4 @@ internal static class Program
 
 //dotnet build .\src\ParseRunner\ParseRunner.csproj -c Release
 //dotnet run --project .\src\ParseRunner\ParseRunner.csproj -- .\src\ParseRunner\input_file.txt
+//src\ParseRunner\bin\Release\net6.0\ParseRunner.exe .\src\ParseRunner\input_file.txt

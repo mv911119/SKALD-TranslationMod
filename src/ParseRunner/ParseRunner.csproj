@@ -11,6 +11,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="..\TextDataExtractor.cs" Link="TextDataExtractor.cs" />
+    <Compile Include="..\TranslationService.cs" Link="TranslationService.cs" />
+    <Compile Include="DebugHostStubs.cs" />
   </ItemGroup>
 
   <ItemGroup>
