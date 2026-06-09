@@ -101,20 +101,22 @@ namespace TranslationMod
                             _translationCache[input] = verseResult;
                         }
                     }
+#if DEBUG
                     LogProcessTrace(input, verseResult);
+#endif
                     return verseResult;
                 }
 
                 // 使用 GameTextParser 将文本拆分为多个片段
                 var sentences = GameTextParser.Parse(input);
                 
-//#if DEBUG
+#if DEBUG
                 TranslationMod.Logger?.LogInfo($"[TranslationService] PARSER INPUT: '{input}'");
                 for (int i = 0; i < sentences.Count; i++)
                 {
                     TranslationMod.Logger?.LogInfo($"[TranslationService] PARSER SENTENCE[{i}]: '{sentences[i]}'");
                 }
-//#endif
+#endif
                 
                 // 根据原始输入生成模板
                 var template = CreateTemplate(input, sentences);
@@ -168,8 +170,9 @@ namespace TranslationMod
                         _translationCache[input] = result;
                     }
                 }
-
+#if DEBUG
                 LogProcessTrace(input, result);
+#endif                
                 return result;
             }
             catch (Exception ex)
@@ -185,8 +188,9 @@ namespace TranslationMod
                         _translationCache[input] = input;
                     }
                 }
-                
+#if DEBUG                
                 LogProcessTrace(input, input);
+#endif
                 return input;
             }
         }

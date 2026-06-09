@@ -36,7 +36,7 @@ namespace TranslationMod
 				Logger.LogInfo("Configuration system initialized successfully.");
 
 				LanguageManager.Initialize();
-				Logger.LogInfo("Language manager initialized.");
+				Logger.LogInfo("Language manager initialized v1.1");
 				
 				HarmonyManager.ApplyPatches(new Harmony(MyPluginInfo.PLUGIN_GUID));
 				Logger.LogInfo("Harmony patches applied successfully.");

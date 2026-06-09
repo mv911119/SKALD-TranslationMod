@@ -13,6 +13,6 @@ build_font_assets.py 一键运行，将translations中已翻译内生成中文�
 ```shell
 dotnet restore .\TranslationMod.csproj
 dotnet build .\TranslationMod.csproj -c Release --no-restore
-dotnet publish .\TranslationMod.csproj -c Release --no-build -o ..\build
+dotnet publish .\TranslationMod.csproj -c Release --no-build -o ..\src\build
 
 ```

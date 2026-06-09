@@ -928,31 +928,36 @@ public static class GameTextParser
     private static IEnumerable<string> SplitIntoSentences(string text)
     {
         if (string.IsNullOrWhiteSpace(text)) yield break;
-
-        string flat = Regex.Replace(text, @"\r?\n+", " ").Trim();
+        
+        // 将单个换行替换为 |NL|，避免换行文本被变为同行文本无法区分
+        string flat = Regex.Replace(text, @"\r?\n+", "|NL|").Trim();
         flat = PreMaskAbbr(flat);
 
         // 按空行等方式切分段为多句
         string[] parts = Regex.Split(
             flat,
-            @"(?<=[\.!?…]['""”)]?)\s+(?=[“""']?[A-Z])" + // 1. 常规句末
-            @"|(?<=[\.!?…]['""”])\s+(?=[a-z])" +                // 2. 引号后接小写
-            @"|(?<=[""”])\s+(?=[A-Z])" +                     // 3. 引号后接大写
-            @"|(?<=:)\s+(?=[“""']?[A-Z])" +                  // 4. 冒号后的标题式文本
-            @"|(?<=,\s*[""“])\s*(?=[A-Z])" +                 // 5. 逗号后接引号
-            @"|(?<=[\.!?…]['""”]),\s+(?=[A-Z])" +            // 6. 结束引号后的逗号
-            @"|(?<=,['""“”])\s+(?=[A-Za-z])" +                  // 7. 引号内部逗号后的文本
-            @"|(?<=[\.!?…]['""”)]?)\s+[“""']?\.\.\.\s*(?=[A-Z])" +  // 8. 省略号后的新句
-            @"|(?<=[\.!?…])\s+[""“”]\s*-\s+(?=[A-Z])" +
-            @"|(?<=\|PAR\|)" + 
-            @"|(?<=:)\s*(?=\|PAR\|)" +
-            @"|(?<=\S)\s*~\s*(?=\S)" +
-            @"|(?<=:)\s+(?=[“""']?\{)" +
-            @"|(?<=[\.!?…])\s+(?=\(\s*[“""']?[A-Z])" +
-            @"|(?<=\)[”""']?)\s+(?=[A-Z])" +
-            @"|(?<=\)[”""']?)\s+\(\s*(?=[A-Z])" +
-            @"|(?<=[”""'])\)\s+\(\s*(?=[A-Z])" +
-            @"|(?<=\.)\s+(?=[\+\-]\d)"
+            @"(?<=[\.!?…]['""”)]?)\s+(?=[“""']?[A-Z])" +            // 标准句末后切分：句号/问号/感叹号/省略号后，跟着空白和一个新句的大写开头
+            @"|(?<=[\.!?…]['""”])\s+(?=[a-z])" +                    // 句末引号后接小写时也切分，兼容 "Foo." bar 这类格式
+            @"|(?<=[""”])\s+(?=[A-Z])" +                            // 结束引号后直接接大写开头的新句
+            @"|(?<=:)\s+(?=[“""']?[A-Z])" +                         // 冒号后接标题式/说明式文本时切分，如 "Effect: Burning Hands"
+            @"|(?<=,\s*[""“])\s*(?=[A-Z])" +                        // 逗号后接引号中的新短句，如 `, "Something"`
+            @"|(?<=[\.!?…]['""”]),\s+(?=[A-Z])" +                   // 句末引号后还有逗号，再接新句时切分
+            @"|(?<=,['""“”])\s+(?=[A-Za-z])" +                      // 引号内部逗号后的文本单独切开，兼容 quoted list / quoted clause
+            @"|(?<=[\.!?…]['""”)]?)\s+[“""']?\.\.\.\s*(?=[A-Z])" +  // 句末后跟省略号，再接大写新句时切分
+            @"|(?<=[\.!?…])\s+[""“”]\s*-\s+(?=[A-Z])" +             // 句末后接 `" - Title"` 这类引用或对话转折时切分
+            @"|(?<=\|PAR\|)" +                                      // 遇到段落占位符 |PAR| 时强制切分
+            @"|(?<=:)\s*(?=\|PAR\|)" +                              // 冒号后紧跟段落占位符时也切分，避免 `Title:|PAR|Body` 粘连
+            @"|(?<=\|NL\|)" +                                       // 遇到单换行占位符 |NL| 时强制切分
+            @"|(?<=:)\s*(?=\|NL\|)" +                               // 冒号后紧跟单换行占位符时切分                       
+            @"|(?<=^\s*~)\s+(?=\S)" +                               // 句首波浪号后按空格切分，如 `~ Fire` -> `~` / `Fire`，保留波浪号本身
+            @"|(?<=\|NL\|~)\s+(?=\S)" +                             // 单换行占位符后紧跟波浪号时，也在其后的空格切分，如 `|NL|~ Fire`
+            @"|(?<=\S)\s*~\s*(?=\S)" +                              // 两侧都有非空白字符的波浪号分隔，如 `Fire ~ Ice`
+            @"|(?<=:)\s+(?=[“""']?\{)" +                            // 冒号后直接进入占位符/变量块，如 `Effect: {PLAYER}`
+            @"|(?<=[\.!?…])\s+(?=\(\s*[“""']?[A-Z])" +              // 句末后接括号补充说明，且括号内是大写开头的新段
+            @"|(?<=\)[”""']?)\s+(?=[A-Z])" +                        // 右括号或右引号括号结束后，后面接大写新句
+            @"|(?<=\)[”""']?)\s+\(\s*(?=[A-Z])" +                   // 一段以 `)` 结束后，后面紧跟新的括号段 `(Title...)`
+            @"|(?<=[”""'])\)\s+\(\s*(?=[A-Z])" +                    // 引号包裹的括号段结束后，再接新的括号段
+            @"|(?<=\.)\s+(?=[\+\-]\d)"                              // 句点后接数值变化项，如 `. +1`、`. -10%`
         );
 
         foreach (string raw in parts)
@@ -1014,6 +1019,8 @@ public static class GameTextParser
         {
             if (s.StartsWith("|PAR|", StringComparison.Ordinal))
                 s = s.Substring(5);
+            else if (s.StartsWith("|NL|", StringComparison.Ordinal))
+                s = s.Substring(4);
             else if (s.Length > 0 &&
                     (s[0] == Mask || char.IsWhiteSpace(s[0]) || s[0] == '*' ||
                     s[0] == '«' || s[0] == '»' || s[0] == '“' || s[0] == '”' ||
@@ -1028,6 +1035,8 @@ public static class GameTextParser
         {
             if (s.EndsWith("|PAR|", StringComparison.Ordinal))
                 s = s.Substring(0, s.Length - 5);
+            else if (s.EndsWith("|NL|", StringComparison.Ordinal))
+                s = s.Substring(0, s.Length - 4);
             else if (s.Length > 0 &&
                     (s[^1] == Mask || char.IsWhiteSpace(s[^1]) || s[^1] == '*' ||
                     s[^1] == '«' || s[^1] == '»' || s[^1] == '“' || s[^1] == '”' ||
@@ -1246,7 +1255,12 @@ public static class GameTextParser
         Bear's Strength, Serpent's Grace, Cure Moderate Poison, Aura of Fear, Instil Courage
         其中's、of这些会被拆分，导致识别为存在小写，故之后无法继续切分
         */
+        var ignoredLowercaseWords = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            "s", "of", "the", "to"
+        };
         bool allCapsStart = words.Cast<Match>()
+                                .Where(m => !ignoredLowercaseWords.Contains(m.Value))
                                 .All(m => char.IsUpper(m.Value[0]));
         if (!allCapsStart) { yield return line; yield break; }
 
