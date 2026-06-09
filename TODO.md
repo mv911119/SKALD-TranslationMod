@@ -4,3 +4,6 @@
 - [ ] 处理 `src/Patches/TranslationPatch.cs` 中首字母装饰（illuminated letter）与第二个字符显示重合的问题，检查首字装饰插入后的文本起始偏移、行内 padding 和后续段落解析布局是否正确。
 - [ ] 调整 `src/Patches/TooltipTranslationPatch.cs` 中未命中 tooltip 映射时的日志级别：将当前 `LogDebug` 提升为 `LogWarning`，方便更早发现 tooltip 关键词映射缺失问题。
 - [ ] 分析部分 tooltip 翻译失效的问题：排查 `identifyTooltipKeywords`、`TooltipKeyBuffer` 建立、翻译后关键词匹配以及 `ToolTipCategory.getToolTip(string)` 回查链路中是否存在漏标记、漏映射或关键词变形导致的失配。
+- [ ] 处理 `Lvl. 3 Champion (Human)` 这类 UI 属性行，避免把等级数字当作通用分隔符拆开，同时保留职业名与括号中的种族信息，确保后续仍能以完整短语参与翻译匹配。
+- [ ] 处理 `src\TextDataExtractor.cs`中 `PostSplitCommaCaps`在处理如 "Bear's Strength, Serpent's Grace, Cure Moderate Poison, Aura of Fear, Instil Courage"中's，of会被视为小写，导致不被继续拆分。
+- [ ] `src\Patches\TranslationPatch.cs`中`BuildPattern`只适用于带复数或变格词汇的语言，中文不需要通过BuildPattern进行近似匹配，因此直接构建一个中文精确匹配用的BuildPattern即可
