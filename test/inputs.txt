@@ -1,0 +1,12 @@
+ <Header>CONDEMNED</Header>
+<color=#B2B2B2>[Negative Condition]</color>
+
+-2 Dodge
+-2 Toughness
+-2 Willpower
+
+
+Roll a successful Willpower Saving Throw vs DC 15 at end of each turn to remove.
+
+Can be removed by magic.
+

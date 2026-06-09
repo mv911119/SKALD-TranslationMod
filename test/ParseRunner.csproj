@@ -10,20 +10,20 @@
 
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="..\TextDataExtractor.cs" Link="TextDataExtractor.cs" />
-    <Compile Include="..\TranslationService.cs" Link="TranslationService.cs" />
+    <Compile Include="..\src\TextDataExtractor.cs" Link="TextDataExtractor.cs" />
+    <Compile Include="..\src\TranslationService.cs" Link="TranslationService.cs" />
     <Compile Include="DebugHostStubs.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="SKALDAssembly">
-      <HintPath>..\libs\SKALDAssembly.dll</HintPath>
+      <HintPath>..\src\libs\SKALDAssembly.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\libs\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\src\libs\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>..\libs\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\src\libs\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
 

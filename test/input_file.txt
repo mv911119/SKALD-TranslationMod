@@ -1,0 +1,14 @@
+<Header>LIGHT WEAPONS INITIATE</Header>
+
+<color=#B2B2B2>Ranks:</color>   <color=#FFFFFF>3/6</color>
+
+<color=#A9FF9F>1 RANKS
+~ Light Weapon Finesse
+</color>
+
+<color=#A9FF9F>3 RANKS
+~ Light Weapon Accuracy
+</color>
+
+6 RANKS
+~ Precise Strike
