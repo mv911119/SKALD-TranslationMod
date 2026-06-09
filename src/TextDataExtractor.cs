@@ -932,6 +932,7 @@ public static class GameTextParser
         string flat = Regex.Replace(text, @"\r?\n+", " ").Trim();
         flat = PreMaskAbbr(flat);
 
+        // 按空行等方式切分段为多句
         string[] parts = Regex.Split(
             flat,
             @"(?<=[\.!?…]['""”)]?)\s+(?=[“""']?[A-Z])" + // 1. 常规句末
@@ -961,13 +962,13 @@ public static class GameTextParser
 
             s = CleanPart(s);
 
-            var htmlParts = SplitHtmlParts(s);
+            var htmlParts = SplitHtmlParts(s);          // 剔除html标签并分割
             foreach (var html in htmlParts)
             {
-                var curlyParts = SplitCurlyParts(html);
+                var curlyParts = SplitCurlyParts(html); // 处理占位替换符为所需内容并分割   
                 foreach (var cur in curlyParts)
                 {
-                    var squareParts = SplitSquareBracketParts(cur);
+                    var squareParts = SplitSquareBracketParts(cur); // 剔除中括号保留其内部文本并分割，例如 `[Spell]`
                     foreach (var part in squareParts)
                     {
                         string clean = CleanPart(part);
@@ -1240,12 +1241,17 @@ public static class GameTextParser
         var words = Regex.Matches(line, @"\b[^\W\d_]+\b");
         if (words.Count == 0) { yield return line; yield break; }
 
+        /*
+        当出现如
+        Bear's Strength, Serpent's Grace, Cure Moderate Poison, Aura of Fear, Instil Courage
+        其中's、of这些会被拆分，导致识别为存在小写，故之后无法继续切分
+        */
         bool allCapsStart = words.Cast<Match>()
                                 .All(m => char.IsUpper(m.Value[0]));
         if (!allCapsStart) { yield return line; yield break; }
 
         // 按逗号、数字分隔段或双空格继续切分
-        foreach (var part in Regex.Split(line, @"\s*,\s*|\s+\d+\s+"))
+        foreach (var part in Regex.Split(line, @"\s*,\s*|\s+\d+\s+"))  
         {
             string p = part.Trim();
             if (p.Length > 0) yield return p;
@@ -1262,7 +1268,7 @@ public static class GameTextParser
                     @"^[\+\-]?\d+(?:\.\d+)?%?\s*(?:[)\.]\s*|\s+)",
                     "");
 
-        txt = PostUnmaskAbbr(txt);                  // 恢复缩写中的句点
+        txt = PostUnmaskAbbr(txt);                  // 恢复缩写中的.符号
         
         if (Regex.IsMatch(txt.Trim(), @"^\{(PLAYER|MONEY)\}$", RegexOptions.IgnoreCase))
             return "";

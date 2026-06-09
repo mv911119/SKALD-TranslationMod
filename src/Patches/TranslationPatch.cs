@@ -962,7 +962,7 @@ namespace TranslationMod.Patches
             if (string.IsNullOrWhiteSpace(key))
                 return string.Empty;
 
-            // 例如：“Очки развития” -> “Очк\w* \s+ разви\w*”
+            // 例如：“Development Points” -> “Development\w* \s+ Points\w*”
             var tokens = key.Split(new[] { ' ', '\t' },
                                 StringSplitOptions.RemoveEmptyEntries);
 
@@ -971,7 +971,7 @@ namespace TranslationMod.Patches
                 if (string.IsNullOrEmpty(t))
                     return string.Empty;
 
-                // 保留单词约 85% 的前缀（至少 3 个字符），剩余部分允许任意词尾
+                // 保留单词约 65% 的前缀（至少 3 个字符），剩余部分允许任意词尾
                 int keep = Math.Max(3, (int)Math.Ceiling(t.Length * 0.65));
                 // 确保 keep 不会超过原字符串长度
                 keep = Math.Min(keep, t.Length);
