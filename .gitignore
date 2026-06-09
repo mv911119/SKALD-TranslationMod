@@ -9,6 +9,9 @@ Release/
 *.user
 *.suo
 
+# vscode
+.vscode/
+
 # NuGet
 packages/
 *.nupkg
