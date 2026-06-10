@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <UseAppHost>false</UseAppHost>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+    <Compile Include="ProcessTestRunner.cs" />
+    <Compile Include="ProcessTestStubs.cs" />
+
+    <Compile Include="..\src\TextDataExtractor.cs" Link="TextDataExtractor.cs" />
+    <Compile Include="..\src\TranslationService.cs" Link="TranslationService.cs" /> 
+    -->
+    
+    <Compile Include="TagKeysTestRunner.cs" />
+    <Compile Include="TagKeysTestStubs.cs" />
+    <Compile Include="..\src\Patches\TranslationPatch.cs" Link="TranslationPatch.cs" />
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\src\libs\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="SKALDAssembly">
+      <HintPath>..\src\libs\SKALDAssembly.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\src\libs\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\src\libs\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="TagKeysInput1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="TagKeysInput2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ProcessInput.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

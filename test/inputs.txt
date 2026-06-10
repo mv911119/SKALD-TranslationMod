@@ -10,3 +10,41 @@ Roll a successful Willpower Saving Throw vs DC 15 at end of each turn to remove.
 
 Can be removed by magic.
 
+
+
+<Header>MONO</Header>
+Lvl. 3 Champion (Human)
+ <color=#B2B2B2>无阵营</color><color=#B2B2B2>
+
+状态:</color> 准备就绪
+
+<color=#B2B2B2>命中</color>     <color=#FFFFFF>+4</color>
+<color=#B2B2B2>伤害</color>     <color=#FFFFFF>5-7</color>
+
+<color=#B2B2B2>体力</color>     <color=#FFFFFF>20</color>
+<color=#B2B2B2>创伤</color>     <color=#FFFFFF>11</color>
+<color=#B2B2B2>减伤</color>     <color=#FFFFFF>0</color>
+
+<color=#B2B2B2>闪避</color>     <color=#FFFFFF>+1</color>
+<color=#B2B2B2>意志.</color>    <color=#FFFFFF>+3</color>
+<color=#B2B2B2>坚韧.</color>    <color=#FFFFFF>+3</color>
+
+<color=#B2B2B2>移动/攻击</color>        <color=#FFFFFF>3/1</color>
+
+<color=#B2B2B2>法术</color>
+熊之力量, 蛇之优雅, 治愈中级毒素, 恐惧光环, 灌注勇气
+
+
+keys['斗士'] = 'Champion'
+keys['命中'] = 'To Hit'
+keys['体力'] = 'Vitality'
+keys['创伤'] = 'Wounds'
+keys['减伤'] = 'Soak'
+keys['闪避'] = 'Dodge'
+keys['意志.'] = 'Will.'
+keys['坚韧.'] = 'Tough.'
+keys['熊之力量'] = 'Bear's Strength'
+keys['蛇之优雅'] = 'Serpent's Grace'
+keys['治愈中级毒素'] = 'Cure Moderate Poison'
+keys['恐惧光环'] = 'Aura of Fear'
+keys['灌注勇气'] = 'Instil Courage'
