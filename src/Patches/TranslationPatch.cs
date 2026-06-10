@@ -260,6 +260,8 @@ namespace TranslationMod.Patches
                     return;
                 }
                 
+                //中文无需装饰字符
+                /*
                 // 首字符装饰初始化
                 if (instance.illuminatedFont != null)
                 {   
@@ -293,13 +295,14 @@ namespace TranslationMod.Patches
 #endif
                     }
                 }
+                */
                 translated = (string)PreProcessStringMethod.Invoke(instance, new object[] { translated });
                 
                 string taggedInput = identifyTooltipKeywords(instance, input);
                 if(taggedInput != input)
                 {
 #if DEBUG
-                    TranslationMod.Logger?.LogInfo($"Tagged input: {taggedInput}");
+                    TranslationMod.Logger?.LogInfo($"Tagged input: {taggedInput}\n");
 #endif
                     
                     // 提取 tooltip 键并加入缓冲区
@@ -308,10 +311,9 @@ namespace TranslationMod.Patches
                     
                     // 将翻译后的键包裹进 <tag></tag> 标签
                     //将已翻译的key用 <tag></tag> 标签包裹起来
-                    translated = TagKeys(translated, keys);
-                    
+                    translated = TagKeys(translated, keys); 
 #if DEBUG
-                    TranslationMod.Logger?.LogInfo($"Translated tagged input: {translated}");
+                    TranslationMod.Logger?.LogInfo($"Translated tagged input: {translated}\n");
 #endif
                 }
 
@@ -962,6 +964,10 @@ namespace TranslationMod.Patches
             if (string.IsNullOrWhiteSpace(key))
                 return string.Empty;
 
+            // 中文 key 不做宽泛匹配，直接使用精确匹配，避免被英文式词尾规则误伤。
+            if (ContainsChineseCharacter(key))
+                return Regex.Escape(key);
+
             // 例如：“Development Points” -> “Development\w* \s+ Points\w*”
             var tokens = key.Split(new[] { ' ', '\t' },
                                 StringSplitOptions.RemoveEmptyEntries);
@@ -985,6 +991,22 @@ namespace TranslationMod.Patches
             }).Where(p => !string.IsNullOrEmpty(p));
 
             return $@"\b{string.Join(@"\s+", parts)}\b";
+        }
+
+        private static bool ContainsChineseCharacter(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+                return false;
+
+            foreach (char c in text)
+            {
+                // CJK Unified Ideographs + Extension A，已覆盖当前项目中的常见中文字符。
+                if ((c >= '\u4E00' && c <= '\u9FFF') ||
+                    (c >= '\u3400' && c <= '\u4DBF'))
+                    return true;
+            }
+
+            return false;
         }
     }
 }
