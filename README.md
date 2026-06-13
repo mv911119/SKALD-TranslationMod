@@ -11,6 +11,8 @@ DLL位置是游戏文件下的C:\Program Files (x86)\Steam\steamapps\common\SKAL
 
 在这个zip里面的py是我怎么把dat（用UABEA提取的Unity的数据，里面有个叫skaldproject的，转成dat单独导出。但是不知为何现在有4个，坑爹作者，得找对版本号）里的字抓出来转成json然后翻译好生成字体和language.json然后写回BepInEx在那个地址的skaldproject.json就可以用了。基本上我把json里的文字都抓出来翻译了。很大部分是AI，但是做了基本的校对，但是肯定还有错。这样有个好处是相当于所有的翻译都有了指针，起码一对一对应的是，哪里出问题了好找。
 
+如果你想，用assetripper提取出来直接就是json甚至，都不用转来转去。
+
 ============================================================================
 
 <img width="216" height="80" alt="Logo" src="https://github.com/user-attachments/assets/e474252c-da1e-407d-ac8a-f59f0d5a048b" />
