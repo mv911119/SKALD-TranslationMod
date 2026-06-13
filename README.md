@@ -3,7 +3,7 @@ DLL位置是游戏文件下的C:\Program Files (x86)\Steam\steamapps\common\SKAL
 
 这个是用dnSPY反编译的。反编译完直接搜索然后把里面英语的description改中文就行了。然后log里面大多没改，还给他修了点bug……我之前用“调谐”会崩溃因为它那个限制了字符长度，然后有一些小的直接用变量的我也改了改，我最恨那种变量名直接显示的，以至于现在有的标签都还是英文，但是有一些我写了转换功能放了进去转成纯文本显示。
 
-==============================================================================
+============================================================================
 
 [code and translated files.zip](https://github.com/user-attachments/files/28919997/code.and.translated.files.zip)
 
@@ -11,9 +11,11 @@ DLL位置是游戏文件下的C:\Program Files (x86)\Steam\steamapps\common\SKAL
 
 在这个zip里面的py是我怎么把dat（用UABEA提取的Unity的数据，里面有个叫skaldproject的，转成dat单独导出。但是不知为何现在有4个，坑爹作者，得找对版本号）里的字抓出来转成json然后翻译好生成字体和language.json然后写回BepInEx在那个地址的skaldproject.json就可以用了。基本上我把json里的文字都抓出来翻译了。很大部分是AI，但是做了基本的校对，但是肯定还有错。这样有个好处是相当于所有的翻译都有了指针，起码一对一对应的是，哪里出问题了好找。
 
-==============================================================================
+============================================================================
 
 <img width="216" height="80" alt="Logo" src="https://github.com/user-attachments/assets/e474252c-da1e-407d-ac8a-f59f0d5a048b" />
+
+
 此外做了个logo用于开始菜单。
 
 我测试了一下基本可玩了！
