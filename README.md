@@ -5,13 +5,16 @@ DLL位置是游戏文件下的C:\Program Files (x86)\Steam\steamapps\common\SKAL
 
 ============================================================================
 
-[code and translated files.zip](https://github.com/user-attachments/files/28934975/code.and.translated.files.zip)
+[code and translated files.zip](https://github.com/user-attachments/files/28935501/code.and.translated.files.zip)
 
 这个是我如何进行的翻译工作的代码和生成的文件，具体来说，BepInEx是用AppData\LocalLow\High North Studios\SKALD_ Against the Black Priory\Custom Projects\DevelopmentBuild\Data\SkaldProject.json这个文件覆盖原来的unityasset里面的内容来达成汉化的。
 
 在这个zip里面的py是我怎么把dat（用UABEA提取的Unity的数据，里面有个叫skaldproject的，转成dat单独导出。但是不知为何现在有4个，坑爹作者，得找对版本号）里的字抓出来转成json然后翻译好生成字体和language.json然后写回BepInEx在那个地址的skaldproject.json就可以用了。基本上我把json里的文字都抓出来翻译了。很大部分是AI，但是做了基本的校对，但是肯定还有错。这样有个好处是相当于所有的翻译都有了指针，起码一对一对应的是，哪里出问题了好找。
 
 如果你想，用assetripper提取出来直接就是json甚至，都不用转来转去。
+1和2都是导出相关的。
+你的Atlas比我的更好我就拿来用了现在。所以3没啥用就是个参考。
+但是4写回json的脚本非常重要，便于修改。
 
 ============================================================================
 
@@ -23,8 +26,7 @@ DLL位置是游戏文件下的C:\Program Files (x86)\Steam\steamapps\common\SKAL
 我测试了一下基本可玩了！
 感谢修复那个俄罗斯作者的破bug！我在上面纠结了好久
 
-字体什么的就交给你啦~~
-而且战斗开始的字不知为何还是乱码（似乎是撕裂），需要修复一下。
+新的战斗的字体非常好用！
 
 我就等一个汉化来玩这个游戏……所以说实话我只翻译了术语什么的，统一了名词，但是没看剧情（不想被自己剧透）。
 
