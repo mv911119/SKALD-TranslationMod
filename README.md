@@ -13,8 +13,8 @@ DLL位置是游戏文件下的C:\Program Files (x86)\Steam\steamapps\common\SKAL
 
 如果你想，用assetripper提取出来直接就是json甚至，都不用转来转去。
 1和2都是导出相关的。
-你的Atlas比我的更好我就拿来用了现在。所以3没啥用就是个参考。
-但是4写回json的脚本非常重要，便于修改。
+3是偷来的，来源是我fork之前的那个https://github.com/renshareck/SKALD-TranslationMod。
+4写回json的脚本非常重要，而且便于修改。
 
 ============================================================================
 
