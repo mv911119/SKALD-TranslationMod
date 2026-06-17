@@ -5,7 +5,7 @@ DLL位置是游戏文件下的C:\Program Files (x86)\Steam\steamapps\common\SKAL
 
 ============================================================================
 
-[code and translation.zip](https://github.com/user-attachments/files/29035874/code.and.translation.zip)
+[code and translation.zip](https://github.com/user-attachments/files/29049950/code.and.translation.zip)
 
 这个是我如何进行的翻译工作的代码和生成的文件，具体来说，BepInEx是用AppData\LocalLow\High North Studios\SKALD_ Against the Black Priory\Custom Projects\DevelopmentBuild\Data\SkaldProject.json这个文件覆盖原来的unityasset里面的内容来达成汉化的。
 
