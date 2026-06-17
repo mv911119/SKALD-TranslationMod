@@ -1,11 +1,11 @@
-[SKALDAssembly_CN.zip](https://github.com/user-attachments/files/28934991/SKALDAssembly_CN.zip)
+[SKALDAssembly_CN.zip](https://github.com/user-attachments/files/29035836/SKALDAssembly_CN.zip)
 DLL位置是游戏文件下的C:\Program Files (x86)\Steam\steamapps\common\SKALD Against the Black Priory\SKALD Against the Black Priory_Data\Managed\SKALDAssembly.dll
 
 这个是用dnSPY反编译的。反编译完直接搜索然后把里面英语的description改中文就行了。然后log里面大多没改，还给他修了点bug……我之前用“调谐”会崩溃因为它那个限制了字符长度，然后有一些小的直接用变量的我也改了改，我最恨那种变量名直接显示的，以至于现在有的标签都还是英文，但是有一些我写了转换功能放了进去转成纯文本显示。
 
 ============================================================================
 
-[code and translated files.zip](https://github.com/user-attachments/files/28935501/code.and.translated.files.zip)
+[code and translation.zip](https://github.com/user-attachments/files/29035874/code.and.translation.zip)
 
 这个是我如何进行的翻译工作的代码和生成的文件，具体来说，BepInEx是用AppData\LocalLow\High North Studios\SKALD_ Against the Black Priory\Custom Projects\DevelopmentBuild\Data\SkaldProject.json这个文件覆盖原来的unityasset里面的内容来达成汉化的。
 
